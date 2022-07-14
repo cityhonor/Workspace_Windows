@@ -187,3 +187,6 @@
 [submodule "projects/Project_Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7"]
 	path = projects/Project_Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7
 	url = git@github.com:NAAGRAAJ-HM/Project_Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7.git
+[submodule "projects/Project_Windows10Home_Eclipse2022-06_PEAQc150_VirtualECU_intelCOREi7"]
+	path = projects/Project_Windows10Home_Eclipse2022-06_PEAQc150_VirtualECU_intelCOREi7
+	url = git@github.com:NAAGRAAJ-HM/Project_Windows10Home_Eclipse2022-06_PEAQc150_VirtualECU_intelCOREi7.git
