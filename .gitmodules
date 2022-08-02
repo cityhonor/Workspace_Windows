@@ -193,3 +193,6 @@
 [submodule "modules/Const"]
 	path = modules/Const
 	url = git@github.com:NAAGRAAJ-HM/Const.git
+[submodule "modules/ReSim_Fm"]
+	path = modules/ReSim_Fm
+	url = git@github.com:NAAGRAAJ-HM/ReSim_Fm.git
