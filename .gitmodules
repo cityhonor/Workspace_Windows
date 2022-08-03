@@ -196,3 +196,6 @@
 [submodule "modules/ReSim_Fm"]
 	path = modules/ReSim_Fm
 	url = git@github.com:NAAGRAAJ-HM/ReSim_Fm.git
+[submodule "projects/Project_Windows10Home_uVisionV5p37_PEAQc150_BldcFocSensorless_TLE9879QXA40"]
+	path = projects/Project_Windows10Home_uVisionV5p37_PEAQc150_BldcFocSensorless_TLE9879QXA40
+	url = git@github.com:NAAGRAAJ-HM/Project_Windows10Home_uVisionV5p37_PEAQc150_BldcFocSensorless_TLE9879QXA40.git
