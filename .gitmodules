@@ -196,3 +196,6 @@
 [submodule "projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"]
 	path = projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
 	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40.git
+[submodule "modules/common"]
+	path = modules/common
+	url = git@github.com:NAAGRAAJ-HM/common.git
