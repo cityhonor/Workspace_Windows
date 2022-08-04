@@ -1,201 +1,198 @@
-[submodule "modules/common"]
-	path = modules/common
-	url = git@github.com:NAAGRAAJ-HM/common.git
-[submodule "modules/Compiler_Abstraction_GNU"]
-	path = modules/Compiler_Abstraction_GNU
-	url = git@github.com:NAAGRAAJ-HM/Compiler_Abstraction_GNU.git
-[submodule "modules/BswAUTOSAR_Cfg_Gen"]
-	path = modules/BswAUTOSAR_Cfg_Gen
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Cfg_Gen.git
-[submodule "modules/BswAUTOSAR_EcuAb_CanIf"]
-	path = modules/BswAUTOSAR_EcuAb_CanIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_CanIf.git
-[submodule "modules/BswAUTOSAR_EcuAb_CanTp"]
-	path = modules/BswAUTOSAR_EcuAb_CanTp
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_CanTp.git
-[submodule "modules/BswAUTOSAR_EcuAb_CryIf"]
-	path = modules/BswAUTOSAR_EcuAb_CryIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_CryIf.git
-[submodule "modules/BswAUTOSAR_EcuAb_Ea"]
-	path = modules/BswAUTOSAR_EcuAb_Ea
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_Ea.git
-[submodule "modules/BswAUTOSAR_EcuAb_EthIf"]
-	path = modules/BswAUTOSAR_EcuAb_EthIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_EthIf.git
-[submodule "modules/BswAUTOSAR_EcuAb_Fee"]
-	path = modules/BswAUTOSAR_EcuAb_Fee
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_Fee.git
-[submodule "modules/BswAUTOSAR_EcuAb_FrIf"]
-	path = modules/BswAUTOSAR_EcuAb_FrIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_FrIf.git
-[submodule "modules/BswAUTOSAR_EcuAb_FrTp"]
-	path = modules/BswAUTOSAR_EcuAb_FrTp
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_FrTp.git
-[submodule "modules/BswAUTOSAR_EcuAb_J1939Tp"]
-	path = modules/BswAUTOSAR_EcuAb_J1939Tp
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_J1939Tp.git
-[submodule "modules/BswAUTOSAR_EcuAb_LinIf"]
-	path = modules/BswAUTOSAR_EcuAb_LinIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_LinIf.git
-[submodule "modules/BswAUTOSAR_EcuAb_LinTp"]
-	path = modules/BswAUTOSAR_EcuAb_LinTp
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_LinTp.git
-[submodule "modules/BswAUTOSAR_EcuAb_MemIf"]
-	path = modules/BswAUTOSAR_EcuAb_MemIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_MemIf.git
-[submodule "modules/BswAUTOSAR_EcuAb_WdgIf"]
-	path = modules/BswAUTOSAR_EcuAb_WdgIf
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_EcuAb_WdgIf.git
-[submodule "modules/BswAUTOSAR_McAL_Adc"]
-	path = modules/BswAUTOSAR_McAL_Adc
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Adc.git
-[submodule "modules/BswAUTOSAR_McAL_Can"]
-	path = modules/BswAUTOSAR_McAL_Can
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Can.git
-[submodule "modules/BswAUTOSAR_McAL_Cry"]
-	path = modules/BswAUTOSAR_McAL_Cry
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Cry.git
-[submodule "modules/BswAUTOSAR_McAL_Dio"]
-	path = modules/BswAUTOSAR_McAL_Dio
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Dio.git
-[submodule "modules/BswAUTOSAR_McAL_Eep"]
-	path = modules/BswAUTOSAR_McAL_Eep
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Eep.git
-[submodule "modules/BswAUTOSAR_McAL_Eth"]
-	path = modules/BswAUTOSAR_McAL_Eth
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Eth.git
-[submodule "modules/BswAUTOSAR_McAL_Fls"]
-	path = modules/BswAUTOSAR_McAL_Fls
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Fls.git
-[submodule "modules/BswAUTOSAR_McAL_Fr"]
-	path = modules/BswAUTOSAR_McAL_Fr
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Fr.git
-[submodule "modules/BswAUTOSAR_McAL_Gpt"]
-	path = modules/BswAUTOSAR_McAL_Gpt
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Gpt.git
-[submodule "modules/BswAUTOSAR_McAL_Icu"]
-	path = modules/BswAUTOSAR_McAL_Icu
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Icu.git
-[submodule "modules/BswAUTOSAR_McAL_Lin"]
-	path = modules/BswAUTOSAR_McAL_Lin
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Lin.git
-[submodule "modules/BswAUTOSAR_McAL_Mcu"]
-	path = modules/BswAUTOSAR_McAL_Mcu
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Mcu.git
-[submodule "modules/BswAUTOSAR_McAL_Ocu"]
-	path = modules/BswAUTOSAR_McAL_Ocu
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Ocu.git
-[submodule "modules/BswAUTOSAR_McAL_Port"]
-	path = modules/BswAUTOSAR_McAL_Port
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Port.git
-[submodule "modules/BswAUTOSAR_McAL_Pwm"]
-	path = modules/BswAUTOSAR_McAL_Pwm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Pwm.git
-[submodule "modules/BswAUTOSAR_McAL_Spi"]
-	path = modules/BswAUTOSAR_McAL_Spi
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Spi.git
-[submodule "modules/BswAUTOSAR_McAL_Wdg"]
-	path = modules/BswAUTOSAR_McAL_Wdg
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_McAL_Wdg.git
-[submodule "modules/BswAUTOSAR_Service_BswM"]
-	path = modules/BswAUTOSAR_Service_BswM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_BswM.git
-[submodule "modules/BswAUTOSAR_Service_CanNm"]
-	path = modules/BswAUTOSAR_Service_CanNm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_CanNm.git
-[submodule "modules/BswAUTOSAR_Service_CanSm"]
-	path = modules/BswAUTOSAR_Service_CanSm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_CanSm.git
-[submodule "modules/BswAUTOSAR_Service_Com"]
-	path = modules/BswAUTOSAR_Service_Com
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Com.git
-[submodule "modules/BswAUTOSAR_Service_ComM"]
-	path = modules/BswAUTOSAR_Service_ComM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_ComM.git
-[submodule "modules/BswAUTOSAR_Service_Csm"]
-	path = modules/BswAUTOSAR_Service_Csm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Csm.git
-[submodule "modules/BswAUTOSAR_Service_Dcm"]
-	path = modules/BswAUTOSAR_Service_Dcm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Dcm.git
-[submodule "modules/BswAUTOSAR_Service_Dem"]
-	path = modules/BswAUTOSAR_Service_Dem
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Dem.git
-[submodule "modules/BswAUTOSAR_Service_Det"]
-	path = modules/BswAUTOSAR_Service_Det
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Det.git
-[submodule "modules/BswAUTOSAR_Service_Dlt"]
-	path = modules/BswAUTOSAR_Service_Dlt
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Dlt.git
-[submodule "modules/BswAUTOSAR_Service_EcuM"]
-	path = modules/BswAUTOSAR_Service_EcuM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_EcuM.git
-[submodule "modules/BswAUTOSAR_Service_FiM"]
-	path = modules/BswAUTOSAR_Service_FiM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_FiM.git
-[submodule "modules/BswAUTOSAR_Service_FrNm"]
-	path = modules/BswAUTOSAR_Service_FrNm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_FrNm.git
-[submodule "modules/BswAUTOSAR_Service_IpduM"]
-	path = modules/BswAUTOSAR_Service_IpduM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_IpduM.git
-[submodule "modules/BswAUTOSAR_Service_Nm"]
-	path = modules/BswAUTOSAR_Service_Nm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Nm.git
-[submodule "modules/BswAUTOSAR_Service_NvM"]
-	path = modules/BswAUTOSAR_Service_NvM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_NvM.git
-[submodule "modules/BswAUTOSAR_Service_Os"]
-	path = modules/BswAUTOSAR_Service_Os
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Os.git
-[submodule "modules/BswAUTOSAR_Service_PduR"]
-	path = modules/BswAUTOSAR_Service_PduR
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_PduR.git
-[submodule "modules/BswAUTOSAR_Service_SchM"]
-	path = modules/BswAUTOSAR_Service_SchM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_SchM.git
-[submodule "modules/BswAUTOSAR_Service_SecOC"]
-	path = modules/BswAUTOSAR_Service_SecOC
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_SecOC.git
-[submodule "modules/BswAUTOSAR_Service_SokFm"]
-	path = modules/BswAUTOSAR_Service_SokFm
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_SokFm.git
-[submodule "modules/BswAUTOSAR_Service_StartUp"]
-	path = modules/BswAUTOSAR_Service_StartUp
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_StartUp.git
-[submodule "modules/BswAUTOSAR_Service_StbM"]
-	path = modules/BswAUTOSAR_Service_StbM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_StbM.git
-[submodule "modules/BswAUTOSAR_Service_Vkms"]
-	path = modules/BswAUTOSAR_Service_Vkms
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_Vkms.git
-[submodule "modules/BswAUTOSAR_Service_WdgM"]
-	path = modules/BswAUTOSAR_Service_WdgM
-	url = git@github.com:NAAGRAAJ-HM/BswAUTOSAR_Service_WdgM.git
-[submodule "modules/Rte"]
-	path = modules/Rte
-	url = git@github.com:NAAGRAAJ-HM/Rte.git
-[submodule "modules/SwcApplFoc"]
-	path = modules/SwcApplFoc
-	url = git@github.com:NAAGRAAJ-HM/SwcApplFoc.git
-[submodule "modules/SwcServiceEcuM"]
-	path = modules/SwcServiceEcuM
-	url = git@github.com:NAAGRAAJ-HM/SwcServiceEcuM.git
-[submodule "modules/SwcServiceOs"]
-	path = modules/SwcServiceOs
-	url = git@github.com:NAAGRAAJ-HM/SwcServiceOs.git
-[submodule "projects/Project_Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7"]
-	path = projects/Project_Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7
-	url = git@github.com:NAAGRAAJ-HM/Project_Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7.git
-[submodule "projects/Project_Windows10Home_Eclipse2022-06_PEAQc150_VirtualECU_intelCOREi7"]
-	path = projects/Project_Windows10Home_Eclipse2022-06_PEAQc150_VirtualECU_intelCOREi7
-	url = git@github.com:NAAGRAAJ-HM/Project_Windows10Home_Eclipse2022-06_PEAQc150_VirtualECU_intelCOREi7.git
-[submodule "modules/Const"]
-	path = modules/Const
-	url = git@github.com:NAAGRAAJ-HM/Const.git
-[submodule "modules/ReSim_Fm"]
-	path = modules/ReSim_Fm
-	url = git@github.com:NAAGRAAJ-HM/ReSim_Fm.git
-[submodule "projects/Project_Windows10Home_uVisionV5p37_PEAQc150_BldcFocSensorless_TLE9879QXA40"]
-	path = projects/Project_Windows10Home_uVisionV5p37_PEAQc150_BldcFocSensorless_TLE9879QXA40
-	url = git@github.com:NAAGRAAJ-HM/Project_Windows10Home_uVisionV5p37_PEAQc150_BldcFocSensorless_TLE9879QXA40.git
+[submodule "modules/CommonARA"]
+	path = modules/CommonARA
+	url = git@github.com:NAAGRAAJ-HM/CommonARA.git
+[submodule "modules/CommonCfg"]
+	path = modules/CommonCfg
+	url = git@github.com:NAAGRAAJ-HM/CommonCfg.git
+[submodule "modules/CommonCompiler"]
+	path = modules/CommonCompiler
+	url = git@github.com:NAAGRAAJ-HM/CommonCompiler.git
+[submodule "modules/CommonConst"]
+	path = modules/CommonConst
+	url = git@github.com:NAAGRAAJ-HM/CommonConst.git
+[submodule "modules/EcuabCanIf"]
+	path = modules/EcuabCanIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabCanIf.git
+[submodule "modules/EcuabCanTp"]
+	path = modules/EcuabCanTp
+	url = git@github.com:NAAGRAAJ-HM/EcuabCanTp.git
+[submodule "modules/EcuabCryIf"]
+	path = modules/EcuabCryIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabCryIf.git
+[submodule "modules/EcuabEa"]
+	path = modules/EcuabEa
+	url = git@github.com:NAAGRAAJ-HM/EcuabEa.git
+[submodule "modules/EcuabEthIf"]
+	path = modules/EcuabEthIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabEthIf.git
+[submodule "modules/EcuabFee"]
+	path = modules/EcuabFee
+	url = git@github.com:NAAGRAAJ-HM/EcuabFee.git
+[submodule "modules/EcuabFrIf"]
+	path = modules/EcuabFrIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabFrIf.git
+[submodule "modules/EcuabFrTp"]
+	path = modules/EcuabFrTp
+	url = git@github.com:NAAGRAAJ-HM/EcuabFrTp.git
+[submodule "modules/EcuabJ1939Tp"]
+	path = modules/EcuabJ1939Tp
+	url = git@github.com:NAAGRAAJ-HM/EcuabJ1939Tp.git
+[submodule "modules/EcuabLinIf"]
+	path = modules/EcuabLinIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabLinIf.git
+[submodule "modules/EcuabLinTp"]
+	path = modules/EcuabLinTp
+	url = git@github.com:NAAGRAAJ-HM/EcuabLinTp.git
+[submodule "modules/EcuabMemIf"]
+	path = modules/EcuabMemIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabMemIf.git
+[submodule "modules/EcuabWdgIf"]
+	path = modules/EcuabWdgIf
+	url = git@github.com:NAAGRAAJ-HM/EcuabWdgIf.git
+[submodule "modules/McalAdc"]
+	path = modules/McalAdc
+	url = git@github.com:NAAGRAAJ-HM/McalAdc.git
+[submodule "modules/McalCan"]
+	path = modules/McalCan
+	url = git@github.com:NAAGRAAJ-HM/McalCan.git
+[submodule "modules/McalCry"]
+	path = modules/McalCry
+	url = git@github.com:NAAGRAAJ-HM/McalCry.git
+[submodule "modules/McalDio"]
+	path = modules/McalDio
+	url = git@github.com:NAAGRAAJ-HM/McalDio.git
+[submodule "modules/McalEep"]
+	path = modules/McalEep
+	url = git@github.com:NAAGRAAJ-HM/McalEep.git
+[submodule "modules/McalEth"]
+	path = modules/McalEth
+	url = git@github.com:NAAGRAAJ-HM/McalEth.git
+[submodule "modules/McalFls"]
+	path = modules/McalFls
+	url = git@github.com:NAAGRAAJ-HM/McalFls.git
+[submodule "modules/McalFr"]
+	path = modules/McalFr
+	url = git@github.com:NAAGRAAJ-HM/McalFr.git
+[submodule "modules/McalGpt"]
+	path = modules/McalGpt
+	url = git@github.com:NAAGRAAJ-HM/McalGpt.git
+[submodule "modules/McalIcu"]
+	path = modules/McalIcu
+	url = git@github.com:NAAGRAAJ-HM/McalIcu.git
+[submodule "modules/McalLin"]
+	path = modules/McalLin
+	url = git@github.com:NAAGRAAJ-HM/McalLin.git
+[submodule "modules/McalMcu"]
+	path = modules/McalMcu
+	url = git@github.com:NAAGRAAJ-HM/McalMcu.git
+[submodule "modules/McalOcu"]
+	path = modules/McalOcu
+	url = git@github.com:NAAGRAAJ-HM/McalOcu.git
+[submodule "modules/McalPort"]
+	path = modules/McalPort
+	url = git@github.com:NAAGRAAJ-HM/McalPort.git
+[submodule "modules/McalPwm"]
+	path = modules/McalPwm
+	url = git@github.com:NAAGRAAJ-HM/McalPwm.git
+[submodule "modules/McalSpi"]
+	path = modules/McalSpi
+	url = git@github.com:NAAGRAAJ-HM/McalSpi.git
+[submodule "modules/McalWdg"]
+	path = modules/McalWdg
+	url = git@github.com:NAAGRAAJ-HM/McalWdg.git
+[submodule "modules/ServiceBswM"]
+	path = modules/ServiceBswM
+	url = git@github.com:NAAGRAAJ-HM/ServiceBswM.git
+[submodule "modules/ServiceCanNm"]
+	path = modules/ServiceCanNm
+	url = git@github.com:NAAGRAAJ-HM/ServiceCanNm.git
+[submodule "modules/ServiceCanSm"]
+	path = modules/ServiceCanSm
+	url = git@github.com:NAAGRAAJ-HM/ServiceCanSm.git
+[submodule "modules/ServiceCom"]
+	path = modules/ServiceCom
+	url = git@github.com:NAAGRAAJ-HM/ServiceCom.git
+[submodule "modules/ServiceComM"]
+	path = modules/ServiceComM
+	url = git@github.com:NAAGRAAJ-HM/ServiceComM.git
+[submodule "modules/ServiceCsm"]
+	path = modules/ServiceCsm
+	url = git@github.com:NAAGRAAJ-HM/ServiceCsm.git
+[submodule "modules/ServiceDcm"]
+	path = modules/ServiceDcm
+	url = git@github.com:NAAGRAAJ-HM/ServiceDcm.git
+[submodule "modules/ServiceDem"]
+	path = modules/ServiceDem
+	url = git@github.com:NAAGRAAJ-HM/ServiceDem.git
+[submodule "modules/ServiceDet"]
+	path = modules/ServiceDet
+	url = git@github.com:NAAGRAAJ-HM/ServiceDet.git
+[submodule "modules/ServiceDlt"]
+	path = modules/ServiceDlt
+	url = git@github.com:NAAGRAAJ-HM/ServiceDlt.git
+[submodule "modules/ServiceEcuM"]
+	path = modules/ServiceEcuM
+	url = git@github.com:NAAGRAAJ-HM/ServiceEcuM.git
+[submodule "modules/ServiceFiM"]
+	path = modules/ServiceFiM
+	url = git@github.com:NAAGRAAJ-HM/ServiceFiM.git
+[submodule "modules/ServiceFrNm"]
+	path = modules/ServiceFrNm
+	url = git@github.com:NAAGRAAJ-HM/ServiceFrNm.git
+[submodule "modules/ServiceIpduM"]
+	path = modules/ServiceIpduM
+	url = git@github.com:NAAGRAAJ-HM/ServiceIpduM.git
+[submodule "modules/ServiceNm"]
+	path = modules/ServiceNm
+	url = git@github.com:NAAGRAAJ-HM/ServiceNm.git
+[submodule "modules/ServiceNvM"]
+	path = modules/ServiceNvM
+	url = git@github.com:NAAGRAAJ-HM/ServiceNvM.git
+[submodule "modules/ServiceOs"]
+	path = modules/ServiceOs
+	url = git@github.com:NAAGRAAJ-HM/ServiceOs.git
+[submodule "modules/ServicePduR"]
+	path = modules/ServicePduR
+	url = git@github.com:NAAGRAAJ-HM/ServicePduR.git
+[submodule "modules/ServiceSchM"]
+	path = modules/ServiceSchM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSchM.git
+[submodule "modules/ServiceSecOC"]
+	path = modules/ServiceSecOC
+	url = git@github.com:NAAGRAAJ-HM/ServiceSecOC.git
+[submodule "modules/ServiceSokFm"]
+	path = modules/ServiceSokFm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSokFm.git
+[submodule "modules/ServiceStartUp"]
+	path = modules/ServiceStartUp
+	url = git@github.com:NAAGRAAJ-HM/ServiceStartUp.git
+[submodule "modules/ServiceStbM"]
+	path = modules/ServiceStbM
+	url = git@github.com:NAAGRAAJ-HM/ServiceStbM.git
+[submodule "modules/ServiceVkms"]
+	path = modules/ServiceVkms
+	url = git@github.com:NAAGRAAJ-HM/ServiceVkms.git
+[submodule "modules/ServiceWdgM"]
+	path = modules/ServiceWdgM
+	url = git@github.com:NAAGRAAJ-HM/ServiceWdgM.git
+[submodule "modules/ReSimFm"]
+	path = modules/ReSimFm
+	url = git@github.com:NAAGRAAJ-HM/ReSimFm.git
+[submodule "modules/ApplSwcFoc"]
+	path = modules/ApplSwcFoc
+	url = git@github.com:NAAGRAAJ-HM/ApplSwcFoc.git
+[submodule "modules/ServiceSwcEcuM"]
+	path = modules/ServiceSwcEcuM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcEcuM.git
+[submodule "modules/ServiceSwcOs"]
+	path = modules/ServiceSwcOs
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcOs.git
+[submodule "projects/ProjectWindows_Cygwin64_VirtualECUintelCOREi7"]
+	path = projects/ProjectWindows_Cygwin64_VirtualECUintelCOREi7
+	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_Cygwin64_VirtualECUintelCOREi7.git
+[submodule "projects/ProjectWindows_Eclipse_VirtualECUintelCOREi7"]
+	path = projects/ProjectWindows_Eclipse_VirtualECUintelCOREi7
+	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_Eclipse_VirtualECUintelCOREi7.git
+[submodule "projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"]
+	path = projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
+	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40.git
