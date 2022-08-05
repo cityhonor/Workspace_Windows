@@ -187,3 +187,15 @@
 [submodule "projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"]
 	path = projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
 	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40.git
+[submodule "modules/ProjectARA"]
+	path = modules/ProjectARA
+	url = git@github.com:NAAGRAAJ-HM/ProjectARA.git
+[submodule "modules/ProjectCfg"]
+	path = modules/ProjectCfg
+	url = git@github.com:NAAGRAAJ-HM/ProjectCfg.git
+[submodule "modules/ProjectCompiler"]
+	path = modules/ProjectCompiler
+	url = git@github.com:NAAGRAAJ-HM/ProjectCompiler.git
+[submodule "modules/ProjectConst"]
+	path = modules/ProjectConst
+	url = git@github.com:NAAGRAAJ-HM/ProjectConst.git
