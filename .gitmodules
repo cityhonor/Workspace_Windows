@@ -1,15 +1,6 @@
-[submodule "modules/CommonARA"]
-	path = modules/CommonARA
-	url = git@github.com:NAAGRAAJ-HM/CommonARA.git
-[submodule "modules/CommonCfg"]
-	path = modules/CommonCfg
-	url = git@github.com:NAAGRAAJ-HM/CommonCfg.git
-[submodule "modules/CommonCompiler"]
-	path = modules/CommonCompiler
-	url = git@github.com:NAAGRAAJ-HM/CommonCompiler.git
-[submodule "modules/CommonConst"]
-	path = modules/CommonConst
-	url = git@github.com:NAAGRAAJ-HM/CommonConst.git
+[submodule "modules/common"]
+	path = modules/common
+	url = git@github.com:NAAGRAAJ-HM/common.git
 [submodule "modules/EcuabCanIf"]
 	path = modules/EcuabCanIf
 	url = git@github.com:NAAGRAAJ-HM/EcuabCanIf.git
@@ -196,6 +187,3 @@
 [submodule "projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"]
 	path = projects/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
 	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40.git
-[submodule "modules/common"]
-	path = modules/common
-	url = git@github.com:NAAGRAAJ-HM/common.git
