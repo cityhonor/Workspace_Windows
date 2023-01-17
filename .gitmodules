@@ -199,3 +199,9 @@
 [submodule "modules/ProjectConst"]
 	path = modules/ProjectConst
 	url = git@github.com:NAAGRAAJ-HM/ProjectConst.git
+[submodule "modules/CddBdrv"]
+	path = modules/CddBdrv
+	url = git@github.com:NAAGRAAJ-HM/CddBdrv.git
+[submodule "modules/ServiceSwcIoHwAb"]
+	path = modules/ServiceSwcIoHwAb
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcIoHwAb.git
