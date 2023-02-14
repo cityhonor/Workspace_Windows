@@ -205,3 +205,6 @@
 [submodule "modules/ServiceSwcIoHwAb"]
 	path = modules/ServiceSwcIoHwAb
 	url = git@github.com:NAAGRAAJ-HM/ServiceSwcIoHwAb.git
+[submodule "modules/ReSimCmd"]
+	path = modules/ReSimCmd
+	url = git@github.com:NAAGRAAJ-HM/ReSimCmd.git
