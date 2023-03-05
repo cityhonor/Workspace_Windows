@@ -208,3 +208,6 @@
 [submodule "modules/ReSimCmd"]
 	path = modules/ReSimCmd
 	url = git@github.com:NAAGRAAJ-HM/ReSimCmd.git
+[submodule "projects/ProjectWindows_VisualStudio_VirtualEcu"]
+	path = projects/ProjectWindows_VisualStudio_VirtualEcu
+	url = git@github.com:NAAGRAAJ-HM/ProjectWindows_VisualStudio_VirtualEcu.git
