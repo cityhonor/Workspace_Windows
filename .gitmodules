@@ -91,81 +91,81 @@
 [submodule "modules/McalWdg"]
 	path = modules/McalWdg
 	url = git@github.com:NAAGRAAJ-HM/McalWdg.git
-[submodule "modules/ServiceBswM"]
-	path = modules/ServiceBswM
-	url = git@github.com:NAAGRAAJ-HM/ServiceBswM.git
-[submodule "modules/ServiceCanNm"]
-	path = modules/ServiceCanNm
-	url = git@github.com:NAAGRAAJ-HM/ServiceCanNm.git
-[submodule "modules/ServiceCanSm"]
-	path = modules/ServiceCanSm
-	url = git@github.com:NAAGRAAJ-HM/ServiceCanSm.git
-[submodule "modules/ServiceCom"]
-	path = modules/ServiceCom
-	url = git@github.com:NAAGRAAJ-HM/ServiceCom.git
-[submodule "modules/ServiceComM"]
-	path = modules/ServiceComM
-	url = git@github.com:NAAGRAAJ-HM/ServiceComM.git
-[submodule "modules/ServiceCsm"]
-	path = modules/ServiceCsm
-	url = git@github.com:NAAGRAAJ-HM/ServiceCsm.git
-[submodule "modules/ServiceDcm"]
-	path = modules/ServiceDcm
-	url = git@github.com:NAAGRAAJ-HM/ServiceDcm.git
-[submodule "modules/ServiceDem"]
-	path = modules/ServiceDem
-	url = git@github.com:NAAGRAAJ-HM/ServiceDem.git
-[submodule "modules/ServiceDet"]
-	path = modules/ServiceDet
-	url = git@github.com:NAAGRAAJ-HM/ServiceDet.git
-[submodule "modules/ServiceDlt"]
-	path = modules/ServiceDlt
-	url = git@github.com:NAAGRAAJ-HM/ServiceDlt.git
+[submodule "modules/ServiceSwcBswM"]
+	path = modules/ServiceSwcBswM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcBswM.git
+[submodule "modules/ServiceSwcCanNm"]
+	path = modules/ServiceSwcCanNm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcCanNm.git
+[submodule "modules/ServiceSwcCanSm"]
+	path = modules/ServiceSwcCanSm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcCanSm.git
+[submodule "modules/ServiceSwcCom"]
+	path = modules/ServiceSwcCom
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcCom.git
+[submodule "modules/ServiceSwcComM"]
+	path = modules/ServiceSwcComM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcComM.git
+[submodule "modules/ServiceSwcCsm"]
+	path = modules/ServiceSwcCsm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcCsm.git
+[submodule "modules/ServiceSwcDcm"]
+	path = modules/ServiceSwcDcm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcDcm.git
+[submodule "modules/ServiceSwcDem"]
+	path = modules/ServiceSwcDem
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcDem.git
+[submodule "modules/ServiceSwcDet"]
+	path = modules/ServiceSwcDet
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcDet.git
+[submodule "modules/ServiceSwcDlt"]
+	path = modules/ServiceSwcDlt
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcDlt.git
 [submodule "modules/ServiceEcuM"]
 	path = modules/ServiceEcuM
 	url = git@github.com:NAAGRAAJ-HM/ServiceEcuM.git
-[submodule "modules/ServiceFiM"]
-	path = modules/ServiceFiM
-	url = git@github.com:NAAGRAAJ-HM/ServiceFiM.git
-[submodule "modules/ServiceFrNm"]
-	path = modules/ServiceFrNm
-	url = git@github.com:NAAGRAAJ-HM/ServiceFrNm.git
-[submodule "modules/ServiceIpduM"]
-	path = modules/ServiceIpduM
-	url = git@github.com:NAAGRAAJ-HM/ServiceIpduM.git
-[submodule "modules/ServiceNm"]
-	path = modules/ServiceNm
-	url = git@github.com:NAAGRAAJ-HM/ServiceNm.git
-[submodule "modules/ServiceNvM"]
-	path = modules/ServiceNvM
-	url = git@github.com:NAAGRAAJ-HM/ServiceNvM.git
+[submodule "modules/ServiceSwcFiM"]
+	path = modules/ServiceSwcFiM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcFiM.git
+[submodule "modules/ServiceSwcFrNm"]
+	path = modules/ServiceSwcFrNm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcFrNm.git
+[submodule "modules/ServiceSwcIpduM"]
+	path = modules/ServiceSwcIpduM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcIpduM.git
+[submodule "modules/ServiceSwcNm"]
+	path = modules/ServiceSwcNm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcNm.git
+[submodule "modules/ServiceSwcNvM"]
+	path = modules/ServiceSwcNvM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcNvM.git
 [submodule "modules/ServiceOs"]
 	path = modules/ServiceOs
 	url = git@github.com:NAAGRAAJ-HM/ServiceOs.git
-[submodule "modules/ServicePduR"]
-	path = modules/ServicePduR
-	url = git@github.com:NAAGRAAJ-HM/ServicePduR.git
-[submodule "modules/ServiceSchM"]
-	path = modules/ServiceSchM
-	url = git@github.com:NAAGRAAJ-HM/ServiceSchM.git
-[submodule "modules/ServiceSecOC"]
-	path = modules/ServiceSecOC
-	url = git@github.com:NAAGRAAJ-HM/ServiceSecOC.git
-[submodule "modules/ServiceSokFm"]
-	path = modules/ServiceSokFm
-	url = git@github.com:NAAGRAAJ-HM/ServiceSokFm.git
-[submodule "modules/ServiceStartUp"]
-	path = modules/ServiceStartUp
-	url = git@github.com:NAAGRAAJ-HM/ServiceStartUp.git
-[submodule "modules/ServiceStbM"]
-	path = modules/ServiceStbM
-	url = git@github.com:NAAGRAAJ-HM/ServiceStbM.git
-[submodule "modules/ServiceVkms"]
-	path = modules/ServiceVkms
-	url = git@github.com:NAAGRAAJ-HM/ServiceVkms.git
-[submodule "modules/ServiceWdgM"]
-	path = modules/ServiceWdgM
-	url = git@github.com:NAAGRAAJ-HM/ServiceWdgM.git
+[submodule "modules/ServiceSwcPduR"]
+	path = modules/ServiceSwcPduR
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcPduR.git
+[submodule "modules/ServiceSwcSchM"]
+	path = modules/ServiceSwcSchM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcSchM.git
+[submodule "modules/ServiceSwcSecOC"]
+	path = modules/ServiceSwcSecOC
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcSecOC.git
+[submodule "modules/ServiceSwcSokFm"]
+	path = modules/ServiceSwcSokFm
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcSokFm.git
+[submodule "modules/ServiceSwcStartUp"]
+	path = modules/ServiceSwcStartUp
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcStartUp.git
+[submodule "modules/ServiceSwcStbM"]
+	path = modules/ServiceSwcStbM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcStbM.git
+[submodule "modules/ServiceSwcVkms"]
+	path = modules/ServiceSwcVkms
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcVkms.git
+[submodule "modules/ServiceSwcWdgM"]
+	path = modules/ServiceSwcWdgM
+	url = git@github.com:NAAGRAAJ-HM/ServiceSwcWdgM.git
 [submodule "modules/ReSimFm"]
 	path = modules/ReSimFm
 	url = git@github.com:NAAGRAAJ-HM/ReSimFm.git
