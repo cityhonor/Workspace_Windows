@@ -1,2 +1,0 @@
-# Csm
-Cryptography service manager

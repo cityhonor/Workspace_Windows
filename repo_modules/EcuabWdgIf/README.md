@@ -1,2 +1,0 @@
-# WdgIf
-Watchdog interface submodule

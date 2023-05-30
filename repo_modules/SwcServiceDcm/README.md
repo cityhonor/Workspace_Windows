@@ -1,2 +1,0 @@
-# Dcm
-Diagnostic communication manager

@@ -1,2 +1,0 @@
-# Mcu
-Microcontroller driver submodule

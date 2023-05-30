@@ -1,2 +1,0 @@
-# Ea
-EEPROM abstraction submodule

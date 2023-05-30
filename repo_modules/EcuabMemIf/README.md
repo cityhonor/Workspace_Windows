@@ -1,2 +1,0 @@
-# MemIf
-Memory interface submodule

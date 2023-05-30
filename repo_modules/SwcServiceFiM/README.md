@@ -1,2 +1,0 @@
-# FiM
-Function inhibition manager

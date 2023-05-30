@@ -1,2 +1,0 @@
-# SchM
-Submodule: Schedule manager

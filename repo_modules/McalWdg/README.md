@@ -1,2 +1,0 @@
-# Wdg
-Watchdog driver submodule

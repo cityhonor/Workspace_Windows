@@ -1,2 +1,0 @@
-# CryIf
-Cryptography interface layer
