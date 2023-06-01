@@ -403,3 +403,6 @@
 [submodule "repo_submodules/common"]
 	path = repo_submodules/common
 	url = https://github.com/NagarajaHuliyapuradaMata/common.git
+[submodule "repo_submodules/LibAutosar"]
+	path = repo_submodules/LibAutosar
+	url = git@github.com:NagarajaHuliyapuradaMata/LibAutosar.git
