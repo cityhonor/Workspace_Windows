@@ -405,4 +405,4 @@
 	url = https://github.com/NagarajaHuliyapuradaMata/common.git
 [submodule "repo_submodules/LibAutosar"]
 	path = repo_submodules/LibAutosar
-	url = git@github.com:NagarajaHuliyapuradaMata/LibAutosar.git
+	url = https://github.com/NagarajaHuliyapuradaMata/LibAutosar.git
