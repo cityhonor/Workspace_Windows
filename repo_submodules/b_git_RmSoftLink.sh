@@ -11,6 +11,7 @@ git rm -f EcuabLinIf
 git rm -f EcuabLinTp
 git rm -f EcuabMemIf
 git rm -f EcuabWdgIf
+git rm -f LibAutosar
 git rm -f McalAdc
 git rm -f McalCan
 git rm -f McalCry

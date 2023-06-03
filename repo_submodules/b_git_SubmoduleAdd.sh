@@ -11,6 +11,7 @@ git submodule add https://github.com/NagarajaHuliyapuradaMata/EcuabLinIf.git Ecu
 git submodule add https://github.com/NagarajaHuliyapuradaMata/EcuabLinTp.git EcuabLinTp
 git submodule add https://github.com/NagarajaHuliyapuradaMata/EcuabMemIf.git EcuabMemIf
 git submodule add https://github.com/NagarajaHuliyapuradaMata/EcuabWdgIf.git EcuabWdgIf
+git submodule add https://github.com/NagarajaHuliyapuradaMata/LibAutosar.git LibAutosar
 git submodule add https://github.com/NagarajaHuliyapuradaMata/McalAdc.git McalAdc
 git submodule add https://github.com/NagarajaHuliyapuradaMata/McalCan.git McalCan
 git submodule add https://github.com/NagarajaHuliyapuradaMata/McalCry.git McalCry

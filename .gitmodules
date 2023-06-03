@@ -205,9 +205,6 @@
 [submodule "projects/ProjectWindows_VisualStudio_VirtualEcu"]
 	path = projects/ProjectWindows_VisualStudio_VirtualEcu
 	url = git@github.com:NagarajaHuliyapuradaMata/ProjectWindows_VisualStudio_VirtualEcu.git
-[submodule "repo_projects/ProjectWindows_VisualStudio_VirtualEcu"]
-	path = repo_projects/ProjectWindows_VisualStudio_VirtualEcu
-	url = https://github.com/NagarajaHuliyapuradaMata/ProjectWindows_VisualStudio_VirtualEcu.git
 [submodule "repo_submodules/CddBdrv"]
 	path = repo_submodules/CddBdrv
 	url = https://github.com/NagarajaHuliyapuradaMata/CddBdrv.git
@@ -247,6 +244,9 @@
 [submodule "repo_submodules/EcuabWdgIf"]
 	path = repo_submodules/EcuabWdgIf
 	url = https://github.com/NagarajaHuliyapuradaMata/EcuabWdgIf.git
+[submodule "repo_submodules/LibAutosar"]
+	path = repo_submodules/LibAutosar
+	url = https://github.com/NagarajaHuliyapuradaMata/LibAutosar.git
 [submodule "repo_submodules/McalAdc"]
 	path = repo_submodules/McalAdc
 	url = https://github.com/NagarajaHuliyapuradaMata/McalAdc.git
@@ -403,6 +403,6 @@
 [submodule "repo_submodules/common"]
 	path = repo_submodules/common
 	url = https://github.com/NagarajaHuliyapuradaMata/common.git
-[submodule "repo_submodules/LibAutosar"]
-	path = repo_submodules/LibAutosar
-	url = https://github.com/NagarajaHuliyapuradaMata/LibAutosar.git
+[submodule "repo_projects/ProjectWindows_VisualStudio_VirtualEcu"]
+	path = repo_projects/ProjectWindows_VisualStudio_VirtualEcu
+	url = https://github.com/NagarajaHuliyapuradaMata/ProjectWindows_VisualStudio_VirtualEcu.git
