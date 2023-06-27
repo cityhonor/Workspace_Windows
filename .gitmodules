@@ -406,3 +406,6 @@
 [submodule "repo_projects/ProjectWindows_VisualStudio_VirtualEcu"]
 	path = repo_projects/ProjectWindows_VisualStudio_VirtualEcu
 	url = https://github.com/NagarajaHuliyapuradaMata/ProjectWindows_VisualStudio_VirtualEcu.git
+[submodule "repo_submodules/EcuabCanTrcv"]
+	path = repo_submodules/EcuabCanTrcv
+	url = https://github.com/NagarajaHuliyapuradaMata/EcuabCanTrcv.git
