@@ -409,3 +409,6 @@
 [submodule "repo_submodules/EcuabCanTrcv"]
 	path = repo_submodules/EcuabCanTrcv
 	url = https://github.com/NagarajaHuliyapuradaMata/EcuabCanTrcv.git
+[submodule "repo_projects/pFOTA"]
+	path = repo_projects/pFOTA
+	url = https://github.com/NagarajaHuliyapuradaMata/pFOTA.git
