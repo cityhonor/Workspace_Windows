@@ -415,3 +415,6 @@
 [submodule "repo_submodules/SwcApplStartUp"]
 	path = repo_submodules/SwcApplStartUp
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplStartUp.git
+[submodule "repo_projects/pRealEcu"]
+	path = repo_projects/pRealEcu
+	url = https://github.com/NagarajaHuliyapuradaMata/pRealEcu.git
