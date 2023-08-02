@@ -220,3 +220,6 @@
 [submodule "repo_projects/pRealEcu"]
 	path = repo_projects/pRealEcu
 	url = https://github.com/NagarajaHuliyapuradaMata/pRealEcu.git
+[submodule "repo_submodules/SwcApplEcuM"]
+	path = repo_submodules/SwcApplEcuM
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplEcuM.git
