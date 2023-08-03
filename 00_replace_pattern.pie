@@ -1,0 +1,17 @@
+import sys
+
+in_filename         = sys.argv[1]
+search_pattern      = (sys.argv[2]).replace('\\r', '\r').replace('\\n', '\n').replace('\\t', '\t')   ## Move to a function / procedure
+replacement_pattern = (sys.argv[3]).replace('\\r', '\r').replace('\\n', '\n').replace('\\t', '\t')   ## Move to a function / procedure
+out_filename        = sys.argv[4]
+iteration           = int(sys.argv[5])
+
+file_source  = open(in_filename).read()
+
+for loop_index in range(iteration):
+   processed_text = file_source.replace(search_pattern, replacement_pattern)
+   file_source = processed_text
+
+fh = open(out_filename, "w")
+fh.write(processed_text)
+fh.close()
