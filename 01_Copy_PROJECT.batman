@@ -1,9 +1,0 @@
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_CCC_InterfaceTest.c src\App\SWC_CCC.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_DIAG_MEASUREMENTS_BCM_InterfaceTest.c src\App\SWC_DIAG_MEASUREMENTS_BCM.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_DIAG_ROUTINES_BCM_InterfaceTest.c src\App\SWC_DIAG_ROUTINES_BCM.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_HMI_VIA_BAP_BCM_InterfaceTest.c src\App\SWC_HMI_VIA_BAP_BCM.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_KLS_InterfaceTest.c src\App\SWC_KLS.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_POWER_MGT_BCM_InterfaceTest.c src\App\SWC_POWER_MGT_BCM.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_SERVICE_KEY_BCM_InterfaceTest.c src\App\SWC_SERVICE_KEY_BCM.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_WUP_LEARNING_BCM_InterfaceTest.c src\App\SWC_WUP_LEARNING_BCM.c
-xcopy /e /f /i /q D:\DSUsers\uie44553\Perforce\Workspace_MQB_BSL_23\CHORUS\mc_sw\RteLight\RteGen\1\test\interfaceTest\SWC_ZAT_ILLUMINATION_BCM_InterfaceTest.c src\App\SWC_ZAT_ILLUMINATION_BCM.c
