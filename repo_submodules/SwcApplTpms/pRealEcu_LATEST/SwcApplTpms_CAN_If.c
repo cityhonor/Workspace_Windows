@@ -105,11 +105,7 @@ static void GenHmiMsgData(
    boolean        l_bSendRealDataStatus = FALSE;
    tuCAN_HMI_Data l_sHMI;
 
-#ifdef FILTER_SYMC_CAN_MSGS
    l_bSendRealDataStatus = SendRealReData();
-#else
-   l_bSendRealDataStatus = TRUE;
-#endif
                                                        l_sHMI.sHMI.b6Gap1              = BUSMSG_GAP1_DEFAULT;
                                                        l_sHMI.sHMI.bTPS_FR             = (0x07 & BusMsgGetWarning(BUSMSG_TYRE_VR));
                                                        l_sHMI.sHMI.bTPV_FR             = (0x01 & ((l_bSendRealDataStatus == TRUE) ? BusMsgGetTyrePressValidVR() : BUSMSG_TYREPRESS_INVALID));
@@ -137,15 +133,16 @@ static void GenHmiMsgData(
    *spCAN_Message = l_sHMI.sMsgsBytes;
 }
 
+extern void VERSION_GetSoftware_ID(
+   uint8* ucData
+);
+
 static void Gen_TPMS_Software_ID_MsgData(
    Type_SwcApplTpms_stMessageCan* spCAN_Message
 ){
-   tuCAN_TPMS_Software_ID_Data l_sTPMS_Software_ID;
-   l_sTPMS_Software_ID.sTPMS_Software_ID.u8MajorRelease  = 0x02;
-   l_sTPMS_Software_ID.sTPMS_Software_ID.u8MinorRelease  = 0x03;
-   l_sTPMS_Software_ID.sTPMS_Software_ID.u16MicroRelease = 0x1234;
-   l_sTPMS_Software_ID.sTPMS_Software_ID.u32Crc          = 0x12345678;
-   *spCAN_Message = l_sTPMS_Software_ID.sMsgsBytes;
+   VERSION_GetSoftware_ID(
+      spCAN_Message
+   );
 }
 
 static void GenHmiTemperatureRefPresMsgData(
