@@ -24,118 +24,140 @@
 
 typedef struct{
    uint32 ulID;
-   uint8 ucPressure;
-   sint8 scTemperature;
-   uint8 ucRemainingLifeTime;
-   uint8 ucTransMode;
+   uint8  ucPressure;
+   sint8  scTemperature;
+   uint8  ucRemainingLifeTime;
+   uint8  ucTransMode;
    uint16 ushSensorDefect;
 }tREDATAPREPROC_DECL;
 
-static tPreBuf tReDataPD;
+static tPreBuf      tReDataPD;
 static tRxRotatSBuf tWs_RxRotatSBuf[12];
-static uint8 ucRotatSTelIndexPut;
-static uint16 ucTyreInvalidPressSurpressionCnt[5];
-static uint8 ucRotL;
-static uint8 ucSnRotH;
-static uint8 ucRecEventPD;
-static uint8 U8_AllReceivedTelegCnt;
-static uint8 ucReifendruckPD[cAnzRad];
-static sint8 scTemperaturPD[cAnzRad];
-static uint8 ucRestlebensdauerPD[cAnzRad];
-static uint8 ucRSSIsumPD[cAnzRad];
-static uint8 ucTelTypePD[cAnzRad];
-static uint8 ucTransModePD[cAnzRad];
-static uint16 ushSensorDefectPD[cAnzRad];
-static uint8 ucPatmoPD;
+static uint8        ucRotatSTelIndexPut;
+static uint16       ucTyreInvalidPressSurpressionCnt[5];
+static uint8        ucRotL;
+static uint8        ucSnRotH;
+static uint8        ucRecEventPD;
+static uint8        U8_AllReceivedTelegCnt;
+static uint8        ucReifendruckPD[cAnzRad];
+static sint8        scTemperaturPD[cAnzRad];
+static uint8        ucRestlebensdauerPD[cAnzRad];
+static uint8        ucRSSIsumPD[cAnzRad];
+static uint8        ucTelTypePD[cAnzRad];
+static uint8        ucTransModePD[cAnzRad];
+static uint16       ushSensorDefectPD[cAnzRad];
+static uint8        ucPatmoPD;
 
 static tREDATAPREPROC_DECL tReDataPreProcPD = {
-   (uint32)0,
-   (uint8) cInvalidREpressure,
-   (sint8) cInvalidREtemperature,
-   (uint8) cInvalidRElifeTime,
-   (uint8) cInvalidTransMode,
-   (uint16) cInvalidSensorDefect, };
+      (uint32) 0
+   ,  (uint8)  cInvalidREpressure
+   ,  (sint8)  cInvalidREtemperature
+   ,  (uint8)  cInvalidRElifeTime
+   ,  (uint8)  cInvalidTransMode
+   ,  (uint16) cInvalidSensorDefect
+};
 
 uint8 ucRotatSTelIndexGet;
 
 static uint16 ushCalcAKPressurePD(
-   uint8 ucRawPres,
-   uint8* pucPhyPres);
+      uint8  ucRawPres
+   ,  uint8* pucPhyPres
+);
 static uint16 ushCalcAKTemperaturePD(
-   uint8 ucRawTemp,
-   sint8* pscPhyTemp);
+      uint8  ucRawTemp
+   ,  sint8* pscPhyTemp
+);
 
-void InitPD(
-   void){
+void InitPD(void){
    uint8 ucLoop;
    ReloadSTATISTICS();
    ucRecEventPD = 0;
    U8_AllReceivedTelegCnt = 0;
    ucRotatSTelIndexPut = 0;
    ucRotatSTelIndexGet = 0;
-   for(ucLoop = 0; ucLoop < cAnzRad; ucLoop++){
-      ucReifendruckPD[ucLoop] = cInvalidREpressure;
-      scTemperaturPD[ucLoop] = cInvalidREtemperature;
-      ucRestlebensdauerPD[ucLoop] = cInvalidRElifeTime;
-      ucRSSIsumPD[ucLoop] = cInvalidRSSIsum;
-      ucTelTypePD[ucLoop] = cInvalidTelType;
-      ucTransModePD[ucLoop] = cInvalidTransMode;
-      ushSensorDefectPD[ucLoop] = cInvalidSensorDefect;
+   for(
+      ucLoop = 0;
+      ucLoop < cAnzRad;
+      ucLoop ++
+   ){
+      ucReifendruckPD[ucLoop]                  = cInvalidREpressure;
+      scTemperaturPD[ucLoop]                   = cInvalidREtemperature;
+      ucRestlebensdauerPD[ucLoop]              = cInvalidRElifeTime;
+      ucRSSIsumPD[ucLoop]                      = cInvalidRSSIsum;
+      ucTelTypePD[ucLoop]                      = cInvalidTelType;
+      ucTransModePD[ucLoop]                    = cInvalidTransMode;
+      ushSensorDefectPD[ucLoop]                = cInvalidSensorDefect;
       ucTyreInvalidPressSurpressionCnt[ucLoop] = 0;
    }
    PUTucPatmoPD(
-      GETucPatmoEE());
+      GETucPatmoEE()
+   );
 }
 
 void IncrementAllReceivedTelegCnt(void){
    U8_AllReceivedTelegCnt++;
 }
 
-uint32 ulGetReDataIdPD(
-   void){
+uint32 ulGetReDataIdPD(void){
    uint32 ul_LocalID;
-   ul_LocalID = (((uint32)tReDataPD.AK35def.ucID[0] << 24U) | ((uint32)tReDataPD.AK35def.ucID[1] << 16U) | ((uint32)tReDataPD.AK35def.ucID[2] << 8U) | ((uint32)tReDataPD.AK35def.ucID[3] << 0U));
+   ul_LocalID = (
+         ((uint32)tReDataPD.AK35def.ucID[0] << 24U)
+      |  ((uint32)tReDataPD.AK35def.ucID[1] << 16U)
+      |  ((uint32)tReDataPD.AK35def.ucID[2] << 8U)
+      |  ((uint32)tReDataPD.AK35def.ucID[3] << 0U)
+   );
    return ul_LocalID;
 }
 
-uint8 ucGetReDataPressurePD(
-   void){
+uint8 ucGetReDataPressurePD(void){
    uint8 ucHelp;
-   if((cTelTypeAK35def == tReDataPD.AK35def.ucCmdID) || (cTelTypeHufStatus == tReDataPD.AK35def.ucCmdID) || (cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID) || (cTelTypeAK35defLMA == tReDataPD.AK35def.ucCmdID) || (cTelTypeStandstill == tReDataPD.AK35def.ucCmdID)){
+   if(
+         (cTelTypeAK35def == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeHufStatus == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeAK35defLMA == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeStandstill == tReDataPD.AK35def.ucCmdID)
+   ){
       ucHelp = tReDataPD.AK35def.ucPressure;
    }
    else{
       ucHelp = ((uint8)0x00);
    }
-   return (ucHelp);
+   return ucHelp;
 }
 
-uint8 ucGetReDataTemperaturePD(
-   void){
+uint8 ucGetReDataTemperaturePD(void){
    uint8 ucHelp;
-   if((cTelTypeAK35def == tReDataPD.AK35def.ucCmdID) || (cTelTypeHufStatus == tReDataPD.AK35def.ucCmdID) || (cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID) || (cTelTypeAK35defLMA == tReDataPD.AK35def.ucCmdID) || (cTelTypeStandstill == tReDataPD.AK35def.ucCmdID)){
+   if(
+         (cTelTypeAK35def        == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeHufStatus      == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeAK35defLMA     == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeStandstill     == tReDataPD.AK35def.ucCmdID)
+   ){
       ucHelp = tReDataPD.AK35def.ucTemperature;
    }
    else{
       ucHelp = ((uint8)0x00);
    }
-   return (ucHelp);
+   return ucHelp;
 }
 
-uint8 ucGetReDataRemainingLifeTimePD(
-   void){
+uint8 ucGetReDataRemainingLifeTimePD(void){
    uint8 ucHelp;
-   if((cTelTypeHufStatus == tReDataPD.AK35def.ucCmdID) || (cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID)){
+   if(
+         (cTelTypeHufStatus      == tReDataPD.AK35def.ucCmdID)
+      || (cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID)
+   ){
       ucHelp = (uint8)((tReDataPD.HufStatus.ucByte2Status & 0x3C) >> 2);
    }
    else{
       ucHelp = ((uint8)0x0F);
    }
-   return (ucHelp);
+   return ucHelp;
 }
 
-uint8 ucGetReDataStatePD(
-   void){
+uint8 ucGetReDataStatePD(void){
    uint8 ucHelp = 0;
    if(cTelTypeAK35def == tReDataPD.AK35def.ucCmdID){
       ucHelp = cRE_AK_TM_MODE_DRIVE;
@@ -149,18 +171,9 @@ uint8 ucGetReDataStatePD(
       }
       else{
          switch((tReDataPD.HufStatus.ucByte1Status & 0xE0u) >> 5){
-            case 3: {
-               ucHelp = cRE_AK_TM_MODE_LEARNDRIVE;
-               break;
-            }
-            case 5: {
-               ucHelp = cRE_AK_TM_MODE_DRIVE;
-               break;
-            }
-            default: {
-               ucHelp = cRE_AK_TM_MODE_STANDSTILL;
-               break;
-            }
+            case 3:  ucHelp = cRE_AK_TM_MODE_LEARNDRIVE; break;
+            case 5:  ucHelp = cRE_AK_TM_MODE_DRIVE;      break;
+            default: ucHelp = cRE_AK_TM_MODE_STANDSTILL; break;
          }
          if(1 == ((tReDataPD.HufStatus.ucByte2Status & 0xC0u) >> 6)){
             ucHelp = cRE_AK_TM_EVENT_DP;
@@ -170,17 +183,11 @@ uint8 ucGetReDataStatePD(
    else{
       ucHelp = ((uint8)0);
    }
-   return (ucHelp);
+   return ucHelp;
 }
 
-uint8 ucGetReDataRssiAvgPD(
-   void){
-   return tReDataPD.Struc.ucAvg;
-}
-
-uint8 ucGetReDataTelTypePD(void){
-   return tReDataPD.AK35def.ucCmdID;
-}
+uint8 ucGetReDataRssiAvgPD(void){return tReDataPD.Struc.ucAvg;}
+uint8 ucGetReDataTelTypePD(void){return tReDataPD.AK35def.ucCmdID;}
 
 uint8 ucGetReDataTGCounter(void){
    uint8 ucHelp = 0;
@@ -193,76 +200,24 @@ uint8 ucGetReDataTGCounter(void){
    return ucHelp;
 }
 
-tPreBuf* pGetCurTel(void){
-   return &tReDataPD;
-}
+tPreBuf* pGetCurTel            (void){return &tReDataPD;}
+uint32   ulGetReDataPreProcIdPD(void){return tReDataPreProcPD.ulID;}
+void     PutReDataPreProcIdPD(uint32 ulID){tReDataPreProcPD.ulID = ulID;}
+uint8    ucGetReDataPreProcPressurePD(void){return tReDataPreProcPD.ucPressure;}
+void     PutReDataPreProcPressurePD(uint8 ucPressure){tReDataPreProcPD.ucPressure = ucPressure;}
+sint8    scGetReDataPreProcTemperaturePD(void){return tReDataPreProcPD.scTemperature;}
+void     PutReDataPreProcTemperaturePD(sint8 scTemperature){tReDataPreProcPD.scTemperature = scTemperature;}
+uint8    ucGetReDataPreProcRemainingLifeTimePD(void){return tReDataPreProcPD.ucRemainingLifeTime;}
+void     PutReDataPreProcRemainingLifeTimePD(uint8 ucRemainingLifeTime){tReDataPreProcPD.ucRemainingLifeTime = ucRemainingLifeTime;}
+uint8    ucGetReDataPreProcTransModePD(void){return tReDataPreProcPD.ucTransMode;}
+void     PutReDataPreProcTransModePD(uint8 ucTransMode){tReDataPreProcPD.ucTransMode = ucTransMode;}
+uint16   ushGetReDataPreProcSensorDefectPD(void){return tReDataPreProcPD.ushSensorDefect;}
+void     PutReDataPreProcSensorDefectPD(uint16 ushSensorDefect){tReDataPreProcPD.ushSensorDefect = ushSensorDefect;}
 
-uint32 ulGetReDataPreProcIdPD(
-   void){
-   return tReDataPreProcPD.ulID;
-}
-
-void PutReDataPreProcIdPD(
-   uint32 ulID){
-   tReDataPreProcPD.ulID = ulID;
-}
-
-uint8 ucGetReDataPreProcPressurePD(
-   void){
-   return tReDataPreProcPD.ucPressure;
-}
-
-void PutReDataPreProcPressurePD(
-   uint8 ucPressure){
-   tReDataPreProcPD.ucPressure = ucPressure;
-}
-
-sint8 scGetReDataPreProcTemperaturePD(
-   void){
-   return tReDataPreProcPD.scTemperature;
-}
-
-void PutReDataPreProcTemperaturePD(
-   sint8 scTemperature){
-   tReDataPreProcPD.scTemperature = scTemperature;
-}
-
-uint8 ucGetReDataPreProcRemainingLifeTimePD(
-   void){
-   return tReDataPreProcPD.ucRemainingLifeTime;
-}
-
-void PutReDataPreProcRemainingLifeTimePD(
-   uint8 ucRemainingLifeTime){
-   tReDataPreProcPD.ucRemainingLifeTime = ucRemainingLifeTime;
-}
-
-uint8 ucGetReDataPreProcTransModePD(
-   void){
-   return tReDataPreProcPD.ucTransMode;
-}
-
-void PutReDataPreProcTransModePD(
-   uint8 ucTransMode){
-   tReDataPreProcPD.ucTransMode = ucTransMode;
-}
-
-uint16 ushGetReDataPreProcSensorDefectPD(
-   void){
-   return tReDataPreProcPD.ushSensorDefect;
-}
-
-void PutReDataPreProcSensorDefectPD(
-   uint16 ushSensorDefect){
-   tReDataPreProcPD.ushSensorDefect = ushSensorDefect;
-}
-
-uint8 ucGetValidTyrePressureRelAtPosPD(
-   uint8 ucRadPos){
+uint8 ucGetValidTyrePressureRelAtPosPD(uint8 ucRadPos){
    uint8 ucRet;
    uint8 ucZomPos;
-   ucZomPos = ucGetSlotNoAtPosPD(
-      ucRadPos);
+   ucZomPos = ucGetSlotNoAtPosPD(ucRadPos);
    if(ucZomPos < cAnzRad){
       if(ucReifendruckPD[ucZomPos] == cInvalidREpressure){
          ucRet = cInvalidREpressure;
@@ -277,12 +232,10 @@ uint8 ucGetValidTyrePressureRelAtPosPD(
    return ucRet;
 }
 
-uint8 ucGetValidTemperatureRelAtPosPD(
-   uint8 ucRadPos){
+uint8 ucGetValidTemperatureRelAtPosPD(uint8 ucRadPos){
    uint8 ucRet;
    uint8 ucZomPos;
-   ucZomPos = ucGetSlotNoAtPosPD(
-      ucRadPos);
+   ucZomPos = ucGetSlotNoAtPosPD(ucRadPos);
    if(ucZomPos < cAnzRad){
       if(scTemperaturPD[ucZomPos] == cInvalidREtemperature){
          ucRet = cInvalidTemperatureCAN;
@@ -297,16 +250,17 @@ uint8 ucGetValidTemperatureRelAtPosPD(
    return ucRet;
 }
 
-uint8 ucGetSlotNoAtPosPD(
-   uint8 ucRadPos){
+uint8 ucGetSlotNoAtPosPD(uint8 ucRadPos){
    uint8 ucLoop;
    uint8 ucRet;
-   if(bGetBitBetriebszustandBZ(
-      cZUGEORDNET) == TRUE){
+   if(TRUE == bGetBitBetriebszustandBZ(cZUGEORDNET)){
       ucRet = cAnzRad;
-      for(ucLoop = 0; (ucLoop < cAnzRad); ucLoop++){
-         if(ucGetRadPosAtSlotPDIF(
-            ucLoop) == ucRadPos){
+      for(
+         ucLoop = 0;
+         ucLoop < cAnzRad;
+         ucLoop ++
+      ){
+         if(ucGetRadPosAtSlotPDIF(ucLoop) == ucRadPos){
             ucRet = ucLoop;
             break;
          }
@@ -318,74 +272,72 @@ uint8 ucGetSlotNoAtPosPD(
    return ucRet;
 }
 
-void ReadReDataFromRingBuffer_iBTCM(
-   const tsWS_RxDataIn* spRxDataIn){
+void ReadReDataFromRingBuffer_iBTCM(const tsWS_RxDataIn* spRxDataIn){
    boolean l_bDoIt;
    boolean l_bAnalyseTelegram;
    uint8 l_ucTelType;
    l_bDoIt = TRUE;
    l_bAnalyseTelegram = TRUE;
    l_ucTelType = spRxDataIn->ucaTelegram[2];
-   if(FALSE != ucTelOfInterest(
-      l_ucTelType)){
+   if(FALSE != ucTelOfInterest(l_ucTelType)){
       tReDataPD.Struc.ulTimeStamp = spRxDataIn->ulRxTimeStamp;
       tReDataPD.Struc.ucAvg = (uint8)(0x00FFu & spRxDataIn->uiRxRSSI);
       switch(l_ucTelType){
          case cTelTypeAK35def:
          case cTelTypeAK35defLMA:
          case cTelTypeStandstill:
-            tReDataPD.AK35def.ucCmdID = l_ucTelType;
-            tReDataPD.AK35def.ucID[0] = spRxDataIn->ucaTelegram[3];
-            tReDataPD.AK35def.ucID[1] = spRxDataIn->ucaTelegram[4];
-            tReDataPD.AK35def.ucID[2] = spRxDataIn->ucaTelegram[5];
-            tReDataPD.AK35def.ucID[3] = spRxDataIn->ucaTelegram[6];
-            tReDataPD.AK35def.ucPressure = spRxDataIn->ucaTelegram[7];
-            tReDataPD.AK35def.ucTemperature = spRxDataIn->ucaTelegram[8];
-            tReDataPD.AK35def.ucCRC8 = spRxDataIn->ucaTelegram[9];
+            tReDataPD.AK35def.ucCmdID          = l_ucTelType;
+            tReDataPD.AK35def.ucID[0]          = spRxDataIn->ucaTelegram[3];
+            tReDataPD.AK35def.ucID[1]          = spRxDataIn->ucaTelegram[4];
+            tReDataPD.AK35def.ucID[2]          = spRxDataIn->ucaTelegram[5];
+            tReDataPD.AK35def.ucID[3]          = spRxDataIn->ucaTelegram[6];
+            tReDataPD.AK35def.ucPressure       = spRxDataIn->ucaTelegram[7];
+            tReDataPD.AK35def.ucTemperature    = spRxDataIn->ucaTelegram[8];
+            tReDataPD.AK35def.ucCRC8           = spRxDataIn->ucaTelegram[9];
             break;
          case cTelTypeHufStatus:
          case cTelTypeHufStatusLearn:
-            tReDataPD.HufStatus.ucCmdID = l_ucTelType;
-            tReDataPD.HufStatus.ucID[0] = spRxDataIn->ucaTelegram[3];
-            tReDataPD.HufStatus.ucID[1] = spRxDataIn->ucaTelegram[4];
-            tReDataPD.HufStatus.ucID[2] = spRxDataIn->ucaTelegram[5];
-            tReDataPD.HufStatus.ucID[3] = spRxDataIn->ucaTelegram[6];
-            tReDataPD.HufStatus.ucPressure = spRxDataIn->ucaTelegram[7];
-            tReDataPD.HufStatus.ucTemperature = spRxDataIn->ucaTelegram[8];
-            tReDataPD.HufStatus.ucByte1Status = spRxDataIn->ucaTelegram[9];
-            tReDataPD.HufStatus.ucByte2Status = spRxDataIn->ucaTelegram[10];
-            tReDataPD.HufStatus.ucCRC8 = spRxDataIn->ucaTelegram[11];
+            tReDataPD.HufStatus.ucCmdID        = l_ucTelType;
+            tReDataPD.HufStatus.ucID[0]        = spRxDataIn->ucaTelegram[3];
+            tReDataPD.HufStatus.ucID[1]        = spRxDataIn->ucaTelegram[4];
+            tReDataPD.HufStatus.ucID[2]        = spRxDataIn->ucaTelegram[5];
+            tReDataPD.HufStatus.ucID[3]        = spRxDataIn->ucaTelegram[6];
+            tReDataPD.HufStatus.ucPressure     = spRxDataIn->ucaTelegram[7];
+            tReDataPD.HufStatus.ucTemperature  = spRxDataIn->ucaTelegram[8];
+            tReDataPD.HufStatus.ucByte1Status  = spRxDataIn->ucaTelegram[9];
+            tReDataPD.HufStatus.ucByte2Status  = spRxDataIn->ucaTelegram[10];
+            tReDataPD.HufStatus.ucCRC8         = spRxDataIn->ucaTelegram[11];
             break;
          case cTelTypeRotatS:
-            tReDataPD.RotatS.ucCmdID = l_ucTelType;
-            tReDataPD.RotatS.ucID[0] = spRxDataIn->ucaTelegram[3];
-            tReDataPD.RotatS.ucID[1] = spRxDataIn->ucaTelegram[4];
-            tReDataPD.RotatS.ucID[2] = spRxDataIn->ucaTelegram[5];
-            tReDataPD.RotatS.ucID[3] = spRxDataIn->ucaTelegram[6];
-            tReDataPD.RotatS.ucSnRH = spRxDataIn->ucaTelegram[7];
-            tReDataPD.RotatS.ucRL = spRxDataIn->ucaTelegram[8];
-            tReDataPD.RotatS.ucCRC8 = spRxDataIn->ucaTelegram[9];
+            tReDataPD.RotatS.ucCmdID           = l_ucTelType;
+            tReDataPD.RotatS.ucID[0]           = spRxDataIn->ucaTelegram[3];
+            tReDataPD.RotatS.ucID[1]           = spRxDataIn->ucaTelegram[4];
+            tReDataPD.RotatS.ucID[2]           = spRxDataIn->ucaTelegram[5];
+            tReDataPD.RotatS.ucID[3]           = spRxDataIn->ucaTelegram[6];
+            tReDataPD.RotatS.ucSnRH            = spRxDataIn->ucaTelegram[7];
+            tReDataPD.RotatS.ucRL              = spRxDataIn->ucaTelegram[8];
+            tReDataPD.RotatS.ucCRC8            = spRxDataIn->ucaTelegram[9];
             break;
          case cTelTypeHufLfResponse:
-            tReDataPD.LfResponse.ucCmdID = l_ucTelType;
-            tReDataPD.LfResponse.ucID[0] = spRxDataIn->ucaTelegram[3];
-            tReDataPD.LfResponse.ucID[1] = spRxDataIn->ucaTelegram[4];
-            tReDataPD.LfResponse.ucID[2] = spRxDataIn->ucaTelegram[5];
-            tReDataPD.LfResponse.ucID[3] = spRxDataIn->ucaTelegram[6];
-            tReDataPD.LfResponse.ucPressure = spRxDataIn->ucaTelegram[7];
+            tReDataPD.LfResponse.ucCmdID       = l_ucTelType;
+            tReDataPD.LfResponse.ucID[0]       = spRxDataIn->ucaTelegram[3];
+            tReDataPD.LfResponse.ucID[1]       = spRxDataIn->ucaTelegram[4];
+            tReDataPD.LfResponse.ucID[2]       = spRxDataIn->ucaTelegram[5];
+            tReDataPD.LfResponse.ucID[3]       = spRxDataIn->ucaTelegram[6];
+            tReDataPD.LfResponse.ucPressure    = spRxDataIn->ucaTelegram[7];
             tReDataPD.LfResponse.ucTemperature = spRxDataIn->ucaTelegram[8];
-            tReDataPD.LfResponse.ucReserved = spRxDataIn->ucaTelegram[9];
+            tReDataPD.LfResponse.ucReserved    = spRxDataIn->ucaTelegram[9];
             tReDataPD.LfResponse.ucByte1Status = spRxDataIn->ucaTelegram[10];
             tReDataPD.LfResponse.ucByte2Status = spRxDataIn->ucaTelegram[11];
-            tReDataPD.LfResponse.ucCRC8 = spRxDataIn->ucaTelegram[12];
-            l_bAnalyseTelegram = FALSE;
+            tReDataPD.LfResponse.ucCRC8        = spRxDataIn->ucaTelegram[12];
+            l_bAnalyseTelegram                 = FALSE;
             break;
          case cTelTypeSchraderFP:
-            tReDataPD.SchraderType.ucCmdID = l_ucTelType;
-            tReDataPD.SchraderType.ucID[0] = spRxDataIn->ucaTelegram[3];
-            tReDataPD.SchraderType.ucID[1] = spRxDataIn->ucaTelegram[4];
-            tReDataPD.SchraderType.ucID[2] = spRxDataIn->ucaTelegram[5];
-            tReDataPD.SchraderType.ucID[3] = spRxDataIn->ucaTelegram[6];
+            tReDataPD.SchraderType.ucCmdID     = l_ucTelType;
+            tReDataPD.SchraderType.ucID[0]     = spRxDataIn->ucaTelegram[3];
+            tReDataPD.SchraderType.ucID[1]     = spRxDataIn->ucaTelegram[4];
+            tReDataPD.SchraderType.ucID[2]     = spRxDataIn->ucaTelegram[5];
+            tReDataPD.SchraderType.ucID[3]     = spRxDataIn->ucaTelegram[6];
             tReDataPD.SchraderType.ucReserved1 = spRxDataIn->ucaTelegram[7];
             tReDataPD.SchraderType.ucReserved2 = spRxDataIn->ucaTelegram[8];
             tReDataPD.SchraderType.ucReserved3 = spRxDataIn->ucaTelegram[9];
@@ -394,8 +346,8 @@ void ReadReDataFromRingBuffer_iBTCM(
             tReDataPD.SchraderType.ucReserved6 = spRxDataIn->ucaTelegram[12];
             tReDataPD.SchraderType.ucReserved7 = spRxDataIn->ucaTelegram[13];
             tReDataPD.SchraderType.ucReserved8 = spRxDataIn->ucaTelegram[14];
-            tReDataPD.SchraderType.ucCRC8 = spRxDataIn->ucaTelegram[15];
-            l_bAnalyseTelegram = FALSE;
+            tReDataPD.SchraderType.ucCRC8      = spRxDataIn->ucaTelegram[15];
+            l_bAnalyseTelegram                 = FALSE;
             break;
          default:
             l_bDoIt = FALSE;
@@ -405,17 +357,16 @@ void ReadReDataFromRingBuffer_iBTCM(
    else{
       l_bDoIt = FALSE;
    }
-   if(l_bDoIt == TRUE){
+   if(TRUE == l_bDoIt){
       ucRecEventPD++;
-      if(l_bAnalyseTelegram == TRUE){
+      if(TRUE == l_bAnalyseTelegram){
          EvReDataSM();
       }
       DCM_EventDataUpdateOnRx();
    }
 }
 
-void RSSIBalancePD(
-   uint8 ucOffsetVal){
+void RSSIBalancePD(uint8 ucOffsetVal){
    if(tReDataPD.Struc.ucAvg > ucOffsetVal){
       tReDataPD.Struc.ucAvg -= ucOffsetVal;
    }
@@ -424,156 +375,116 @@ void RSSIBalancePD(
    }
 }
 
-void ClearReDataInSlotPD(
-   uint8 ucZomSlot){
-   ucReifendruckPD[ucZomSlot] = cInvalidREpressure;
-   scTemperaturPD[ucZomSlot] = cInvalidREtemperature;
+void ClearReDataInSlotPD(uint8 ucZomSlot){
+   ucReifendruckPD[ucZomSlot]     = cInvalidREpressure;
+   scTemperaturPD[ucZomSlot]      = cInvalidREtemperature;
    ucRestlebensdauerPD[ucZomSlot] = cInvalidRElifeTime;
-   ucRSSIsumPD[ucZomSlot] = cInvalidRSSIsum;
-   ucTelTypePD[ucZomSlot] = cInvalidTelType;
-   ucTransModePD[ucZomSlot] = cInvalidTransMode;
-   ushSensorDefectPD[ucZomSlot] = cInvalidSensorDefect;
+   ucRSSIsumPD[ucZomSlot]         = cInvalidRSSIsum;
+   ucTelTypePD[ucZomSlot]         = cInvalidTelType;
+   ucTransModePD[ucZomSlot]       = cInvalidTransMode;
+   ushSensorDefectPD[ucZomSlot]   = cInvalidSensorDefect;
 }
 
-uint8 GETucReifendruckPD(
-   uint8 ucZomSlot){
-   return ucReifendruckPD[ucZomSlot];
-}
+uint8 GETucReifendruckPD(uint8 ucZomSlot){return ucReifendruckPD[ucZomSlot];}
 
 void PUTucReifendruckPD(
-   uint8 ucInData,
-   uint8 ucZomSlot){
+      uint8 ucInData
+   ,  uint8 ucZomSlot
+){
    uint8 ucWheelPosition;
    ucReifendruckPD[ucZomSlot] = ucInData;
-   ucWheelPosition = ucGetWPOfCol(
-      ucZomSlot);
+   ucWheelPosition = ucGetWPOfCol(ucZomSlot);
    switch(ucWheelPosition){
-      case cRadPosVL:
-         NvM_WriteData_PressureFL(
-            ucInData);
-         break;
-      case cRadPosVR:
-         NvM_WriteData_PressureFR(
-            ucInData);
-         break;
-      case cRadPosHL:
-         NvM_WriteData_PressureRL(
-            ucInData);
-         break;
-      case cRadPosHR:
-         NvM_WriteData_PressureRR(
-            ucInData);
-         break;
-      default:
-         break;
+      case cRadPosVL: NvM_WriteData_PressureFL(ucInData); break;
+      case cRadPosVR: NvM_WriteData_PressureFR(ucInData); break;
+      case cRadPosHL: NvM_WriteData_PressureRL(ucInData); break;
+      case cRadPosHR: NvM_WriteData_PressureRR(ucInData); break;
+      default:                                            break;
    }
 }
 
-sint8 GETscTemperaturPD(
-   uint8 ucZomSlot){
-   return scTemperaturPD[ucZomSlot];
-}
+sint8 GETscTemperaturPD(uint8 ucZomSlot){return scTemperaturPD[ucZomSlot];}
 
 void PUTscTemperaturPD(
-   sint8 scInData,
-   uint8 ucZomSlot){
+      sint8 scInData
+   ,  uint8 ucZomSlot
+){
    uint8 ucWheelPosition;
    scTemperaturPD[ucZomSlot] = scInData;
-   ucWheelPosition = ucGetWPOfCol(
-      ucZomSlot);
+   ucWheelPosition = ucGetWPOfCol(ucZomSlot);
    switch(ucWheelPosition){
-      case cRadPosVL:
-         NvM_WriteData_TemperatureFL(
-            scInData);
-         break;
-      case cRadPosVR:
-         NvM_WriteData_TemperatureFR(
-            scInData);
-         break;
-      case cRadPosHL:
-         NvM_WriteData_TemperatureRL(
-            scInData);
-         break;
-      case cRadPosHR:
-         NvM_WriteData_TemperatureRR(
-            scInData);
-         break;
-      default:
-         break;
+      case cRadPosVL: NvM_WriteData_TemperatureFL(scInData); break;
+      case cRadPosVR: NvM_WriteData_TemperatureFR(scInData); break;
+      case cRadPosHL: NvM_WriteData_TemperatureRL(scInData); break;
+      case cRadPosHR: NvM_WriteData_TemperatureRR(scInData); break;
+      default:                                               break;
    }
 }
 
-uint8 GETucRestlebensdauerPD(
-   uint8 ucZomSlot){
-   return ucRestlebensdauerPD[ucZomSlot];
-}
+uint8 GETucRestlebensdauerPD(uint8 ucZomSlot){return ucRestlebensdauerPD[ucZomSlot];}
 
 void PUTucRestlebensdauerPD(
-   uint8 ucInData,
-   uint8 ucZomSlot){
+      uint8 ucInData
+   ,  uint8 ucZomSlot
+){
    ucRestlebensdauerPD[ucZomSlot] = ucInData;
 }
 
 void PUTucRSSIsumPD(
-   uint8 ucInData,
-   uint8 ucZomSlot){
+      uint8 ucInData
+   ,  uint8 ucZomSlot
+){
    ucRSSIsumPD[ucZomSlot] = ucInData;
 }
 
 void PUTucTelTypePD(
-   uint8 ucInData,
-   uint8 ucZomSlot){
+      uint8 ucInData
+   ,  uint8 ucZomSlot
+){
    ucTelTypePD[ucZomSlot] = ucInData;
 }
 
-uint8 GETucTransModePD(
-   uint8 ucZomSlot){
-   return ucTransModePD[ucZomSlot];
-}
+uint8 GETucTransModePD(uint8 ucZomSlot){return ucTransModePD[ucZomSlot];}
 
 void PUTucTransModePD(
-   uint8 ucInData,
-   uint8 ucZomSlot){
+      uint8 ucInData
+   ,  uint8 ucZomSlot
+){
    ucTransModePD[ucZomSlot] = ucInData;
 }
 
-uint16 GETushSensorDefectPD(
-   uint8 ucZomSlot){
-   return ushSensorDefectPD[ucZomSlot];
-}
+uint16 GETushSensorDefectPD(uint8 ucZomSlot){return ushSensorDefectPD[ucZomSlot];}
 
 void PUTushSensorDefectPD(
-   uint16 ushInData,
-   uint8 ucZomSlot){
+      uint16 ushInData
+   ,  uint8 ucZomSlot
+){
    ushSensorDefectPD[ucZomSlot] = ushInData;
 }
 
-uint8 GETucRadpositionPD(
-   uint8 ucZomSlot){
-   return ucGetRadPosAtSlotPDIF(
-      ucZomSlot);
-}
+uint8 GETucRadpositionPD(uint8 ucZomSlot){return ucGetRadPosAtSlotPDIF(ucZomSlot);}
 
 uint16 PreProcPressAndTempPD(void){
    uint8 ucPres;
    sint8 scTemp;
    uint16 ushSensorfehler = 0;
    ushSensorfehler |= ushCalcAKPressurePD(
-      ucGetReDataPressurePD(),
-      &ucPres);
+         ucGetReDataPressurePD()
+      ,  &ucPres
+   );
    ushSensorfehler |= ushCalcAKTemperaturePD(
-      ucGetReDataTemperaturePD(),
-      &scTemp);
-   PutReDataPreProcPressurePD(
-      ucPres);
-   PutReDataPreProcTemperaturePD(
-      scTemp);
+         ucGetReDataTemperaturePD()
+      ,  &scTemp
+   );
+   PutReDataPreProcPressurePD(ucPres);
+   PutReDataPreProcTemperaturePD(scTemp);
    return (ushSensorfehler);
 }
 
 static uint16 ushCalcAKPressurePD(
-   uint8 ucRawPres,
-   uint8* pucPhyPres){
+      uint8  ucRawPres
+   ,  uint8* pucPhyPres
+){
    uint16 ushError = 0;
    uint16 ushPsensorAbs;
    switch(ucRawPres){
@@ -608,8 +519,9 @@ static uint16 ushCalcAKPressurePD(
 }
 
 static uint16 ushCalcAKTemperaturePD(
-   uint8 ucRawTemp,
-   sint8* pscPhyTemp){
+      uint8  ucRawTemp
+   ,  sint8* pscPhyTemp
+){
    uint16 ushError = 0;
    switch(ucRawTemp){
       case cRE_AK_TEMP_INVALID:
@@ -640,12 +552,10 @@ static uint16 ushCalcAKTemperaturePD(
    return ushError;
 }
 
-void SaveReDataAtBufferPD(
-   uint8 ucZomSlot){
+void SaveReDataAtBufferPD(uint8 ucZomSlot){
    uint16 ushSensorDefect = 0x0000;
    uint8 ucLocalReDataTelType = 0x00;
-   PutReDataPreProcIdPD(
-      ulGetReDataIdPD());
+   PutReDataPreProcIdPD(ulGetReDataIdPD());
    ucLocalReDataTelType = ucGetReDataTelTypePD();
    if(ucLocalReDataTelType != cTelTypeRotatS){
       ushSensorDefect = PreProcPressAndTempPD();
@@ -675,48 +585,58 @@ void SaveReDataAtBufferPD(
       ushSensorDefect = (RE_AK_SF_PRES_NOT_RECEIVED | RE_AK_SF_TEMP_NOT_RECEIVED);
       if(ucZomSlot < cAnzRad){
          PutReDataPreProcPressurePD(
-            GETucReifendruckPD(
-               ucZomSlot));
+            GETucReifendruckPD(ucZomSlot)
+         );
          PutReDataPreProcTemperaturePD(
-            GETscTemperaturPD(
-               ucZomSlot));
+            GETscTemperaturPD(ucZomSlot)
+         );
       }
       else{
-         PutReDataPreProcPressurePD(
-            cInvalidREpressure);
-         PutReDataPreProcTemperaturePD(
-            cInvalidREtemperature);
+         PutReDataPreProcPressurePD(cInvalidREpressure);
+         PutReDataPreProcTemperaturePD(cInvalidREtemperature);
       }
    }
-   if((cTelTypeHufStatus == ucLocalReDataTelType) || (cTelTypeHufStatusLearn == ucLocalReDataTelType)){
+   if(
+         (cTelTypeHufStatus      == ucLocalReDataTelType)
+      || (cTelTypeHufStatusLearn == ucLocalReDataTelType)
+   ){
       PutReDataPreProcRemainingLifeTimePD(
-         ucGetReDataRemainingLifeTimePD());
+         ucGetReDataRemainingLifeTimePD()
+      );
    }
    else{
       if(ucZomSlot < cAnzRad){
          PutReDataPreProcRemainingLifeTimePD(
-            GETucRestlebensdauerPD(
-               ucZomSlot));
+            GETucRestlebensdauerPD(ucZomSlot)
+         );
       }
       else{
-         PutReDataPreProcRemainingLifeTimePD(
-            cInvalidRElifeTime);
+         PutReDataPreProcRemainingLifeTimePD(cInvalidRElifeTime);
       }
       ushSensorDefect |= RE_AK_SF_RLT_NOT_RECEIVED;
    }
    PutReDataPreProcTransModePD(
-      ucGetReDataStatePD());
-   PutReDataPreProcSensorDefectPD(
-      ushSensorDefect);
+      ucGetReDataStatePD()
+   );
+   PutReDataPreProcSensorDefectPD(ushSensorDefect);
 }
 
-uint8 ucIsReHwDefectPD(
-   uint8 ZomSlot){
+uint8 ucIsReHwDefectPD(uint8 ZomSlot){
    uint8 ucRet = 0x03;
-   if((GETushSensorDefectPD(
-      ZomSlot) & RE_AK_SF_HW_DEFECT) == 0){
-      if((GETushSensorDefectPD(
-         ZomSlot) & (RE_AK_SF_PRES_NOT_RECEIVED | RE_AK_SF_TEMP_NOT_RECEIVED | RE_AK_SF_MOTION_NOT_RECEIVED)) == 0){
+   if(
+      0 == (GETushSensorDefectPD(ZomSlot) & RE_AK_SF_HW_DEFECT)
+   ){
+      if(
+            0
+         == (
+                  GETushSensorDefectPD(ZomSlot)
+               &  (
+                        RE_AK_SF_PRES_NOT_RECEIVED
+                     |  RE_AK_SF_TEMP_NOT_RECEIVED
+                     |  RE_AK_SF_MOTION_NOT_RECEIVED
+                  )
+            )
+      ){
          ucRet = (uint8)FALSE;
       }
    }
@@ -726,42 +646,35 @@ uint8 ucIsReHwDefectPD(
    return (ucRet & 0x03u);
 }
 
-boolean bIsReOverTempPD(
-   uint8 ZomSlot){
-   boolean bRet;
-   if((cRE_AK_TM_MODE_OVERTEMP & GETucTransModePD(
-      ZomSlot)) == cRE_AK_TM_MODE_OVERTEMP){
-      bRet = TRUE;
-   }
-   else{
-      bRet = FALSE;
-   }
-   return bRet;
+boolean bIsReOverTempPD(uint8 ZomSlot){
+   return (
+         cRE_AK_TM_MODE_OVERTEMP
+      == (
+               cRE_AK_TM_MODE_OVERTEMP
+            &  GETucTransModePD(ZomSlot)
+         )
+   )
+   ? TRUE
+   : FALSE
+   ;
 }
 
-boolean bIsReLowLifeTimePD(
-   uint8 ZomSlot){
-   boolean bRet;
-   if(GETucRestlebensdauerPD(
-      ZomSlot) == 0x01u){
-      bRet = TRUE;
-   }
-   else{
-      bRet = FALSE;
-   }
-   return bRet;
+boolean bIsReLowLifeTimePD(uint8 ZomSlot){
+   return (0x01u == GETucRestlebensdauerPD(ZomSlot))
+   ? TRUE
+   : FALSE
+   ;
 }
 
-uint8 GETucPatmoPD(
-   void){
+uint8 GETucPatmoPD(void){
    uint8 ret;
-   if((ucPatmoPD < LOWEST_ATMOSPHERIC_PRESS) || (ucPatmoPD > HIGHEST_ATMOSPHERIC_PRESS)){
-      ret = (uint8)ONE_BAR_PRESSURE;
-   }
-   else{
-      ret = ucPatmoPD;
-   }
-   return ret;
+   return (
+         (ucPatmoPD < LOWEST_ATMOSPHERIC_PRESS)
+      || (ucPatmoPD > HIGHEST_ATMOSPHERIC_PRESS)
+   )
+   ? (uint8)ONE_BAR_PRESSURE
+   : ucPatmoPD
+   ;
 }
 
 void PUTucPatmoPD(
@@ -769,8 +682,7 @@ void PUTucPatmoPD(
    ucPatmoPD = ucInData;
 }
 
-void CalcPatmo(
-   void){
+void CalcPatmo(void){
    static uint8 uc1secTimer = 0;
    uint8 ucFmmotmax;
    uint16 ushCalcValue;
@@ -778,8 +690,7 @@ void CalcPatmo(
    ucFmmotmax = 0;
    uc1secTimer++;
    if(uc1secTimer >= TIME_1S_OVER){
-      (void)ReceiveGetFmmotmax(
-         &ucFmmotmax);
+      (void)ReceiveGetFmmotmax(&ucFmmotmax);
       if(ucFmmotmax > 0u){
          if((ulMeanValue < (78u * cFMMOTMAXmin)) || (ulMeanValue > (78u * cFMMOTMAXmax))){
             ulMeanValue = (250u * GETucPatmoPD());
@@ -789,8 +700,7 @@ void CalcPatmo(
          ulMeanValue /= 10u;
          ushCalcValue = ((uint16)ulMeanValue) + 39u;
          ushCalcValue /= 250u;
-         PUTucPatmoPD(
-            (uint8)ushCalcValue);
+         PUTucPatmoPD((uint8)ushCalcValue);
       }
       uc1secTimer = 0u;
    }
@@ -799,12 +709,11 @@ void CalcPatmo(
 }
 
 void SaveRotatS(void){
-   ucRotL = tReDataPD.RotatS.ucRL;
+   ucRotL   = tReDataPD.RotatS.ucRL;
    ucSnRotH = tReDataPD.RotatS.ucSnRH;
 }
 
-void PutRotatSDataInBuffer(
-   const tsWS_RxDataIn* spRxDataIn){
+void PutRotatSDataInBuffer(const tsWS_RxDataIn* spRxDataIn){
    int i;
    if(ucRotatSTelIndexPut < cWsTelBufferSize){
       tWs_RxRotatSBuf[ucRotatSTelIndexPut].RxDataIn.ulRxTimeStamp = spRxDataIn->ulRxTimeStamp;
@@ -819,14 +728,8 @@ void PutRotatSDataInBuffer(
    ucRotatSTelIndexPut %= cWsTelBufferSize;
 }
 
-tRxRotatSBuf* pGetRotatSDataTFromBuffer(
-   uint8 ucBufferIndex){
-   return &tWs_RxRotatSBuf[ucBufferIndex];
-}
-
-uint8 ucGetRotatSDataBufferIndex(void){
-   return ucRotatSTelIndexPut;
-}
+tRxRotatSBuf* pGetRotatSDataTFromBuffer(uint8 ucBufferIndex){return &tWs_RxRotatSBuf[ucBufferIndex];}
+uint8 ucGetRotatSDataBufferIndex(void){return ucRotatSTelIndexPut;}
 
 uint16 ushGetRotatSVehSpeed(void){
    uint16 VehicleSpeedValue;
@@ -839,8 +742,7 @@ uint16 ushGetRotatSVehSpeed(void){
    return VehicleSpeedValue;
 }
 
-void DCM_InvIf_RxStatusFieldGetValue(
-   uint8* u8_StatusFieldValue){
+void DCM_InvIf_RxStatusFieldGetValue(uint8* u8_StatusFieldValue){
    if((cTelTypeHufStatusLearn == tReDataPD.AK35def.ucCmdID) || (cTelTypeHufStatus == tReDataPD.AK35def.ucCmdID)){
       u8_StatusFieldValue[0] = (uint8)tReDataPD.HufStatus.ucByte1Status;
       u8_StatusFieldValue[1] = (uint8)tReDataPD.HufStatus.ucByte2Status;
@@ -851,13 +753,8 @@ void DCM_InvIf_RxStatusFieldGetValue(
    }
 }
 
-uint8 DCM_InvIf_PressLastRxIDGetValue(void){
-   return ucGetReDataPreProcPressurePD();
-}
-
-sint8 DCM_InvIf_TempLastRxIDGetValue(void){
-   return scGetReDataPreProcTemperaturePD();
-}
+uint8 DCM_InvIf_PressLastRxIDGetValue(void){return ucGetReDataPreProcPressurePD();}
+sint8 DCM_InvIf_TempLastRxIDGetValue(void){return scGetReDataPreProcTemperaturePD();}
 
 void DCM_InvIf_LastRxIDGetValue(
    uint8* u8_LastIdReceived){
@@ -867,9 +764,7 @@ void DCM_InvIf_LastRxIDGetValue(
    u8_LastIdReceived[3] = (uint8)tReDataPD.Struc.aucTelDat[4];
 }
 
-uint8 DCM_InvIf_TelTypeCurrIDGetValue(void){
-   return ucGetReDataTelTypePD();
-}
+uint8 DCM_InvIf_TelTypeCurrIDGetValue(void){return ucGetReDataTelTypePD();}
 
 void DCM_InvIf_RFTimeStampGetValue(
    uint8* u8_TimeStampValue){
@@ -878,13 +773,8 @@ void DCM_InvIf_RFTimeStampGetValue(
    u8_TimeStampValue[2] = (uint8)(tReDataPD.Struc.ulTimeStamp & 0x000000FFU);
 }
 
-uint8 DCM_InvIf_RawRSSIGetValue(void){
-   return (uint8)tReDataPD.Struc.ucAvg;
-}
-
-uint8 DCM_InvIf_RecEventGetCntValue(void){
-   return ucRecEventPD;
-}
+uint8 DCM_InvIf_RawRSSIGetValue(void){return (uint8)tReDataPD.Struc.ucAvg;}
+uint8 DCM_InvIf_RecEventGetCntValue(void){return ucRecEventPD;}
 
 void DCM_InvIf_RawRfTelGetValue(
    uint8 u8_StartPosition,
@@ -909,7 +799,4 @@ void DCM_InvIf_RawRfTelGetValue(
    }
 }
 
-uint8 DCM_InvIf_AllReceivedTelegGetValue(void){
-   return U8_AllReceivedTelegCnt;
-}
-
+uint8 DCM_InvIf_AllReceivedTelegGetValue(void){return U8_AllReceivedTelegCnt;}

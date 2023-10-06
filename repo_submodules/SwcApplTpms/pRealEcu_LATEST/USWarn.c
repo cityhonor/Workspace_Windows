@@ -201,14 +201,16 @@ unsigned short ushMIso(
 static void ClearWarntypeBit(
    unsigned char ucWType,
    unsigned char ucId,
-   unsigned char ucMode){
-   unsigned char i;
+   unsigned char ucMode
+){
+                unsigned char i;
    static const unsigned char ucClearMaskc = 0x10;
    if((ucMode & ucClearWarningc) == ucClearMaskc){
       for(i = 0; i < ucSumWEc ; i++){
          ClearWarnBitWN(
-            i,
-            ucWType);
+               i
+            ,  ucWType
+         );
          if(ucWType == ucDHWIxc){
             ResetM1Pressure(
                i);
@@ -217,8 +219,9 @@ static void ClearWarntypeBit(
    }
    if((ucMode & ucClearIdWarningc) == ucClearIdWarningc){
       ClearWarnBitWN(
-         ucId,
-         ucWType);
+            ucId
+         ,  ucWType
+      );
       if(ucWType == ucDHWIxc){
          ResetM1Pressure(
             ucId);

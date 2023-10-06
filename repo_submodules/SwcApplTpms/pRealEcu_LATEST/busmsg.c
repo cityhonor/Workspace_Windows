@@ -21,10 +21,10 @@
 #define AXLE_IMBALANCE_ABSENT     0x01U
 #define AXLE_IMBALANCE_PRESENT    0x02U
 
-STATIC uint8 ucTyreTemperature[BUSMSG_NUMBER_OF_TYRES];
-STATIC uint8 ucTyrePressUncomp[BUSMSG_NUMBER_OF_TYRES];
-STATIC uint8 ucTyreWarning[BUSMSG_NUMBER_OF_TYRES];
-STATIC uint8 ucTyreTemperatureWarning;
+STATIC uint8   ucTyreTemperature[BUSMSG_NUMBER_OF_TYRES];
+STATIC uint8   ucTyrePressUncomp[BUSMSG_NUMBER_OF_TYRES];
+STATIC uint8   ucTyreWarning[BUSMSG_NUMBER_OF_TYRES];
+STATIC uint8   ucTyreTemperatureWarning;
 STATIC boolean bTyreValidVL;
 STATIC boolean bTyreValidVR;
 STATIC boolean bTyreValidHL;
@@ -32,12 +32,12 @@ STATIC boolean bTyreValidHR;
 STATIC boolean bTextFlags[BUSMSG_NUMBER_OF_TEXTFLAGS];
 
 static boolean GETbNoWarnPartSurv (const uint8 ucPos);
-static void BusMsgCheckWarningsFrontLeft(void);
-static void BusMsgCheckWarningsFrontRight(void);
-static void BusMsgCheckWarningsRearLeft(void);
-static void BusMsgCheckWarningsRearRight(void);
-static void BusMsgCheckWarningsUnknownPos(void);
-static uint8 BusMsgDetermineErrCounter(void);
+static void    BusMsgCheckWarningsFrontLeft(void);
+static void    BusMsgCheckWarningsFrontRight(void);
+static void    BusMsgCheckWarningsRearLeft(void);
+static void    BusMsgCheckWarningsRearRight(void);
+static void    BusMsgCheckWarningsUnknownPos(void);
+static uint8   BusMsgDetermineErrCounter(void);
 
 void BusMsgInit(void){
    uint8 i;
@@ -131,23 +131,22 @@ void BusMsgPutTemperatureWarning(
    }
 }
 
-boolean BusMsgGetTemperatureWarning(
-   uint8 ucId){
+boolean BusMsgGetTemperatureWarning(uint8 ucId){
    boolean BO_IsTemperatureWarningActive;
    BO_IsTemperatureWarningActive = (ucTyreTemperatureWarning >> ucId) & 1U;
    return BO_IsTemperatureWarningActive;
 }
 
 void BusMsgPutWarning(
-   uint8 ucId,
-   uint8 ucwarning){
+      uint8 ucId
+   ,  uint8 ucwarning
+){
    if(ucId < BUSMSG_NUMBER_OF_TYRES){
       ucTyreWarning[ucId] = ucwarning;
    }
 }
 
-uint8 BusMsgGetWarning(
-   uint8 ucId){
+uint8 BusMsgGetWarning(uint8 ucId){
    uint8 ucHelp;
    ucHelp = BUSMSG_WARN_UNKNOWN;
    if(ucId < BUSMSG_NUMBER_OF_TYRES){
@@ -156,52 +155,25 @@ uint8 BusMsgGetWarning(
    return (ucHelp);
 }
 
-void BusMsgPutTyrePressValidVL(
-   boolean bstate){
-   bTyreValidVL = bstate;
-}
-
-boolean BusMsgGetTyrePressValidVL(void){
-   return (bTyreValidVL);
-}
-
-void BusMsgPutTyrePressValidVR(
-   boolean bstate){
-   bTyreValidVR = bstate;
-}
-
-boolean BusMsgGetTyrePressValidVR(void){
-   return (bTyreValidVR);
-}
-
-void BusMsgPutTyrePressValidHL(
-   boolean bstate){
-   bTyreValidHL = bstate;
-}
-
-boolean BusMsgGetTyrePressValidHL(void){
-   return (bTyreValidHL);
-}
-
-void BusMsgPutTyrePressValidHR(
-   boolean bstate){
-   bTyreValidHR = bstate;
-}
-
-boolean BusMsgGetTyrePressValidHR(void){
-   return (bTyreValidHR);
-}
+void    BusMsgPutTyrePressValidVL(boolean bstate){bTyreValidVL = bstate;}
+boolean BusMsgGetTyrePressValidVL(void){return (bTyreValidVL);}
+void    BusMsgPutTyrePressValidVR(boolean bstate){bTyreValidVR = bstate;}
+boolean BusMsgGetTyrePressValidVR(void){return (bTyreValidVR);}
+void    BusMsgPutTyrePressValidHL(boolean bstate){bTyreValidHL = bstate;}
+boolean BusMsgGetTyrePressValidHL(void){return (bTyreValidHL);}
+void    BusMsgPutTyrePressValidHR(boolean bstate){bTyreValidHR = bstate;}
+boolean BusMsgGetTyrePressValidHR(void){return (bTyreValidHR);}
 
 void BusMsgPutTextflag(
-   uint8 ucId,
-   boolean bstate){
+      uint8   ucId
+   ,  boolean bstate
+){
    if(ucId < BUSMSG_NUMBER_OF_TEXTFLAGS){
       bTextFlags[ucId] = bstate;
    }
 }
 
-boolean BusMsgGetTextflag(
-   uint8 ucId){
+boolean BusMsgGetTextflag(uint8 ucId){
    boolean bHelp;
    bHelp = TEXTFLAGS_INVALID;
    if(ucId < BUSMSG_NUMBER_OF_TEXTFLAGS){
@@ -211,8 +183,8 @@ boolean BusMsgGetTextflag(
 }
 
 void BusMsgDoTeleFinished(void){
-   uint8 ucTemp1;
-   uint8 ucReErrCount = 0;
+   uint8  ucTemp1;
+   uint8  ucReErrCount = 0;
    uint16 usTempNoRxTime = 0;
    BusMsgClr();
    if((GetSystem_DefectECUState() == TRUE) || (ushGetBetriebszustandBZ(
@@ -301,36 +273,31 @@ void BusMsgDoTeleFinished(void){
    usTempNoRxTime = GETusFolgeAusfallCntSTATISTICS(
       ucGetIndexOfHistoryWP(
          BUSMSG_TYRE_VR));
-   if((TRUE == GETbNoWarnPartSurvVR(
-      )) || (TRUE == BusMsgGetTextflag(
-      BUSMSG_TEXTFLAG_1)) || ((TRUE == BusMsgGetTextflag(
-      BUSMSG_TEXTFLAG_3)) && (usTempNoRxTime >= ucMaxFF4RFInterference)) || ((TRUE == BusMsgGetTextflag(
-      BUSMSG_TEXTFLAG_4)) && (usTempNoRxTime >= ucMaxFF4RFInterference))){
-      BusMsgPutTyrePressUncomp(
-         BUSMSG_TYRE_VR,
-         cInvalidPressureCAN);
-      BusMsgPutTyrePressValidVR(
-         BUSMSG_TYREPRESS_INVALID);
-      BusMsgPutWarning(
-         BUSMSG_TYRE_VR,
-         BUSMSG_WARN_UNKNOWN);
+   if(
+         (TRUE == GETbNoWarnPartSurvVR())
+      || (TRUE == BusMsgGetTextflag(BUSMSG_TEXTFLAG_1))
+      || (
+               (TRUE == BusMsgGetTextflag(BUSMSG_TEXTFLAG_3))
+            && (usTempNoRxTime >= ucMaxFF4RFInterference)
+         )
+      || (
+               (TRUE == BusMsgGetTextflag(BUSMSG_TEXTFLAG_4))
+            && (usTempNoRxTime >= ucMaxFF4RFInterference)
+         )
+   ){
+      BusMsgPutTyrePressUncomp(BUSMSG_TYRE_VR, cInvalidPressureCAN);
+      BusMsgPutTyrePressValidVR(BUSMSG_TYREPRESS_INVALID);
+      BusMsgPutWarning(BUSMSG_TYRE_VR, BUSMSG_WARN_UNKNOWN);
    }
    else{
-      ucTemp1 = ucGetValidTyrePressureRelAtPosPD(
-         cRadPosVR);
+      ucTemp1 = ucGetValidTyrePressureRelAtPosPD(cRadPosVR);
       if(ucTemp1 >= cInvalidREpressure){
-         BusMsgPutTyrePressUncomp(
-            BUSMSG_TYRE_VR,
-            cInvalidPressureCAN);
-         BusMsgPutTyrePressValidVR(
-            BUSMSG_TYREPRESS_INVALID);
+         BusMsgPutTyrePressUncomp(BUSMSG_TYRE_VR, cInvalidPressureCAN);
+         BusMsgPutTyrePressValidVR(BUSMSG_TYREPRESS_INVALID);
       }
       else{
-         BusMsgPutTyrePressUncomp(
-            BUSMSG_TYRE_VR,
-            ucTemp1);
-         BusMsgPutTyrePressValidVR(
-            BUSMSG_TYREPRESS_VALID);
+         BusMsgPutTyrePressUncomp(BUSMSG_TYRE_VR, ucTemp1);
+         BusMsgPutTyrePressValidVR(BUSMSG_TYREPRESS_VALID);
       }
    }
    usTempNoRxTime = GETusFolgeAusfallCntSTATISTICS(
