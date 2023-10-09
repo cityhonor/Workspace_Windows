@@ -187,32 +187,27 @@ void BusMsgDoTeleFinished(void){
    uint8  ucReErrCount = 0;
    uint16 usTempNoRxTime = 0;
    BusMsgClr();
-   if((GetSystem_DefectECUState() == TRUE) || (ushGetBetriebszustandBZ(
-      cZO_TIMEOUT | cER_FINISH) == cZO_TIMEOUT) || (DTC_GetActiveStatusOfDTC(
-      cZO_ERR_NO_QUALIFIED_SENSOR_SIGNALS) == TRUE)){
-      BusMsgPutTextflag(
-         BUSMSG_TEXTFLAG_3,
-         1);
-      SilaPutState(
-         SILA_STATE_MALFUNCTIONFLASH);
+   if(
+         (TRUE == GetSystem_DefectECUState())
+      || (cZO_TIMEOUT == ushGetBetriebszustandBZ(cZO_TIMEOUT | cER_FINISH))
+      || (TRUE == DTC_GetActiveStatusOfDTC(cZO_ERR_NO_QUALIFIED_SENSOR_SIGNALS))
+   ){
+      BusMsgPutTextflag(BUSMSG_TEXTFLAG_3, 1);
+      SilaPutState(SILA_STATE_MALFUNCTIONFLASH);
    }
    else{
-      if((GETbHfIntLatchEE() == TRUE) || (DTC_GetActiveStatusOfDTC(
-         cZO_ERR_RF_INTERFERENCE) == TRUE)){
-         BusMsgPutTextflag(
-            BUSMSG_TEXTFLAG_4,
-            1);
-         SilaPutState(
-            SILA_STATE_MALFUNCTIONFLASH);
+      if(
+            (TRUE == GETbHfIntLatchEE())
+         || (TRUE == DTC_GetActiveStatusOfDTC(cZO_ERR_RF_INTERFERENCE))
+      ){
+         BusMsgPutTextflag(BUSMSG_TEXTFLAG_4, 1);
+         SilaPutState(SILA_STATE_MALFUNCTIONFLASH);
       }
    }
-   if(bGetBitBetriebszustandBZ(
-      cZUGEORDNET) == TRUE){
+   if(TRUE == bGetBitBetriebszustandBZ(cZUGEORDNET)){
       ucReErrCount = BusMsgDetermineErrCounter();
       if(ucReErrCount > 1){
-         BusMsgPutTextflag(
-            BUSMSG_TEXTFLAG_1,
-            1);
+         BusMsgPutTextflag(BUSMSG_TEXTFLAG_1, 1);
       }
       BusMsgCheckWarningsFrontLeft();
       BusMsgCheckWarningsFrontRight();
@@ -220,37 +215,38 @@ void BusMsgDoTeleFinished(void){
       BusMsgCheckWarningsRearRight();
    }
    else{
-      if((bGetBitBetriebszustandBZ(
-         cER_FINISH) == TRUE) || ((bGetBitBetriebszustandBZ(
-         cEIGENRAD) == TRUE) && (bGetBitBetriebszustandBZ(
-         cHIST_PRELOAD) == TRUE))){
+      if(
+            (TRUE == bGetBitBetriebszustandBZ(cER_FINISH))
+         || (
+                  (TRUE == bGetBitBetriebszustandBZ(cEIGENRAD))
+               && (TRUE == bGetBitBetriebszustandBZ(cHIST_PRELOAD))
+            )
+      ){
          ucReErrCount = BusMsgDetermineErrCounter();
          if(ucReErrCount > 1){
-            BusMsgPutTextflag(
-               BUSMSG_TEXTFLAG_1,
-               1);
+            BusMsgPutTextflag(BUSMSG_TEXTFLAG_1, 1);
          }
          BusMsgCheckWarningsUnknownPos();
       }
       else{
       }
    }
-   usTempNoRxTime = GETusFolgeAusfallCntSTATISTICS(
-      ucGetIndexOfHistoryWP(
-         BUSMSG_TYRE_VL));
-   if((TRUE == GETbNoWarnPartSurvVL(
-      )) || (TRUE == BusMsgGetTextflag(
-      BUSMSG_TEXTFLAG_1)) || ((TRUE == BusMsgGetTextflag(
-      BUSMSG_TEXTFLAG_3)) && (usTempNoRxTime >= ucMaxFF4RFInterference)) || ((TRUE == BusMsgGetTextflag(
-      BUSMSG_TEXTFLAG_4)) && (usTempNoRxTime >= ucMaxFF4RFInterference))){
-      BusMsgPutTyrePressUncomp(
-         BUSMSG_TYRE_VL,
-         cInvalidPressureCAN);
-      BusMsgPutTyrePressValidVL(
-         BUSMSG_TYREPRESS_INVALID);
-      BusMsgPutWarning(
-         BUSMSG_TYRE_VL,
-         BUSMSG_WARN_UNKNOWN);
+   usTempNoRxTime = GETusFolgeAusfallCntSTATISTICS(ucGetIndexOfHistoryWP(BUSMSG_TYRE_VL));
+   if(
+         (TRUE == GETbNoWarnPartSurvVL())
+      || (TRUE == BusMsgGetTextflag(BUSMSG_TEXTFLAG_1))
+      || (
+               (TRUE == BusMsgGetTextflag(BUSMSG_TEXTFLAG_3))
+            && (usTempNoRxTime >= ucMaxFF4RFInterference)
+         )
+      || (
+               (TRUE == BusMsgGetTextflag(BUSMSG_TEXTFLAG_4))
+            && (usTempNoRxTime >= ucMaxFF4RFInterference)
+         )
+   ){
+      BusMsgPutTyrePressUncomp(BUSMSG_TYRE_VL, cInvalidPressureCAN);
+      BusMsgPutTyrePressValidVL(BUSMSG_TYREPRESS_INVALID);
+      BusMsgPutWarning(BUSMSG_TYRE_VL, BUSMSG_WARN_UNKNOWN);
    }
    else{
       ucTemp1 = ucGetValidTyrePressureRelAtPosPD(

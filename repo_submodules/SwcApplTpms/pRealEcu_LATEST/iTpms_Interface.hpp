@@ -49,49 +49,49 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef enum TPMSErrorType{
-      E_TPMS_ERROR_WS_LIFE_TIME_FL_CNT_LOW
-   ,  E_TPMS_ERROR_WS_LIFE_TIME_FR_CNT_LOW
-   ,  E_TPMS_ERROR_WS_LIFE_TIME_RR_CNT_LOW
-   ,  E_TPMS_ERROR_WS_LIFE_TIME_RL_CNT_LOW
-   ,  E_TPMS_ERROR_WS_DEFECT_FL
-   ,  E_TPMS_ERROR_WS_DEFECT_FR
-   ,  E_TPMS_ERROR_WS_DEFECT_RR
-   ,  E_TPMS_ERROR_WS_DEFECT_RL
-   ,  E_TPMS_ERROR_WS_DEFECT_UNKNOWN_POS
-   ,  E_TPMS_ERROR_WS_MISSING_FL
-   ,  E_TPMS_ERROR_WS_MISSING_FR
-   ,  E_TPMS_ERROR_WS_MISSING_RR
-   ,  E_TPMS_ERROR_WS_MISSING_RL
-   ,  E_TPMS_ERROR_WS_MISSING_UNKNOWN_POS
-   ,  E_TPMS_ERROR_WS_OVER_TEMP_FL
-   ,  E_TPMS_ERROR_WS_OVER_TEMP_FR
-   ,  E_TPMS_ERROR_WS_OVER_TEMP_RR
-   ,  E_TPMS_ERROR_WS_OVER_TEMP_RL
-   ,  E_TPMS_ERROR_AXLE_LOCATE_FAIL
-   ,  E_TPMS_ERROR_NO_QUALIFIED_SENSOR_SIGNALS
-   ,  E_TPMS_ERROR_DETECTED_TOO_MANY_SENSORS
-   ,  E_TPMS_ERROR_NOT_FUNCTIONING_DUE_TO_ECU_INTERNAL_FAULT
-   ,  E_TPMS_ERROR_WS_MISSING_DURING_CONTINUOUS_INVALID_SPEED
-   ,  E_TPMS_ERROR_RF_INTERFERENCE
-   ,  E_TPMS_ERROR_AUTOLOCATION_FAILED
-   ,  E_TPMS_ERROR_MAX_NUMBER
-}enum_TPMSErrorType;
+typedef enum{
+      SwcApplTpms_eError_WS_LIFE_TIME_FL_CNT_LOW
+   ,  SwcApplTpms_eError_WS_LIFE_TIME_FR_CNT_LOW
+   ,  SwcApplTpms_eError_WS_LIFE_TIME_RR_CNT_LOW
+   ,  SwcApplTpms_eError_WS_LIFE_TIME_RL_CNT_LOW
+   ,  SwcApplTpms_eError_WS_DEFECT_FL
+   ,  SwcApplTpms_eError_WS_DEFECT_FR
+   ,  SwcApplTpms_eError_WS_DEFECT_RR
+   ,  SwcApplTpms_eError_WS_DEFECT_RL
+   ,  SwcApplTpms_eError_WS_DEFECT_UNKNOWN_POS
+   ,  SwcApplTpms_eError_WS_MISSING_FL
+   ,  SwcApplTpms_eError_WS_MISSING_FR
+   ,  SwcApplTpms_eError_WS_MISSING_RR
+   ,  SwcApplTpms_eError_WS_MISSING_RL
+   ,  SwcApplTpms_eError_WS_MISSING_UNKNOWN_POS
+   ,  SwcApplTpms_eError_WS_OVER_TEMP_FL
+   ,  SwcApplTpms_eError_WS_OVER_TEMP_FR
+   ,  SwcApplTpms_eError_WS_OVER_TEMP_RR
+   ,  SwcApplTpms_eError_WS_OVER_TEMP_RL
+   ,  SwcApplTpms_eError_AXLE_LOCATE_FAIL
+   ,  SwcApplTpms_eError_NO_QUALIFIED_SENSOR_SIGNALS
+   ,  SwcApplTpms_eError_DETECTED_TOO_MANY_SENSORS
+   ,  SwcApplTpms_eError_NOT_FUNCTIONING_DUE_TO_ECU_INTERNAL_FAULT
+   ,  SwcApplTpms_eError_WS_MISSING_DURING_CONTINUOUS_INVALID_SPEED
+   ,  SwcApplTpms_eError_RF_INTERFERENCE
+   ,  SwcApplTpms_eError_AUTOLOCATION_FAILED
+   ,  SwcApplTpms_eError_MAX_NUMBER
+}Type_SwcApplTpms_eErrors;
 
-struct struct_Version{
+typedef struct{
    uint8 ucaApplVersionHuf[9];
    uint8 ucaApplVersionCst[7];
    uint8 ucaApplVersionCDD[20];
    uint8 ucaCompilerName[6];
    uint8 ucaCompilerVersion[6];
    uint8 ucaBuild_Date[20];
-};
+}Type_SwcApplTpms_stVersion;
 
 typedef struct{
    uint32 ulRxTimeStamp;
    uint16 uiRxRSSI;
    uint8  ucaTelegram[MAX_SIZE_WS_TELEGRAM];
-}tsWS_RxDataIn;
+}Type_SwcApplTpms_stTelegramWS;
 
 typedef struct{
    uint16  uiVehSpeed;
@@ -103,7 +103,7 @@ typedef struct{
    uint16  uiNvmBlockConsistence;
    uint16  uiNoiseRSSI;
    boolean bRoadMode;
-}tsEnv_Data;
+}Type_SwcApplTpms_stStatusBody;
 
 typedef struct{
    bitfield bTPS_FR                  : 3;
@@ -126,14 +126,14 @@ typedef struct{
    bitfield bTemp_Warning_FR         : 1;
    bitfield bTemp_Warning_RL         : 1;
    bitfield bTemp_Warning_RR         : 1;
-}CAN_HMI_type;
+}Type_SwcApplTpms_stPressure;
 
 typedef struct{
    uint8  u8MajorRelease;
    uint8  u8MinorRelease;
    uint16 u16MicroRelease;
    uint32 u32Crc;
-}CAN_TPMS_Software_ID_type;
+}Type_SwcApplTpms_stIdSoftware;
 
 typedef struct{
    uint8 ucTT_FL;
@@ -144,7 +144,7 @@ typedef struct{
    uint8 ucRP_FR;
    uint8 ucRP_RL;
    uint8 ucRP_RR;
-}tsHMI_Temperature_RefPres;
+}Type_SwcApplTpms_stTempAndRefPress;
 
 typedef struct{
    uint32 ulAbsTimeStamp;
@@ -154,7 +154,7 @@ typedef struct{
    uint16 uiPulseCtrRR;
    uint16 uiSimTimeStamp;
    uint8  ucAge;
-}tsEnvAbs_Data;
+}Type_SwcApplTpms_stWheelPulseStamped;
 
 typedef struct{
    uint8 ucData0;
@@ -191,19 +191,19 @@ extern void    InfSwcApplTpmsSwcServiceOs_vInitFunction                  (void);
 extern void    SwcApplTpms_vRunnableUpdateStatus                         (void);
 
 extern void    HufIf_Init_Huf_SWC                               (void);
-extern void    HufIf_RCtSaReTelDec                              (       tsWS_RxDataIn*     spRxDataIn, const tsEnv_Data* spEnvDataIn);
-extern void    HufIf_RCtSaEnvData                               (const  tsEnv_Data*        spRxEnvDataIn);
-extern void    HufIf_RCtAbsEnvData                              (const  tsEnvAbs_Data*     spRxEnvAbsDataIn);
-extern void    HufIf_RCtSaTpmsData                              (const  tsEnv_Data*        spEnvData);
-extern void    HufIf_GetVersion                                 (struct struct_Version*    sVersion);
-extern boolean HufIf_CheckCRC8                                  (const  uint8*             pucAkTel, const uint8 ucLen);
-extern uint8   ClientIf_NvM_ReadBlock                           (       uint16             uiBlockNr, uint16 uiLen,       NVM_BLOCK_TYPE* ulpDestPtr);
-extern uint8   ClientIf_NvM_WriteBlock                          (       uint16             uiBlockNr, uint16 uiLen, const NVM_BLOCK_TYPE* ulpSrcPtr);
-extern void    ClientIf_SetCurrentErrorERR                      (       enum_TPMSErrorType eErrorType);
-extern void    ClientIf_DeleteCurrentErrorERR                   (       enum_TPMSErrorType eErrorType);
-extern void    ClientIf_GetECUTimeStampValue                    (       uint32*            ulpECUTimeStamp);
-extern uint8   infSwcApplTpmsSwcServiceCom_tBuildTxMessageCan   (       uint16             ltIdCan, Type_SwcApplTpms_stMessageCan* lptrstMessage);
-extern uint8   infSwcApplTpmsSwcServiceCom_tCalloutRxMessage    (       uint16             uiCanMsgID, const Type_SwcApplTpms_stMessageCan* spCAN_Message);
+extern void    HufIf_RCtSaReTelDec                              (       Type_SwcApplTpms_stTelegramWS*        spRxDataIn, const Type_SwcApplTpms_stStatusBody* spEnvDataIn);
+extern void    HufIf_RCtSaEnvData                               (const  Type_SwcApplTpms_stStatusBody*        spRxEnvDataIn);
+extern void    HufIf_RCtAbsEnvData                              (const  Type_SwcApplTpms_stWheelPulseStamped* spRxEnvAbsDataIn);
+extern void    HufIf_RCtSaTpmsData                              (const  Type_SwcApplTpms_stStatusBody*        spEnvData);
+extern void    HufIf_GetVersion                                 (       Type_SwcApplTpms_stVersion*           sVersion);
+extern boolean HufIf_CheckCRC8                                  (const  uint8*                                pucAkTel, const uint8 ucLen);
+extern uint8   ClientIf_NvM_ReadBlock                           (       uint16                                uiBlockNr, uint16 uiLen,       NVM_BLOCK_TYPE* ulpDestPtr);
+extern uint8   ClientIf_NvM_WriteBlock                          (       uint16                                uiBlockNr, uint16 uiLen, const NVM_BLOCK_TYPE* ulpSrcPtr);
+extern void    ClientIf_SetCurrentErrorERR                      (       Type_SwcApplTpms_eErrors              eErrorType);
+extern void    ClientIf_DeleteCurrentErrorERR                   (       Type_SwcApplTpms_eErrors              eErrorType);
+extern void    ClientIf_GetECUTimeStampValue                    (       uint32*                               ulpECUTimeStamp);
+extern uint8   infSwcApplTpmsSwcServiceCom_tBuildTxMessageCan   (       uint16                                ltIdCan, Type_SwcApplTpms_stMessageCan* lptrstMessage);
+extern uint8   infSwcApplTpmsSwcServiceCom_tCalloutRxMessage    (       uint16                                uiCanMsgID, const Type_SwcApplTpms_stMessageCan* spCAN_Message);
 
 /******************************************************************************/
 /* EOF                                                                        */

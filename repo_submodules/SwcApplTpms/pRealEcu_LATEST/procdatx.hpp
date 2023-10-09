@@ -107,7 +107,7 @@ extern void PUTucPatmoPD(uint8 ucInData);
 extern uint8 GETucPatmoPD(void);
 extern void CalcPatmo(void);
 extern void SaveRotatS(void);
-extern void PutRotatSDataInBuffer(const tsWS_RxDataIn* spRxDataIn);
+extern void PutRotatSDataInBuffer(const Type_SwcApplTpms_stTelegramWS* spRxDataIn);
 extern tRxRotatSBuf* pGetRotatSDataTFromBuffer(uint8 ucBufferIndex);
 extern uint8 ucGetRotatSDataBufferIndex(void);
 extern uint16 ushGetRotatSVehSpeed(void);

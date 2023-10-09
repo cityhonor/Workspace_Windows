@@ -128,7 +128,7 @@ void Huf_SWC_Basic_Timer(void){
    if( (DTC_StatusOfDTC & cDTC_WAS_DELETED_TROUGH_DIAG) == cDTC_WAS_DELETED_TROUGH_DIAG )
    {
       uint8 u8Cnt;
-      for(u8Cnt = 0; u8Cnt < E_TPMS_ERROR_MAX_NUMBER;u8Cnt++)
+      for(u8Cnt = 0; u8Cnt < SwcApplTpms_eError_MAX_NUMBER;u8Cnt++)
       {
         if(DTC_GetActiveStatusOfDTC(u8Cnt) == TRUE)
         {

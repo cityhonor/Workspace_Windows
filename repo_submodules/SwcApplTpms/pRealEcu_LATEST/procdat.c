@@ -272,7 +272,7 @@ uint8 ucGetSlotNoAtPosPD(uint8 ucRadPos){
    return ucRet;
 }
 
-void ReadReDataFromRingBuffer_iBTCM(const tsWS_RxDataIn* spRxDataIn){
+void ReadReDataFromRingBuffer_iBTCM(const Type_SwcApplTpms_stTelegramWS* spRxDataIn){
    boolean l_bDoIt;
    boolean l_bAnalyseTelegram;
    uint8 l_ucTelType;
@@ -713,7 +713,7 @@ void SaveRotatS(void){
    ucSnRotH = tReDataPD.RotatS.ucSnRH;
 }
 
-void PutRotatSDataInBuffer(const tsWS_RxDataIn* spRxDataIn){
+void PutRotatSDataInBuffer(const Type_SwcApplTpms_stTelegramWS* spRxDataIn){
    int i;
    if(ucRotatSTelIndexPut < cWsTelBufferSize){
       tWs_RxRotatSBuf[ucRotatSTelIndexPut].RxDataIn.ulRxTimeStamp = spRxDataIn->ulRxTimeStamp;
