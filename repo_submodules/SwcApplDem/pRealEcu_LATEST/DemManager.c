@@ -60,39 +60,39 @@ typedef struct{
 }DemMGR__Struct_SignalMonitoringData;
 
 typedef struct{
-   enum_TPMSErrorType E_TPMSError;
+   Type_SwcApplTpms_eErrors E_TPMSError;
    Dem_EventIdType    U16_EventId;
 }DemMGR__Struct_DTCMapping;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-static const DemMGR__Struct_DTCMapping DemMGR__CAS_DTCMappings[E_TPMS_ERROR_MAX_NUMBER] = {
-      {E_TPMS_ERROR_WS_LIFE_TIME_FL_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowFL}
-   ,  {E_TPMS_ERROR_WS_LIFE_TIME_FR_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowFR}
-   ,  {E_TPMS_ERROR_WS_LIFE_TIME_RR_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowRR}
-   ,  {E_TPMS_ERROR_WS_LIFE_TIME_RL_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowRL}
-   ,  {E_TPMS_ERROR_WS_DEFECT_FL,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectFL}
-   ,  {E_TPMS_ERROR_WS_DEFECT_FR,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectFR}
-   ,  {E_TPMS_ERROR_WS_DEFECT_RR,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectRR}
-   ,  {E_TPMS_ERROR_WS_DEFECT_RL,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectRL}
-   ,  {E_TPMS_ERROR_WS_DEFECT_UNKNOWN_POS,                      DemConf_DemEventParameter_DemEventParameter_SensorDefectUnknownPosition}
-   ,  {E_TPMS_ERROR_WS_MISSING_FL,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingFL}
-   ,  {E_TPMS_ERROR_WS_MISSING_FR,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingFR}
-   ,  {E_TPMS_ERROR_WS_MISSING_RR,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingRR}
-   ,  {E_TPMS_ERROR_WS_MISSING_RL,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingRL}
-   ,  {E_TPMS_ERROR_WS_MISSING_UNKNOWN_POS,                     DemConf_DemEventParameter_DemEventParameter_SensorMissingUnknownPosition}
-   ,  {E_TPMS_ERROR_WS_OVER_TEMP_FL,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempFL}
-   ,  {E_TPMS_ERROR_WS_OVER_TEMP_FR,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempFR}
-   ,  {E_TPMS_ERROR_WS_OVER_TEMP_RR,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempRR}
-   ,  {E_TPMS_ERROR_WS_OVER_TEMP_RL,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempRL}
-   ,  {E_TPMS_ERROR_AXLE_LOCATE_FAIL,                           DemConf_DemEventParameter_DemEventParameter_AutolocationFail}
-   ,  {E_TPMS_ERROR_NO_QUALIFIED_SENSOR_SIGNALS,                DemConf_DemEventParameter_DemEventParameter_NoQualifiedSensorSignals}
-   ,  {E_TPMS_ERROR_DETECTED_TOO_MANY_SENSORS,                  DemConf_DemEventParameter_DemEventParameter_DetectedTooManySensors}
-   ,  {E_TPMS_ERROR_NOT_FUNCTIONING_DUE_TO_ECU_INTERNAL_FAULT,  DemConf_DemEventParameter_DemEventParameter_TpmsNotFunctional}
-   ,  {E_TPMS_ERROR_WS_MISSING_DURING_CONTINUOUS_INVALID_SPEED, DemConf_DemEventParameter_DemEventParameter_CanSpeedSignalMissing}
-   ,  {E_TPMS_ERROR_RF_INTERFERENCE,                            DemConf_DemEventParameter_DemEventParameter_EcuRfInterference}
-   ,  {E_TPMS_ERROR_AUTOLOCATION_FAILED,                        DemConf_DemEventParameter_DemEventParameter_AutolocationFail}
+static const DemMGR__Struct_DTCMapping DemMGR__CAS_DTCMappings[SwcApplTpms_eError_MAX_NUMBER] = {
+      {SwcApplTpms_eError_WS_LIFE_TIME_FL_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowFL}
+   ,  {SwcApplTpms_eError_WS_LIFE_TIME_FR_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowFR}
+   ,  {SwcApplTpms_eError_WS_LIFE_TIME_RR_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowRR}
+   ,  {SwcApplTpms_eError_WS_LIFE_TIME_RL_CNT_LOW,                    DemConf_DemEventParameter_DemEventParameter_SensorLifeTimeCounterLowRL}
+   ,  {SwcApplTpms_eError_WS_DEFECT_FL,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectFL}
+   ,  {SwcApplTpms_eError_WS_DEFECT_FR,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectFR}
+   ,  {SwcApplTpms_eError_WS_DEFECT_RR,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectRR}
+   ,  {SwcApplTpms_eError_WS_DEFECT_RL,                               DemConf_DemEventParameter_DemEventParameter_SensorDefectRL}
+   ,  {SwcApplTpms_eError_WS_DEFECT_UNKNOWN_POS,                      DemConf_DemEventParameter_DemEventParameter_SensorDefectUnknownPosition}
+   ,  {SwcApplTpms_eError_WS_MISSING_FL,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingFL}
+   ,  {SwcApplTpms_eError_WS_MISSING_FR,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingFR}
+   ,  {SwcApplTpms_eError_WS_MISSING_RR,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingRR}
+   ,  {SwcApplTpms_eError_WS_MISSING_RL,                              DemConf_DemEventParameter_DemEventParameter_SensorMissingRL}
+   ,  {SwcApplTpms_eError_WS_MISSING_UNKNOWN_POS,                     DemConf_DemEventParameter_DemEventParameter_SensorMissingUnknownPosition}
+   ,  {SwcApplTpms_eError_WS_OVER_TEMP_FL,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempFL}
+   ,  {SwcApplTpms_eError_WS_OVER_TEMP_FR,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempFR}
+   ,  {SwcApplTpms_eError_WS_OVER_TEMP_RR,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempRR}
+   ,  {SwcApplTpms_eError_WS_OVER_TEMP_RL,                            DemConf_DemEventParameter_DemEventParameter_SensorOvertempRL}
+   ,  {SwcApplTpms_eError_AXLE_LOCATE_FAIL,                           DemConf_DemEventParameter_DemEventParameter_AutolocationFail}
+   ,  {SwcApplTpms_eError_NO_QUALIFIED_SENSOR_SIGNALS,                DemConf_DemEventParameter_DemEventParameter_NoQualifiedSensorSignals}
+   ,  {SwcApplTpms_eError_DETECTED_TOO_MANY_SENSORS,                  DemConf_DemEventParameter_DemEventParameter_DetectedTooManySensors}
+   ,  {SwcApplTpms_eError_NOT_FUNCTIONING_DUE_TO_ECU_INTERNAL_FAULT,  DemConf_DemEventParameter_DemEventParameter_TpmsNotFunctional}
+   ,  {SwcApplTpms_eError_WS_MISSING_DURING_CONTINUOUS_INVALID_SPEED, DemConf_DemEventParameter_DemEventParameter_CanSpeedSignalMissing}
+   ,  {SwcApplTpms_eError_RF_INTERFERENCE,                            DemConf_DemEventParameter_DemEventParameter_EcuRfInterference}
+   ,  {SwcApplTpms_eError_AUTOLOCATION_FAILED,                        DemConf_DemEventParameter_DemEventParameter_AutolocationFail}
 };
 
 static const DemMGR__Struct_SignalMonitoringData DemMGR__CS_SignalMonitoringData[DEMMGR_E_NUMBER_OF_RX_MESSAGES_MONITED] = {
@@ -524,7 +524,7 @@ static void DemMGR__EspWheelPulseStampedMonitor(void){
          )
       != FALSE
    ){
-      tsEnv_Data* PS_EnvData = Env_GetEnvironmentData();
+      Type_SwcApplTpms_stStatusBody* PS_EnvData = Env_GetEnvironmentData();
       if(
             PS_EnvData->uiVehSpeed
          >  DEMMGR__ESP_WHEEL_PULSE_STAMPED_MIN_SPEED
@@ -685,12 +685,12 @@ static void DEMMGR_FifoPut(Dem_EventIdType ucDtc, Dem_EventStatusType ucStatus){
 }
 
 void ClientIf_SetCurrentErrorERR(
-   enum_TPMSErrorType eErrorType
+   Type_SwcApplTpms_eErrors eErrorType
 ){
    uint8 U8_Counter;
    for(
       U8_Counter = 0;
-      U8_Counter < E_TPMS_ERROR_MAX_NUMBER;
+      U8_Counter < SwcApplTpms_eError_MAX_NUMBER;
       U8_Counter ++
    ){
       if(
@@ -719,12 +719,12 @@ void ClientIf_SetCurrentErrorERR(
 }
 
 void ClientIf_DeleteCurrentErrorERR(
-   enum_TPMSErrorType eErrorType
+   Type_SwcApplTpms_eErrors eErrorType
 ){
    uint8 U8_Counter;
    for(
       U8_Counter = 0;
-      U8_Counter < E_TPMS_ERROR_MAX_NUMBER;
+      U8_Counter < SwcApplTpms_eError_MAX_NUMBER;
       U8_Counter ++
    ){
       if(

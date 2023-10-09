@@ -10,7 +10,7 @@
 #include "SwcApplTpms_NvM_If.hpp"
 
 #define BITS_IN_BYTE  8U
-#define DTC_ARRAY_SIZE ((uint8) (((E_TPMS_ERROR_MAX_NUMBER - 1)/BITS_IN_BYTE) + 1))
+#define DTC_ARRAY_SIZE ((uint8) (((SwcApplTpms_eError_MAX_NUMBER - 1)/BITS_IN_BYTE) + 1))
 
 uint8 DTC_IsDTCInActiveState[DTC_ARRAY_SIZE];
 uint8 DTC_StatusOfDTC;
@@ -81,9 +81,9 @@ void Init_DTC(void){
 
 void SetCurrentErrorERR(
    uint8 ucCurrentExtErrorIndex){
-  enum_TPMSErrorType enErrorType = E_TPMS_ERROR_MAX_NUMBER;
-  enErrorType = (enum_TPMSErrorType)ucCurrentExtErrorIndex;
-   if(enErrorType < E_TPMS_ERROR_MAX_NUMBER){
+  Type_SwcApplTpms_eErrors enErrorType = SwcApplTpms_eError_MAX_NUMBER;
+  enErrorType = (Type_SwcApplTpms_eErrors)ucCurrentExtErrorIndex;
+   if(enErrorType < SwcApplTpms_eError_MAX_NUMBER){
    ClientIf_SetCurrentErrorERR(enErrorType);
     DTC_SetDTCActiveStatus(enErrorType);
     DTC_StatusOfDTC |= cDTC_STATE_CHANGED;
@@ -94,9 +94,9 @@ void SetCurrentErrorERR(
 
 void DeleteCurrentErrorERR(
    uint8 ucCurrentExtErrorIndex){
-  enum_TPMSErrorType enErrorType = E_TPMS_ERROR_MAX_NUMBER;
-  enErrorType = (enum_TPMSErrorType)ucCurrentExtErrorIndex;
-   if(enErrorType < E_TPMS_ERROR_MAX_NUMBER){
+  Type_SwcApplTpms_eErrors enErrorType = SwcApplTpms_eError_MAX_NUMBER;
+  enErrorType = (Type_SwcApplTpms_eErrors)ucCurrentExtErrorIndex;
+   if(enErrorType < SwcApplTpms_eError_MAX_NUMBER){
    ClientIf_DeleteCurrentErrorERR(enErrorType);
     DTC_DeleteDTCActiveStatus(enErrorType);
     DTC_StatusOfDTC |= cDTC_STATE_CHANGED;
@@ -110,7 +110,7 @@ void HufIf_GetStatusErrorERR(
   DTC_StatusOfDTC |= cDTC_WAS_DELETED_TROUGH_DIAG;
   DTC_DeleteDTCActiveStatus(eErrorType);
    switch(eErrorType){
-   case E_TPMS_ERROR_AUTOLOCATION_FAILED:
+   case SwcApplTpms_eError_AUTOLOCATION_FAILED:
         NvM3_PUTucAutolocationFailedCounter(ucDefAutolocationFailedCounterInit);
         break;
     default:
