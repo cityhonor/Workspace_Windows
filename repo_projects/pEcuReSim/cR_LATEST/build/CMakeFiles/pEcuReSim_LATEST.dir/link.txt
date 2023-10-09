@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--enable-auto-import CMakeFiles/pEcuReSim_LATEST.dir/source/SwcServiceStartUp/SwcServiceStartUp.c.o CMakeFiles/pEcuReSim_LATEST.dir/source/McalGpt/McalGpt.c.o CMakeFiles/pEcuReSim_LATEST.dir/source/wrappers/wrappers.c.o -o pEcuReSim_LATEST.exe -Wl,--out-implib,libpEcuReSim_LATEST.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
