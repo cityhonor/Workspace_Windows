@@ -35,7 +35,6 @@
 #include "Dem.hpp"
 #include "Fee_30_SmallSector.hpp"
 #include "AdcX.hpp"
-#include "version.hpp"
 #include "rba_DiagLib.hpp"
 
 #include "iTpms_Interface.hpp"
@@ -368,7 +367,8 @@ void DemMGR_EcuVoltageMonitorMainFunction(void){
    }
 }
 
-static void DemMGR_CheckEcuIdentificationAndApplMemory(void){
+#include "CfgSwcServiceStartUp.hpp"
+static void DemMGR_CheckEcuIdentificationAndApplMemory(void){ //TBD: Move to StartUp/MemoryServices
    uint8  ucBuffer[40];
    uint8  ucSize;
    uint32 i, j;
@@ -382,10 +382,10 @@ static void DemMGR_CheckEcuIdentificationAndApplMemory(void){
       == 0xff
    ){
       ushChecksumCalculated = 0;
-      ushChecksumRead = *(uint16*)(cAPPLICATION_END_ADDRESS-1);
+      ushChecksumRead = *(uint16*)(CfgSwcServiceStartUp_dAddressApplicationEnd-1);
       for(
-         i = cAPPLICATION_START_ADDRESS;
-         i < (cAPPLICATION_END_ADDRESS-1);
+         i = CfgSwcServiceStartUp_dAddressApplicationStart;
+         i < (CfgSwcServiceStartUp_dAddressApplicationEnd-1);
          i ++
       ){
          ushChecksumCalculated += *(uint8*)i;
