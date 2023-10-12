@@ -772,7 +772,7 @@ void DCM_InitCanDebug(void){
 
 static void DCM_PutEventData2Buffer(Type_SwcApplTpms_stMessageCan S_EnvDataMultiplex)
 {
-  if(FALSE != DCH_MultiplexMsgGetActiveStatus(S_EnvDataMultiplex.ucData0))
+  if(FALSE != DCH_MultiplexMsgGetActiveStatus(S_EnvDataMultiplex.lptru8Data0))
   {
     // check for overflow
    if(u8_EnvWriteCnt >= DCM_MAX_SIZE_ENV_BUF)
@@ -780,7 +780,7 @@ static void DCM_PutEventData2Buffer(Type_SwcApplTpms_stMessageCan S_EnvDataMulti
       u8_EnvWriteCnt = 0;
    }
 
-    DCM_StoreMaxMultiplexEventNr(S_EnvDataMultiplex.ucData0);
+    DCM_StoreMaxMultiplexEventNr(S_EnvDataMultiplex.lptru8Data0);
 
     S_HufEnvMsgBuf[u8_EnvWriteCnt] = S_EnvDataMultiplex;
    u8_EnvWriteCnt++;
@@ -792,7 +792,7 @@ static void DCM_PutEventData2Buffer(Type_SwcApplTpms_stMessageCan S_EnvDataMulti
 
 static void DCM_PutSystemData2Buffer(Type_SwcApplTpms_stMessageCan S_SysDataMultiplex)
 {
-  if(FALSE != DCH_MultiplexMsgGetActiveStatus(S_SysDataMultiplex.ucData0))
+  if(FALSE != DCH_MultiplexMsgGetActiveStatus(S_SysDataMultiplex.lptru8Data0))
   {
     // check for overflow
    if(u8_SysWriteCnt >= DCM_MAX_SIZE_SYS_BUF)
@@ -800,7 +800,7 @@ static void DCM_PutSystemData2Buffer(Type_SwcApplTpms_stMessageCan S_SysDataMult
       u8_SysWriteCnt = 0;
    }
 
-    DCM_StoreMaxMultiplexSystemNr(S_SysDataMultiplex.ucData0);
+    DCM_StoreMaxMultiplexSystemNr(S_SysDataMultiplex.lptru8Data0);
     S_HufSysMsgBuf[u8_SysWriteCnt] = S_SysDataMultiplex;
    u8_SysWriteCnt++;
 
@@ -868,7 +868,7 @@ static void DCM_SystemDataGetFromBuffer(Type_SwcApplTpms_stMessageCan* tHufDispl
 
   *tHufDisplay = S_HufSysMsgBuf[u8_SysReadCnt];
 
-  if( DCM_U8_SystemDataMaxMultiplexNr == S_HufSysMsgBuf[u8_SysReadCnt].ucData0)
+  if( DCM_U8_SystemDataMaxMultiplexNr == S_HufSysMsgBuf[u8_SysReadCnt].lptru8Data0)
   {
    bo_StructSystemMultiLast = TRUE;
   }

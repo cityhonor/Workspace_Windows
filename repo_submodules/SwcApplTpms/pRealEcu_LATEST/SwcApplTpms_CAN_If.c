@@ -181,14 +181,14 @@ static void GenHmiMsgData(
    *spCAN_Message = l_sHMI.sMsgsBytes;
 }
 
-extern void VERSION_GetSoftware_ID(
-   uint8* ucData
+extern void SwcServiceStartUp_u8GetSoftware_ID(
+   uint8* lptru8Data
 );
 
 static void Gen_TPMS_Software_ID_MsgData(
    Type_SwcApplTpms_stMessageCan* spCAN_Message
 ){
-   VERSION_GetSoftware_ID(
+   SwcServiceStartUp_u8GetSoftware_ID(
       spCAN_Message
    );
 }

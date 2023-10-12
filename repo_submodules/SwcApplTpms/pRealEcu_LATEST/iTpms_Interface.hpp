@@ -157,14 +157,14 @@ typedef struct{
 }Type_SwcApplTpms_stWheelPulseStamped;
 
 typedef struct{
-   uint8 ucData0;
-   uint8 ucData1;
-   uint8 ucData2;
-   uint8 ucData3;
-   uint8 ucData4;
-   uint8 ucData5;
-   uint8 ucData6;
-   uint8 ucData7;
+   uint8 lptru8Data0;
+   uint8 lptru8Data1;
+   uint8 lptru8Data2;
+   uint8 lptru8Data3;
+   uint8 lptru8Data4;
+   uint8 lptru8Data5;
+   uint8 lptru8Data6;
+   uint8 lptru8Data7;
 }Type_SwcApplTpms_stMessageCan;
 
 /******************************************************************************/
@@ -196,7 +196,7 @@ extern void    HufIf_RCtSaEnvData                               (const  Type_Swc
 extern void    HufIf_RCtAbsEnvData                              (const  Type_SwcApplTpms_stWheelPulseStamped* spRxEnvAbsDataIn);
 extern void    HufIf_RCtSaTpmsData                              (const  Type_SwcApplTpms_stStatusBody*        spEnvData);
 extern void    HufIf_GetVersion                                 (       Type_SwcApplTpms_stVersion*           sVersion);
-extern boolean HufIf_CheckCRC8                                  (const  uint8*                                pucAkTel, const uint8 ucLen);
+extern boolean HufIf_CheckCRC8                                  (const  uint8*                                pucAkTel, const uint8 lu8Len);
 extern uint8   ClientIf_NvM_ReadBlock                           (       uint16                                uiBlockNr, uint16 uiLen,       NVM_BLOCK_TYPE* ulpDestPtr);
 extern uint8   ClientIf_NvM_WriteBlock                          (       uint16                                uiBlockNr, uint16 uiLen, const NVM_BLOCK_TYPE* ulpSrcPtr);
 extern void    ClientIf_SetCurrentErrorERR                      (       Type_SwcApplTpms_eErrors              eErrorType);

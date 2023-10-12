@@ -182,14 +182,14 @@ static uint8 CalcCrc8(const uint8 ui8BasePtr[], uint8 ui8BufLen){
     return(ui8CRCReg);
 }
 
-boolean HufIf_CheckCRC8(const uint8 * pucAkTel, const uint8 ucLen){
+boolean HufIf_CheckCRC8(const uint8 * pucAkTel, const uint8 lu8Len){
   boolean l_bRet;
   uint8 l_ucCRC_Calc;
-  uint8 l_ucLen;
-  l_ucLen = ucGetLen4Cmd(*pucAkTel);
-  if((l_ucLen != 0U) && (ucLen != 0U) && (l_ucLen == (ucLen - 1))){
-    l_ucCRC_Calc = CalcCrc8(pucAkTel, l_ucLen);
-   if(l_ucCRC_Calc == pucAkTel[l_ucLen]){
+  uint8 l_lu8Len;
+  l_lu8Len = ucGetLen4Cmd(*pucAkTel);
+  if((l_lu8Len != 0U) && (lu8Len != 0U) && (l_lu8Len == (lu8Len - 1))){
+    l_ucCRC_Calc = CalcCrc8(pucAkTel, l_lu8Len);
+   if(l_ucCRC_Calc == pucAkTel[l_lu8Len]){
       l_bRet = TRUE;
    }
    else{
