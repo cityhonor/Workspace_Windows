@@ -29,13 +29,13 @@ void NvM3_GETHistoryIdsFromEE(
 }
 
 void NvM3_PUTHistoryWPInEE(
-   uint8* ucData){
-  WriteMember2Blocks(CATEGORY3, cHistoryWPSet1, ucData);
+   uint8* lptru8Data){
+  WriteMember2Blocks(CATEGORY3, cHistoryWPSet1, lptru8Data);
 }
 
 void NvM3_GETHistoryWPFromEE(
-   uint8* ucData){
-  ReadBlock2Member (CATEGORY3, cHistoryWPSet1, ucData );
+   uint8* lptru8Data){
+  ReadBlock2Member (CATEGORY3, cHistoryWPSet1, lptru8Data );
 }
 
 void NvM3_PUTWAParametersInEE(

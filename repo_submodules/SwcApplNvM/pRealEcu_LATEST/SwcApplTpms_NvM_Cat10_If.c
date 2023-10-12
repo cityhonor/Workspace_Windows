@@ -6,8 +6,8 @@
 #include "SwcApplTpms_NvM.hpp"
 
 void NvM_WriteData_ECUDefect(
-   uint8 ucData){
-  WriteMember2Blocks  (10,2,&ucData );
+   uint8 lptru8Data){
+  WriteMember2Blocks  (10,2,&lptru8Data );
 }
 
 void NvM_ReadData_ECUDefect(

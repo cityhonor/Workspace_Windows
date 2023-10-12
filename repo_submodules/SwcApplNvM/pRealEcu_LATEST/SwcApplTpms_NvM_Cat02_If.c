@@ -5,9 +5,9 @@
 #include "SwcApplTpms_NvM.hpp"
 #include "SwcApplTpms_NvM_If.hpp"
 
-void    PUTucReErrorStatusEE(uint8 ucData);
+void    PUTucReErrorStatusEE(uint8 lptru8Data);
 uint8   GETucReErrorStatusEE(void);
-void    PUTucReHeatUpStatusEE(uint8 ucData);
+void    PUTucReHeatUpStatusEE(uint8 lptru8Data);
 uint8   GETucReHeatUpStatusEE(void);
 void    PUTusFolgeAusfallCntEE(uint16 ucValue, uint8 ucSlot);
 uint16  GETusFolgeAusfallCntEE(uint8 ucSlot);
@@ -15,12 +15,12 @@ void    PUTushGutEmpfCntEE(uint16 uiData, uint8 ucSlot);
 uint16  GETushGutEmpfCntEE(uint8 ucSlot);
 void    PUTushMissedCntEE(uint16 uiData, uint8 ucSlot);
 uint16  GETushMissedCntEE(uint8 ucSlot);
-void    PUTbHfIntLatchEE(uint8 ucData);
+void    PUTbHfIntLatchEE(uint8 lptru8Data);
 boolean GETbHfIntLatchEE(void);
 
-void PUTucReErrorStatusEE(uint8 ucData)
+void PUTucReErrorStatusEE(uint8 lptru8Data)
 {
-  WriteMember2Blocks (2,1,&ucData);
+  WriteMember2Blocks (2,1,&lptru8Data);
 }
 
 uint8 GETucReErrorStatusEE(void){
@@ -32,9 +32,9 @@ uint8 GETucReErrorStatusEE(void){
   return(l_ucaData[0]);
 }
 
-void PUTucReHeatUpStatusEE(uint8 ucData)
+void PUTucReHeatUpStatusEE(uint8 lptru8Data)
 {
-  WriteMember2Blocks (2,2, &ucData);
+  WriteMember2Blocks (2,2, &lptru8Data);
 }
 
 uint8 GETucReHeatUpStatusEE(void){
@@ -140,9 +140,9 @@ uint16 GETushMissedCntEE(uint8 ucSlot )
   return (l_uiRet);
 }
 
-void PUTbHfIntLatchEE(uint8 ucData)
+void PUTbHfIntLatchEE(uint8 lptru8Data)
 {
-WriteMember2Blocks (2,7,&ucData);
+WriteMember2Blocks (2,7,&lptru8Data);
 }
 
 boolean GETbHfIntLatchEE(void){
@@ -153,9 +153,9 @@ boolean GETbHfIntLatchEE(void){
   return(l_ucaData[0]);
 }
 
-void NvM2_PutEOLRoutineStatusEE(uint8 ucData)
+void NvM2_PutEOLRoutineStatusEE(uint8 lptru8Data)
 {
-  WriteMember2Blocks (CATEGORY2,INDEX8,&ucData);
+  WriteMember2Blocks (CATEGORY2,INDEX8,&lptru8Data);
 }
 
 uint8 NvM2_GetEOLRoutineStatusEE(void){
@@ -166,9 +166,9 @@ uint8 NvM2_GetEOLRoutineStatusEE(void){
   return(l_ucaData[0]);
 }
 
-void NvM2_PutEOLRoutineActiveEE(uint8 ucData)
+void NvM2_PutEOLRoutineActiveEE(uint8 lptru8Data)
 {
-  WriteMember2Blocks (CATEGORY2,INDEX9,&ucData);
+  WriteMember2Blocks (CATEGORY2,INDEX9,&lptru8Data);
 }
 
 uint8 NvM2_GetEOLRoutineActiveEE(void){
@@ -179,9 +179,9 @@ uint8 NvM2_GetEOLRoutineActiveEE(void){
   return(l_ucaData[0]);
 }
 
-void NvM2_PutDiagUsedToDeleteDTCEE(uint8 ucData)
+void NvM2_PutDiagUsedToDeleteDTCEE(uint8 lptru8Data)
 {
-  WriteMember2Blocks (CATEGORY2,INDEX10,&ucData);
+  WriteMember2Blocks (CATEGORY2,INDEX10,&lptru8Data);
 }
 
 uint8 NvM2_GetDiagUsedToDeleteDTCEE(void){

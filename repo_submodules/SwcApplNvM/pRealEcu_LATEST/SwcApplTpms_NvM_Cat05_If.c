@@ -5,9 +5,9 @@
 #include "SwcApplTpms_NvM.hpp"
 #include "SwcApplTpms_NvM_If.hpp"
 
-void PUTucVarCodLegislationEE(uint8 ucData)
+void PUTucVarCodLegislationEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(5,1, &ucData);
+    WriteMember2Blocks(5,1, &lptru8Data);
 }
 
 uint8 GETucVarCodLegislationEE(void){
@@ -21,9 +21,9 @@ uint8 GETucVarCodLegislationEE(void){
 
 //RST NVM
 
-void NvM3_PUTucVarCodHighPressResetThresEE(uint8 ucData)
+void NvM3_PUTucVarCodHighPressResetThresEE(uint8 lptru8Data)
 {
-  WriteMember2Blocks(CATEGORY5,INDEX2, &ucData);
+  WriteMember2Blocks(CATEGORY5,INDEX2, &lptru8Data);
 }
 
 uint8 NvM3_GETucVarCodHighPressResetThresEE(void){
@@ -50,9 +50,9 @@ sint8 NvM3_GETucVarCodTemperatureWarningThresEE(void){
   return ((sint8) (l_ucaData[0]));
 }
 
-void NvM3_PUTucVarCodOffroadPlacardPress(uint8 ucData)
+void NvM3_PUTucVarCodOffroadPlacardPress(uint8 lptru8Data)
 {
-  WriteMember2Blocks(CATEGORY5, INDEX4, &ucData);
+  WriteMember2Blocks(CATEGORY5, INDEX4, &lptru8Data);
 }
 
 uint8 NvM3_GETucVarCodOffroadPlacardPress(void){
@@ -65,9 +65,9 @@ uint8 NvM3_GETucVarCodOffroadPlacardPress(void){
   return (l_ucaData[0]);
 }
 
-void PUTucVarCodPlacardPressEE(uint8 ucData)
+void PUTucVarCodPlacardPressEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(5,5, &ucData);
+    WriteMember2Blocks(5,5, &lptru8Data);
 }
 
 uint8 GETucVarCodPlacardPressEE (void){
@@ -79,9 +79,9 @@ uint8 GETucVarCodPlacardPressEE (void){
     return(l_ucaData[0]);
 }
 
-void PUTucVarCodMinPressThresEE(uint8 ucData)
+void PUTucVarCodMinPressThresEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(5,6, &ucData);
+    WriteMember2Blocks(5,6, &lptru8Data);
 }
 
 uint8 GETucVarCodMinPressThresEE(void){
@@ -93,9 +93,9 @@ uint8 GETucVarCodMinPressThresEE(void){
     return(l_ucaData[0]);
 }
 
-void PUTucVarCodHighPressThresEE(uint8 ucData)
+void PUTucVarCodHighPressThresEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(5,7, &ucData);
+    WriteMember2Blocks(5,7, &lptru8Data);
 }
 
 uint8 GETucVarCodHighPressThresEE(void){
@@ -107,9 +107,9 @@ uint8 GETucVarCodHighPressThresEE(void){
     return(l_ucaData[0]);
 }
 
-void PUTucVarCodAxImbSetThresEE(uint8 ucData)
+void PUTucVarCodAxImbSetThresEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(5,8, &ucData);
+    WriteMember2Blocks(5,8, &lptru8Data);
 }
 
 uint8 GETucVarCodAxImbSetThresEE(void){
@@ -121,9 +121,9 @@ uint8 GETucVarCodAxImbSetThresEE(void){
     return(l_ucaData[0]);
 }
 
-void PUTucVarCodAxImbResThresEE(uint8 ucData)
+void PUTucVarCodAxImbResThresEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(5,9, &ucData);
+    WriteMember2Blocks(5,9, &lptru8Data);
 }
 
 uint8 GETucVarCodAxImbResThresEE(void){

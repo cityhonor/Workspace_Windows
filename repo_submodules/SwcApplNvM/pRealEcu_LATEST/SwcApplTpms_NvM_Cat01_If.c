@@ -5,11 +5,11 @@
 #include "SwcApplTpms_NvM.hpp"
 #include "SwcApplTpms_NvM_If.hpp"
 
-uint8 GETucResetWarnPressRefEE(uint8 ucIndex)
+uint8 GETucResetWarnPressRefEE(uint8 u8Index)
 {
    uint8 LocalCnt;
    uint8  l_ucaData   [NVM_CAT01_IDX07_REAL_SIZE];
-   ucIndex = (ucIndex < 5) ? ucIndex : (uint8) 4;
+   u8Index = (u8Index < 5) ? u8Index : (uint8) 4;
 
    for(LocalCnt=0;LocalCnt<NVM_CAT01_IDX07_REAL_SIZE; LocalCnt++)
    {
@@ -18,24 +18,24 @@ uint8 GETucResetWarnPressRefEE(uint8 ucIndex)
 
     ReadBlock2Member (1,7,l_ucaData );
 
-    return(l_ucaData[ucIndex]);
+    return(l_ucaData[u8Index]);
 }
 
-void PUTucResetWarnPressRefEE(uint8 ucIndex, uint8 ucData)
+void PUTucResetWarnPressRefEE(uint8 u8Index, uint8 lptru8Data)
 {
    uint8  l_ucaData   [NVM_CAT01_IDX07_REAL_SIZE];
-   ucIndex = (ucIndex < 5) ? ucIndex : (uint8) 4;
+   u8Index = (u8Index < 5) ? u8Index : (uint8) 4;
 
     ReadBlock2Member (1,7,l_ucaData );
 
-    l_ucaData[ucIndex] = ucData;
+    l_ucaData[u8Index] = lptru8Data;
 
     WriteMember2Blocks (1,7,l_ucaData );
 }
 
-void PUTucPatmoEE(uint8 ucData)
+void PUTucPatmoEE(uint8 lptru8Data)
 {
-    WriteMember2Blocks(1,8, &ucData);
+    WriteMember2Blocks(1,8, &lptru8Data);
 }
 
 uint8 GETucPatmoEE(void){
