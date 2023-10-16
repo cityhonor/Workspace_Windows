@@ -52,9 +52,9 @@ struct HFTel
 
 extern unsigned char ucTSSMsgManagerTM(unsigned char ucAction, unsigned char *ptData);
 
-extern void WrWnValidTMc(struct ParaSubSet *plptru8Data);
+extern void WrWnValidTMc(struct ParaSubSet *pucData);
 
-extern void RdWnValidTMc(struct ParaSubSet *plptru8Data);
+extern void RdWnValidTMc(struct ParaSubSet *pucData);
 
 struct TssMsg
 {

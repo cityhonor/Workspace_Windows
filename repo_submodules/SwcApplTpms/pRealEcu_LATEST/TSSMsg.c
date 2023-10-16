@@ -19,7 +19,7 @@ static void GenMsgForPosition(
 static void TSSMsgOut(
    const unsigned char* ptData);
 static unsigned char ucTSSMsgService(
-   unsigned char* plptru8Data);
+   unsigned char* pucData);
 static void TSSMsgInit(
    unsigned char* pucStatus,
    const unsigned char* pucIniDat);
@@ -242,21 +242,21 @@ static void TSSMsgOut(
 }
 
 static unsigned char ucTSSMsgService(
-   unsigned char* plptru8Data){
+   unsigned char* pucData){
    unsigned char i, ucRet = 0;
    struct TssMsg tMsg;
-   switch(*plptru8Data){
+   switch(*pucData){
       case (unsigned short) ucNewPositionsc: {
-         plptru8Data++;
+         pucData++;
          for(i = 0; i < ucSumWEc ; i++){
-            if(plptru8Data[i] >= ucWPSTc){
+            if(pucData[i] >= ucWPSTc){
                break;
             }
          }
          if(i == ucSumWEc){
             aucWPosTM[ucSumWEc ] = 0;
             for(i = 0; i < ucSumWEc ; i++){
-               aucWPosTM[i] = plptru8Data[i];
+               aucWPosTM[i] = pucData[i];
             }
             tMsg.ucId = ucSumWEc;
             tMsg.ucSystemState = ucPosDepWarnc;
@@ -287,7 +287,7 @@ static unsigned char ucTSSMsgService(
       }
          break;
       case (unsigned short) ucClearWarnOfIdc:
-         if(plptru8Data[1] == ucSumWEc){
+         if(pucData[1] == ucSumWEc){
             for(i = 0; i < (ucSumWEc + 1); i++){
                aucWPosTM[i] = ucWPUNc;
                aucWarnAtPosTM[i] = 0;
@@ -297,7 +297,7 @@ static unsigned char ucTSSMsgService(
             ucFilterActive = 0;
          }
          else{
-            i = plptru8Data[1];
+            i = pucData[1];
             if(i < (ucMaxPosc + 1)){
                if((ucFilIdWarn(
                   i,
@@ -331,9 +331,9 @@ static unsigned char ucTSSMsgService(
          ucRet = 0;
          break;
       case (unsigned short) ucPutWarnVectorSetc: {
-         plptru8Data++;
+         pucData++;
          for(i = 0; i < ucSumWEc ; i++){
-            aucWarnAtPosTM[i] = plptru8Data[i];
+            aucWarnAtPosTM[i] = pucData[i];
          }
       }
          break;
@@ -341,7 +341,7 @@ static unsigned char ucTSSMsgService(
          ucRet = ucFilterActive;
          ucFilterActive = 0;
          for(i = 0; i < ucSumWEc ; i++){
-            plptru8Data[i] = ucFilIdWarn(
+            pucData[i] = ucFilIdWarn(
                i,
                aucWPosTM[i]);
          }
@@ -351,21 +351,21 @@ static unsigned char ucTSSMsgService(
          break;
 
       case (unsigned short) ucGetPosOfIdc: {
-         if(plptru8Data[1] < ucSumWEc){
-            plptru8Data[0] = aucWPosTM[plptru8Data[1]];
+         if(pucData[1] < ucSumWEc){
+            pucData[0] = aucWPosTM[pucData[1]];
          }
          else{
-            plptru8Data[0] = ucSumWEc;
+            pucData[0] = ucSumWEc;
          }
          ucRet = 0;
       }
          break;
 
       case (unsigned short) ucGetIdcOfPos: {
-         plptru8Data[0] = ucSumWEc;
+         pucData[0] = ucSumWEc;
          for(i = 0; i < ucSumWEc ; i++){
-            if(plptru8Data[1] == aucWPosTM[i]){
-               plptru8Data[0] = i;
+            if(pucData[1] == aucWPosTM[i]){
+               pucData[0] = i;
             }
          }
          ucRet = 0;
@@ -459,11 +459,11 @@ unsigned char ucTSSMsgManagerTM(
 }
 
 void WrWnValidTMc(
-   struct ParaSubSet* plptru8Data){
-   if(plptru8Data->ucAccess == ucWrWnValidTMc){
-      if((aucWnValidTM[ucIxWnCfgc] != plptru8Data->ucParaByte[ucIxWnCfgc]) || (aucWnValidTM[ucIxMsCfgc] != plptru8Data->ucParaByte[ucIxMsCfgc])){
-         aucWnValidTM[ucIxWnCfgc] = plptru8Data->ucParaByte[ucIxWnCfgc];
-         aucWnValidTM[ucIxMsCfgc] = (plptru8Data->ucParaByte[ucIxMsCfgc] & 0x0FE);
+   struct ParaSubSet* pucData){
+   if(pucData->ucAccess == ucWrWnValidTMc){
+      if((aucWnValidTM[ucIxWnCfgc] != pucData->ucParaByte[ucIxWnCfgc]) || (aucWnValidTM[ucIxMsCfgc] != pucData->ucParaByte[ucIxMsCfgc])){
+         aucWnValidTM[ucIxWnCfgc] = pucData->ucParaByte[ucIxWnCfgc];
+         aucWnValidTM[ucIxMsCfgc] = (pucData->ucParaByte[ucIxMsCfgc] & 0x0FE);
          PutDataEE(
             ucCbIdTMc,
             aucWnValidTM);
@@ -472,11 +472,11 @@ void WrWnValidTMc(
 }
 
 void RdWnValidTMc(
-   struct ParaSubSet* plptru8Data){
-   if(plptru8Data->ucAccess == ucRdWnValidTMc){
-      plptru8Data->ucParaByte[ucIxWnCfgc] |= (aucWnValidTM[ucIxWnCfgc] & ucMsgMaskc);
-      plptru8Data->ucParaByte[ucIxMsCfgc] = 0;
-      plptru8Data->ucParaByte[ucIxMsCfgc] |= aucWnValidTM[ucIxMsCfgc];
+   struct ParaSubSet* pucData){
+   if(pucData->ucAccess == ucRdWnValidTMc){
+      pucData->ucParaByte[ucIxWnCfgc] |= (aucWnValidTM[ucIxWnCfgc] & ucMsgMaskc);
+      pucData->ucParaByte[ucIxMsCfgc] = 0;
+      pucData->ucParaByte[ucIxMsCfgc] |= aucWnValidTM[ucIxMsCfgc];
    }
 }
 

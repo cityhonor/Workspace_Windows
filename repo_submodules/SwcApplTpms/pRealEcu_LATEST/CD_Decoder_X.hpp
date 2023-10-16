@@ -118,7 +118,7 @@ typedef union prebuffer{
 }tPreBuf;
 
 typedef struct{
-  Type_SwcApplTpms_stTelegramWS RxDataIn;
+  tsWS_RxDataIn RxDataIn;
   unsigned short ushVehSpeed;
 }tRxRotatSBuf;
 

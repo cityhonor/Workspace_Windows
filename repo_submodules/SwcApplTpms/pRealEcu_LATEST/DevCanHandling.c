@@ -95,7 +95,7 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
 {
   if( DCH_ENABLE_CAN_DEBUG == DCH_IsCanDebugEnabled())
   { // if CAN Debug is already enabled, don't enter on "else if" anymore.
-   if(DCH_MULTIPLEX_ENABLED == (DCH_MULTIPLEX_ENABLED & sDebugCanMsgCfg->lptru8Data2) )
+   if(DCH_MULTIPLEX_ENABLED == (DCH_MULTIPLEX_ENABLED & sDebugCanMsgCfg->ucData2) )
    {
       DCH_EnableAllMutiplexMsg();
       DCH_U8_SubmultiplexesActive = DCH_ALL_SUBMULTIPLEXES_ACTIVE;
@@ -104,7 +104,7 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
       DCH_DisableAllMutiplexMsg();
    }
     // check second bit
-   if(( DCH_MULTIPLEX_ENABLED << 1 ) == ( ( DCH_MULTIPLEX_ENABLED << 1 ) & sDebugCanMsgCfg->lptru8Data2 ) )
+   if(( DCH_MULTIPLEX_ENABLED << 1 ) == ( ( DCH_MULTIPLEX_ENABLED << 1 ) & sDebugCanMsgCfg->ucData2 ) )
    {
       DCH_bEnableSingleMultiplexConfig = DCH_MULTIPLEX_ENABLED;
    }
@@ -112,7 +112,7 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
       DCH_bEnableSingleMultiplexConfig = DCH_MULTIPLEX_DISABLED;
    }
 
-   if(DCH_MULTIPLEX_ENABLED == (DCH_MULTIPLEX_ENABLED & (sDebugCanMsgCfg->lptru8Data3) ) )
+   if(DCH_MULTIPLEX_ENABLED == (DCH_MULTIPLEX_ENABLED & (sDebugCanMsgCfg->ucData3) ) )
    {
       DCH_BO_EnableContinousAPCReading = DCH_MULTIPLEX_ENABLED;
    }
@@ -121,7 +121,7 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
    }
 
     // check second bit
-   if(( DCH_MULTIPLEX_ENABLED << 1 ) == ( ( DCH_MULTIPLEX_ENABLED << 1 ) & sDebugCanMsgCfg->lptru8Data3 ) )
+   if(( DCH_MULTIPLEX_ENABLED << 1 ) == ( ( DCH_MULTIPLEX_ENABLED << 1 ) & sDebugCanMsgCfg->ucData3 ) )
    {
       DCH_bEnableDeveloperModeConfig = DCH_MULTIPLEX_ENABLED;
    }
@@ -129,7 +129,7 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
       DCH_bEnableDeveloperModeConfig = DCH_MULTIPLEX_DISABLED;
    }
 
-   if(DCH_MULTIPLEX_ENABLED == (DCH_MULTIPLEX_ENABLED & (sDebugCanMsgCfg->lptru8Data4) ) )
+   if(DCH_MULTIPLEX_ENABLED == (DCH_MULTIPLEX_ENABLED & (sDebugCanMsgCfg->ucData4) ) )
    {
       DCH_bEnableNvMAccess = DCH_MULTIPLEX_ENABLED;
    }
@@ -138,14 +138,14 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
    }
 
     // check second bit
-   if(( DCH_MULTIPLEX_ENABLED << 1 ) == ( ( DCH_MULTIPLEX_ENABLED << 1 ) & sDebugCanMsgCfg->lptru8Data4 ) )
+   if(( DCH_MULTIPLEX_ENABLED << 1 ) == ( ( DCH_MULTIPLEX_ENABLED << 1 ) & sDebugCanMsgCfg->ucData4 ) )
    {
       ResetHistoryToDefault();
    }
    else{
    }
   }
-  else if(DCH_CAN_DEBUG_ACTIVE == sDebugCanMsgCfg->lptru8Data1)
+  else if(DCH_CAN_DEBUG_ACTIVE == sDebugCanMsgCfg->ucData1)
   {
     DCH_bEnableCanDebugConfig = DCH_ENABLE_CAN_DEBUG;
   }
@@ -168,27 +168,27 @@ static void DCH_ActivateDebugCfg(const Type_SwcApplTpms_stMessageCan* sDebugCanM
 static void DCH_MultiplexMsgUpdate(const Type_SwcApplTpms_stMessageCan* sMultiplexCanMsgCfg)
 {
   uint8 SubMultiplexValue;
-  SubMultiplexValue = sMultiplexCanMsgCfg->lptru8Data1;
+  SubMultiplexValue = sMultiplexCanMsgCfg->ucData1;
   if( DCH_MULTIPLEX_ENABLED == DCH_bEnableSingleMultiplexConfig )
   {
    if( SubMultiplexValue <= DCH_SUB_MULTIPLEX_5_MSG )
    {
       if(DCH_SUB_MULTIPLEX_5_MSG == SubMultiplexValue)
       { // last message has only 2 bytes with values, the rest are blank
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[0] = sMultiplexCanMsgCfg->lptru8Data2;
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[1] = sMultiplexCanMsgCfg->lptru8Data3;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[0] = sMultiplexCanMsgCfg->ucData2;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[1] = sMultiplexCanMsgCfg->ucData3;
         DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[2] = 0x00;
         DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[3] = 0x00;
         DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[4] = 0x00;
         DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[5] = 0x00;
       }
       else{
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[0] = sMultiplexCanMsgCfg->lptru8Data2;
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[1] = sMultiplexCanMsgCfg->lptru8Data3;
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[2] = sMultiplexCanMsgCfg->lptru8Data4;
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[3] = sMultiplexCanMsgCfg->lptru8Data5;
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[4] = sMultiplexCanMsgCfg->lptru8Data6;
-        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[5] = sMultiplexCanMsgCfg->lptru8Data7;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[0] = sMultiplexCanMsgCfg->ucData2;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[1] = sMultiplexCanMsgCfg->ucData3;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[2] = sMultiplexCanMsgCfg->ucData4;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[3] = sMultiplexCanMsgCfg->ucData5;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[4] = sMultiplexCanMsgCfg->ucData6;
+        DCH_asMultiMsgPackageAct[SubMultiplexValue].au8_MsgActivationInfo[5] = sMultiplexCanMsgCfg->ucData7;
       }
    }
    else{// do nothing, out of array bounds, not a valid submultiplex value
@@ -259,7 +259,7 @@ static void DCH_NvMReadWriteDebugHandling(const Type_SwcApplTpms_stMessageCan* s
 {
   if( DCH_MULTIPLEX_ENABLED == DCH_bEnableNvMAccess )
   {
-   switch(sMultiplexCanNvMCfg->lptru8Data1 )
+   switch(sMultiplexCanNvMCfg->ucData1 )
    {
       case DCH_NVM_READ_CMD:
         DCH_DebugNvMRead(sMultiplexCanNvMCfg);
@@ -296,8 +296,8 @@ static void DCH_DebugNvMRead(const Type_SwcApplTpms_stMessageCan* CanDebugNvmRea
   uint8 u8_LocalData[sizeof(NVM_BLOCK_TYPE)];
   uint8 U8_ReadSuccessful;
   NVM_BLOCK_TYPE l_ulTemp;
-  u8_GlobBlockNr = CanDebugNvmRead->lptru8Data2;
-//  u8_Length      = CanDebugNvmRead->lptru8Data3;
+  u8_GlobBlockNr = CanDebugNvmRead->ucData2;
+//  u8_Length      = CanDebugNvmRead->ucData3;
   U8_ReadSuccessful = ClientIf_NvM_ReadBlock(u8_GlobBlockNr, 1, &l_ulTemp);
 
   if( 0 == U8_ReadSuccessful)
@@ -306,23 +306,23 @@ static void DCH_DebugNvMRead(const Type_SwcApplTpms_stMessageCan* CanDebugNvmRea
    u8_LocalData[1]  = (uint8)((l_ulTemp >> 16U) & 0xFFU);
    u8_LocalData[2]  = (uint8)((l_ulTemp >>  8U) & 0xFFU);
    u8_LocalData[3]  = (uint8)((l_ulTemp >>  0U) & 0xFFU);  /* LSB */
-    DCH_NvMReadWritteResponse.lptru8Data1 = DCH_CAN_DBG_POS_RESP_READ;  //CanDebugNvmRead->lptru8Data1;
+    DCH_NvMReadWritteResponse.ucData1 = DCH_CAN_DBG_POS_RESP_READ;  //CanDebugNvmRead->ucData1;
   }
   else{
    u8_LocalData[0]  = 0;  /* MSB */
    u8_LocalData[1]  = 0;
    u8_LocalData[2]  = 0;
    u8_LocalData[3]  = 0;  /* LSB */
-    DCH_NvMReadWritteResponse.lptru8Data1 = DCH_CAN_DBG_NEG_RESP;  //CanDebugNvmRead->lptru8Data1;
+    DCH_NvMReadWritteResponse.ucData1 = DCH_CAN_DBG_NEG_RESP;  //CanDebugNvmRead->ucData1;
   }
 
-  DCH_NvMReadWritteResponse.lptru8Data0 = CanDebugNvmRead->lptru8Data0; /* MSB */
-  DCH_NvMReadWritteResponse.lptru8Data2 = CanDebugNvmRead->lptru8Data2;
-  DCH_NvMReadWritteResponse.lptru8Data3 = CanDebugNvmRead->lptru8Data3; /* LSB */
-  DCH_NvMReadWritteResponse.lptru8Data4 = u8_LocalData[0];
-  DCH_NvMReadWritteResponse.lptru8Data5 = u8_LocalData[1];
-  DCH_NvMReadWritteResponse.lptru8Data6 = u8_LocalData[2];
-  DCH_NvMReadWritteResponse.lptru8Data7 = u8_LocalData[3];
+  DCH_NvMReadWritteResponse.ucData0 = CanDebugNvmRead->ucData0; /* MSB */
+  DCH_NvMReadWritteResponse.ucData2 = CanDebugNvmRead->ucData2;
+  DCH_NvMReadWritteResponse.ucData3 = CanDebugNvmRead->ucData3; /* LSB */
+  DCH_NvMReadWritteResponse.ucData4 = u8_LocalData[0];
+  DCH_NvMReadWritteResponse.ucData5 = u8_LocalData[1];
+  DCH_NvMReadWritteResponse.ucData6 = u8_LocalData[2];
+  DCH_NvMReadWritteResponse.ucData7 = u8_LocalData[3];
 }
 
 /*!************************************************************************************************
@@ -347,8 +347,8 @@ static void DCH_DebugNvMWrite(const Type_SwcApplTpms_stMessageCan* CanDebugNvmWr
   NVM_BLOCK_TYPE U32_Block;
   NVM_BLOCK_TYPE NVM_TempReadData;
 
-  U8_GlobBlockNr = CanDebugNvmWrite->lptru8Data2;
-  U8_BytesToWrite = CanDebugNvmWrite->lptru8Data3;
+  U8_GlobBlockNr = CanDebugNvmWrite->ucData2;
+  U8_BytesToWrite = CanDebugNvmWrite->ucData3;
 
   U8_ReadWriteSuccessful = ClientIf_NvM_ReadBlock(U8_GlobBlockNr,1,&NVM_TempReadData);
   U8_TempReadDataFromNvm[0]  = (uint8)((NVM_TempReadData >> 24U) & 0xFFU);
@@ -362,7 +362,7 @@ static void DCH_DebugNvMWrite(const Type_SwcApplTpms_stMessageCan* CanDebugNvmWr
   {
    if((( U8_BytesToWrite >> 0) & 1U) == 1U)
    {
-      U8_WriteData[0] = CanDebugNvmWrite->lptru8Data4;
+      U8_WriteData[0] = CanDebugNvmWrite->ucData4;
    }
    else{
       U8_WriteData[0] = U8_TempReadDataFromNvm[0];
@@ -370,7 +370,7 @@ static void DCH_DebugNvMWrite(const Type_SwcApplTpms_stMessageCan* CanDebugNvmWr
 
    if((( U8_BytesToWrite >> 1) & 1U) == 1U)
    {
-      U8_WriteData[1]    = CanDebugNvmWrite->lptru8Data5;
+      U8_WriteData[1]    = CanDebugNvmWrite->ucData5;
    }
    else{
       U8_WriteData[1] = U8_TempReadDataFromNvm[1];
@@ -378,7 +378,7 @@ static void DCH_DebugNvMWrite(const Type_SwcApplTpms_stMessageCan* CanDebugNvmWr
 
    if((( U8_BytesToWrite >> 2) & 1U) == 1U)
    {
-      U8_WriteData[2]    = CanDebugNvmWrite->lptru8Data6;
+      U8_WriteData[2]    = CanDebugNvmWrite->ucData6;
    }
    else{
       U8_WriteData[2] = U8_TempReadDataFromNvm[2];
@@ -386,7 +386,7 @@ static void DCH_DebugNvMWrite(const Type_SwcApplTpms_stMessageCan* CanDebugNvmWr
 
    if((( U8_BytesToWrite >> 3) & 1U) == 1U)
    {
-      U8_WriteData[3]    = CanDebugNvmWrite->lptru8Data7;
+      U8_WriteData[3]    = CanDebugNvmWrite->ucData7;
    }
    else{
       U8_WriteData[3] = U8_TempReadDataFromNvm[3];
@@ -406,21 +406,21 @@ static void DCH_DebugNvMWrite(const Type_SwcApplTpms_stMessageCan* CanDebugNvmWr
                (((NVM_BLOCK_TYPE)U8_WriteData[3] <<  0U) & 0x000000FFU)  );
   U8_ReadWriteSuccessful |= ClientIf_NvM_WriteBlock (U8_GlobBlockNr, 1, &U32_Block);
 
-  DCH_NvMReadWritteResponse.lptru8Data0 = CanDebugNvmWrite->lptru8Data0;
+  DCH_NvMReadWritteResponse.ucData0 = CanDebugNvmWrite->ucData0;
 
   if( 0 == U8_ReadWriteSuccessful )
   {
-    DCH_NvMReadWritteResponse.lptru8Data1 = DCH_CAN_DBG_POS_RESP_WRITE;  //CanDebugNvmRead->lptru8Data1;
+    DCH_NvMReadWritteResponse.ucData1 = DCH_CAN_DBG_POS_RESP_WRITE;  //CanDebugNvmRead->ucData1;
   }
   else{
-    DCH_NvMReadWritteResponse.lptru8Data1 = DCH_CAN_DBG_NEG_RESP;  //CanDebugNvmRead->lptru8Data1;
+    DCH_NvMReadWritteResponse.ucData1 = DCH_CAN_DBG_NEG_RESP;  //CanDebugNvmRead->ucData1;
   }
-  DCH_NvMReadWritteResponse.lptru8Data2 = CanDebugNvmWrite->lptru8Data2;
-  DCH_NvMReadWritteResponse.lptru8Data3 = CanDebugNvmWrite->lptru8Data3;
-  DCH_NvMReadWritteResponse.lptru8Data4 = U8_WriteData[0];
-  DCH_NvMReadWritteResponse.lptru8Data5 = U8_WriteData[1];
-  DCH_NvMReadWritteResponse.lptru8Data6 = U8_WriteData[2];
-  DCH_NvMReadWritteResponse.lptru8Data7 = U8_WriteData[3];
+  DCH_NvMReadWritteResponse.ucData2 = CanDebugNvmWrite->ucData2;
+  DCH_NvMReadWritteResponse.ucData3 = CanDebugNvmWrite->ucData3;
+  DCH_NvMReadWritteResponse.ucData4 = U8_WriteData[0];
+  DCH_NvMReadWritteResponse.ucData5 = U8_WriteData[1];
+  DCH_NvMReadWritteResponse.ucData6 = U8_WriteData[2];
+  DCH_NvMReadWritteResponse.ucData7 = U8_WriteData[3];
 }
 
 boolean DCH_IsCanDebugEnabled(void){
@@ -462,10 +462,10 @@ uint8 DCH_MultiplexMsgGetActiveStatus(uint8 ui8_MultiplexNr)
 void DCH_CheckCanDebugRequest(const Type_SwcApplTpms_stMessageCan* CanDebugRequestMsg)
 {
   // store first 2 values for response
-  DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX] = CanDebugRequestMsg->lptru8Data0;
-  DCH_au8CurrentConfigMsg[DCH_SUB_MULTIPLEX_INDEX] = CanDebugRequestMsg->lptru8Data1;
+  DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX] = CanDebugRequestMsg->ucData0;
+  DCH_au8CurrentConfigMsg[DCH_SUB_MULTIPLEX_INDEX] = CanDebugRequestMsg->ucData1;
 
-  switch(CanDebugRequestMsg->lptru8Data0 )
+  switch(CanDebugRequestMsg->ucData0 )
   {
    case DCH_DEBUG_CFG:
       DCH_ActivateDebugCfg(CanDebugRequestMsg);
@@ -473,9 +473,9 @@ void DCH_CheckCanDebugRequest(const Type_SwcApplTpms_stMessageCan* CanDebugReque
 
    case DCH_DEBUG_CYC:
       DCH_MultiplexMsgUpdate(CanDebugRequestMsg);
-      if( CanDebugRequestMsg->lptru8Data1 < 8)
+      if( CanDebugRequestMsg->ucData1 < 8)
       {
-        DCH_U8_SubmultiplexesActive |= ( DCH_U8_MAXSIZE_MASK & ( DCH_MULTIPLEX_ENABLED << CanDebugRequestMsg->lptru8Data1) );
+        DCH_U8_SubmultiplexesActive |= ( DCH_U8_MAXSIZE_MASK & ( DCH_MULTIPLEX_ENABLED << CanDebugRequestMsg->ucData1) );
       }
       else{
         //not a valid submultiplex, don't count
@@ -516,14 +516,14 @@ void DCH_GetCanDebugResponseData(Type_SwcApplTpms_stMessageCan* CanDebugResponse
       else{
         LocalResponseValue = DCH_CAN_DBG_NEG_RESP;
       }
-      CanDebugResponseMsg->lptru8Data0 = DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX];
-      CanDebugResponseMsg->lptru8Data1 = LocalResponseValue;
-      CanDebugResponseMsg->lptru8Data2 = 0x00;
-      CanDebugResponseMsg->lptru8Data3 = 0x00;
-      CanDebugResponseMsg->lptru8Data4 = 0x00;
-      CanDebugResponseMsg->lptru8Data5 = 0x00;
-      CanDebugResponseMsg->lptru8Data6 = 0x00;
-      CanDebugResponseMsg->lptru8Data7 = 0x00;
+      CanDebugResponseMsg->ucData0 = DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX];
+      CanDebugResponseMsg->ucData1 = LocalResponseValue;
+      CanDebugResponseMsg->ucData2 = 0x00;
+      CanDebugResponseMsg->ucData3 = 0x00;
+      CanDebugResponseMsg->ucData4 = 0x00;
+      CanDebugResponseMsg->ucData5 = 0x00;
+      CanDebugResponseMsg->ucData6 = 0x00;
+      CanDebugResponseMsg->ucData7 = 0x00;
    break;
 
    case DCH_SUB_MULTIPLEX_1_MSG:
@@ -536,36 +536,36 @@ void DCH_GetCanDebugResponseData(Type_SwcApplTpms_stMessageCan* CanDebugResponse
         LocalResponseValue = DCH_CAN_DBG_NEG_RESP;
       }
 
-      CanDebugResponseMsg->lptru8Data0 = DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX];
-      CanDebugResponseMsg->lptru8Data1 = LocalResponseValue;
-      CanDebugResponseMsg->lptru8Data2 = 0x00;
-      CanDebugResponseMsg->lptru8Data3 = 0x00;
-      CanDebugResponseMsg->lptru8Data4 = 0x00;
-      CanDebugResponseMsg->lptru8Data5 = 0x00;
-      CanDebugResponseMsg->lptru8Data6 = 0x00;
-      CanDebugResponseMsg->lptru8Data7 = 0x00;
+      CanDebugResponseMsg->ucData0 = DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX];
+      CanDebugResponseMsg->ucData1 = LocalResponseValue;
+      CanDebugResponseMsg->ucData2 = 0x00;
+      CanDebugResponseMsg->ucData3 = 0x00;
+      CanDebugResponseMsg->ucData4 = 0x00;
+      CanDebugResponseMsg->ucData5 = 0x00;
+      CanDebugResponseMsg->ucData6 = 0x00;
+      CanDebugResponseMsg->ucData7 = 0x00;
    break;
 
    case DCH_SUB_MULTIPLEX_2_MSG:
-      CanDebugResponseMsg->lptru8Data0 = DCH_NvMReadWritteResponse.lptru8Data0;
-      CanDebugResponseMsg->lptru8Data1 = DCH_NvMReadWritteResponse.lptru8Data1;
-      CanDebugResponseMsg->lptru8Data2 = DCH_NvMReadWritteResponse.lptru8Data2;
-      CanDebugResponseMsg->lptru8Data3 = DCH_NvMReadWritteResponse.lptru8Data3;
-      CanDebugResponseMsg->lptru8Data4 = DCH_NvMReadWritteResponse.lptru8Data4;
-      CanDebugResponseMsg->lptru8Data5 = DCH_NvMReadWritteResponse.lptru8Data5;
-      CanDebugResponseMsg->lptru8Data6 = DCH_NvMReadWritteResponse.lptru8Data6;
-      CanDebugResponseMsg->lptru8Data7 = DCH_NvMReadWritteResponse.lptru8Data7;
+      CanDebugResponseMsg->ucData0 = DCH_NvMReadWritteResponse.ucData0;
+      CanDebugResponseMsg->ucData1 = DCH_NvMReadWritteResponse.ucData1;
+      CanDebugResponseMsg->ucData2 = DCH_NvMReadWritteResponse.ucData2;
+      CanDebugResponseMsg->ucData3 = DCH_NvMReadWritteResponse.ucData3;
+      CanDebugResponseMsg->ucData4 = DCH_NvMReadWritteResponse.ucData4;
+      CanDebugResponseMsg->ucData5 = DCH_NvMReadWritteResponse.ucData5;
+      CanDebugResponseMsg->ucData6 = DCH_NvMReadWritteResponse.ucData6;
+      CanDebugResponseMsg->ucData7 = DCH_NvMReadWritteResponse.ucData7;
    break;
 
     default:
-      CanDebugResponseMsg->lptru8Data0 = DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX];
-      CanDebugResponseMsg->lptru8Data1 = DCH_CAN_DBG_NEG_RESP;
-      CanDebugResponseMsg->lptru8Data2 = 0x00;
-      CanDebugResponseMsg->lptru8Data3 = 0x00;
-      CanDebugResponseMsg->lptru8Data4 = 0x00;
-      CanDebugResponseMsg->lptru8Data5 = 0x00;
-      CanDebugResponseMsg->lptru8Data6 = 0x00;
-      CanDebugResponseMsg->lptru8Data7 = 0x00;
+      CanDebugResponseMsg->ucData0 = DCH_au8CurrentConfigMsg[DCH_MULTIPLEX_INDEX];
+      CanDebugResponseMsg->ucData1 = DCH_CAN_DBG_NEG_RESP;
+      CanDebugResponseMsg->ucData2 = 0x00;
+      CanDebugResponseMsg->ucData3 = 0x00;
+      CanDebugResponseMsg->ucData4 = 0x00;
+      CanDebugResponseMsg->ucData5 = 0x00;
+      CanDebugResponseMsg->ucData6 = 0x00;
+      CanDebugResponseMsg->ucData7 = 0x00;
    break;
   }
 }

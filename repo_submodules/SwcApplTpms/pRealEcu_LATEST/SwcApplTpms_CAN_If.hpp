@@ -21,13 +21,13 @@
 #define RECEIVE_ABSPULSE_SUBSTVAL                                  ((uint8)0xFF)
 
 typedef union{
-   Type_SwcApplTpms_stPressure                  sHMI;
-   Type_SwcApplTpms_stTempAndRefPress     sHMI_Temperature_RefPres;
+   CAN_HMI_type                  sHMI;
+   tsHMI_Temperature_RefPres     sHMI_Temperature_RefPres;
    Type_SwcApplTpms_stMessageCan sMsgsBytes;
 }tuCAN_HMI_Data;
 
 typedef union{
-   Type_SwcApplTpms_stIdSoftware     sTPMS_Software_ID;
+   CAN_TPMS_Software_ID_type     sTPMS_Software_ID;
    Type_SwcApplTpms_stMessageCan sMsgsBytes;
 }tuCAN_TPMS_Software_ID_Data;
 
