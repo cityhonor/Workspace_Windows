@@ -353,7 +353,7 @@ uint8* PRODFLASH_GetGenealogyBlockStartAddress(void){
   return (uint8*)DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index18_RivianGenealogyVersion;
 }
 
-uint8 PRODFLASH_GetCustomerHwPartNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetCustomerHwPartNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8* pHwPartNumber;
@@ -371,13 +371,13 @@ uint8 PRODFLASH_GetCustomerHwPartNumber(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = pHwPartNumber[ucCounter];
+   ucData[ucCounter] = pHwPartNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetCustomerEcuPartNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetCustomerEcuPartNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8* pEcuPartNumber;
@@ -395,13 +395,13 @@ uint8 PRODFLASH_GetCustomerEcuPartNumber(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = pEcuPartNumber[ucCounter];
+   ucData[ucCounter] = pEcuPartNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetCustomerEcuSerialNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetCustomerEcuSerialNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -410,20 +410,20 @@ uint8 PRODFLASH_GetCustomerEcuSerialNumber(uint8* lptru8Data)
 
   for(ucCounter = 0u; ucCounter < 10; ucCounter++)
   {
-   lptru8Data[ucCounter] = 0xff;
+   ucData[ucCounter] = 0xff;
   }
 
-  lptru8Data[10] = 0x30;
+  ucData[10] = 0x30;
 
   for(ucCounter = 11U; ucCounter < 20; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index11_CustomerECUSerialNumber[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index11_CustomerECUSerialNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetVin(uint8* lptru8Data)
+uint8 PRODFLASH_GetVin(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -432,13 +432,13 @@ uint8 PRODFLASH_GetVin(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index16_RivianVIN[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index16_RivianVIN[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetEcuProgramFingerprintApplication(uint8* lptru8Data)
+uint8 PRODFLASH_GetEcuProgramFingerprintApplication(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -446,18 +446,18 @@ uint8 PRODFLASH_GetEcuProgramFingerprintApplication(uint8* lptru8Data)
   ucSize = sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index12_RivianApplSwFpTesterSerialNo);
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index12_RivianApplSwFpTesterSerialNo[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index12_RivianApplSwFpTesterSerialNo[ucCounter];
   }
 
   ucSize += sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index13_RivianApplSwFpProgrammingDate);
   for(ucCounter = ucCounter; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index13_RivianApplSwFpProgrammingDate[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index13_RivianApplSwFpProgrammingDate[ucCounter];
   }
   return ucSize;
 }
 
-uint8 PRODFLASH_GetEcuProgramFingerprintBootloader(uint8* lptru8Data)
+uint8 PRODFLASH_GetEcuProgramFingerprintBootloader(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -465,18 +465,18 @@ uint8 PRODFLASH_GetEcuProgramFingerprintBootloader(uint8* lptru8Data)
   ucSize = sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index14_RivianBlFpTesterSerialNo);
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index14_RivianBlFpTesterSerialNo[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index14_RivianBlFpTesterSerialNo[ucCounter];
   }
 
   ucSize += sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index15_RivianBlFpProgrammingDate);
   for(ucCounter = ucCounter; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index15_RivianBlFpProgrammingDate[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index15_RivianBlFpProgrammingDate[ucCounter];
   }
   return ucSize;
 }
 
-uint8 PRODFLASH_GetRivianEcuSerialNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetRivianEcuSerialNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -485,13 +485,13 @@ uint8 PRODFLASH_GetRivianEcuSerialNumber(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index26_RivianEcuSerialNumber[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index26_RivianEcuSerialNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetRivianBoardSerialNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetRivianBoardSerialNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -500,13 +500,13 @@ uint8 PRODFLASH_GetRivianBoardSerialNumber(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index24_RivianBoardSerialNumber[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index24_RivianBoardSerialNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetRivianEcuPartNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetRivianEcuPartNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -515,13 +515,13 @@ uint8 PRODFLASH_GetRivianEcuPartNumber(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index25_RivianEcuPartNumber[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index25_RivianEcuPartNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetRivianBoardPartNumber(uint8* lptru8Data)
+uint8 PRODFLASH_GetRivianBoardPartNumber(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -530,13 +530,13 @@ uint8 PRODFLASH_GetRivianBoardPartNumber(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index23_RivianBoardPartNumber[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index23_RivianBoardPartNumber[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetManufacturingSupportMode(uint8* lptru8Data)
+uint8 PRODFLASH_GetManufacturingSupportMode(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -545,13 +545,13 @@ uint8 PRODFLASH_GetManufacturingSupportMode(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index17_RivianManufSuppMode[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index17_RivianManufSuppMode[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetApplicationSignature(uint8* lptru8Data)
+uint8 PRODFLASH_GetApplicationSignature(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -560,13 +560,13 @@ uint8 PRODFLASH_GetApplicationSignature(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index27_RivianApplicationSignature[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index27_RivianApplicationSignature[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetGenealogyCrc32(uint8* lptru8Data)
+uint8 PRODFLASH_GetGenealogyCrc32(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -575,13 +575,13 @@ uint8 PRODFLASH_GetGenealogyCrc32(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index28_RivianGenealogyCrc32[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index28_RivianGenealogyCrc32[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetGenealogyVersion(uint8* lptru8Data)
+uint8 PRODFLASH_GetGenealogyVersion(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -590,13 +590,13 @@ uint8 PRODFLASH_GetGenealogyVersion(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index18_RivianGenealogyVersion[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index18_RivianGenealogyVersion[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetPcbaId(uint8* lptru8Data)
+uint8 PRODFLASH_GetPcbaId(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -605,13 +605,13 @@ uint8 PRODFLASH_GetPcbaId(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index20_RivianPcbaId[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index20_RivianPcbaId[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetAuxId(uint8* lptru8Data)
+uint8 PRODFLASH_GetAuxId(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -620,13 +620,13 @@ uint8 PRODFLASH_GetAuxId(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index21_RivianAuxId[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index21_RivianAuxId[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetComponentId(uint8* lptru8Data)
+uint8 PRODFLASH_GetComponentId(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -635,13 +635,13 @@ uint8 PRODFLASH_GetComponentId(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index19_RivianComponentId[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index19_RivianComponentId[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetModeId(uint8* lptru8Data)
+uint8 PRODFLASH_GetModeId(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -650,13 +650,13 @@ uint8 PRODFLASH_GetModeId(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index22_RivianModeId[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index22_RivianModeId[ucCounter];
   }
 
   return ucSize;
 }
 
-uint8 PRODFLASH_GetEolCheckerByte(uint8* lptru8Data)
+uint8 PRODFLASH_GetEolCheckerByte(uint8* ucData)
 {
   uint8 ucCounter;
   uint8 ucSize;
@@ -665,33 +665,33 @@ uint8 PRODFLASH_GetEolCheckerByte(uint8* lptru8Data)
 
   for(ucCounter = 0U; ucCounter < ucSize; ucCounter++)
   {
-   lptru8Data[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index29_BHSENSEolCheckerByte[ucCounter];
+   ucData[ucCounter] = DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index29_BHSENSEolCheckerByte[ucCounter];
   }
 
   return ucSize;
 }
 
 void PRODFLASH_PutRivianEcuPartNumber(
-   const uint8* lptru8Data){
-  PRODFLASH__WriteProductionDataMember(DCM__E_RIVIAN_ECU_PART_NUMBER, lptru8Data, sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index25_RivianEcuPartNumber));
+   const uint8* ucData){
+  PRODFLASH__WriteProductionDataMember(DCM__E_RIVIAN_ECU_PART_NUMBER, ucData, sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index25_RivianEcuPartNumber));
 }
 
-void PRODFLASH_PutVin(const uint8* lptru8Data)
+void PRODFLASH_PutVin(const uint8* ucData)
 {
-  PRODFLASH__WriteProductionDataMember(DCM__E_RIVIAN_VIN, lptru8Data, sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index16_RivianVIN));
+  PRODFLASH__WriteProductionDataMember(DCM__E_RIVIAN_VIN, ucData, sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index16_RivianVIN));
 }
 
-void PRODFLASH_PutManufacturingSupportMode(const uint8* lptru8Data)
+void PRODFLASH_PutManufacturingSupportMode(const uint8* ucData)
 {
-  PRODFLASH__WriteProductionDataMember(DCM__E_RIVIAN_MANUF_SUPP_MODE, &lptru8Data[0], sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index17_RivianManufSuppMode));
+  PRODFLASH__WriteProductionDataMember(DCM__E_RIVIAN_MANUF_SUPP_MODE, &ucData[0], sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index17_RivianManufSuppMode));
 }
 
-void PRODFLASH_PutEolCheckerByte(const uint8* lptru8Data)
+void PRODFLASH_PutEolCheckerByte(const uint8* ucData)
 {
-  PRODFLASH__WriteProductionDataMember(DCM__E_BHSENS_EOL_CHECKER_BYTE, &lptru8Data[0], sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index29_BHSENSEolCheckerByte));
+  PRODFLASH__WriteProductionDataMember(DCM__E_BHSENS_EOL_CHECKER_BYTE, &ucData[0], sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index29_BHSENSEolCheckerByte));
 }
 
-void PRODFLASH_PutApplicationChecksum(const uint8* lptru8Data)
+void PRODFLASH_PutApplicationChecksum(const uint8* ucData)
 {
-  PRODFLASH__WriteProductionDataMember(DCM__E_APPLICATION_CHECKSUM, &lptru8Data[0], sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index31_ApplicationChecksum));
+  PRODFLASH__WriteProductionDataMember(DCM__E_APPLICATION_CHECKSUM, &ucData[0], sizeof(DCM__UN_ProductionDataFlash.Struct_Split_Production_Data.AU8_Index31_ApplicationChecksum));
 }
