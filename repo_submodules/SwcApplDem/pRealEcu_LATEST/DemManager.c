@@ -13,7 +13,7 @@
 #include "Dem.hpp"
 #include "Fee_30_SmallSector.hpp"
 #include "AdcX.hpp"
-#include "version.hpp"
+#include "CfgSwcServiceStartUp.hpp"
 #include "rba_DiagLib.hpp"
 
 typedef void (* DemMGR_SignalMonitorFunction) (void);
@@ -285,9 +285,9 @@ static void DemMGR_CheckEcuIdentificationAndApplMemory(void){
   if(ucBuffer[0] == 0xff)
   {
    ushChecksumCalculated = 0;
-   ushChecksumRead = *(uint16*)(cAPPLICATION_END_ADDRESS-1);
+   ushChecksumRead = *(uint16*)(CfgSwcServiceStartUp_dAddressApplicationEnd-1);
 
-   for(i = cAPPLICATION_START_ADDRESS; i<(cAPPLICATION_END_ADDRESS-1); i++)
+   for(i = CfgSwcServiceStartUp_dAddressApplicationStart; i<(CfgSwcServiceStartUp_dAddressApplicationEnd-1); i++)
    {
       ushChecksumCalculated += *(uint8*)i;
    }
