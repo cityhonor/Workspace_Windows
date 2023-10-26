@@ -81,19 +81,36 @@ typedef struct{
    Type_infSwcApplTpmsAra_stStatusEventDtc         astListStatusEventDtc[CfgSwcApplTpms_dNumberStatusEventDtc];
 }Type_infSwcApplTpmsAra_stSenders;
 
+typedef enum{
+      infSwcApplTpmsAra_eStatusApi_OK
+   ,  infSwcApplTpmsAra_eStatusApi_NOK
+}Type_infSwcApplTpmsAra_eStatusApi;
+
 typedef struct{
+   FUNC(void, SWCAPPLTPMS_CODE) (*get_altitude)(
+         CONSTP2VAR(Type_infAraSwcApplTpms_eQualitySignal,     SWCAPPLTPMS_APPL_DATA, AUTOMATIC) lptreQualitySignal
+      ,  CONSTP2VAR(Type_System_tDistance_m_f32,               SWCAPPLTPMS_APPL_DATA, AUTOMATIC) lptrtAltitude
+      ,  CONSTP2VAR(Type_System_tDistance_m_f32,               SWCAPPLTPMS_APPL_DATA, AUTOMATIC) lptrtErrorAltitude
+   );
+
+   FUNC(void, SWCAPPLTPMS_CODE) (*get_atmospheric_pressure)(
+         CONSTP2VAR(Type_infAraSwcApplTpms_eQualitySignal,     SWCAPPLTPMS_APPL_DATA, AUTOMATIC) lptreQualitySignal
+      ,  CONSTP2VAR(Type_System_tPressure_mbar_u16,            SWCAPPLTPMS_APPL_DATA, AUTOMATIC) lptrtPressureAtmospheric
+   );
+
+   FUNC(Type_infSwcApplTpmsAra_eStatusApi, SWCAPPLTPMS_CODE) (*get_rdci_coding_parameters)(
+      CONSTP2VAR(Type_infAraSwcApplTpms_stParameterCodingTpms, SWCAPPLTPMS_APPL_DATA, AUTOMATIC) lcptrstParameterCodingTpms
+   );
+
    void                                  (*get_vehicle_state            )(Type_infAraSwcApplTpms_eQualitySignal*           const, Type_infAraSwcApplTpms_eStateVehicle*  const              );
    void                                  (*get_vehicle_velocity         )(Type_infAraSwcApplTpms_eQualitySignal*           const, uint16*                                const              );
    void                                  (*get_odometer                 )(Type_infAraSwcApplTpms_eQualitySignal*           const, uint32*                                const              );
    void                                  (*get_air_temperature          )(Type_infAraSwcApplTpms_eQualitySignal*           const, sint16*                                const              );
    void                                  (*get_date_and_time            )(Type_infAraSwcApplTpms_eQualitySignal*           const, Type_infAraSwcApplTpms_stDateAndTime*  const              );
-   void                                  (*get_atmospheric_pressure     )(Type_infAraSwcApplTpms_eQualitySignal*           const, uint16*                                const              );
    void                                  (*get_relative_time            )(Type_infAraSwcApplTpms_eQualitySignal*           const, uint32*                                const              );
-   void                                  (*get_altitude                 )(Type_infAraSwcApplTpms_eQualitySignal*           const, float*                                 const, float* const);
    void                                  (*get_vehicle_gear             )(Type_infAraSwcApplTpms_eQualitySignal*           const, Type_infAraSwcApplTpms_eGearVehicle*   const              );
    Type_infAraSwcApplTpms_eStatusNetwork (*get_network_status           )(void                                                                                                              );
    uint8                                 (*get_network_dtc_suppression  )(void                                                                                                              );
-   uint8                                 (*get_rdci_coding_parameters   )(Type_infAraSwcApplTpms_stParameterCodingTpms*                                                                     );
    void                                  (*set_check_control_message    )(Type_infSwcApplTpmsAra_stCcm*                    const                                                            );
    void                                  (*set_tyre_current_data        )(Type_infSwcApplTpmsAra_stPressure*               const, Type_infSwcApplTpmsAra_stTemperature*  const              );
    void                                  (*set_tyre_target_pressures    )(Type_infSwcApplTpmsAra_stPressure*               const                                                            );
