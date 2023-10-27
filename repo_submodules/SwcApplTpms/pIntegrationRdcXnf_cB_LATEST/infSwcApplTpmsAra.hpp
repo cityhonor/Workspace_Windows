@@ -84,6 +84,7 @@ typedef struct{
 typedef enum{
       infSwcApplTpmsAra_eStatusApi_OK
    ,  infSwcApplTpmsAra_eStatusApi_NOK
+   ,  infSwcApplTpmsAra_eStatusApi_PENDING = 10u
 }Type_infSwcApplTpmsAra_eStatusApi;
 
 typedef struct{
