@@ -63,8 +63,8 @@ LOCAL FUNC(void, RESIM_CODE) receive_altitude(
    ,  CONSTP2VAR(Type_System_tDistance_m_f32,           RESIM_APPL_DATA, AUTOMATIC) lptrtErrorAltitude
 ){
    *lptreQualitySignal = infAraSwcApplTpms_eQualitySignal_INVALID;
-   *lptrtAltitude      = CompuMethod_Distance_m(Default_infAraSwcApplTpms_Altitude);
-   *lptrtErrorAltitude = CompuMethod_Distance_m(Default_infAraSwcApplTpms_ErrorAltitude);
+   *lptrtAltitude      = CompuMethod_Distance_m_f32(Default_infAraSwcApplTpms_Altitude);
+   *lptrtErrorAltitude = CompuMethod_Distance_m_f32(Default_infAraSwcApplTpms_ErrorAltitude);
 }
 
 LOCAL FUNC(void, RESIM_CODE) receive_atmospheric_pressure(
@@ -72,7 +72,7 @@ LOCAL FUNC(void, RESIM_CODE) receive_atmospheric_pressure(
    ,  CONSTP2VAR(Type_System_tPressure_mbar_u16,        RESIM_APPL_DATA, AUTOMATIC) lptrtPressureAtmospheric
 ){
    *lptreQualitySignal       = infAraSwcApplTpms_eQualitySignal_INVALID;
-   *lptrtPressureAtmospheric = CompuMethod_Pressure_mbar(Default_infAraSwcApplTpms_PressureAtmospheric);
+   *lptrtPressureAtmospheric = CompuMethod_Pressure_mbar_u16(Default_infAraSwcApplTpms_PressureAtmospheric);
 }
 
 LOCAL FUNC(Type_infSwcApplTpmsAra_eStatusApi, RESIM_CODE) receive_rdci_coding_parameters(
