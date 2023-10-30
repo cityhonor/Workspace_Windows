@@ -226,3 +226,18 @@
 [submodule "repo_projects/pIntegrationRdcXnf"]
 	path = repo_projects/pIntegrationRdcXnf
 	url = https://github.com/NagarajaHuliyapuradaMata/pIntegrationRdcXnf.git
+[submodule "repo_submodules/ReSimVehicle"]
+	path = repo_submodules/ReSimVehicle
+	url = https://github.com/NagarajaHuliyapuradaMata/ReSimVehicle.git
+[submodule "repo_submodules/SwcApplDcm"]
+	path = repo_submodules/SwcApplDcm
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplDcm.git
+[submodule "repo_submodules/SwcApplDem"]
+	path = repo_submodules/SwcApplDem
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplDem.git
+[submodule "repo_submodules/SwcApplNvM"]
+	path = repo_submodules/SwcApplNvM
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplNvM.git
+[submodule "repo_submodules/SwcApplTpms"]
+	path = repo_submodules/SwcApplTpms
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplTpms.git
