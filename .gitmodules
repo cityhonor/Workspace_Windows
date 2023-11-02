@@ -1,3 +1,12 @@
+[submodule "repo_projects/pFOTA"]
+	path = repo_projects/pFOTA
+	url = https://github.com/NagarajaHuliyapuradaMata/pFOTA.git
+[submodule "repo_projects/pIntegrationRdcXnf"]
+	path = repo_projects/pIntegrationRdcXnf
+	url = https://github.com/NagarajaHuliyapuradaMata/pIntegrationRdcXnf.git
+[submodule "repo_projects/pRealEcu"]
+	path = repo_projects/pRealEcu
+	url = https://github.com/NagarajaHuliyapuradaMata/pRealEcu.git
 [submodule "repo_projects/ProjectWindows_Cygwin64_VirtualECUintelCOREi7"]
 	path = repo_projects/ProjectWindows_Cygwin64_VirtualECUintelCOREi7
 	url = https://github.com/NagarajaHuliyapuradaMata/ProjectWindows_Cygwin64_VirtualECUintelCOREi7.git
@@ -10,15 +19,12 @@
 [submodule "repo_projects/ProjectWindows_VisualStudio_VirtualEcu"]
 	path = repo_projects/ProjectWindows_VisualStudio_VirtualEcu
 	url = https://github.com/NagarajaHuliyapuradaMata/ProjectWindows_VisualStudio_VirtualEcu.git
-[submodule "repo_projects/pFOTA"]
-	path = repo_projects/pFOTA
-	url = https://github.com/NagarajaHuliyapuradaMata/pFOTA.git
-[submodule "repo_projects/pRealEcu"]
-	path = repo_projects/pRealEcu
-	url = https://github.com/NagarajaHuliyapuradaMata/pRealEcu.git
 [submodule "repo_submodules/CddBdrv"]
 	path = repo_submodules/CddBdrv
 	url = https://github.com/NagarajaHuliyapuradaMata/CddBdrv.git
+[submodule "repo_submodules/common"]
+	path = repo_submodules/common
+	url = https://github.com/NagarajaHuliyapuradaMata/common.git
 [submodule "repo_submodules/EcuabCanIf"]
 	path = repo_submodules/EcuabCanIf
 	url = https://github.com/NagarajaHuliyapuradaMata/EcuabCanIf.git
@@ -130,15 +136,30 @@
 [submodule "repo_submodules/ReSimFm"]
 	path = repo_submodules/ReSimFm
 	url = https://github.com/NagarajaHuliyapuradaMata/ReSimFm.git
+[submodule "repo_submodules/ReSimVehicle"]
+	path = repo_submodules/ReSimVehicle
+	url = https://github.com/NagarajaHuliyapuradaMata/ReSimVehicle.git
+[submodule "repo_submodules/SwcApplDcm"]
+	path = repo_submodules/SwcApplDcm
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplDcm.git
+[submodule "repo_submodules/SwcApplDem"]
+	path = repo_submodules/SwcApplDem
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplDem.git
 [submodule "repo_submodules/SwcApplFoc"]
 	path = repo_submodules/SwcApplFoc
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplFoc.git
 [submodule "repo_submodules/SwcApplEcuM"]
 	path = repo_submodules/SwcApplEcuM
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplEcuM.git
+[submodule "repo_submodules/SwcApplNvM"]
+	path = repo_submodules/SwcApplNvM
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplNvM.git
 [submodule "repo_submodules/SwcApplStartUp"]
 	path = repo_submodules/SwcApplStartUp
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplStartUp.git
+[submodule "repo_submodules/SwcApplTpms"]
+	path = repo_submodules/SwcApplTpms
+	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplTpms.git
 [submodule "repo_submodules/SwcServiceBswM"]
 	path = repo_submodules/SwcServiceBswM
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceBswM.git
@@ -220,24 +241,6 @@
 [submodule "repo_submodules/SwcServiceWdgM"]
 	path = repo_submodules/SwcServiceWdgM
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceWdgM.git
-[submodule "repo_submodules/common"]
-	path = repo_submodules/common
-	url = https://github.com/NagarajaHuliyapuradaMata/common.git
-[submodule "repo_projects/pIntegrationRdcXnf"]
-	path = repo_projects/pIntegrationRdcXnf
-	url = https://github.com/NagarajaHuliyapuradaMata/pIntegrationRdcXnf.git
-[submodule "repo_submodules/ReSimVehicle"]
-	path = repo_submodules/ReSimVehicle
-	url = https://github.com/NagarajaHuliyapuradaMata/ReSimVehicle.git
-[submodule "repo_submodules/SwcApplDcm"]
-	path = repo_submodules/SwcApplDcm
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplDcm.git
-[submodule "repo_submodules/SwcApplDem"]
-	path = repo_submodules/SwcApplDem
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplDem.git
-[submodule "repo_submodules/SwcApplNvM"]
-	path = repo_submodules/SwcApplNvM
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplNvM.git
-[submodule "repo_submodules/SwcApplTpms"]
-	path = repo_submodules/SwcApplTpms
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcApplTpms.git
+[submodule "repo_projects/pEcuReSim"]
+	path = repo_projects/pEcuReSim
+	url = https://github.com/NagarajaHuliyapuradaMata/pEcuReSim.git

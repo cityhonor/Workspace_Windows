@@ -1,3 +1,0 @@
-/cygdrive/c/_ECU2/ECU_Rivian_A1/Target/repo_projects/pEcuReSim/cR_LATEST/build/CMakeFiles/pEcuReSim_LATEST.dir
-/cygdrive/c/_ECU2/ECU_Rivian_A1/Target/repo_projects/pEcuReSim/cR_LATEST/build/CMakeFiles/edit_cache.dir
-/cygdrive/c/_ECU2/ECU_Rivian_A1/Target/repo_projects/pEcuReSim/cR_LATEST/build/CMakeFiles/rebuild_cache.dir
