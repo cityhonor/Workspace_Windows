@@ -1,3 +1,6 @@
+[submodule "repo_projects/pEcuReSim"]
+	path = repo_projects/pEcuReSim
+	url = https://github.com/NagarajaHuliyapuradaMata/pEcuReSim.git
 [submodule "repo_projects/pFOTA"]
 	path = repo_projects/pFOTA
 	url = https://github.com/NagarajaHuliyapuradaMata/pFOTA.git
@@ -241,6 +244,3 @@
 [submodule "repo_submodules/SwcServiceWdgM"]
 	path = repo_submodules/SwcServiceWdgM
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceWdgM.git
-[submodule "repo_projects/pEcuReSim"]
-	path = repo_projects/pEcuReSim
-	url = https://github.com/NagarajaHuliyapuradaMata/pEcuReSim.git
