@@ -28,45 +28,12 @@
 [submodule "repo_submodules/common"]
 	path = repo_submodules/common
 	url = https://github.com/NagarajaHuliyapuradaMata/common.git
-[submodule "repo_submodules/EcuabCanIf"]
-	path = repo_submodules/EcuabCanIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabCanIf.git
-[submodule "repo_submodules/EcuabCanTrcv"]
-	path = repo_submodules/EcuabCanTrcv
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabCanTrcv.git
-[submodule "repo_submodules/EcuabCryIf"]
-	path = repo_submodules/EcuabCryIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabCryIf.git
 [submodule "repo_submodules/EcuabEa"]
 	path = repo_submodules/EcuabEa
 	url = https://github.com/NagarajaHuliyapuradaMata/EcuabEa.git
-[submodule "repo_submodules/EcuabEthIf"]
-	path = repo_submodules/EcuabEthIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabEthIf.git
 [submodule "repo_submodules/EcuabFee"]
 	path = repo_submodules/EcuabFee
 	url = https://github.com/NagarajaHuliyapuradaMata/EcuabFee.git
-[submodule "repo_submodules/EcuabFrIf"]
-	path = repo_submodules/EcuabFrIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabFrIf.git
-[submodule "repo_submodules/EcuabFrTp"]
-	path = repo_submodules/EcuabFrTp
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabFrTp.git
-[submodule "repo_submodules/EcuabJ1939Tp"]
-	path = repo_submodules/EcuabJ1939Tp
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabJ1939Tp.git
-[submodule "repo_submodules/EcuabLinIf"]
-	path = repo_submodules/EcuabLinIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabLinIf.git
-[submodule "repo_submodules/EcuabLinTp"]
-	path = repo_submodules/EcuabLinTp
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabLinTp.git
-[submodule "repo_submodules/EcuabMemIf"]
-	path = repo_submodules/EcuabMemIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabMemIf.git
-[submodule "repo_submodules/EcuabWdgIf"]
-	path = repo_submodules/EcuabWdgIf
-	url = https://github.com/NagarajaHuliyapuradaMata/EcuabWdgIf.git
 [submodule "repo_submodules/LibAutosar"]
 	path = repo_submodules/LibAutosar
 	url = https://github.com/NagarajaHuliyapuradaMata/LibAutosar.git
@@ -166,15 +133,6 @@
 [submodule "repo_submodules/SwcServiceBswM"]
 	path = repo_submodules/SwcServiceBswM
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceBswM.git
-[submodule "repo_submodules/SwcServiceCanNm"]
-	path = repo_submodules/SwcServiceCanNm
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceCanNm.git
-[submodule "repo_submodules/SwcServiceCanSm"]
-	path = repo_submodules/SwcServiceCanSm
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceCanSm.git
-[submodule "repo_submodules/SwcServiceCanTp"]
-	path = repo_submodules/SwcServiceCanTp
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceCanTp.git
 [submodule "repo_submodules/SwcServiceCom"]
 	path = repo_submodules/SwcServiceCom
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceCom.git
@@ -202,9 +160,6 @@
 [submodule "repo_submodules/SwcServiceFiM"]
 	path = repo_submodules/SwcServiceFiM
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceFiM.git
-[submodule "repo_submodules/SwcServiceFrNm"]
-	path = repo_submodules/SwcServiceFrNm
-	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceFrNm.git
 [submodule "repo_submodules/SwcServiceIoHwAb"]
 	path = repo_submodules/SwcServiceIoHwAb
 	url = https://github.com/NagarajaHuliyapuradaMata/SwcServiceIoHwAb.git
