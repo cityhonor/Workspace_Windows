@@ -94,9 +94,6 @@
 [submodule "repo_submodules/ProjectCfg"]
 	path = repo_submodules/ProjectCfg
 	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectCfg.git
-[submodule "repo_submodules/ProjectCompiler"]
-	path = repo_submodules/ProjectCompiler
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectCompiler.git
 [submodule "repo_submodules/ProjectConst"]
 	path = repo_submodules/ProjectConst
 	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectConst.git
@@ -220,3 +217,27 @@
 [submodule "repo_submodules/SwcServiceWdgM"]
 	path = repo_submodules/SwcServiceWdgM
 	url = https://github.com/RaajnaagHuliyapuradaMata/SwcServiceWdgM.git
+[submodule "repo_projects/ProjectWindows_EcuReal_vBcRsBpTpms"]
+	path = repo_projects/ProjectWindows_EcuReal_vBcRsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuReal_vBcRsBpTpms.git
+[submodule "repo_projects/ProjectWindows_EcuReal_vIcVsEpFoc"]
+	path = repo_projects/ProjectWindows_EcuReal_vIcVsEpFoc
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuReal_vIcVsEpFoc.git
+[submodule "repo_projects/ProjectWindows_EcuReal_vVcBsBpTpms"]
+	path = repo_projects/ProjectWindows_EcuReal_vVcBsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuReal_vVcBsBpTpms.git
+[submodule "repo_projects/ProjectWindows_EcuReal_vVcLsBpFota"]
+	path = repo_projects/ProjectWindows_EcuReal_vVcLsBpFota
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuReal_vVcLsBpFota.git
+[submodule "repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms"]
+	path = repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuResim_vBcRsBpTpms.git
+[submodule "repo_projects/ProjectWindows_EcuResim_vRcVsEpFoc"]
+	path = repo_projects/ProjectWindows_EcuResim_vRcVsEpFoc
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuResim_vRcVsEpFoc.git
+[submodule "repo_projects/ProjectWindows_EcuResim_vVcBsBpTpms"]
+	path = repo_projects/ProjectWindows_EcuResim_vVcBsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuResim_vVcBsBpTpms.git
+[submodule "repo_projects/ProjectWindows_EcuResim_vVcLsBpFota"]
+	path = repo_projects/ProjectWindows_EcuResim_vVcLsBpFota
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_EcuResim_vVcLsBpFota.git
