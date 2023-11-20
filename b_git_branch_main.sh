@@ -1,82 +1,12 @@
-cd ./repo_projects/pFOTA
-echo "pFOTA"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../pIntegrationRdcXnf
-echo "pIntegrationRdcXnf"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../pRealEcu
-echo "pRealEcu"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../ProjectWindows_Cygwin64_VirtualECUintelCOREi7
-echo "ProjectWindows_Cygwin64_VirtualECUintelCOREi7"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../ProjectWindows_Eclipse_VirtualECUintelCOREi7
-echo "ProjectWindows_Eclipse_VirtualECUintelCOREi7"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
-echo "ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../ProjectWindows_VisualStudio_VirtualEcu
-echo "ProjectWindows_VisualStudio_VirtualEcu"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../../repo_submodules/CddBdrv
-echo "CddBdrv"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../common
+cd ./repo_submodules/common
 echo "common"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabCanIf
-echo "EcuabCanIf"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../EcuabCanTrcv
-echo "EcuabCanTrcv"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../EcuabCryIf
-echo "EcuabCryIf"
+cd ../CddBdrv
+echo "CddBdrv"
 git checkout main
 git branch -a
 git status
@@ -89,13 +19,6 @@ git branch -a
 git status
 echo ""
 
-cd ../EcuabEthIf
-echo "EcuabEthIf"
-git checkout main
-git branch -a
-git status
-echo ""
-
 cd ../EcuabFee
 echo "EcuabFee"
 git checkout main
@@ -103,50 +26,57 @@ git branch -a
 git status
 echo ""
 
-cd ../EcuabFrIf
-echo "EcuabFrIf"
+cd ../EcuabIfCan
+echo "EcuabIfCan"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabFrTp
-echo "EcuabFrTp"
+cd ../EcuabIfCry
+echo "EcuabIfCry"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabJ1939Tp
-echo "EcuabJ1939Tp"
+cd ../EcuabIfEth
+echo "EcuabIfEth"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabLinIf
-echo "EcuabLinIf"
+cd ../EcuabIfFr
+echo "EcuabIfFr"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabLinTp
-echo "EcuabLinTp"
+cd ../EcuabIfLin
+echo "EcuabIfLin"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabMemIf
-echo "EcuabMemIf"
+cd ../EcuabIfMem
+echo "EcuabIfMem"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../EcuabWdgIf
-echo "EcuabWdgIf"
+cd ../EcuabIfWdg
+echo "EcuabIfWdg"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../EcuabTrcvCan
+echo "EcuabTrcvCan"
 git checkout main
 git branch -a
 git status
@@ -292,15 +222,15 @@ git branch -a
 git status
 echo ""
 
-cd ../ProjectCompiler
-echo "ProjectCompiler"
+cd ../ProjectConst
+echo "ProjectConst"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectConst
-echo "ProjectConst"
+cd ../ProjectMemMap
+echo "ProjectMemMap"
 git checkout main
 git branch -a
 git status
@@ -383,27 +313,6 @@ git branch -a
 git status
 echo ""
 
-cd ../SwcServiceCanNm
-echo "SwcServiceCanNm"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../SwcServiceCanSm
-echo "SwcServiceCanSm"
-git checkout main
-git branch -a
-git status
-echo ""
-
-cd ../SwcServiceCanTp
-echo "SwcServiceCanTp"
-git checkout main
-git branch -a
-git status
-echo ""
-
 cd ../SwcServiceCom
 echo "SwcServiceCom"
 git checkout main
@@ -467,13 +376,6 @@ git branch -a
 git status
 echo ""
 
-cd ../SwcServiceFrNm
-echo "SwcServiceFrNm"
-git checkout main
-git branch -a
-git status
-echo ""
-
 cd ../SwcServiceIoHwAb
 echo "SwcServiceIoHwAb"
 git checkout main
@@ -490,6 +392,20 @@ echo ""
 
 cd ../SwcServiceNm
 echo "SwcServiceNm"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../SwcServiceNmCan
+echo "SwcServiceNmCan"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../SwcServiceNmFr
+echo "SwcServiceNmFr"
 git checkout main
 git branch -a
 git status
@@ -530,6 +446,13 @@ git branch -a
 git status
 echo ""
 
+cd ../SwcServiceSmCan
+echo "SwcServiceSmCan"
+git checkout main
+git branch -a
+git status
+echo ""
+
 cd ../SwcServiceSokFm
 echo "SwcServiceSokFm"
 git checkout main
@@ -551,6 +474,34 @@ git branch -a
 git status
 echo ""
 
+cd ../SwcServiceTpCan
+echo "SwcServiceTpCan"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../SwcServiceTpFr
+echo "SwcServiceTpFr"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../SwcServiceTpJ1939
+echo "SwcServiceTpJ1939"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../SwcServiceTpLin
+echo "SwcServiceTpLin"
+git checkout main
+git branch -a
+git status
+echo ""
+
 cd ../SwcServiceVkms
 echo "SwcServiceVkms"
 git checkout main
@@ -565,3 +516,58 @@ git branch -a
 git status
 echo ""
 
+cd ../../repo_projects/pEcuReSim
+echo "pEcuReSim"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../pFOTA
+echo "pFOTA"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../pIntegrationRdcXnf
+echo "pIntegrationRdcXnf"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../pRealEcu
+echo "pRealEcu"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../ProjectWindows_Cygwin64_VirtualECUintelCOREi7
+echo "ProjectWindows_Cygwin64_VirtualECUintelCOREi7"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../ProjectWindows_Eclipse_VirtualECUintelCOREi7
+echo "ProjectWindows_Eclipse_VirtualECUintelCOREi7"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
+echo "ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"
+git checkout main
+git branch -a
+git status
+echo ""
+
+cd ../ProjectWindows_VisualStudio_VirtualEcu
+echo "ProjectWindows_VisualStudio_VirtualEcu"
+git checkout main
+git branch -a
+git status
+echo ""

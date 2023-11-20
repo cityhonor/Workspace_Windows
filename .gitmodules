@@ -97,6 +97,9 @@
 [submodule "repo_submodules/ProjectConst"]
 	path = repo_submodules/ProjectConst
 	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectConst.git
+[submodule "repo_submodules/ProjectMemMap"]
+	path = repo_submodules/ProjectMemMap
+	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectMemMap.git
 [submodule "repo_submodules/ReSimCmd"]
 	path = repo_submodules/ReSimCmd
 	url = https://github.com/RaajnaagHuliyapuradaMata/ReSimCmd.git
