@@ -516,57 +516,57 @@ git branch -a
 git status
 echo ""
 
-cd ../../repo_projects/pEcuReSim
-echo "pEcuReSim"
+cd ../../repo_projects/ProjectWindows_EcuReal_vBcRsBpTpms
+echo "ProjectWindows_EcuReal_vBcRsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../pFOTA
-echo "pFOTA"
+cd ../ProjectWindows_EcuReal_vIcVsEpFoc
+echo "ProjectWindows_EcuReal_vIcVsEpFoc"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../pIntegrationRdcXnf
-echo "pIntegrationRdcXnf"
+cd ../ProjectWindows_EcuReal_vVcBsBpTpms
+echo "ProjectWindows_EcuReal_vVcBsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../pRealEcu
-echo "pRealEcu"
+cd ../ProjectWindows_EcuReal_vVcLsBpFota
+echo "ProjectWindows_EcuReal_vVcLsBpFota"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_Cygwin64_VirtualECUintelCOREi7
-echo "ProjectWindows_Cygwin64_VirtualECUintelCOREi7"
+cd ../ProjectWindows_EcuResim_vBcRsBpTpms
+echo "ProjectWindows_EcuResim_vBcRsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_Eclipse_VirtualECUintelCOREi7
-echo "ProjectWindows_Eclipse_VirtualECUintelCOREi7"
+cd ../ProjectWindows_EcuResim_vRcVsEpFoc
+echo "ProjectWindows_EcuResim_vRcVsEpFoc"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40
-echo "ProjectWindows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40"
+cd ../ProjectWindows_EcuResim_vVcBsBpTpms
+echo "ProjectWindows_EcuResim_vVcBsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_VisualStudio_VirtualEcu
-echo "ProjectWindows_VisualStudio_VirtualEcu"
+cd ../ProjectWindows_EcuResim_vVcLsBpFota
+echo "ProjectWindows_EcuResim_vVcLsBpFota"
 git checkout main
 git branch -a
 git status
