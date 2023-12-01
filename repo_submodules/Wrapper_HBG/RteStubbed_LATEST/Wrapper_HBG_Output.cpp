@@ -34,7 +34,10 @@
 #include "Wrapper_HBG_StbMBX.h"
 #include "Wrapper_HBG_DemServicesX.h"
 
+#ifdef _EcuVirtual
 #include "RTE_Stub_Output.h"
+#else
+#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -546,7 +549,10 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_ST_TYR( P2CONST(Rdci_ST_TYR_Type, A
 }
 
 void Wrap_HBG_CyclicOutputFunction(void){
+#ifdef _EcuVirtual
    RTE_Stub_CyclicOutputFunction();
+#else
+#endif
 }
 
 /******************************************************************************/

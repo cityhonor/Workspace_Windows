@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_Output_h
+#define Wrapper_HBG_Output_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_Output.h                                              */
 /*                                                                            */
@@ -147,4 +148,4 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_ST_TYR( P2CONST(Rdci_ST_TYR_Type, A
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

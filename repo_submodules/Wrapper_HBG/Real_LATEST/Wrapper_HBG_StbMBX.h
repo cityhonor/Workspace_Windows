@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_StbMBX_h
+#define Wrapper_HBG_StbMBX_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_StbMBX.h                                              */
 /*                                                                            */
@@ -72,4 +73,4 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetTickDuration( P2VAR(uint32
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

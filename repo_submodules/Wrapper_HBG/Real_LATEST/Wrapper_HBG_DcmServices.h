@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_DcmServices_h
+#define Wrapper_HBG_DcmServices_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_DcmServices.h                                         */
 /*                                                                            */
@@ -111,4 +112,4 @@ extern uint8 *Stub_RdcAnlernenLokalisierungLesen_Output( uint8 );
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

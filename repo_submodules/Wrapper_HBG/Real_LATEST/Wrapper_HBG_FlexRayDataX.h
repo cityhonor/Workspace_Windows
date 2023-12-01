@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_FlexRayDataX_h
+#define Wrapper_HBG_FlexRayDataX_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_FlexRayDataX.h                                        */
 /*                                                                            */
@@ -111,4 +112,4 @@ FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_FrBusState(void);
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

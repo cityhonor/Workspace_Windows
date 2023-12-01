@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_SettingsNvmBlock_h
+#define Wrapper_HBG_SettingsNvmBlock_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_SettingsNvmBlock.h                                    */
 /*                                                                            */
@@ -104,4 +105,4 @@ extern void NVM_SetDefaultRteStubSettings(void);
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

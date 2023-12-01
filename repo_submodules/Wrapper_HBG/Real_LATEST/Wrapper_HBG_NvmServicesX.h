@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_NvmServicesX_h
+#define Wrapper_HBG_NvmServicesX_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_NvmServicesX.h                                        */
 /*                                                                            */
@@ -137,4 +138,4 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_NvmRdciZomBlock2_WriteBlock(P2CONST
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

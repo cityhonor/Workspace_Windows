@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_CalPrmX_h
+#define Wrapper_HBG_CalPrmX_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_CalPrmX.h                                             */
 /*                                                                            */
@@ -128,4 +129,4 @@ ImpTypeValCRdciParkSupWarningThresholdValueNc Wrap_HBG_Prm_CRdciParkSupWarningTh
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

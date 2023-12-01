@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_DemServices_h
+#define Wrapper_HBG_DemServices_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_DemServices.h                                         */
 /*                                                                            */
@@ -70,4 +71,4 @@ static void SaveDTC( uint8 ucDtcNo, ImpTypeRefDem_EventStatusType EventStatus );
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_DtcNvmBlock_h
+#define Wrapper_HBG_DtcNvmBlock_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_DtcNvmBlock.h                                         */
 /*                                                                            */
@@ -70,4 +71,4 @@ extern void NvmDTC_WriteByte( uint32 ulIx, uint8 ucNvmByte );
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

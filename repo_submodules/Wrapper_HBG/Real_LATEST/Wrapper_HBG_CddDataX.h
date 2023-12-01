@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_CddDataX_h
+#define Wrapper_HBG_CddDataX_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_CddDataX.h                                            */
 /*                                                                            */
@@ -102,4 +103,4 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData( P2VAR(ImpTypeRecCddR
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

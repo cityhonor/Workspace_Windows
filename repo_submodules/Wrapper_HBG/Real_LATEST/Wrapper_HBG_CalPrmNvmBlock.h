@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_CalPrmNvmBlock_h
+#define Wrapper_HBG_CalPrmNvmBlock_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_CalPrmNvmBlock.h                                      */
 /*                                                                            */
@@ -218,4 +219,4 @@ extern void NvmDscCodierdatenRDCi_Activate( uint8 );
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

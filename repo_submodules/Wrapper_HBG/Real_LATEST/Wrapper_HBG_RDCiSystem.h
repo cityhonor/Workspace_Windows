@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_RDCiSystem_h
+#define Wrapper_HBG_RDCiSystem_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_RDCiSystem.h                                          */
 /*                                                                            */
@@ -68,4 +69,4 @@ void TriggerRunnableCyclicRDCiTask(void);
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

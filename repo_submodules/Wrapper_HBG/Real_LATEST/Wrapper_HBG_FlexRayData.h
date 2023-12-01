@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Wrapper_HBG_FlexRayData_h
+#define Wrapper_HBG_FlexRayData_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_FlexRayData.h                                         */
 /*                                                                            */
@@ -99,4 +100,4 @@ void PutStEnergFzm(Rdci_ST_ENERG_FZM_Type * );
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif
