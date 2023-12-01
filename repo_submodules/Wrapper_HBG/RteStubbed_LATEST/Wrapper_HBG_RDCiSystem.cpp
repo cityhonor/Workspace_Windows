@@ -25,11 +25,7 @@
 /******************************************************************************/
 #include "Wrapper_HBG_RDCiSystem.h"
 #include "Wrapper_HBG_Output.h"
-
-#ifdef _SwcApplTpms_CLAR_LCI
-#else
-#include "Wrapper_HBG_JumpTableX.h"
-#endif
+#include "JumpTableX.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -58,13 +54,9 @@
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-void TriggerRunnableCyclicRDCiTask(void)
-{
-#ifdef _SwcApplTpms_CLAR_LCI
-#else
-  RDCi_RCyclicRDCiTask_001( Rte_Inst_CtApHufTpmsSWC);
-#endif
-  Wrap_HBG_CyclicOutputFunction();
+void TriggerRunnableCyclicRDCiTask(void){
+   RDCi_FunctiontablePtr->RDCi_RCyclicRDCiTask_001(Rte_Inst_CtApHufTpmsSWC);
+   Wrap_HBG_CyclicOutputFunction();
 }
 
 /******************************************************************************/

@@ -32,7 +32,7 @@
 
 #ifdef _SwcApplTpms_CLAR_LCI
 #else
-#include "Wrapper_HBG_JumpTableX.h"
+#include "JumpTableX.h"
 #endif
 
 /******************************************************************************/
