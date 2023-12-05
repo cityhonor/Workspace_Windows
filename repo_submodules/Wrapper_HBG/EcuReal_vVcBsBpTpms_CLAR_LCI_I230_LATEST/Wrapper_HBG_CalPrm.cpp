@@ -13,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright Â© 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -24,7 +24,10 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Wrapper_HBG_CalPrm.h"
+#ifdef _EcuVirtual
 #include "RTE_Stub_CalPrm.h"
+#else
+#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -53,7 +56,16 @@
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(ImpTypeVal_C_Funktion_ReifenPannenerkennung_aktiv_e, RTE_CODE) Wrap_HBG_Prm_C_Funktion_ReifenPannenerkennung_aktiv_e (void){return Stub_Rte_Prm_C_Funktion_ReifenPannenerkennung_aktiv_e();}
+FUNC(ImpTypeVal_C_Funktion_ReifenPannenerkennung_aktiv_e, RTE_CODE) Wrap_HBG_Prm_C_Funktion_ReifenPannenerkennung_aktiv_e(void){
+   return(
+#ifdef _EcuVirtual
+      Stub_Rte_Prm_C_Funktion_ReifenPannenerkennung_aktiv_e()
+#else
+      0
+#endif
+   );
+}
+
 FUNC(ImpTypeValCRdciTPrewarnNc,                           RTE_CODE) Wrap_HBG_Prm_CRdciTPrewarnNc                          (void){return 0;}
 FUNC(ImpTypeValCRdciMaxThreshold,                         RTE_CODE) Wrap_HBG_Prm_CRdciMaxThreshold                        (void){return 0;}
 FUNC(ImpTypeValCRdciPrewarnEnable,                        RTE_CODE) Wrap_HBG_Prm_CRdciPrewarnEnable                       (void){return 0;}
@@ -85,8 +97,19 @@ FUNC(ImpTypeValCRdciTimeoutPrewarn,                       RTE_CODE) Wrap_HBG_Prm
 FUNC(ImpTypeValCRdciDtAmbPrewarn,                         RTE_CODE) Wrap_HBG_Prm_CRdciDtAmbPrewarn                        (void){return 0;}
 FUNC(ImpTypeValCRdciDpToIPmin,                            RTE_CODE) Wrap_HBG_Prm_CRdciDpToIPmin                           (void){return 0;}
 
+#ifdef _EcuVirtual
 static uint8 CRdciLearnLocateConfigCD[2] = {0, 0};
-Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciLearnLocateConfig_FncRetPtrType Wrap_HBG_Prm_CRdciLearnLocateConfig         (void){return &CRdciLearnLocateConfigCD[0];}
+#else
+#endif
+Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciLearnLocateConfig_FncRetPtrType Wrap_HBG_Prm_CRdciLearnLocateConfig(void){
+   return(
+#ifdef _EcuVirtual
+      &CRdciLearnLocateConfigCD[0]
+#else
+      NULL_PTR
+#endif
+   );
+}
 
 FUNC(ImpTypeValCRdciXminCoolTire,                         RTE_CODE) Wrap_HBG_Prm_CRdciXminCoolTire                        (void){return 0;}
 FUNC(ImpTypeValCRdciMaxCorTime,                           RTE_CODE) Wrap_HBG_Prm_CRdciMaxCorTime                          (void){return 0;}
@@ -102,8 +125,19 @@ FUNC(ImpTypeValCRdciDefaultMenuSel,                       RTE_CODE) Wrap_HBG_Prm
 FUNC(ImpTypeValCRdciDispConfTimeout,                      RTE_CODE) Wrap_HBG_Prm_CRdciDispConfTimeout                     (void){return 0;}
 FUNC(ImpTypeValCRdciRidEnable,                            RTE_CODE) Wrap_HBG_Prm_CRdciRidEnable                           (void){return 0;}
 
+#ifdef _EcuVirtual
 static uint8 CRdciTrefSeasAdjConfigCD[4] = {0, 0, 0, 0};
-Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciTrefSeasAdjConfig_FncRetPtrType Wrap_HBG_Prm_CRdciTrefSeasAdjConfig         (void){return &CRdciTrefSeasAdjConfigCD[0];}
+#else
+#endif
+Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciTrefSeasAdjConfig_FncRetPtrType Wrap_HBG_Prm_CRdciTrefSeasAdjConfig(void){
+   return(
+#ifdef _EcuVirtual
+      &CRdciTrefSeasAdjConfigCD[0]
+#else
+      NULL_PTR
+#endif
+   );
+}
 
 FUNC(ImpTypeValCRdciSpeedCcmEnable,                       RTE_CODE) Wrap_HBG_Prm_CRdciSpeedCcmEnable                      (void){return 0;}
 FUNC(ImpTypeValCRdciSpeedCcmHyst,                         RTE_CODE) Wrap_HBG_Prm_CRdciSpeedCcmHyst                        (void){return 0;}

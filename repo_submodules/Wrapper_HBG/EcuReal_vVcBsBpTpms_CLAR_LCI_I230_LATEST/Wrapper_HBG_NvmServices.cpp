@@ -30,10 +30,7 @@
 
 #include "crc16X.h"
 
-#ifdef _SwcApplTpms_CLAR_LCI
-#else
-#include "Wrapper_HBG_JumpTableX.h"
-#endif
+#include "JumpTable.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -58,84 +55,10 @@
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-static uint8 ucDataIndexEcoBlock;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-void NVM_ReadAll( void )
-{
-  (void) Wrap_HBG_Call_NvmRdciCommonBlock_ReadBlock( (uint8 *) Rte_Pim_NvmRdciCommonBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciDiagBlock1_ReadBlock( (uint8 *) Rte_Pim_NvmRdciDiagBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciDiagBlock2_ReadBlock( (uint8 *) Rte_Pim_NvmRdciDiagBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciErfsBlock_ReadBlock( (uint8 *) Rte_Pim_NvmRdciErfsBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciErfsTsaBlock_ReadBlock( (uint8 *) Rte_Pim_NvmRdciErfsTsaBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciRidQrBlock1_ReadBlock( (uint8 *) Rte_Pim_NvmRdciRidQrBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciRidQrBlock2_ReadBlock( (uint8 *) Rte_Pim_NvmRdciRidQrBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciWarnStatusBlock_ReadBlock( (uint8 *) Rte_Pim_NvmRdciWarnStatusBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciZoHistoryBlock_ReadBlock( (uint8 *) Rte_Pim_NvmRdciZoHistoryBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciZomBlock1_ReadBlock( (uint8 *) Rte_Pim_NvmRdciZomBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-  (void) Wrap_HBG_Call_NvmRdciZomBlock2_ReadBlock( (uint8 *) Rte_Pim_NvmRdciZomBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-}
-
-
-void NVM_WriteAll( void )
-{
-  ImpTypeArrayDcm_StatusRdcVersionReadDataType Data;
-  uint16 ushVersion;
-
-#ifdef _SwcApplTpms_CLAR_LCI
-#else
-  (void) RDCi_ROpInvDcmStatusRdcVersion_ReadData_093( Rte_Inst_CtApHufTpmsSWC, (uint8 *) &Data );
-#endif
-
-  ushVersion = (uint16) (Data[0] << 8) + Data[1];
-
-  Rte_Pim_NvmRdciCommonBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciCommonBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciCommonBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciCommonBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciCommonBlock_WriteBlock( (uint8 *) Rte_Pim_NvmRdciCommonBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciDiagBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciDiagBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciDiagBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciDiagBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciDiagBlock1_WriteBlock( (uint8 *) Rte_Pim_NvmRdciDiagBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciDiagBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciDiagBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciDiagBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciDiagBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciDiagBlock2_WriteBlock( (uint8 *) Rte_Pim_NvmRdciDiagBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciErfsBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciErfsBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciErfsBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciErfsBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciErfsBlock_WriteBlock( (uint8 *) Rte_Pim_NvmRdciErfsBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciErfsTsaBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciErfsTsaBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciErfsTsaBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciErfsTsaBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciErfsTsaBlock_WriteBlock( (uint8 *) Rte_Pim_NvmRdciErfsTsaBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciRidQrBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciRidQrBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciRidQrBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciRidQrBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciRidQrBlock1_WriteBlock( (uint8 *) Rte_Pim_NvmRdciRidQrBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciRidQrBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciRidQrBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciRidQrBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciRidQrBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciRidQrBlock2_WriteBlock( (uint8 *) Rte_Pim_NvmRdciRidQrBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciWarnStatusBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciWarnStatusBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciWarnStatusBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciWarnStatusBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciWarnStatusBlock_WriteBlock( (uint8 *) Rte_Pim_NvmRdciWarnStatusBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciZoHistoryBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciZoHistoryBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciZoHistoryBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciZoHistoryBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciZoHistoryBlock_WriteBlock( (uint8 *) Rte_Pim_NvmRdciZoHistoryBlock_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciZomBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciZomBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciZomBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciZomBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciZomBlock1_WriteBlock( (uint8 *) Rte_Pim_NvmRdciZomBlock1_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-
-  Rte_Pim_NvmRdciZomBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Version = ushVersion;
-  Rte_Pim_NvmRdciZomBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Chksum = ushCalcCrc16( (uint8 *) Rte_Pim_NvmRdciZomBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data, (uint16) sizeof(Rte_Pim_NvmRdciZomBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC )->Data) );
-  (void) Wrap_HBG_Call_NvmRdciZomBlock2_WriteBlock( (uint8 *) Rte_Pim_NvmRdciZomBlock2_NVBlock_MirrorBlock( Rte_Inst_CtApHufTpmsSWC ) );
-}
-
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_NvmRdciCommonBlock_GetDataIndex( uint8 *DataIndex )
 {
   return E_OK;
@@ -183,7 +106,6 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_NvmRdciErfsEcoBlock_ReadBlock(P2VAR
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_NvmRdciErfsEcoBlock_SetDataIndex(uint8 DataIndex)
 {
-  ucDataIndexEcoBlock = DataIndex; 
   return E_OK;
 }
 

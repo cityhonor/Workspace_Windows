@@ -1,6 +1,5 @@
-#pragma once
 /******************************************************************************/
-/* File   : Wrapper_HBG_DemServices.h                                         */
+/* File   : Wrapper_HBG_CddData.cpp                                           */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -14,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright ï¿½ 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -24,13 +23,20 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Rte_Type.h"
-#include "Wrapper_HBG_DemServicesX.h"
+#include "Wrapper_HBG_CddData.h"
 
-#ifdef __cplusplus
-extern "C"
-{
+#ifdef _SwcApplTpms_CLAR_LCI
+#include "CD_Decoder_X.h"
+#include "wallocX.h"
+#include "DataManagerX.h"
+#include "EeWarnStatusBlockX.h"
+#include "EeCommonBlockX.h"
+#else
+#include "Wrapper_HBG_Dialog.h"
+#include "Logging.h"
 #endif
+
+#include "crc16X.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -43,6 +49,10 @@ extern "C"
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+#ifdef _SwcApplTpms_CLAR_LCI
+#else
+using namespace RDCi;
+#endif
 
 /******************************************************************************/
 /* CONSTS                                                                     */
@@ -59,13 +69,13 @@ extern "C"
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-static void ClearDtcUwbData( uint8 ucDtcNo );
-static uint8 ucGetRdcSensorHersteller(void);
-static void SaveDTC( uint8 ucDtcNo, ImpTypeRefDem_EventStatusType EventStatus );
-
-#ifdef __cplusplus
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddAbsData(P2VAR(ImpTypeRecCddAbsData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data){
+   return 0x00;
 }
-#endif
+
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData(P2VAR(ImpTypeRecCddRdcData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data){
+  return 0x00;
+}
 
 /******************************************************************************/
 /* EOF                                                                        */

@@ -1,6 +1,7 @@
-#pragma once
+#ifndef Wrapper_HBG_StbMB_h
+#define Wrapper_HBG_StbMB_h
 /******************************************************************************/
-/* File   : Wrapper_HBG_RDCiSystem.h                                          */
+/* File   : Wrapper_HBG_StbMB.h                                               */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -24,7 +25,9 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Rte_Type.h"
+#include "Rte_CtApHufTpmsSWC_Type.h"
+#include "Rte_CtApHufTpmsSWC.h"
+#include "Wrapper_HBG_StbMBX.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -58,9 +61,6 @@ extern "C"
 {
 #endif
 
-void TriggerRunnableCyclicRDCiTask(void);
-
-
 #ifdef __cplusplus
 }
 #endif
@@ -68,4 +68,4 @@ void TriggerRunnableCyclicRDCiTask(void);
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

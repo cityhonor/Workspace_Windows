@@ -1,6 +1,7 @@
-#pragma once
+#ifndef Wrapper_HBG_StbMBX_h
+#define Wrapper_HBG_StbMBX_h
 /******************************************************************************/
-/* File   : Wrapper_HBG_NvmServices.h                                         */
+/* File   : Wrapper_HBG_StbMBX.h                                              */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -24,9 +25,6 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Rte_CtApHufTpmsSWC_Type.h"
-#include "Rte_CtApHufTpmsSWC.h"
-#include "Wrapper_HBG_NvmServicesX.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -60,8 +58,13 @@ extern "C"
 {
 #endif
 
-extern void NVM_ReadAll(void);
-extern void NVM_WriteAll(void);
+extern void PutStbMBTime(StbMB_SystemTimeType*);
+extern void PutStbMBSyncState(StbMB_SyncStatusType*);
+
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetAbsoluteTime  (P2VAR(StbMB_SystemTimeType, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR));
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetGlobalTime    (P2VAR(StbMB_TickType,       AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR));
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetSyncState     (P2VAR(StbMB_SyncStatusType, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR));
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetTickDuration  (P2VAR(uint32,               AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR));
 
 #ifdef __cplusplus
 }
@@ -70,4 +73,4 @@ extern void NVM_WriteAll(void);
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif

@@ -107,7 +107,6 @@ extern ImpTypeRefDcm_NegativeResponseCodeType Wrap_HBG_UWB_RdcSensorHersteller_R
 extern ImpTypeRefDcm_NegativeResponseCodeType Wrap_HBG_UWB_RdcSolldruckHinten_ReadData( ImpTypeArrayDcm_RdcSolldruckHintenReadDataType * Data);
 extern ImpTypeRefDcm_NegativeResponseCodeType Wrap_HBG_UWB_RdcSolldruckVorn_ReadData( ImpTypeArrayDcm_RdcSolldruckVornReadDataType * Data);
 extern ImpTypeRefDcm_NegativeResponseCodeType Wrap_HBG_UWB_RdcStatus_ReadData( ImpTypeValDcm_RdcStatusReadDataType * Data);
-extern uint8 *Stub_RdcAnlernenLokalisierungLesen_Output( uint8 );
 
 /******************************************************************************/
 /* EOF                                                                        */

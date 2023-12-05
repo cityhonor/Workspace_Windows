@@ -68,7 +68,6 @@
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_Dem_TpmsManufactoryModeInfo_GetEventStatus(P2VAR(ImpTypeRefDem_UdsStatusByteType, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) EventStatusByte)
 {
   return E_OK;

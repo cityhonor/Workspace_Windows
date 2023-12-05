@@ -26,10 +26,7 @@
 #include "Wrapper_HBG_DcmServices.h"
 #include "Rte_CtApHufTpmsSWC.h"
 
-#ifdef _SwcApplTpms_CLAR_LCI
-#else
-#include "JumpTableX.h"
-#endif
+#include "JumpTable.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */

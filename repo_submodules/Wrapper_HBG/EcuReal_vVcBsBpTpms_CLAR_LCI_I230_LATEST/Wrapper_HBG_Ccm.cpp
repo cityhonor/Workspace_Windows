@@ -1,5 +1,5 @@
 /******************************************************************************/
-/* File   : Wrapper_HBG_RDCiSystem.cpp                                        */
+/* File   : Wrapper_HBG_Ccm.cpp                                               */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -13,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright ï¿½ 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -23,9 +23,7 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Wrapper_HBG_RDCiSystem.h"
-#include "Wrapper_HBG_Output.h"
-#include "JumpTableX.h"
+#include "Wrapper_HBG_Ccm.h"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -54,9 +52,9 @@
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-void TriggerRunnableCyclicRDCiTask(void){
-   RDCi_FunctiontablePtr->RDCi_RCyclicRDCiTask_001(Rte_Inst_CtApHufTpmsSWC);
-   Wrap_HBG_CyclicOutputFunction();
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_Ccm( P2CONST(ImpTypeRecCcm_DISP_CC_BYPA_00, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_DATA) data ) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+  return RTE_E_OK;
 }
 
 /******************************************************************************/

@@ -1,6 +1,7 @@
-#pragma once
+#ifndef Wrapper_HBG_CcmX_h
+#define Wrapper_HBG_CcmX_h
 /******************************************************************************/
-/* File   : Wrapper_HBG_CddDataX.h                                            */
+/* File   : Wrapper_HBG_CcmX.h                                                */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -28,14 +29,7 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define cMaxReElements  7
-#define cRecEleIx_Slot0 0                   // Historische Position 0
-#define cRecEleIx_Slot1 1                   // Historische Position 1
-#define cRecEleIx_Slot2 2                   // Historische Position 2
-#define cRecEleIx_Slot3 3                   // Historische Position 3
-#define cRecEleIx_FR    4                   // Fremdrad
-#define cRecEleIx_RID   5                   // RID Telegramm
-#define cRecEleIx_Alive 6                   // Alive Botschaft
+#define CC_DATA_QUEUE_LENGTH                                                   5
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -44,23 +38,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef struct
-{
-  ImpTypeRecCddRdcData  tRecCddRdcData;
-  uint16                ushPabs_iso_hPa;
-  sint16                sshTabs_iso_K;
-  uint16                ushPlast_rel_hPa;
-  sint16                sshTlast_celsius;
-  boolean               bAliveError;
-  boolean               bInputIsochor;
-  boolean               bBatteryEmpty;
-  boolean               bTyrIdFromFile;
-  boolean               bSuppIdFromFile;
-  boolean               bPckgIdFromFile;
-  boolean               bDt1PressureFromFile;
-  boolean               bDt2TemperatureFromFile;
-  boolean               bWuDataFromFile;
-} RdcDataType;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
@@ -82,18 +59,7 @@ extern "C"
 {
 #endif
 
-extern void PutTimerTicks( uint32 ulTimerTicks );
-extern uint32 ulGetTimerTicks(void);
-extern uint32 ulGetTRdcRfWriteCounter(void);
-extern uint32 ulGetTRdcRfReadCounter(void);
-extern void InitRecCddRdcData(void);
-extern ImpTypeRecCddRdcData * ptGetRecCddRdcDataPtr( uint8 ucIx );
-extern RdcDataType * ptGetRdcDataPtr(uint8 ucRe);
-extern void PutRecCddRdcData( uint8 ucRe );
-extern uint16 ushGetTelCountCddRdcDataPtr( uint8 ucRe );
-extern uint8 ucGetNextValidAliveCounter( uint8 ucAliveStartValue );
-FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddAbsData(P2VAR(ImpTypeRecCddAbsData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) );
-FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData( P2VAR(ImpTypeRecCddRdcData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) );
+extern FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_Ccm(P2CONST(ImpTypeRecCcm_DISP_CC_BYPA_00, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_DATA));
 
 #ifdef __cplusplus
 }
@@ -102,4 +68,4 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData( P2VAR(ImpTypeRecCddR
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-
+#endif
