@@ -13,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright ï¿½ 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -24,6 +24,10 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Wrapper_HBG_FlexRayData.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub_FlexRayData.h"
+#else
+#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -54,38 +58,38 @@
 /******************************************************************************/
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_V_VEH( P2VAR(Rdci_V_VEH_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_WMOM_DRV_4( P2VAR(Rdci_WMOM_DRV_4_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_TEMP_EX( P2VAR(Rdci_TEMP_EX_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_UN_AIP( P2VAR(Rdci_UN_AIP_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_UN_MILE( P2VAR(Rdci_UN_MILE_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_UN_TEMP( P2VAR(Rdci_UN_TEMP_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_CON_VEH( P2VAR(Rdci_CON_VEH_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_OP_SLCTN_TYR_AVLB( P2VAR(Rdci_OP_SLCTN_TYR_AVLB_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data )
@@ -163,122 +167,122 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_ST_ENERG_FZM( P2VAR(Rdci_ST_ENERG_F
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Read_FrBusState( P2VAR(ImpTypeValFrBusState, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) pucState )
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_TEMP_EX(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_UN_AIP(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_UN_MILE(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_UN_TEMP(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_CON_VEH(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_V_VEH(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_WMOM_DRV_4(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_OP_SLCTN_TYR_AVLB(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_OP_TAR_P_LOCO_TPCT(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_OP_TPCT(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_OP_TYR_SEA_TPCT(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_RQ_OL_TPCT(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_ST_IDR_MSGC(void)
 {	
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_OP_IDR_SLCTN(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_UHRZEIT_DATUM(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_AIP_ENG_DRV(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_GNSSPositionAltitude(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_GNSSErrorAltitudeMeters(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_T_SEC_COU_REL(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_MILE_KM(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_ST_ILK_ERRM_FZM(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_ST_ENERG_FZM(void)
 {
-  return 0;
+   return 0;
 }
 
 FUNC(boolean, RTE_CODE) Wrap_HBG_IsUpdated_FrBusState(void)
 {
-  return 0;
+   return 0;
 }
 
 /******************************************************************************/

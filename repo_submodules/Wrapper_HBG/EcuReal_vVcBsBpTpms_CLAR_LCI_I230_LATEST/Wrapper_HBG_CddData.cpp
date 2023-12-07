@@ -24,6 +24,10 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Wrapper_HBG_CddData.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub_CddData.h"
+#else
+#endif
 
 #ifdef _SwcApplTpms_CLAR_LCI
 #include "CD_Decoder_X.h"
@@ -74,7 +78,7 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddAbsData(P2VAR(ImpTypeRecCddAb
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData(P2VAR(ImpTypeRecCddRdcData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data){
-  return 0x00;
+   return 0x00;
 }
 
 /******************************************************************************/

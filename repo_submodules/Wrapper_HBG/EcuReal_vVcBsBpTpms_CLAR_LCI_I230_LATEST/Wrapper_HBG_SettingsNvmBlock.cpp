@@ -24,6 +24,11 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Wrapper_HBG_SettingsNvmBlock.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub_SettingsNvmBlock.h"
+#else
+#endif
+
 #include <stdio.h>
 
 #ifdef _EcuVirtual

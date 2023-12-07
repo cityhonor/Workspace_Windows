@@ -48,19 +48,19 @@
 typedef struct
 {
   ImpTypeRecCddRdcData  tRecCddRdcData;
-  uint16                ushPabs_iso_hPa;
-  sint16                sshTabs_iso_K;
-  uint16                ushPlast_rel_hPa;
-  sint16                sshTlast_celsius;
-  boolean               bAliveError;
-  boolean               bInputIsochor;
-  boolean               bBatteryEmpty;
-  boolean               bTyrIdFromFile;
-  boolean               bSuppIdFromFile;
-  boolean               bPckgIdFromFile;
-  boolean               bDt1PressureFromFile;
-  boolean               bDt2TemperatureFromFile;
-  boolean               bWuDataFromFile;
+   uint16                ushPabs_iso_hPa;
+   sint16                sshTabs_iso_K;
+   uint16                ushPlast_rel_hPa;
+   sint16                sshTlast_celsius;
+   boolean               bAliveError;
+   boolean               bInputIsochor;
+   boolean               bBatteryEmpty;
+   boolean               bTyrIdFromFile;
+   boolean               bSuppIdFromFile;
+   boolean               bPckgIdFromFile;
+   boolean               bDt1PressureFromFile;
+   boolean               bDt2TemperatureFromFile;
+   boolean               bWuDataFromFile;
 } RdcDataType;
 
 /******************************************************************************/
@@ -83,16 +83,16 @@ extern "C"
 {
 #endif
 
-extern void PutTimerTicks( uint32 ulTimerTicks );
+extern void PutTimerTicks(uint32 ulTimerTicks );
 extern uint32 ulGetTimerTicks(void);
 extern uint32 ulGetTRdcRfWriteCounter(void);
 extern uint32 ulGetTRdcRfReadCounter(void);
 extern void InitRecCddRdcData(void);
-extern ImpTypeRecCddRdcData * ptGetRecCddRdcDataPtr( uint8 ucIx );
+extern ImpTypeRecCddRdcData * ptGetRecCddRdcDataPtr(uint8 ucIx );
 extern RdcDataType * ptGetRdcDataPtr(uint8 ucRe);
-extern void PutRecCddRdcData( uint8 ucRe );
-extern uint16 ushGetTelCountCddRdcDataPtr( uint8 ucRe );
-extern uint8 ucGetNextValidAliveCounter( uint8 ucAliveStartValue );
+extern void PutRecCddRdcData(uint8 ucRe );
+extern uint16 ushGetTelCountCddRdcDataPtr(uint8 ucRe );
+extern uint8 ucGetNextValidAliveCounter(uint8 ucAliveStartValue );
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddAbsData(P2VAR(ImpTypeRecCddAbsData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) );
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData( P2VAR(ImpTypeRecCddRdcData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) );
 

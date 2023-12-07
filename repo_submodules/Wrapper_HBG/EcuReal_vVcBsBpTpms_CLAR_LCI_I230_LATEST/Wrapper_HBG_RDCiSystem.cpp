@@ -24,7 +24,13 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Wrapper_HBG_RDCiSystem.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub_RDCiSystem.h"
+#else
+#endif
+
 #include "Wrapper_HBG_Output.h"
+
 #include "JumpTable.h"
 
 /******************************************************************************/

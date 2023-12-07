@@ -91,13 +91,13 @@
 /******************************************************************************/
 typedef struct
 {
-  uint8                                                     /*  0 */ auc0x1702_SAE_CODE[3];
-  uint32                                                    /*  1 */ ul0x1768_KM_STAND_SUPREME;
-  uint8                                                     /*  2 */ auc0x1769_SYSTEMZEIT_SUPREME[6];
+   uint8                                                     /*  0 */ auc0x1702_SAE_CODE[3];
+   uint32                                                    /*  1 */ ul0x1768_KM_STAND_SUPREME;
+   uint8                                                     /*  2 */ auc0x1769_SYSTEMZEIT_SUPREME[6];
   ImpTypeValDcm_FunktionenReifendruckkontrolleReadDataType  /*  3 */ uc0x190D_FUNKTIONEN_REIFENDRUCKKONTROLLE;
   ImpTypeValDcm_RdcAktuelleAussentemperaturReadDataType     /*  5 */ uc0x2805_AUSSENTEMPERATUR;
-  uint8                                                     /*  6 */ uc0x2866_BETRIEBSSPANNUNG;
-  uint8                                                     /*  7 */ uc0x2867_FAHRZEUGGESCHWINDIGKEIT;
+   uint8                                                     /*  6 */ uc0x2866_BETRIEBSSPANNUNG;
+   uint8                                                     /*  7 */ uc0x2867_FAHRZEUGGESCHWINDIGKEIT;
   ImpTypeValDcm_RdcSensorHerstellerReadDataType             /*  8 */ uc0x4100_RDC_SENSOR_HERSTELLER;
   ImpTypeValDcm_RdcReferenzAussentemperaturReadDataType     /*  9 */ uc0x4101_RDC_REFERENZ_AUSSENTEMPERATUR;
   ImpTypeArrayDcm_RdcAussendruckReadDataType                /* 10 */ auc0x4102_RDC_AUSSENDRUCK;
@@ -109,7 +109,7 @@ typedef struct
   ImpTypeValDcm_RdcReifentemperaturVrReadDataType           /* 16 */ uc0x4108_RDC_REIFENTEMPERATUR_VR;
   ImpTypeValDcm_RdcReifentemperaturHlReadDataType           /* 17 */ uc0x4109_RDC_REIFENTEMPERATUR_HL;
   ImpTypeValDcm_RdcReifentemperaturHrReadDataType           /* 18 */ uc0x410A_RDC_REIFENTEMPERATUR_HR;
-  sint8                                                     /* 19 */ sc0x410B_RDC_AKTUELLE_AUSSENTEMPERATUR;
+   sint8                                                     /* 19 */ sc0x410B_RDC_AKTUELLE_AUSSENTEMPERATUR;
   ImpTypeValDcm_RdcInaktivStatusReadDataType                /* 20 */ uc0x410C_RDC_INAKTIV_STATUS;
   ImpTypeValDcm_RdcKalibrierungStatusReadDataType           /* 21 */ uc0x410D_RDC_KALIBRIERUNG_STATUS;
   ImpTypeValDcm_RdcStatusReadDataType                       /* 22 */ uc0x410E_RDC_STATUS;
@@ -117,23 +117,23 @@ typedef struct
   ImpTypeArrayDcm_RdcSolldruckVornReadDataType              /* 24 */ auc0x4110_RDC_SOLLDRUCK_VORN;
   ImpTypeArrayDcm_RdcSolldruckHintenReadDataType            /* 25 */ auc0x4111_RDC_SOLLDRUCK_HINTEN;
   ImpTypeValDcm_RdcPositionReadDataType                     /* 26 */ uc0x4112_RDC_POSITION;
-  uint8                                                     /* 27 */ uc0x5008_SPANNUNGSMASTER_VERFUEGBAR;
-  uint8                                                     /* 28 */ uc0x500A_GESCHWINDIGKEIT;
-  uint16                                                    /* 29 */ ush0x500B_FUNKTIONSZUSTAND;
-  uint8                                                     /* 30 */ uc0x500C_INTERNER_FUNKTIONSZUSTAND;
-  uint16                                                    /* 31 */ ush0x500E_INTERNE_FEHLERNUMMER;
+   uint8                                                     /* 27 */ uc0x5008_SPANNUNGSMASTER_VERFUEGBAR;
+   uint8                                                     /* 28 */ uc0x500A_GESCHWINDIGKEIT;
+   uint16                                                    /* 29 */ ush0x500B_FUNKTIONSZUSTAND;
+   uint8                                                     /* 30 */ uc0x500C_INTERNER_FUNKTIONSZUSTAND;
+   uint16                                                    /* 31 */ ush0x500E_INTERNE_FEHLERNUMMER;
 } tRDCiDtcUwbListDef; // 50 Byte
 
 typedef struct 
 {
-  uint32                          ulDtc;                                      // HA DTC
+   uint32                          ulDtc;                                      // HA DTC
   ImpTypeRefDem_EventStatusType   ucStatus;                                   // failed, passed
 
-  uint8                           ucType;                                     // primary, secondary
+   uint8                           ucType;                                     // primary, secondary
 
-  uint8                           ucUwbUpdateState;                           // TRUE => alle UWBs werden aktualisiert, FALSE => keine Aktion
-  uint32                          ulUwbMask;                                  // Bitkodierte Zuordnung von UWB zu DTC (1 => UWB für DTC relevant, 0 => UWB für DTC nicht relevant) 
-  tRDCiDtcUwbListDef              tUwb;                                       // Environment data
+   uint8                           ucUwbUpdateState;                           // TRUE => alle UWBs werden aktualisiert, FALSE => keine Aktion
+   uint32                          ulUwbMask;                                  // Bitkodierte Zuordnung von UWB zu DTC (1 => UWB für DTC relevant, 0 => UWB für DTC nicht relevant) 
+   tRDCiDtcUwbListDef              tUwb;                                       // Environment data
 } tRDCiDtcListDef;  // 61 Byte 
 
 /******************************************************************************/
@@ -355,8 +355,8 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_Dem_WuMuteRr_SetEventStatus( ImpTyp
 
 extern void WriteDtcListToNvmBlock(void);
 extern void ReadDtcListFromNvmBlock(void);
-extern void InitDtcUwbData( uint8 ucDtcNo );
-extern void ReadDtcUwbData( uint8 ucDtcNo );
+extern void InitDtcUwbData(uint8 ucDtcNo );
+extern void ReadDtcUwbData(uint8 ucDtcNo );
 
 #ifdef __cplusplus
 }

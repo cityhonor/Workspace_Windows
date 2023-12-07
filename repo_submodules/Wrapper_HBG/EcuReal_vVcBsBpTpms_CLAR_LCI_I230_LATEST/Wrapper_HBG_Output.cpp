@@ -26,6 +26,11 @@
 #include "Rte_CtApHufTpmsSWC.h"
 
 #include "Wrapper_HBG_Output.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub_Output.h"
+#else
+#endif
+
 #include "Wrapper_HBG_NvmServicesX.h"
 #include "Wrapper_HBG_CalPrmX.h"
 #include "Wrapper_HBG_CddDataX.h"
@@ -33,11 +38,6 @@
 #include "Wrapper_HBG_FlexRayDataX.h"
 #include "Wrapper_HBG_StbMBX.h"
 #include "Wrapper_HBG_DemServicesX.h"
-
-#ifdef _EcuVirtual
-#include "RTE_Stub_Output.h"
-#else
-#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -544,7 +544,7 @@ struct Rte_PDS_CtApHufTpmsSWC_StbMB_AbsoluteTimeBaseValue_R       tStbMB_Absolut
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_ST_TYR( P2CONST(Rdci_ST_TYR_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_DATA) data){
+FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_ST_TYR(P2CONST(Rdci_ST_TYR_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_DATA) data){
    return 0;
 }
 

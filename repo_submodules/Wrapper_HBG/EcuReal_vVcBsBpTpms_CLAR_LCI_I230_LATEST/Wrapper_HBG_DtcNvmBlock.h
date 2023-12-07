@@ -61,8 +61,8 @@ extern "C"
 
 extern void NVM_ReadAllDTC(void);
 extern void NVM_WriteAllDTC(void);
-extern uint8 ucNvmDTC_ReadByte( uint32 ulIx );
-extern void NvmDTC_WriteByte( uint32 ulIx, uint8 ucNvmByte );
+extern uint8 ucNvmDTC_ReadByte(uint32 ulIx );
+extern void NvmDTC_WriteByte(uint32 ulIx, uint8 ucNvmByte );
 
 #ifdef __cplusplus
 }

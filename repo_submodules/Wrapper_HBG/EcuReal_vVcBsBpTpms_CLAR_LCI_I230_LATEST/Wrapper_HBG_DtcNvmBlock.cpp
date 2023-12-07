@@ -24,7 +24,13 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Wrapper_HBG_DtcNvmBlock.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub_DtcNvmBlock.h"
+#else
+#endif
+
 #include "Wrapper_HBG_DemServicesX.h"
+
 #include "Rte_CtApHufTpmsSWC.h"
 
 #include <stdio.h>

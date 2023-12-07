@@ -29,6 +29,11 @@
 #endif
 
 #include "Wrapper_HBG.h"
+#ifdef _EcuVirtual
+#include "RTE_Stub.h"
+#else
+#endif
+
 #include "Rte_CtApHufTpmsSWC.h"
 
 /******************************************************************************/
