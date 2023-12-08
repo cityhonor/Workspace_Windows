@@ -13,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright � 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -23,15 +23,26 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Wrapper_HBG_FlexRayData.h"
+#include "Rte_CtApHufTpmsSWC_Type.h"
+#include "Rte_CtApHufTpmsSWC.h"
+#include "Wrapper_HBG_FlexRayDataX.h"
+
 #ifdef _EcuVirtual
-#include "RTE_Stub_FlexRayData.h"
+#include "RTE_Stub_FlexRayDataX.h"
 #else
 #endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define cIx_DISP_HR           ((uint8) 0x01)
+#define cIx_DISP_MN           ((uint8) 0x02)
+#define cIx_DISP_SEC          ((uint8) 0x04)
+#define cIx_DISP_DATE_DAY     ((uint8) 0x08)
+#define cIx_DISP_DATE_WDAY    ((uint8) 0x10)
+#define cIx_DISP_DATE_MON     ((uint8) 0x20)
+#define cIx_DISP_DATE_YR      ((uint8) 0x40)
+#define cIx_ST_DISP_CTI_DATE  ((uint8) 0x80)
 
 /******************************************************************************/
 /* MACROS                                                                     */

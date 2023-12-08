@@ -13,7 +13,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright � 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
@@ -23,9 +23,11 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Wrapper_HBG_CddData.h"
+#include "Rte_CtApHufTpmsSWC_Type.h"
+#include "Rte_CtApHufTpmsSWC.h"
+#include "Wrapper_HBG_CddDataX.h"
 #ifdef _EcuVirtual
-#include "RTE_Stub_CddData.h"
+#include "RTE_Stub_CddDataX.h"
 #else
 #endif
 
