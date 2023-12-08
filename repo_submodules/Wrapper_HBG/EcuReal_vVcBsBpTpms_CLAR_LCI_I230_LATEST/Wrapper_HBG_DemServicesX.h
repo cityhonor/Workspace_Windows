@@ -1,3 +1,5 @@
+#ifndef _Wrapper_HBG_DemServicesX_h
+#define _Wrapper_HBG_DemServicesX_h
 /******************************************************************************/
 /* File   : Wrapper_HBG_DemServicesX.h                                        */
 /*                                                                            */
@@ -27,60 +29,6 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define cDemErrorRdciRfExternalInterference                   ( (uint8)  0 )
-#define cDemErrorRdciAutoLearningFailed                       ( (uint8)  1 )
-#define cDemErrorRdci4WrongWuMounted                          ( (uint8)  2 )
-#define cDemErrorRdci1To3WrongWuMounted                       ( (uint8)  3 )
-#define cDemErrorRdciWuMuteFl                                 ( (uint8)  4 )
-#define cDemErrorRdciWuMuteFr                                 ( (uint8)  5 )
-#define cDemErrorRdciWuMuteRl                                 ( (uint8)  6 )
-#define cDemErrorRdciWuMuteRr                                 ( (uint8)  7 )
-#define cDemErrorRdciWuDefectFl                               ( (uint8)  8 )
-#define cDemErrorRdciWuDefectFr                               ( (uint8)  9 )
-#define cDemErrorRdciWuDefectRl                               ( (uint8) 10 )
-#define cDemErrorRdciWuLocalisationFailed                     ( (uint8) 11 )
-#define cDemErrorRdciWuDefectRr                               ( (uint8) 12 )
-#define cDemErrorRdciWuLowBatteryFl                           ( (uint8) 13 )
-#define cDemErrorRdciWuLowBatteryFr                           ( (uint8) 14 )
-#define cDemErrorRdciWuLowBatteryRl                           ( (uint8) 15 )
-#define cDemErrorRdciWuLowBatteryRr                           ( (uint8) 16 )
-#define cDemErrorRdciTpmsManufactoryMode                      ( (uint8) 17 )
-#define cDemErrorRdciUnspecifiedWfcDefect                     ( (uint8) 18 )
-#define cDemErrorRdciUnspecifiedWuMute                        ( (uint8) 19 )
-#define cDemErrorRdciGatewayOrAntennaError                    ( (uint8) 20 )
-#define cDemErrorRdciOtherWuSensorType                        ( (uint8) 21 )
-#define cDemErrorRdciErfsCodingDataInconsistent               ( (uint8) 22 )
-#define cDemErrorRdciAusfall                                  ( (uint8) 23 )
-#define cDemErrorRdciBefuellhinweis                           ( (uint8) 24 )
-#define cDemErrorRdciDruckwarnung                             ( (uint8) 25 )
-#define cDemErrorRdciPannenwarnung                            ( (uint8) 26 )
-#define cDemErrorRdciWarnruecknahme                           ( (uint8) 27 )
-#define cDemErrorRdciKalibrierung                             ( (uint8) 28 )
-#define cDemErrorRdciPartialSystemAvailability                ( (uint8) 29 )
-#define cDemErrorRdciSystemNotAvailable                       ( (uint8) 30 )
-#define cDemErrorRdciATempTimeout                             ( (uint8) 31 )
-#define cDemErrorRdciATempInvalid                             ( (uint8) 32 )
-#define cDemErrorRdciVVehCogInvalid                           ( (uint8) 33 )
-#define cDemErrorRdciVVehCogQualifier                         ( (uint8) 33 )
-#define cDemErrorRdciConVehCrc                                ( (uint8) 34 )
-#define cDemErrorRdciConVehAlive                              ( (uint8) 35 )
-#define cDemErrorRdciConVehTimeout                            ( (uint8) 36 )
-#define cDemErrorRdciConVehInvalid                            ( (uint8) 37 )
-#define cDemErrorRdciEinheitenBn2020Timeout                   ( (uint8) 38 )
-#define cDemErrorRdciRdcDtPckg1Timeout                        ( (uint8) 39 )
-#define cDemErrorRdciEinheitenBn2020Invalid                   ( (uint8) 40 )
-#define cDemErrorRdciRdcDtPckg1Alive                          ( (uint8) 41 )
-#define cDemErrorRdciRdcDtPckg1Invalid                        ( (uint8) 42 )
-#define cDemErrorRdciRelativzeitTimeout                       ( (uint8) 43 )
-#define cDemErrorRdciRelativzeitInvalid                       ( (uint8) 44 )
-#define cDemErrorRdciVVehTimeout                              ( (uint8) 45 )
-#define cDemErrorRdciVVehAliveFailure                         ( (uint8) 46 )
-#define cDemErrorRdciVVehCrcFailure                           ( (uint8) 47 )
-
-#define cMaxErrorCount                                        ( (uint8) 48 ) // 48 Fehler werden z.Zt. unterstützt
-
-#define cDemPrimaryType                                       ( (uint8)  0 )
-#define cDemSecondaryType                                     ( (uint8)  1 )
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -89,52 +37,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef struct
-{
-   uint8                                                     /*  0 */ auc0x1702_SAE_CODE[3];
-   uint32                                                    /*  1 */ ul0x1768_KM_STAND_SUPREME;
-   uint8                                                     /*  2 */ auc0x1769_SYSTEMZEIT_SUPREME[6];
-  ImpTypeValDcm_FunktionenReifendruckkontrolleReadDataType  /*  3 */ uc0x190D_FUNKTIONEN_REIFENDRUCKKONTROLLE;
-  ImpTypeValDcm_RdcAktuelleAussentemperaturReadDataType     /*  5 */ uc0x2805_AUSSENTEMPERATUR;
-   uint8                                                     /*  6 */ uc0x2866_BETRIEBSSPANNUNG;
-   uint8                                                     /*  7 */ uc0x2867_FAHRZEUGGESCHWINDIGKEIT;
-  ImpTypeValDcm_RdcSensorHerstellerReadDataType             /*  8 */ uc0x4100_RDC_SENSOR_HERSTELLER;
-  ImpTypeValDcm_RdcReferenzAussentemperaturReadDataType     /*  9 */ uc0x4101_RDC_REFERENZ_AUSSENTEMPERATUR;
-  ImpTypeArrayDcm_RdcAussendruckReadDataType                /* 10 */ auc0x4102_RDC_AUSSENDRUCK;
-  ImpTypeArrayDcm_RdcReifendruckVlReadDataType              /* 11 */ auc0x4103_RDC_REIFENDRUCK_VL;
-  ImpTypeArrayDcm_RdcReifendruckVrReadDataType              /* 12 */ auc0x4104_RDC_REIFENDRUCK_VR;
-  ImpTypeArrayDcm_RdcReifendruckHlReadDataType              /* 13 */ auc0x4105_RDC_REIFENDRUCK_HL;
-  ImpTypeArrayDcm_RdcReifendruckHrReadDataType              /* 14 */ auc0x4106_RDC_REIFENDRUCK_HR;
-  ImpTypeValDcm_RdcReifentemperaturVlReadDataType           /* 15 */ uc0x4107_RDC_REIFENTEMPERATUR_VL;
-  ImpTypeValDcm_RdcReifentemperaturVrReadDataType           /* 16 */ uc0x4108_RDC_REIFENTEMPERATUR_VR;
-  ImpTypeValDcm_RdcReifentemperaturHlReadDataType           /* 17 */ uc0x4109_RDC_REIFENTEMPERATUR_HL;
-  ImpTypeValDcm_RdcReifentemperaturHrReadDataType           /* 18 */ uc0x410A_RDC_REIFENTEMPERATUR_HR;
-   sint8                                                     /* 19 */ sc0x410B_RDC_AKTUELLE_AUSSENTEMPERATUR;
-  ImpTypeValDcm_RdcInaktivStatusReadDataType                /* 20 */ uc0x410C_RDC_INAKTIV_STATUS;
-  ImpTypeValDcm_RdcKalibrierungStatusReadDataType           /* 21 */ uc0x410D_RDC_KALIBRIERUNG_STATUS;
-  ImpTypeValDcm_RdcStatusReadDataType                       /* 22 */ uc0x410E_RDC_STATUS;
-  ImpTypeValDcm_RdcKonfigurationReadDataType                /* 23 */ uc0x410F_RDC_KONFIGURATION;
-  ImpTypeArrayDcm_RdcSolldruckVornReadDataType              /* 24 */ auc0x4110_RDC_SOLLDRUCK_VORN;
-  ImpTypeArrayDcm_RdcSolldruckHintenReadDataType            /* 25 */ auc0x4111_RDC_SOLLDRUCK_HINTEN;
-  ImpTypeValDcm_RdcPositionReadDataType                     /* 26 */ uc0x4112_RDC_POSITION;
-   uint8                                                     /* 27 */ uc0x5008_SPANNUNGSMASTER_VERFUEGBAR;
-   uint8                                                     /* 28 */ uc0x500A_GESCHWINDIGKEIT;
-   uint16                                                    /* 29 */ ush0x500B_FUNKTIONSZUSTAND;
-   uint8                                                     /* 30 */ uc0x500C_INTERNER_FUNKTIONSZUSTAND;
-   uint16                                                    /* 31 */ ush0x500E_INTERNE_FEHLERNUMMER;
-} tRDCiDtcUwbListDef; // 50 Byte
-
-typedef struct 
-{
-   uint32                          ulDtc;                                      // HA DTC
-  ImpTypeRefDem_EventStatusType   ucStatus;                                   // failed, passed
-
-   uint8                           ucType;                                     // primary, secondary
-
-   uint8                           ucUwbUpdateState;                           // TRUE => alle UWBs werden aktualisiert, FALSE => keine Aktion
-   uint32                          ulUwbMask;                                  // Bitkodierte Zuordnung von UWB zu DTC (1 => UWB für DTC relevant, 0 => UWB für DTC nicht relevant) 
-   tRDCiDtcUwbListDef              tUwb;                                       // Environment data
-} tRDCiDtcListDef;  // 61 Byte 
 
 /******************************************************************************/
 /* CONSTS                                                                     */
@@ -147,7 +49,6 @@ typedef struct
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-extern tRDCiDtcListDef tRDCiDtclist[cMaxErrorCount];
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
@@ -353,11 +254,6 @@ FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_Dem_WuMuteRrInfo_GetEventStatus( P2
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_Dem_WuMuteRr_ResetEventStatus(void);
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_Dem_WuMuteRr_SetEventStatus( ImpTypeRefDem_EventStatusType EventStatus );
 
-extern void WriteDtcListToNvmBlock(void);
-extern void ReadDtcListFromNvmBlock(void);
-extern void InitDtcUwbData(uint8 ucDtcNo );
-extern void ReadDtcUwbData(uint8 ucDtcNo );
-
 #ifdef __cplusplus
 }
 #endif
@@ -365,4 +261,5 @@ extern void ReadDtcUwbData(uint8 ucDtcNo );
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
+#endif
 

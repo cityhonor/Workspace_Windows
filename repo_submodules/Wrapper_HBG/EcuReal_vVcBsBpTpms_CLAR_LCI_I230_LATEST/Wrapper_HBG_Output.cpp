@@ -545,7 +545,13 @@ struct Rte_PDS_CtApHufTpmsSWC_StbMB_AbsoluteTimeBaseValue_R       tStbMB_Absolut
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_ST_TYR(P2CONST(Rdci_ST_TYR_Type, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_DATA) data){
-   return 0;
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Send_ST_TYR(data)
+#else
+      E_OK
+#endif
+   );
 }
 
 void Wrap_HBG_CyclicOutputFunction(void){

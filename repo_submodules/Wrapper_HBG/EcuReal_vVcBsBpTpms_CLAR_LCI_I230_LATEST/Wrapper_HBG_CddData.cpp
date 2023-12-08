@@ -74,11 +74,23 @@ using namespace RDCi;
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddAbsData(P2VAR(ImpTypeRecCddAbsData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data){
-   return 0x00;
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Receive_CddAbsData(data)
+#else
+      0
+#endif
+   );
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Receive_CddRdcData(P2VAR(ImpTypeRecCddRdcData, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) data){
-   return 0x00;
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Receive_CddRdcData(data)
+#else
+      0
+#endif
+   );
 }
 
 /******************************************************************************/

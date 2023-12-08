@@ -60,7 +60,7 @@
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Send_Ccm(P2CONST(ImpTypeRecCcm_DISP_CC_BYPA_00, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_DATA) data){
    return(
 #ifdef _EcuVirtual
-      Stub_Rte_Send_Ccm(data)
+      RTE_Stub_Send_Ccm(data)
 #else
       0
 #endif
