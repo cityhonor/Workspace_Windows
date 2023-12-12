@@ -28,7 +28,7 @@
 #include "Wrapper_HBG_CalPrmX.h"
 
 #ifdef _EcuVirtual
-#include "RTE_Stub_CalPrm.h"
+#include "RTE_Stub_CalPrmX.h"
 #else
 #endif
 
