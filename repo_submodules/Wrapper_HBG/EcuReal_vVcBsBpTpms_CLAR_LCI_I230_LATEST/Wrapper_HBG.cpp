@@ -30,7 +30,7 @@
 
 #include "Wrapper_HBG.h"
 #ifdef _EcuVirtual
-#include "RTE_Stub.h"
+#include "Rte_Type.h"
 #else
 #endif
 
