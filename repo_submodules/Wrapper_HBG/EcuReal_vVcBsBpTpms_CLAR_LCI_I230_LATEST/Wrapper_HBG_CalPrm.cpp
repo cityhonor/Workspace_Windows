@@ -374,7 +374,7 @@ Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciLearnLocateConfig_FncRetPtrType Wr
 #ifdef _EcuVirtual
       RTE_Stub_Prm_CRdciLearnLocateConfig()
 #else
-      NULL_PTR
+      ((Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciLearnLocateConfig_FncRetPtrType)NULL_PTR)
 #endif
    );
 }
@@ -514,7 +514,7 @@ Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciTrefSeasAdjConfig_FncRetPtrType Wr
 #ifdef _EcuVirtual
       RTE_Stub_Prm_CRdciTrefSeasAdjConfig()
 #else
-      NULL_PTR
+      ((Rte_CtApHufTpmsSWC_PiCalPrmRDCi_R_Calprm_CRdciTrefSeasAdjConfig_FncRetPtrType)NULL_PTR)
 #endif
    );
 }

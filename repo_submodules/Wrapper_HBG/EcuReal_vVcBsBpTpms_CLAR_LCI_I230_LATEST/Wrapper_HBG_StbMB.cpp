@@ -60,19 +60,43 @@
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetAbsoluteTime(P2VAR(StbMB_SystemTimeType, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) systemTime){
-   return RTE_Stub_Call_StbMB_GetAbsoluteTime(systemTime);
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Call_StbMB_GetAbsoluteTime(systemTime)
+#else
+      E_OK
+#endif
+   );
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetGlobalTime(P2VAR(StbMB_TickType, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) ticks){
-   return RTE_Stub_Call_StbMB_GetGlobalTime(ticks);
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Call_StbMB_GetGlobalTime(ticks)
+#else
+      E_OK
+#endif
+   );
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetSyncState(P2VAR(StbMB_SyncStatusType, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) syncState){
-   return RTE_Stub_Call_StbMB_GetSyncState(syncState);
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Call_StbMB_GetSyncState(syncState)
+#else
+      E_OK
+#endif
+   );
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Wrap_HBG_Call_StbMB_GetTickDuration(P2VAR(uint32, AUTOMATIC, RTE_CTAPHUFTPMSSWC_APPL_VAR) tickDuration){
-   return RTE_Stub_Call_StbMB_GetTickDuration(tickDuration);
+   return(
+#ifdef _EcuVirtual
+      RTE_Stub_Call_StbMB_GetTickDuration(tickDuration)
+#else
+      E_OK
+#endif
+   );
 }
 
 /******************************************************************************/
