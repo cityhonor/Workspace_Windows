@@ -516,57 +516,57 @@ git branch -a
 git status
 echo ""
 
-cd ../../repo_projects/ProjectWindows_EcuReal_vBcRsBpTpms
-echo "ProjectWindows_EcuReal_vBcRsBpTpms"
+cd ../../repo_projects/ProjectWindows_rEcu_vBcRsBpTpms
+echo "ProjectWindows_rEcu_vBcRsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuReal_vIcVsEpFoc
-echo "ProjectWindows_EcuReal_vIcVsEpFoc"
+cd ../ProjectWindows_rEcu_vIcVsEpFoc
+echo "ProjectWindows_rEcu_vIcVsEpFoc"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuReal_vVcBsBpTpms
-echo "ProjectWindows_EcuReal_vVcBsBpTpms"
+cd ../ProjectWindows_rEcu_vVcBsBpTpms
+echo "ProjectWindows_rEcu_vVcBsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuReal_vVcLsBpFota
-echo "ProjectWindows_EcuReal_vVcLsBpFota"
+cd ../ProjectWindows_rEcu_vVcLsBpFota
+echo "ProjectWindows_rEcu_vVcLsBpFota"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuResim_vBcRsBpTpms
-echo "ProjectWindows_EcuResim_vBcRsBpTpms"
+cd ../ProjectWindows_vEcu_vBcRsBpTpms
+echo "ProjectWindows_vEcu_vBcRsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuResim_vRcVsEpFoc
-echo "ProjectWindows_EcuResim_vRcVsEpFoc"
+cd ../ProjectWindows_vEcu_vRcVsEpFoc
+echo "ProjectWindows_vEcu_vRcVsEpFoc"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuResim_vVcBsBpTpms
-echo "ProjectWindows_EcuResim_vVcBsBpTpms"
+cd ../ProjectWindows_vEcu_vVcBsBpTpms
+echo "ProjectWindows_vEcu_vVcBsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_EcuResim_vVcLsBpFota
-echo "ProjectWindows_EcuResim_vVcLsBpFota"
+cd ../ProjectWindows_vEcu_vVcLsBpFota
+echo "ProjectWindows_vEcu_vVcLsBpFota"
 git checkout main
 git branch -a
 git status
