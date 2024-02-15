@@ -544,6 +544,13 @@ git branch -a
 git status
 echo ""
 
+cd ../ProjectWindows_vEcu_vBcIsBpTpms
+echo "ProjectWindows_vEcu_vBcIsBpTpms"
+git checkout main
+git branch -a
+git status
+echo ""
+
 cd ../ProjectWindows_vEcu_vBcRsBpTpms
 echo "ProjectWindows_vEcu_vBcRsBpTpms"
 git checkout main
