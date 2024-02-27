@@ -28,6 +28,9 @@
 [submodule "repo_submodules/EcuabIfMem"]
 	path = repo_submodules/EcuabIfMem
 	url = https://github.com/RaajnaagHuliyapuradaMata/EcuabIfMem.git
+[submodule "repo_submodules/EcuabIfRf"]
+	path = repo_submodules/EcuabIfRf
+	url = https://github.com/RaajnaagHuliyapuradaMata/EcuabIfRf.git
 [submodule "repo_submodules/EcuabIfWdg"]
 	path = repo_submodules/EcuabIfWdg
 	url = https://github.com/RaajnaagHuliyapuradaMata/EcuabIfWdg.git
