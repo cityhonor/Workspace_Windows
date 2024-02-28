@@ -68,6 +68,13 @@ git branch -a
 git status
 echo ""
 
+cd ../EcuabIfRf
+echo "EcuabIfRf"
+git checkout main
+git branch -a
+git status
+echo ""
+
 cd ../EcuabIfWdg
 echo "EcuabIfWdg"
 git checkout main

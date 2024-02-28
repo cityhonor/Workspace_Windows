@@ -58,6 +58,12 @@ git pull
 git status
 echo ""
 
+cd ../EcuabIfRf
+echo "EcuabIfRf"
+git pull
+git status
+echo ""
+
 cd ../EcuabIfWdg
 echo "EcuabIfWdg"
 git pull
