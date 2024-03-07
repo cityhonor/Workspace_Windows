@@ -223,30 +223,3 @@
 [submodule "repo_submodules/SwcServiceWdgM"]
 	path = repo_submodules/SwcServiceWdgM
 	url = https://github.com/RaajnaagHuliyapuradaMata/SwcServiceWdgM.git
-[submodule "repo_projects/ProjectWindows_rEcu_vBcRsBpTpms"]
-	path = repo_projects/ProjectWindows_rEcu_vBcRsBpTpms
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_rEcu_vBcRsBpTpms.git
-[submodule "repo_projects/ProjectWindows_rEcu_vIcVsEpFoc"]
-	path = repo_projects/ProjectWindows_rEcu_vIcVsEpFoc
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_rEcu_vIcVsEpFoc.git
-[submodule "repo_projects/ProjectWindows_rEcu_vVcBsBpTpms"]
-	path = repo_projects/ProjectWindows_rEcu_vVcBsBpTpms
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_rEcu_vVcBsBpTpms.git
-[submodule "repo_projects/ProjectWindows_rEcu_vVcLsBpFota"]
-	path = repo_projects/ProjectWindows_rEcu_vVcLsBpFota
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_rEcu_vVcLsBpFota.git
-[submodule "repo_projects/ProjectWindows_vEcu_vBcIsBpTpms"]
-	path = repo_projects/ProjectWindows_vEcu_vBcIsBpTpms
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_vEcu_vBcIsBpTpms.git
-[submodule "repo_projects/ProjectWindows_vEcu_vBcRsBpTpms"]
-	path = repo_projects/ProjectWindows_vEcu_vBcRsBpTpms
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_vEcu_vBcRsBpTpms.git
-[submodule "repo_projects/ProjectWindows_vEcu_vRcVsEpFoc"]
-	path = repo_projects/ProjectWindows_vEcu_vRcVsEpFoc
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_vEcu_vRcVsEpFoc.git
-[submodule "repo_projects/ProjectWindows_vEcu_vVcBsBpTpms"]
-	path = repo_projects/ProjectWindows_vEcu_vVcBsBpTpms
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_vEcu_vVcBsBpTpms.git
-[submodule "repo_projects/ProjectWindows_vEcu_vVcLsBpFota"]
-	path = repo_projects/ProjectWindows_vEcu_vVcLsBpFota
-	url = https://github.com/RaajnaagHuliyapuradaMata/ProjectWindows_vEcu_vVcLsBpFota.git
