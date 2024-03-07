@@ -223,3 +223,30 @@
 [submodule "repo_submodules/SwcServiceWdgM"]
 	path = repo_submodules/SwcServiceWdgM
 	url = https://github.com/RaajnaagHuliyapuradaMata/SwcServiceWdgM.git
+[submodule "repo_projects/rEcu_DaVinciDeveloperVxx.xx.xx_TaskingSmartCodeV10.01.04_InfineonAurixTC4x____________LibvVcBsBpTpms"]
+	path = repo_projects/rEcu_DaVinciDeveloperVxx.xx.xx_TaskingSmartCodeV10.01.04_InfineonAurixTC4x____________LibvVcBsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/rEcu_DaVinciDeveloperVxx.xx.xx_TaskingSmartCodeV10.01.04_InfineonAurixTC4x____________LibvVcBsBpTpms.git
+[submodule "repo_projects/rEcu_DaVinciDeveloperVxx.xx.xx_uVisionV05.37.00__________RenesasRH850F1KS1____________eMobility"]
+	path = repo_projects/rEcu_DaVinciDeveloperVxx.xx.xx_uVisionV05.37.00__________RenesasRH850F1KS1____________eMobility
+	url = https://github.com/RaajnaagHuliyapuradaMata/rEcu_DaVinciDeveloperVxx.xx.xx_uVisionV05.37.00__________RenesasRH850F1KS1____________eMobility.git
+[submodule "repo_projects/rEcu_FblSlp3CBD2200891_________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vVcLsBpFota"]
+	path = repo_projects/rEcu_FblSlp3CBD2200891_________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vVcLsBpFota
+	url = https://github.com/RaajnaagHuliyapuradaMata/rEcu_FblSlp3CBD2200891_________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vVcLsBpFota.git
+[submodule "repo_projects/rEcu_iSolarV06.00.00___________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vBcRsBpTpms"]
+	path = repo_projects/rEcu_iSolarV06.00.00___________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vBcRsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/rEcu_iSolarV06.00.00___________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vBcRsBpTpms.git
+[submodule "repo_projects/vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____eMobility"]
+	path = repo_projects/vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____eMobility
+	url = https://github.com/RaajnaagHuliyapuradaMata/vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____eMobility.git
+[submodule "repo_projects/vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____LibvVcBsBpTpms"]
+	path = repo_projects/vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____LibvVcBsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____LibvVcBsBpTpms.git
+[submodule "repo_projects/vEcu_FblSlp3CBD2200891_________CMakeV03.25.03____________Hypervisor_VirtualMachine____vVcLsBpFota"]
+	path = repo_projects/vEcu_FblSlp3CBD2200891_________CMakeV03.25.03____________Hypervisor_VirtualMachine____vVcLsBpFota
+	url = https://github.com/RaajnaagHuliyapuradaMata/vEcu_FblSlp3CBD2200891_________CMakeV03.25.03____________Hypervisor_VirtualMachine____vVcLsBpFota.git
+[submodule "repo_projects/vEcu_iSolarV06.00.00___________CMakeV03.25.03____________Hypervisor_VirtualMachine____vBcRsBpTpms"]
+	path = repo_projects/vEcu_iSolarV06.00.00___________CMakeV03.25.03____________Hypervisor_VirtualMachine____vBcRsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/vEcu_iSolarV06.00.00___________CMakeV03.25.03____________Hypervisor_VirtualMachine____vBcRsBpTpms.git
+[submodule "repo_projects/vEcu_iSolarV12.00.00___________MinGwV06.03.00____________NxpS32K146___________________vBcIsBpTpms"]
+	path = repo_projects/vEcu_iSolarV12.00.00___________MinGwV06.03.00____________NxpS32K146___________________vBcIsBpTpms
+	url = https://github.com/RaajnaagHuliyapuradaMata/vEcu_iSolarV12.00.00___________MinGwV06.03.00____________NxpS32K146___________________vBcIsBpTpms.git
