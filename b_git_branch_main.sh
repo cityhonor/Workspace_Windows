@@ -523,64 +523,64 @@ git branch -a
 git status
 echo ""
 
-cd ../../repo_projects/ProjectWindows_rEcu_vBcRsBpTpms
-echo "ProjectWindows_rEcu_vBcRsBpTpms"
+cd ../../repo_projects/rEcu_DaVinciDeveloperVxx.xx.xx_TaskingSmartCodeV10.01.04_InfineonAurixTC4x____________LibvVcBsBpTpms
+echo "rEcu_DaVinciDeveloperVxx.xx.xx_TaskingSmartCodeV10.01.04_InfineonAurixTC4x____________LibvVcBsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_rEcu_vIcVsEpFoc
-echo "ProjectWindows_rEcu_vIcVsEpFoc"
+cd ../rEcu_DaVinciDeveloperVxx.xx.xx_uVisionV05.37.00__________RenesasRH850F1KS1____________eMobility
+echo "rEcu_DaVinciDeveloperVxx.xx.xx_uVisionV05.37.00__________RenesasRH850F1KS1____________eMobility"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_rEcu_vVcBsBpTpms
-echo "ProjectWindows_rEcu_vVcBsBpTpms"
+cd ../rEcu_FblSlp3CBD2200891_________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vVcLsBpFota
+echo "rEcu_FblSlp3CBD2200891_________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vVcLsBpFota"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_rEcu_vVcLsBpFota
-echo "ProjectWindows_rEcu_vVcLsBpFota"
+cd ../rEcu_iSolarV06.00.00___________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vBcRsBpTpms
+echo "rEcu_iSolarV06.00.00___________GhsMultiV2015.01.07_______RenesasRH850F1LR7F7010133AFP_vBcRsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_vEcu_vBcIsBpTpms
-echo "ProjectWindows_vEcu_vBcIsBpTpms"
+cd ../vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____LibvVcBsBpTpms
+echo "vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____LibvVcBsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_vEcu_vBcRsBpTpms
-echo "ProjectWindows_vEcu_vBcRsBpTpms"
+cd ../vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____eMobility
+echo "vEcu_DaVinciDeveloperVxx.xx.xx_CMakeV03.25.03____________Hypervisor_VirtualMachine____eMobility"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_vEcu_vRcVsEpFoc
-echo "ProjectWindows_vEcu_vRcVsEpFoc"
+cd ../vEcu_FblSlp3CBD2200891_________CMakeV03.25.03____________Hypervisor_VirtualMachine____vVcLsBpFota
+echo "vEcu_FblSlp3CBD2200891_________CMakeV03.25.03____________Hypervisor_VirtualMachine____vVcLsBpFota"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_vEcu_vVcBsBpTpms
-echo "ProjectWindows_vEcu_vVcBsBpTpms"
+cd ../vEcu_iSolarV06.00.00___________CMakeV03.25.03____________Hypervisor_VirtualMachine____vBcRsBpTpms
+echo "vEcu_iSolarV06.00.00___________CMakeV03.25.03____________Hypervisor_VirtualMachine____vBcRsBpTpms"
 git checkout main
 git branch -a
 git status
 echo ""
 
-cd ../ProjectWindows_vEcu_vVcLsBpFota
-echo "ProjectWindows_vEcu_vVcLsBpFota"
+cd ../vEcu_iSolarV12.00.00___________MinGwV06.03.00____________NxpS32K146___________________vBcIsBpTpms
+echo "vEcu_iSolarV12.00.00___________MinGwV06.03.00____________NxpS32K146___________________vBcIsBpTpms"
 git checkout main
 git branch -a
 git status
