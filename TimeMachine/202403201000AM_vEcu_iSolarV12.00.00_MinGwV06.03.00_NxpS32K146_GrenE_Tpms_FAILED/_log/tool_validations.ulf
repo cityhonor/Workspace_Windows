@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="RTTM_Editor_AR4X_01" T="2024-03-20T09:45:45.609+0100">
+<SHORT-NAME>ISOLAR-A_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The EcuExtract is not configured or it contains unresolved reference : /ETAS_Project/EcucModuleConfigurationValues/EcucValueCollection</L-2>
+</DESC>
+<CATEGORY>ERROR</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">EcucValueCollection_Generated.arxml</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CustomTargetURI">platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValues/EcucValueCollection?type=EcucValueCollection</SD>
+<SD GID="PROJECT">vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms</SD>
+<SD GID="Resource">/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/ETAS_Project/EcucModuleConfigurationValues/EcucValueCollection</SD>
+<SD GID="URI">platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValues/EcucValueCollection?type=EcucValueCollection</SD>
+<SD GID="ELEMENT">autosar40.ecucdescription.impl.EcucValueCollectionImpl@6b91a98b (shortName: EcucValueCollection)</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="com.bosch.blueworx.core.logging.view.problemslog.markerClickExecutionID">DoubleClickValidation</SD>
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="id">RTTM_Editor_AR4X_01</SD>
+<SD GID="ELEMENTECLASS">EcucValueCollection</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>
