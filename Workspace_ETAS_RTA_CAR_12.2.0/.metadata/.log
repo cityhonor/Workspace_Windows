@@ -5039,3 +5039,967 @@ Binding(CTRL+ARROW_DOWN,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2024-03-21 08:29:04.139 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 08:29:06.920
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 08:29:06.920
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:29:33.683
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:29:33.699
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:29:33.699
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:29:33.699
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:29:33.715
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:29:33.715
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 08:29:37.475
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 08:29:58.362
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 08:30:01.047
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 303 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 08:30:01.078
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 30 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 08:30:02.028
+!MESSAGE RefreshJob: refresh is activated
+
+!ENTRY org.eclipse.jface 2 0 2024-03-21 08:33:20.016
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-21 08:33:20.016
+!MESSAGE A conflict occurred for CTRL+ARROW_UP:
+Binding(CTRL+ARROW_UP,
+	ParameterizedCommand(Command(bsw_move_up_command,Move Up Command,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d956153,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.bosch.autosartool.bsw.editor.ar4x.contextId_BSW,,,system)
+Binding(CTRL+ARROW_UP,
+	ParameterizedCommand(Command(de.cau.cs.kieler.klighd.ui.actionExecution,IAction execution,
+		Generic KLighD command allowing to execution IAction implementations,
+		Category(de.cau.cs.kieler.klighd.ui,KLighD Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22ac0771,
+		[Parameter(de.cau.cs.kieler.klighd.ui.action,Action,null,false)],,true),[org.eclipse.core.commands.Parameterization@112df2ae]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	de.cau.cs.kieler.klighd.ui.context,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-21 08:33:20.016
+!MESSAGE A conflict occurred for CTRL+ARROW_DOWN:
+Binding(CTRL+ARROW_DOWN,
+	ParameterizedCommand(Command(bsw_move_down_command,Move Down Command,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@88ec1fb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.bosch.autosartool.bsw.editor.ar4x.contextId_BSW,,,system)
+Binding(CTRL+ARROW_DOWN,
+	ParameterizedCommand(Command(de.cau.cs.kieler.klighd.ui.actionExecution,IAction execution,
+		Generic KLighD command allowing to execution IAction implementations,
+		Category(de.cau.cs.kieler.klighd.ui,KLighD Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22ac0771,
+		[Parameter(de.cau.cs.kieler.klighd.ui.action,Action,null,false)],,true),[org.eclipse.core.commands.Parameterization@1ad6f414]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	de.cau.cs.kieler.klighd.ui.context,,,system)
+!SESSION 2024-03-21 08:50:07.982 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 08:50:10.521
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 08:50:10.521
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:50:35.657
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:50:35.672
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:50:35.672
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:50:35.688
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:50:35.688
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 08:50:35.688
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 08:50:38.974
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 08:50:58.047
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 08:51:00.044
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 233 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 08:51:00.079
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 33 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 08:51:03.408
+!MESSAGE RefreshJob: refresh is activated
+
+!ENTRY org.eclipse.jface 2 0 2024-03-21 08:51:34.168
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-21 08:51:34.168
+!MESSAGE A conflict occurred for CTRL+ARROW_UP:
+Binding(CTRL+ARROW_UP,
+	ParameterizedCommand(Command(bsw_move_up_command,Move Up Command,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@495caba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.bosch.autosartool.bsw.editor.ar4x.contextId_BSW,,,system)
+Binding(CTRL+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.scroll.lineUp,Scroll Line Up,
+		Scroll up one line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1663f07e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-21 08:51:34.168
+!MESSAGE A conflict occurred for CTRL+ARROW_DOWN:
+Binding(CTRL+ARROW_DOWN,
+	ParameterizedCommand(Command(bsw_move_down_command,Move Down Command,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72416b78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.bosch.autosartool.bsw.editor.ar4x.contextId_BSW,,,system)
+Binding(CTRL+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.scroll.lineDown,Scroll Line Down,
+		Scroll down one line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59c614ac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2024-03-21 09:17:35.441 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 09:17:38.017
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 09:17:38.017
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:18:02.972
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:18:02.972
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:18:02.988
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:18:02.988
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:18:02.988
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:18:03.004
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 09:18:06.304
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 09:18:27.285
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 09:18:31.814
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 225 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 09:18:31.838
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 23 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 09:18:33.512
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-03-21 09:59:25.233 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 09:59:28.149
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 09:59:28.149
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:59:59.660
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:59:59.660
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:59:59.676
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:59:59.676
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:59:59.691
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 09:59:59.691
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 10:00:03.356
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 10:00:37.434
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:00:41.598
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 248 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:00:41.624
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 25 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 10:00:41.676
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-03-21 10:15:59.686 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 10:16:02.409
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 10:16:02.418
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:16:33.235
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:16:33.250
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:16:33.250
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:16:33.250
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:16:33.266
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:16:33.266
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 10:16:36.891
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 10:17:59.519
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:18:01.556
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 232 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:18:01.580
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 23 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 10:18:04.367
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-03-21 10:23:41.599 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 10:23:42.572
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 10:23:42.572
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:23:43.686
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:23:43.686
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:23:43.702
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:23:43.702
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:23:43.702
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:23:43.717
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 10:23:46.313
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 10:24:00.477
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:24:02.081
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 213 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:24:02.106
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 23 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 10:24:05.170
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-03-21 10:30:53.110 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 10:30:55.631
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 10:30:55.631
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:31:22.890
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:31:22.895
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:31:22.906
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:31:22.906
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:31:22.906
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:31:22.921
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 10:31:26.315
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 10:31:50.095
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:31:52.107
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 196 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:31:52.130
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 22 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 10:31:54.614
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-03-21 10:45:03.354 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 10:45:04.344
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 10:45:04.344
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:45:05.474
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:45:05.490
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:45:05.497
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:45:05.497
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:45:05.506
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:45:05.506
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 10:45:08.086
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 10:45:22.195
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:45:23.804
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 181 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:45:23.827
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 22 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 10:45:26.127
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-03-21 10:52:45.000 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 10:52:47.247
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 10:52:47.247
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:53:11.355
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:53:11.357
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:53:11.371
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:53:11.371
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:53:11.371
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 10:53:11.371
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 10:53:14.787
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 10:53:35.292
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:53:36.997
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 201 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 10:53:37.024
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 25 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 10:53:39.254
+!MESSAGE RefreshJob: refresh is activated
+
+!ENTRY com.bosch.autosartool.bsw.generator.core 4 0 2024-03-21 10:57:52.089
+!MESSAGE Problems occured during Conf-Gen execution. Please refer Problems Log.
+!SESSION 2024-03-21 11:27:09.865 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-03-21 11:27:12.435
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-03-21 11:27:12.450
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 11:27:38.552
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 11:27:38.552
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 11:27:38.567
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 11:27:38.567
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 11:27:38.583
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-03-21 11:27:38.583
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-03-21 11:27:41.868
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-03-21 11:28:00.351
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY org.eclipse.core.resources 1 0 2024-03-21 11:28:05.483
+!MESSAGE RefreshJob: refresh is activated
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 11:28:05.604
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 205 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-03-21 11:28:05.620
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 14 ms
+
+!ENTRY com.bosch.autosartool.bsw.generator.core 4 0 2024-03-21 11:29:01.616
+!MESSAGE Problems occured during Conf-Gen execution. Please refer Problems Log.

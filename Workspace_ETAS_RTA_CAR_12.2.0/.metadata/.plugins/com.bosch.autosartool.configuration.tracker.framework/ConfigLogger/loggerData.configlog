@@ -19,7 +19,7 @@
       <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection_0/@ecucValues.0?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
       <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection_0/@ecucValues.2?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
       <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection_0/@ecucValues.1?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
-      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection_0?type=EcucValueCollection</changedParentObjects>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection?type=EcucValueCollection</changedParentObjects>
     </changes>
     <uiChanges actionType="VIEW" timestamp="2024-03-20 10:42:46.112" title="Opened Filesystem Navigator View" commandId="commandId" viewId="com.bosch.wbp.filenavigator.ui.view" name="Filesystem Navigator" uiClassType="org.eclipse.ui.internal.ViewReference"/>
     <uiChanges actionType="WIDGET" timestamp="2024-03-20 10:42:50.847" title="Selected vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms Tree" commandId="commandId" name="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" uiClassType="org.eclipse.swt.widgets.Tree"/>
@@ -1018,4 +1018,356 @@
   <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-20 16:39:23.888" title="Closed CompositionOverview Editor on &lt;b>TopLevelComposition&lt;/b> (CompositionSwComponentType)" commandId="commandId" editorId="com.bosch.autosartool.klighd.editors.CompositionOverviewEditor" name="CompositionOverview" uiClassType="org.eclipse.ui.internal.EditorReference"/>
   <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-20 16:44:21.435" title="Opened Mapping Editor on &lt;b>System&lt;/b> (System)" commandId="commandId" editorId="com.bosch.autosartool.mapping.editor.mappingeditor" name="Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
   <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-20 16:44:42.437" title="Closed Mapping Editor on &lt;b>System&lt;/b> (System)" commandId="commandId" editorId="com.bosch.autosartool.mapping.editor.mappingeditor" name="Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:30:50.621" description="Generated FlatMap, FlatView and EcuExtract System for &lt;b>System&lt;/b> (System)" title="&lt;b>Executed Ecu Extract&lt;/b> ">
+    <changes modificationType="MODIFIED">
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_system/SysDesc_DBC.arxml#/System/System?type=System</changedParentObjects>
+    </changes>
+    <configSettings key="&lt;u>Operation Details&lt;/u>">
+      <value key="&lt;u>Operation Details&lt;/u>" value="Executed Ecu Extract"/>
+    </configSettings>
+    <configSettings key="Back up">
+      <value key="Back up" value="false"/>
+    </configSettings>
+    <configSettings key="Customize ECUExtract version">
+      <value key="Customize ECUExtract version" value="1.0.0"/>
+    </configSettings>
+    <configSettings key="Update existing ECUExtract">
+      <value key="Update existing ECUExtract" value="false"/>
+    </configSettings>
+    <uiChanges actionType="VIEW" timestamp="2024-03-21 08:30:01.869" title="Opened Filesystem Navigator View" commandId="commandId" viewId="com.bosch.wbp.filenavigator.ui.view" name="Filesystem Navigator" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:13.171" title="Selected vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ] in AR Explorer" commandId="commandId" name="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="VIEW" timestamp="2024-03-21 08:30:13.713" title="Opened ECU Navigator View" commandId="commandId" viewId="com.bosch.arcab.abstract.navigator" name="ECU Navigator" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:16.71" title="Selected vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ] in AR Explorer" commandId="commandId" name="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:18.273" title="Selected vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ] in AR Explorer" commandId="commandId" name="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:19.768" title="Selected vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ] in AR Explorer" commandId="commandId" name="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:21.008" title="Selected System in AR Explorer" commandId="commandId" name="System" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-03-21 08:30:31.568" title="Clicked Create ECUExtract MenuItem" commandId="commandId" name="Create ECUExtract" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 08:30:32.66" title="Opened Create ECUExtract Dialog" commandId="commandId" dialogName="Create ECUExtract" name="Create ECUExtract"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:43.926" title="Unchecked Ignore comspec conflicts Button" commandId="commandId" name="Ignore comspec conflicts" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:30:48.012" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 08:30:51.268" description="isolar.preferences.properties, TPMS_FlatView_SWCD.arxml, System_EcuExtr.arxml, TPMS_FlatMap.arxml" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES">
+    <uiChanges actionType="VIEW" timestamp="2024-03-21 08:30:51.054" title="Opened Problems Log View" commandId="commandId" viewId="com.bosch.blueworx.core.logging.view.problemslog" name="Problems Log" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 08:30:51.171" title="Opened Create ECUExtract Dialog" commandId="commandId" dialogName="Create ECUExtract" name="Create ECUExtract"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:33:19.945" title="Opened CompositionOverview Editor on &lt;b>TPMS_FlatView&lt;/b> (CompositionSwComponentType)" commandId="commandId" editorId="com.bosch.autosartool.klighd.editors.CompositionOverviewEditor" name="CompositionOverview" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:33:54.914" title="Opened CompositionOverview Editor on &lt;b>TopLevelComposition&lt;/b> (CompositionSwComponentType)" commandId="commandId" editorId="com.bosch.autosartool.klighd.editors.CompositionOverviewEditor" name="CompositionOverview" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:34:39.007" title="Closed CompositionOverview Editor on &lt;b>TopLevelComposition&lt;/b> (CompositionSwComponentType)" commandId="commandId" editorId="com.bosch.autosartool.klighd.editors.CompositionOverviewEditor" name="CompositionOverview" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:34:40.105" title="Closed CompositionOverview Editor on &lt;b>TPMS_FlatView&lt;/b> (CompositionSwComponentType)" commandId="commandId" editorId="com.bosch.autosartool.klighd.editors.CompositionOverviewEditor" name="CompositionOverview" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:51:33.926" title="Opened Mapping Editor on &lt;b>EXTR_TPMS&lt;/b> (System)" commandId="commandId" editorId="com.bosch.autosartool.mapping.editor.mappingeditor" name="Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:52:31.462" title="Closed Mapping Editor on &lt;b>EXTR_TPMS&lt;/b> (System)" commandId="commandId" editorId="com.bosch.autosartool.mapping.editor.mappingeditor" name="Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:53:38.264" description="Modified &lt;b>shortName&lt;/b> of &lt;b>SwcToEcuMapping_0&lt;/b> (SwcToEcuMapping) From SwcToEcuMapping_0 To SwcToEcuMapping_EcuTpms" title="Modified &lt;b>shortName&lt;/b> of &lt;b>SwcToEcuMapping_0&lt;/b> (SwcToEcuMapping) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>EcuExtr_System.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/01_EcuTpms/EcuExtr_System.arxml#/System_EcuExtract/EXTR_TPMS/SYSMPG_TPMS/SwcToEcuMapping_EcuTpms?type=SwcToEcuMapping</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/01_EcuTpms/EcuExtr_System.arxml#/System_EcuExtract/EXTR_TPMS/SYSMPG_TPMS?type=SystemMapping</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:33.575" title="Selected EXTR_TPMS in AR Explorer" commandId="commandId" name="EXTR_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:37.855" title="Selected EXTR_TPMS in AR Explorer" commandId="commandId" name="EXTR_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:46.746" title="Selected EXTR_TPMS in AR Explorer" commandId="commandId" name="EXTR_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:47.979" title="Selected SYSMPG_TPMS in AR Explorer" commandId="commandId" name="SYSMPG_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:50.509" title="Selected SYSMPG_TPMS in AR Explorer" commandId="commandId" name="SYSMPG_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:55.107" title="Selected SYSMPG_TPMS in AR Explorer" commandId="commandId" name="SYSMPG_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:52:56.759" title="Selected SYSMPG_TPMS in AR Explorer" commandId="commandId" name="SYSMPG_TPMS" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:00.548" title="Selected SystemMapping in AR Explorer" commandId="commandId" name="SystemMapping" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:03.661" title="Selected SystemMapping in AR Explorer" commandId="commandId" name="SystemMapping" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:08.66" title="Selected SystemMapping in AR Explorer" commandId="commandId" name="SystemMapping" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:16.692" title="Selected SwcToEcuMapping_0 in AR Explorer" commandId="commandId" name="SwcToEcuMapping_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:28.353" title="Selected ComponentInSystemInstanceRef in AR Explorer" commandId="commandId" name="ComponentInSystemInstanceRef" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:28.761" title="Selected SwcToEcuMapping_0 in AR Explorer" commandId="commandId" name="SwcToEcuMapping_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 08:54:03.594" description="Modified &lt;b>shortName&lt;/b> of &lt;b>SwcToEcuMapping&lt;/b> (SwcToEcuMapping) From SwcToEcuMapping To SwcToEcuMapping_System" title="Modified &lt;b>shortName&lt;/b> of &lt;b>SwcToEcuMapping&lt;/b> (SwcToEcuMapping) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>SysDesc_DBC.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_system/SysDesc_DBC.arxml#/System/System/SystemMapping/SwcToEcuMapping_System?type=SwcToEcuMapping</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_system/SysDesc_DBC.arxml#/System/System/SystemMapping?type=SystemMapping</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 08:53:54.102" title="Selected SwcToEcuMapping in AR Explorer" commandId="commandId" name="SwcToEcuMapping" uiClassType="org.eclipse.swt.widgets.Tree"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:19:00.078" description="Modified &lt;b>shortName&lt;/b> of &lt;b>EcucValueCollection_0&lt;/b> (EcucValueCollection_0) From EcucValueCollection_0 To EcucValueCollection" title="Modified &lt;b>shortName&lt;/b> of &lt;b>EcucValueCollection_0&lt;/b> (EcucValueCollection_0) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>EcucValueCollection_Generated.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection?type=EcucValueCollection</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/EcucValueCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess?type=ARPackage</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:25:54.37" description="Configured &lt;b>ecuExtract&lt;/b> of &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection) To EXTR_TPMS" title="Configured &lt;b>ecuExtract&lt;/b> of &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>ConfigEcu_ValueEcucCollection_Generated.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection?type=EcucValueCollection</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 10:24:44.331" title="Opened Prerequisite for RTE Configuration Dialog" commandId="commandId" dialogName="Prerequisite for RTE Configuration" name="Prerequisite for RTE Configuration"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 10:25:18.926" title="Set Value of Text field as EXTR_TPMS" commandId="commandId" name="EXTR_TPMS" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 10:25:54.221" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:25:58.002" title="Opened RTE Mapping Editor on &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection)" commandId="commandId" editorId="com.bosch.autosartool.ecuc.mapping.editor.rtemappingeditor" name="RTE Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:26:12.619" title="Closed RTE Mapping Editor on &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection)" commandId="commandId" editorId="com.bosch.autosartool.ecuc.mapping.editor.rtemappingeditor" name="RTE Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:32:49.768" title="Opened OS Editor on &lt;b>Os&lt;/b> (EcucModuleConfigurationValues)" commandId="commandId" editorId="com.bosch.autosartool.os.editor" name="OS Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:34:22.549" title="Closed OS Editor on &lt;b>Os&lt;/b> (EcucModuleConfigurationValues)" commandId="commandId" editorId="com.bosch.autosartool.os.editor" name="OS Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:34:27.15" title="Opened RTE Mapping Editor on &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection)" commandId="commandId" editorId="com.bosch.autosartool.ecuc.mapping.editor.rtemappingeditor" name="RTE Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:36:25.256" description="Created &lt;b>OsTask_0&lt;/b>(OsTask)" title="Updated Os &lt;b>Os&lt;/b> : Created OsTask &lt;b>OsTask_0&lt;/b> ">
+    <changes>
+      <affectedFiles>ConfigEcu_ValuesEcuc_SwcServiceOs.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_SwcServiceOs.arxml#/OS/Os/OsTask_ASW?type=EcucContainerValue</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_SwcServiceOs.arxml#/OS/Os?type=EcucModuleConfigurationValues</changedParentObjects>
+    </changes>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 10:35:29.34" title="Opened Create OsTask Dialog" commandId="commandId" dialogName="Create OsTask" name="Create OsTask"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 10:36:23.926" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 10:36:24.051" title="Closed Create OsTask Dialog" commandId="commandId" dialogName="Create OsTask" name="Create OsTask"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:36:45.383" description="Modified &lt;b>shortName&lt;/b> of &lt;b>OsTask_0&lt;/b> (OsTask) From OsTask_0 To OsTask_ASW" title="Modified &lt;b>shortName&lt;/b> of &lt;b>OsTask_0&lt;/b> (OsTask) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>ConfigEcu_ValuesEcuc_SwcServiceOs.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_SwcServiceOs.arxml#/OS/Os/OsTask_ASW?type=EcucContainerValue</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_SwcServiceOs.arxml#/OS/Os?type=EcucModuleConfigurationValues</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:37:10.058" description="Updated &lt;b>OsTaskSchedule&lt;/b>(OsTaskSchedule)" title="Updated OsTask &lt;b>OsTask_ASW&lt;/b> : Updated OsTaskSchedule &lt;b>OsTaskSchedule&lt;/b> ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>ConfigEcu_ValuesEcuc_SwcServiceOs.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_SwcServiceOs.arxml#/OS/Os/OsTask_ASW/@parameterValues.2?type=EcucTextualParamValue</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_SwcServiceOs.arxml#/OS/Os/OsTask_ASW?type=EcucContainerValue</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:38:00.516" title="Closed RTE Mapping Editor on &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection)" commandId="commandId" editorId="com.bosch.autosartool.ecuc.mapping.editor.rtemappingeditor" name="RTE Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:45:47.416" title="Opened RTE Mapping Editor on &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection)" commandId="commandId" editorId="com.bosch.autosartool.ecuc.mapping.editor.rtemappingeditor" name="RTE Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:46:46.219" description="Added &lt;b>RteMappedToTaskRef&lt;/b>(RteMappedToTaskRef);&lt;br>&lt;b>TimingEvent_SwcApplTpmsCom_Rx&lt;/b>(RteEventToTaskMapping);&lt;br>&lt;b>RteEventRef&lt;/b>(RteEventRef);&lt;br>&lt;b>CPT_SwcApplTpmsCom&lt;/b>(RteSwComponentInstance);&lt;b" title="Added Elements To &lt;b>Rte&lt;/b>(Rte), &lt;b>CPT_SwcApplTpmsCom&lt;/b>(RteSwComponentInstance), &lt;b>TimingEvent_SwcApplTpmsCom_Rx&lt;/b>(RteEventToTaskMapping)">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>ConfigEcu_ValuesEcuc_Rte.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte/CPT_SwcApplTpmsCom?type=EcucContainerValue</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte/CPT_SwcApplTpmsCom/TimingEvent_SwcApplTpmsCom_Rx/@referenceValues.1?type=EcucReferenceValue</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte/CPT_SwcApplTpmsCom/TimingEvent_SwcApplTpmsCom_Rx/@referenceValues.0?type=EcucReferenceValue</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte/CPT_SwcApplTpmsCom/TimingEvent_SwcApplTpmsCom_Rx?type=EcucContainerValue</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte/CPT_SwcApplTpmsCom?type=EcucContainerValue</changedParentObjects>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte/CPT_SwcApplTpmsCom/TimingEvent_SwcApplTpmsCom_Rx?type=EcucContainerValue</changedParentObjects>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValuesEcuc_Rte.arxml#/RTE/Rte?type=EcucModuleConfigurationValues</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:47:29.058" title="Closed RTE Mapping Editor on &lt;b>EcucValueCollection&lt;/b> (EcucValueCollection)" commandId="commandId" editorId="com.bosch.autosartool.ecuc.mapping.editor.rtemappingeditor" name="RTE Mapping Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="TOOLBAR_BUTTON" timestamp="2024-03-21 10:56:43.767" title="Clicked Generate ECU Configuration ToolItem" commandId="commandId" name="Generate ECU Configuration" uiClassType="org.eclipse.swt.widgets.ToolItem"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:57:27.113" title="&lt;b>Executed BSW Import From Ecu Extract&lt;/b> ">
+    <changes modificationType="MODIFIED"/>
+    <configSettings key="&lt;u>Operation Details&lt;/u>">
+      <value key="&lt;u>Operation Details&lt;/u>" value="Executed BSW Import From Ecu Extract"/>
+    </configSettings>
+    <configSettings key="Ecu Instance">
+      <value key="Ecu Instance" value="/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS"/>
+    </configSettings>
+    <configSettings key="BSW Generator">
+      <value key="BSW Generator" value="RTA-BSW_12.2.0"/>
+    </configSettings>
+    <configSettings key="Output Path">
+      <value key="Output Path" value="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/TPMS_Project_EcucValues.arxml"/>
+    </configSettings>
+    <configSettings key="Pdu Selection">
+      <value key="Pdu Selection" value="Selected 29 out of 29 pdus"/>
+    </configSettings>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 10:56:44.534" title="Opened Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms Dialog" commandId="commandId" dialogName="Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" name="Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 10:57:26.814" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 10:57:28.86" description="EcuExtract_CLI_Input.txt" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES">
+    <uiChanges actionType="VIEW" timestamp="2024-03-21 10:57:27.231" title="Opened Console View" commandId="commandId" viewId="org.eclipse.ui.console.ConsoleView" name="Console" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:57:29.121" description="Generated FlatMap, FlatView and EcuExtract System for &lt;b>System&lt;/b> (System)" title="&lt;b>Executed Ecu Extract&lt;/b> ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>EcuExtr_System.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/01_EcuTpms/EcuExtr_System.arxml#/System_EcuExtract/EXTR_TPMS?type=System</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_system/SysDesc_DBC.arxml#/System/System?type=System</changedParentObjects>
+    </changes>
+    <configSettings key="&lt;u>Operation Details&lt;/u>">
+      <value key="&lt;u>Operation Details&lt;/u>" value="Executed Ecu Extract"/>
+    </configSettings>
+    <configSettings key="Back up">
+      <value key="Back up" value="false"/>
+    </configSettings>
+    <configSettings key="Customize ECUExtract version">
+      <value key="Customize ECUExtract version" value="1.0.0"/>
+    </configSettings>
+    <configSettings key="Update existing ECUExtract">
+      <value key="Update existing ECUExtract" value="true"/>
+    </configSettings>
+    <configSettings key="Extract other ECU's connected DataMappings">
+      <value isPreferenceNode="true" key="Extract other ECU's connected DataMappings" value="true" name="Extract other ECU's connected DataMappings"/>
+    </configSettings>
+    <configSettings key="FlatMapPkg">
+      <value isPreferenceNode="true" key="FlatMapPkg" value="/&lt;ECUInstance-ShortName>_FlatView/&lt;ECUInstance-ShortName>_FlatMap/" name="FlatMapPkg"/>
+    </configSettings>
+    <configSettings key="Ignore open RPort">
+      <value isPreferenceNode="true" key="Ignore open RPort" value="false" name="Ignore open RPort"/>
+    </configSettings>
+    <configSettings key="Create SwRefreshTiming">
+      <value isPreferenceNode="true" key="Create SwRefreshTiming" value="true" name="Create SwRefreshTiming"/>
+    </configSettings>
+    <configSettings key="SystemPkg">
+      <value isPreferenceNode="true" key="SystemPkg" value="/&lt;System-ShortName>_EcuExtract/EXTR_&lt;ECUInstance-ShortName>/" name="SystemPkg"/>
+    </configSettings>
+    <configSettings key="EnableSwAddrMethodGen">
+      <value isPreferenceNode="true" key="EnableSwAddrMethodGen" value="false" name="EnableSwAddrMethodGen"/>
+    </configSettings>
+    <configSettings key="FlatViewFile">
+      <value isPreferenceNode="true" key="FlatViewFile" value="&lt;ECUInstance-ShortName>_FlatView_SWCD.arxml" name="FlatViewFile"/>
+    </configSettings>
+    <configSettings key="Ignore N:1 connection">
+      <value isPreferenceNode="true" key="Ignore N:1 connection" value="false" name="Ignore N:1 connection"/>
+    </configSettings>
+    <configSettings key="FlatViewPkg">
+      <value isPreferenceNode="true" key="FlatViewPkg" value="/&lt;ECUInstance-ShortName>_FlatView/SwComponentTypes/&lt;ECUInstance-ShortName>_FlatView/" name="FlatViewPkg"/>
+    </configSettings>
+    <configSettings key="SwAddrMethodPackage">
+      <value isPreferenceNode="true" key="SwAddrMethodPackage" value="/&lt;ECUInstance-ShortName>_FlatView/&lt;ECUInstance-ShortName>_SwAddrMethods/" name="SwAddrMethodPackage"/>
+    </configSettings>
+    <configSettings key="Do not abort ECUExtract for M:N communication if Variation point is configured">
+      <value isPreferenceNode="true" key="Do not abort ECUExtract for M:N communication if Variation point is configured" value="false" name="Do not abort ECUExtract for M:N communication if Variation point is configured"/>
+    </configSettings>
+    <configSettings key="Enable MCSupportData Generation">
+      <value isPreferenceNode="true" key="Enable MCSupportData Generation" value="false" name="Enable MCSupportData Generation"/>
+    </configSettings>
+    <configSettings key="VariantResolve">
+      <value isPreferenceNode="true" key="VariantResolve" value="false" name="VariantResolve"/>
+    </configSettings>
+    <configSettings key="SwAddrMethod Generation">
+      <value isPreferenceNode="true" key="SwAddrMethod Generation" value="GenSwComponent" name="SwAddrMethod Generation"/>
+    </configSettings>
+    <configSettings key="FlatMapFile">
+      <value isPreferenceNode="true" key="FlatMapFile" value="&lt;ECUInstance-ShortName>_FlatMap.arxml" name="FlatMapFile"/>
+    </configSettings>
+    <configSettings key="Selected Binding Time">
+      <value isPreferenceNode="true" key="Selected Binding Time" value="SYSTEM-DESIGN-TIME" name="Selected Binding Time"/>
+    </configSettings>
+    <configSettings key="McDataInstanceFile">
+      <value isPreferenceNode="true" key="McDataInstanceFile" value="ISolar_McSupportData_McDataInstances.arxml" name="McDataInstanceFile"/>
+    </configSettings>
+    <configSettings key="McFuntionFile">
+      <value isPreferenceNode="true" key="McFuntionFile" value="ISolar_McSupportData_McFunctions.arxml" name="McFuntionFile"/>
+    </configSettings>
+    <configSettings key="SystemFile">
+      <value isPreferenceNode="true" key="SystemFile" value="&lt;System-ShortName>_EcuExtr.arxml" name="SystemFile"/>
+    </configSettings>
+    <configSettings key="User naming convention original value">
+      <value isPreferenceNode="true" key="User naming convention original value" value="false" name="User naming convention original value"/>
+    </configSettings>
+    <configSettings key="FlatInstance_Descriptor_Name">
+      <value isPreferenceNode="true" key="FlatInstance_Descriptor_Name" value="VDP_PDP" name="FlatInstance_Descriptor_Name"/>
+    </configSettings>
+    <configSettings key="Allow self contained Port Interface Mapping Set">
+      <value isPreferenceNode="true" key="Allow self contained Port Interface Mapping Set" value="false" name="Allow self contained Port Interface Mapping Set"/>
+    </configSettings>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 10:57:29.953" description="BSW_ConfGen_ECUGeneration.txt, ecuextract.log" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 10:57:47.441" description="TPMS_Project_EcucValues.arxml" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 10:57:48.973" description="Updated &lt;b>EcucModuleConfigurationValuesRefConditional&lt;/b>(s): EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional;&lt;b" title="Updated EcucValueCollection &lt;b>EcucValueCollection&lt;/b> : Updated &lt;b>EcucModuleConfigurationValuesRefConditional&lt;/b>(s) : EcucModuleConfigurationValuesRefConditional, EcucModuleConfigurationValuesRefConditional and 9 more ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>ConfigEcu_ValueEcucCollection_Generated.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.3?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.9?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.8?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.10?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.4?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.6?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.12?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.5?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.7?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.11?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection/@ecucValues.13?type=EcucModuleConfigurationValuesRefConditional</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/config_ecu/ConfigEcu_ValueEcucCollection_Generated.arxml#/ETAS_Project/EcucModuleConfigurationValuess/EcucValueCollection?type=EcucValueCollection</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 10:57:52.161" description="ConfGen_version.h, BSW_ConfGen_ECUGeneration.ulf" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES">
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 10:57:52.141" title="Opened Problem Occurred Dialog" commandId="commandId" dialogName="Problem Occurred" name="Problem Occurred"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="TOOLBAR_BUTTON" timestamp="2024-03-21 11:28:31.637" title="Clicked Generate ECU Configuration ToolItem" commandId="commandId" name="Generate ECU Configuration" uiClassType="org.eclipse.swt.widgets.ToolItem"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 11:28:39.217" description="BSW_ConfGen_ECUGeneration.ulf" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Deleted &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES">
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 11:28:32.263" title="Opened Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms Dialog" commandId="commandId" dialogName="Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" name="Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-03-21 11:28:37.341" title="Clicked OK Button" commandId="commandId" name="OK" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 11:28:37.436" title="Closed Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms Dialog" commandId="commandId" dialogName="Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" name="Generate ECU Configuration for vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms" timestamp="2024-03-21 11:28:39.523" description="Generated FlatMap, FlatView and EcuExtract System for &lt;b>System&lt;/b> (System)" title="&lt;b>Executed Ecu Extract&lt;/b> ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>EcuExtr_System.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/01_EcuTpms/EcuExtr_System.arxml#/System_EcuExtract/EXTR_TPMS?type=System</changeObjectsUris>
+      <changedParentObjects>platform:/resource/vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms/system_config/SysDesc_DBC.arxml#/System/System?type=System</changedParentObjects>
+    </changes>
+    <configSettings key="&lt;u>Operation Details&lt;/u>">
+      <value key="&lt;u>Operation Details&lt;/u>" value="Executed Ecu Extract"/>
+    </configSettings>
+    <configSettings key="Back up">
+      <value key="Back up" value="false"/>
+    </configSettings>
+    <configSettings key="Customize ECUExtract version">
+      <value key="Customize ECUExtract version" value="1.0.0"/>
+    </configSettings>
+    <configSettings key="Update existing ECUExtract">
+      <value key="Update existing ECUExtract" value="true"/>
+    </configSettings>
+    <configSettings key="Extract other ECU's connected DataMappings">
+      <value isPreferenceNode="true" key="Extract other ECU's connected DataMappings" value="true" name="Extract other ECU's connected DataMappings"/>
+    </configSettings>
+    <configSettings key="FlatMapPkg">
+      <value isPreferenceNode="true" key="FlatMapPkg" value="/&lt;ECUInstance-ShortName>_FlatView/&lt;ECUInstance-ShortName>_FlatMap/" name="FlatMapPkg"/>
+    </configSettings>
+    <configSettings key="Ignore open RPort">
+      <value isPreferenceNode="true" key="Ignore open RPort" value="false" name="Ignore open RPort"/>
+    </configSettings>
+    <configSettings key="Create SwRefreshTiming">
+      <value isPreferenceNode="true" key="Create SwRefreshTiming" value="true" name="Create SwRefreshTiming"/>
+    </configSettings>
+    <configSettings key="SystemPkg">
+      <value isPreferenceNode="true" key="SystemPkg" value="/&lt;System-ShortName>_EcuExtract/EXTR_&lt;ECUInstance-ShortName>/" name="SystemPkg"/>
+    </configSettings>
+    <configSettings key="EnableSwAddrMethodGen">
+      <value isPreferenceNode="true" key="EnableSwAddrMethodGen" value="false" name="EnableSwAddrMethodGen"/>
+    </configSettings>
+    <configSettings key="FlatViewFile">
+      <value isPreferenceNode="true" key="FlatViewFile" value="&lt;ECUInstance-ShortName>_FlatView_SWCD.arxml" name="FlatViewFile"/>
+    </configSettings>
+    <configSettings key="Ignore N:1 connection">
+      <value isPreferenceNode="true" key="Ignore N:1 connection" value="false" name="Ignore N:1 connection"/>
+    </configSettings>
+    <configSettings key="FlatViewPkg">
+      <value isPreferenceNode="true" key="FlatViewPkg" value="/&lt;ECUInstance-ShortName>_FlatView/SwComponentTypes/&lt;ECUInstance-ShortName>_FlatView/" name="FlatViewPkg"/>
+    </configSettings>
+    <configSettings key="SwAddrMethodPackage">
+      <value isPreferenceNode="true" key="SwAddrMethodPackage" value="/&lt;ECUInstance-ShortName>_FlatView/&lt;ECUInstance-ShortName>_SwAddrMethods/" name="SwAddrMethodPackage"/>
+    </configSettings>
+    <configSettings key="Do not abort ECUExtract for M:N communication if Variation point is configured">
+      <value isPreferenceNode="true" key="Do not abort ECUExtract for M:N communication if Variation point is configured" value="false" name="Do not abort ECUExtract for M:N communication if Variation point is configured"/>
+    </configSettings>
+    <configSettings key="Enable MCSupportData Generation">
+      <value isPreferenceNode="true" key="Enable MCSupportData Generation" value="false" name="Enable MCSupportData Generation"/>
+    </configSettings>
+    <configSettings key="VariantResolve">
+      <value isPreferenceNode="true" key="VariantResolve" value="false" name="VariantResolve"/>
+    </configSettings>
+    <configSettings key="SwAddrMethod Generation">
+      <value isPreferenceNode="true" key="SwAddrMethod Generation" value="GenSwComponent" name="SwAddrMethod Generation"/>
+    </configSettings>
+    <configSettings key="FlatMapFile">
+      <value isPreferenceNode="true" key="FlatMapFile" value="&lt;ECUInstance-ShortName>_FlatMap.arxml" name="FlatMapFile"/>
+    </configSettings>
+    <configSettings key="Selected Binding Time">
+      <value isPreferenceNode="true" key="Selected Binding Time" value="SYSTEM-DESIGN-TIME" name="Selected Binding Time"/>
+    </configSettings>
+    <configSettings key="McDataInstanceFile">
+      <value isPreferenceNode="true" key="McDataInstanceFile" value="ISolar_McSupportData_McDataInstances.arxml" name="McDataInstanceFile"/>
+    </configSettings>
+    <configSettings key="McFuntionFile">
+      <value isPreferenceNode="true" key="McFuntionFile" value="ISolar_McSupportData_McFunctions.arxml" name="McFuntionFile"/>
+    </configSettings>
+    <configSettings key="SystemFile">
+      <value isPreferenceNode="true" key="SystemFile" value="&lt;System-ShortName>_EcuExtr.arxml" name="SystemFile"/>
+    </configSettings>
+    <configSettings key="User naming convention original value">
+      <value isPreferenceNode="true" key="User naming convention original value" value="false" name="User naming convention original value"/>
+    </configSettings>
+    <configSettings key="FlatInstance_Descriptor_Name">
+      <value isPreferenceNode="true" key="FlatInstance_Descriptor_Name" value="VDP_PDP" name="FlatInstance_Descriptor_Name"/>
+    </configSettings>
+    <configSettings key="Allow self contained Port Interface Mapping Set">
+      <value isPreferenceNode="true" key="Allow self contained Port Interface Mapping Set" value="false" name="Allow self contained Port Interface Mapping Set"/>
+    </configSettings>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-03-21 11:29:02.004" description="BSW_ConfGen_ECUGeneration.ulf" title="Updated &lt;b>vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES">
+    <uiChanges actionType="DIALOG" timestamp="2024-03-21 11:29:01.99" title="Opened Problem Occurred Dialog" commandId="commandId" dialogName="Problem Occurred" name="Problem Occurred"/>
+  </trackerEntries>
 </tracker:TrackerRoot>
