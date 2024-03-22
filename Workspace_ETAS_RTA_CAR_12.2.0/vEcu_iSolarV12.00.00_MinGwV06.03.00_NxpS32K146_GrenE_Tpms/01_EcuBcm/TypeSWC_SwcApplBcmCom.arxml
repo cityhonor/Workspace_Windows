@@ -23,7 +23,7 @@
             <SWC-INTERNAL-BEHAVIOR UUID="1370ddd9-5351-4790-906a-9359c8769d63">
               <SHORT-NAME>InternalBehavior_SwcApplBcmCom_Tx</SHORT-NAME>
               <DATA-TYPE-MAPPING-REFS>
-                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/MappingSet_SwcApplBcmCom</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/MappingSetTypeData_SwcApplBcmCom</DATA-TYPE-MAPPING-REF>
               </DATA-TYPE-MAPPING-REFS>
               <EVENTS>
                 <TIMING-EVENT UUID="a80b2631-0f8c-4b55-9885-47af07332766">

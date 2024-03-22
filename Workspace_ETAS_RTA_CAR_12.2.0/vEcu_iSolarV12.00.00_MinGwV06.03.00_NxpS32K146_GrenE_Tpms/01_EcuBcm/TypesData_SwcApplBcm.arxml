@@ -9,7 +9,7 @@
           <CATEGORY>VALUE</CATEGORY>
         </APPLICATION-PRIMITIVE-DATA-TYPE>
         <DATA-TYPE-MAPPING-SET>
-          <SHORT-NAME>MappingSet_SwcApplBcmCom</SHORT-NAME>
+          <SHORT-NAME>MappingSetTypeData_SwcApplBcmCom</SHORT-NAME>
           <DATA-TYPE-MAPS>
             <DATA-TYPE-MAP>
               <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/TypeData_SwcApplBcmCom_eStatusKL</APPLICATION-DATA-TYPE-REF>
