@@ -1,0 +1,52 @@
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --project=C:\Workspace_Windows_1\Workspace_ETAS_RTA_CAR_12.2.0\vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms, --ecuinstance=TPMS, --otheropt=C:\Workspace_Windows_1\Workspace_ETAS_RTA_CAR_12.2.0\vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [EcuExtr_System.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/03/21 10:57:29
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --project=C:\Workspace_Windows_1\Workspace_ETAS_RTA_CAR_12.2.0\vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms, --ecuinstance=TPMS, --otheropt=C:\Workspace_Windows_1\Workspace_ETAS_RTA_CAR_12.2.0\vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [EcuExtr_System.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/03/21 11:28:39
+/******************************************************END OF REPORT*****************************************************************/

@@ -1,0 +1,122 @@
+*************************General Errors and Warnings*******************************
+Warning : The values [maximum,factor,offset] defined in the DBC file for the Signal SSecOC_MAC_BCM_01 result in a DataFilter max value of 1.84467440737096E19 which is higher than the permissible value for the Signal
+Warning : The values [maximum,factor,offset] defined in the DBC file for the Signal SSecOC_MAC_CGW_01 result in a DataFilter max value of 1.84467440737096E19 which is higher than the permissible value for the Signal
+Warning : The values [maximum,factor,offset] defined in the DBC file for the Signal SSecOC_MAC_ESC_01 result in a DataFilter max value of 1.84467440737096E19 which is higher than the permissible value for the Signal
+Warning : The values [maximum,factor,offset] defined in the DBC file for the Signal SSecOC_MAC_VCU_05 result in a DataFilter max value of 1.84467440737096E19 which is higher than the permissible value for the Signal
+*************************The following BA attributes are not Present in the DBC File*******************************
+Warning : The BA Attribute SamplePointMax is not present in the DBC file
+Warning : The BA Attribute NmJ1939IdentityNumber is not present in the DBC file
+Warning : The BA Attribute TC_BAM_PacketsPerBlock is not present in the DBC file
+Warning : The BA Attribute NmActiveCoordinator is not present in the DBC file
+Warning : The BA Attribute TpConn_BAM_Cancellation is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_DynamicBlockSize is not present in the DBC file
+Warning : The BA Attribute TpConn_TX_Cancellation is not present in the DBC file
+Warning : The BA Attribute AliveTimeout is not present in the DBC file
+Warning : The BA Attribute NmJ1939Function is not present in the DBC file
+Warning : The BA Attribute TC_BAM_DynamicBlockSize is not present in the DBC file
+Warning : The BA Attribute SamplePointMin is not present in the DBC file
+Warning : The BA Attribute TpConn_BAM_Retry is not present in the DBC file
+Warning : The BA Attribute TpConn_CMDT_Cancellation is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_MaxExpectedPackets is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_DynamicBufferRatio is not present in the DBC file
+Warning : The BA Attribute NmJ1939ManufacturerCode is not present in the DBC file
+Warning : The BA Attribute SyncJumpWidthMax is not present in the DBC file
+Warning : The BA Attribute TC_BAM_DynamicBufferRatio is not present in the DBC file
+Warning : The BA Attribute TC_TX_DynamicBufferRatio is not present in the DBC file
+Warning : The BA Attribute NmJ1939SystemInstance is not present in the DBC file
+Warning : The BA Attribute TpConn_TX_Retry is not present in the DBC file
+Warning : The BA Attribute TpConn_CMDT_Retry is not present in the DBC file
+Warning : The BA Attribute TC_TX_DynamicBlockSize is not present in the DBC file
+Warning : The BA Attribute NmJ1939FunctionInstance is not present in the DBC file
+Warning : The BA Attribute CI_MsgName is not present in the DBC file
+Warning : The BA Attribute SyncJumpWidthMin is not present in the DBC file
+Warning : The BA Attribute NmJ1939CordCluster is not present in the DBC file
+Warning : The BA Attribute NmStationAddress is not present in the DBC file
+Warning : The BA Attribute TC_TX_MaxExpectedPackets is not present in the DBC file
+Warning : The BA Attribute TC_TX_PacketsPerBlock is not present in the DBC file
+Warning : The BA Attribute NmJ1939IndustryGroup is not present in the DBC file
+Warning : The BA Attribute NmJ1939ECUInstance is not present in the DBC file
+Warning : The BA Attribute NmJ1939AAC is not present in the DBC file
+Warning : The BA Attribute NmNode is not present in the DBC file
+Warning : The BA Attribute NmJ1939System is not present in the DBC file
+Warning : The BA Attribute TC_BAM_MaxExpectedPackets is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_PacketsPerBlock is not present in the DBC file
+
+**************************The following BA Attributes  are present in DBC file but are not yet Supported by the DBC Importer*********************
+Warning : The BA Attribute GenSigTimeoutTime_TM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_CGW_OBD present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SCP_FreshnessValueLength present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrWaitBusSleepTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_CGW_Vehicle present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute DiagResponse present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute Transmitter present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_ESC_ADAS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrNodeIdentifier present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_TBOX present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_SCM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigSendType present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_SCU_PA present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SC_Message present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrNode present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute DiagState present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigInactiveValue present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_IPU present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_VCU_EDU present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_HU_Body present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_EPS2_EDU present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_VCU_ADAS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_CGW_ADAS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_EPS1_ADAS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrTimeoutTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_AVAS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute Baudrate present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_iBooster_Brake present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_YRS_6 present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_HU_HMI present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrMessageCount present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_YRS_3 present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_CGW_Brake present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute BaudrateCANFD present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_SCU_DR present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_AMP present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_VCU_Vehicle present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenMsgCycleTimeFast present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_ESC_Brake present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SCP_DataId present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_FCM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_BCM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SCL_CryptographicMessageID present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenMsgNrOfRepetition present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_CGW_TBOX present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SCP_AuthInfoTxLength present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute E2EDataId present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_CGW_Body present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_TPMS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute Gateway present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrCanMsgReducedTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrBaseAddress present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrRepeatMessageTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_iBooster_ADAS present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_TCC_TCC present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrCanMsgCycleOffset present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_OBD present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_TCC_Thermal present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SCP_FreshnessValueId present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_HVAC present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SCP_FreshnessValueTxLength present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenMsgDelayTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_EDU_R present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute SC_LinkPos present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrCanMsgCycleTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute DiagRequest present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute ILUsed present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_GSM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmAsrMessage present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_SESAM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_VCU_TCC present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenMsgTimeoutTime present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_EDU_F present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute NmType present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenMsgILSupport present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_ACM present in the DBC file  is not yet Supported by the DBC Importer
+Warning : The BA Attribute GenSigTimeoutTime_IM present in the DBC file  is not yet Supported by the DBC Importer
