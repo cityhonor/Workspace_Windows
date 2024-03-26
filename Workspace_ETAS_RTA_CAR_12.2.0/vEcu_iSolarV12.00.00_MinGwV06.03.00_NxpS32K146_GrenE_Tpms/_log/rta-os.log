@@ -11,3 +11,8 @@ Loading OS Paramdef
 ecu_config\os\internal\Os_EcucValues.arxml
 Done
 Time taken to deploy OS EcucValues: 4393 ms.
+
+********************************************************************************
+RTA-OS
+********************************************************************************
+- Generate RTA-OS --> Skipped

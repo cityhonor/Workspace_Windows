@@ -1,0 +1,6 @@
+=NETWORK_VIEW_CMD_PREF
+SHOW_UNMAPPED_ELEMENTS_PREF=true
+eclipse.preferences.version=1
+org.eclipse.gef.pdock=16
+org.eclipse.gef.psize=260
+org.eclipse.gef.pstate=4
