@@ -1,0 +1,2 @@
+SEARCH_LST=CanTpChannel;CanTpChannel;CanTpTc;CanTpChannel;CanTpTxNPdu;CanTpTxNPdu;CanTpRxNPduId;CanTpTxNPdu;CanTpRxNPduId;CanTpTxNPdu;CanTpRxFcNPduId;CanTpRxFcNPduId;CanTpTxNPduConfirmationPduId;CanTpTxNPduConfirmationPduId;CanTpRxNPdu;CanTpTxNPduConfirmationPduId;CanTpTxNPdu;
+eclipse.preferences.version=1

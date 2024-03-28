@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ModeDeclarationGroups</SHORT-NAME>
+      <ELEMENTS>
+        <MODE-DECLARATION-GROUP>
+          <SHORT-NAME>GroupDeclarationMode_SwcServiceEcuM_STATE</SHORT-NAME>
+          <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeDeclarationGroups/GroupDeclarationMode_SwcServiceEcuM_STATE/DeclarationMode_SwcServiceEcuM_STATE_STARTUP_ONE</INITIAL-MODE-REF>
+          <MODE-DECLARATIONS>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DeclarationMode_SwcServiceEcuM_STATE_APP_POST_RUN</SHORT-NAME>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DeclarationMode_SwcServiceEcuM_STATE_APP_RUN</SHORT-NAME>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DeclarationMode_SwcServiceEcuM_STATE_PREP_SHUTDOWN</SHORT-NAME>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DeclarationMode_SwcServiceEcuM_STATE_RUN</SHORT-NAME>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DeclarationMode_SwcServiceEcuM_STATE_STARTUP_ONE</SHORT-NAME>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DeclarationMode_SwcServiceEcuM_STATE_STARTUP_TWO</SHORT-NAME>
+            </MODE-DECLARATION>
+          </MODE-DECLARATIONS>
+        </MODE-DECLARATION-GROUP>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+      <ELEMENTS>
+        <DATA-TYPE-MAPPING-SET>
+          <SHORT-NAME>DataTypeMappingSet_SwcServiceEcuM_STATE</SHORT-NAME>
+        </DATA-TYPE-MAPPING-SET>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

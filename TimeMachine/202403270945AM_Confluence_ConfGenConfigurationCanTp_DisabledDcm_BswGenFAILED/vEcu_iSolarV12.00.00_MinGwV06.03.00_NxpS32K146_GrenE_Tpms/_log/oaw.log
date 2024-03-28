@@ -1,0 +1,660 @@
+09:42:02,741 [INFO] --------------------------------------------------------------------------------------
+09:42:02,744 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:02,744 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:02,744 [INFO] --------------------------------------------------------------------------------------
+09:42:02,744 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Prepare.oaw
+09:42:02,744 [INFO] 
+09:42:12,288 [INFO] BCTXtendComponent: executing 'Bfx_Prepare'
+09:42:15,282 [INFO] workflow completed in 2994ms!
+09:42:15,334 [INFO] --------------------------------------------------------------------------------------
+09:42:15,335 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:15,336 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:15,336 [INFO] --------------------------------------------------------------------------------------
+09:42:15,337 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanIf\scripts\templates\generateid\CanIf_GenerateId.oaw
+09:42:15,337 [INFO] 
+09:42:15,341 [INFO] BCTXtendComponent: executing 'templates::generateid::CanIf_GenerateId_Id'
+09:42:15,514 [INFO] workflow completed in 173ms!
+09:42:15,550 [INFO] --------------------------------------------------------------------------------------
+09:42:15,551 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:15,551 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:15,551 [INFO] --------------------------------------------------------------------------------------
+09:42:15,551 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanTp\scripts\datagenerator\CanTp_Prepare.mwe
+09:42:15,551 [INFO] 
+09:42:15,554 [INFO] BCTXtendComponent: executing 'CanTp_Prepare'
+09:42:15,573 [INFO] CanTp_Prepare for Active Variant: __KW_COMMON 
+09:42:15,582 [INFO] workflow completed in 28ms!
+09:42:18,853 [INFO] --------------------------------------------------------------------------------------
+09:42:18,854 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:18,854 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:18,854 [INFO] --------------------------------------------------------------------------------------
+09:42:18,854 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\ComStack\scripts\ComStack_Validate.oaw
+09:42:18,854 [INFO] 
+09:42:18,861 [INFO] BCTCheckComponent: slot model check file(s): ComStack_Validate 
+09:42:18,918 [INFO] workflow completed in 57ms!
+09:42:18,945 [INFO] --------------------------------------------------------------------------------------
+09:42:18,945 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:18,946 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:18,946 [INFO] --------------------------------------------------------------------------------------
+09:42:18,946 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Compiler\scripts\Compiler_Generate.oaw
+09:42:18,946 [INFO] 
+09:42:18,974 [INFO] BCTCodeGenerator: generating 'Compiler_h::Generate FOR model' => []
+09:42:18,995 [INFO] workflow completed in 21ms!
+09:42:19,065 [INFO] --------------------------------------------------------------------------------------
+09:42:19,066 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,066 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,066 [INFO] --------------------------------------------------------------------------------------
+09:42:19,066 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\Diagnosis\Det\scripts\validator\Det_Validate.mwe
+09:42:19,066 [INFO] 
+09:42:19,069 [INFO] BCTCheckComponent: slot model check file(s): Det_Validate 
+09:42:19,076 [INFO] workflow completed in 6ms!
+09:42:19,114 [INFO] --------------------------------------------------------------------------------------
+09:42:19,115 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,115 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,115 [INFO] --------------------------------------------------------------------------------------
+09:42:19,115 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\EcuC\scripts\EcuC_Validate.oaw
+09:42:19,116 [INFO] 
+09:42:19,117 [INFO] BCTCheckComponent: slot model check file(s): EcuC 
+09:42:19,139 [INFO] workflow completed in 22ms!
+09:42:19,169 [INFO] --------------------------------------------------------------------------------------
+09:42:19,170 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,170 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,170 [INFO] --------------------------------------------------------------------------------------
+09:42:19,170 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Forward.mwe
+09:42:19,171 [INFO] 
+09:42:19,174 [INFO] BCTXtendComponent: executing ' templates::EcuM_NvMForward'
+09:42:19,180 [INFO] workflow completed in 7ms!
+09:42:19,201 [INFO] --------------------------------------------------------------------------------------
+09:42:19,201 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,201 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,202 [INFO] --------------------------------------------------------------------------------------
+09:42:19,202 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_GenerateId.mwe
+09:42:19,202 [INFO] 
+09:42:19,205 [INFO] BCTXtendComponent: executing ' templates::EcuM_Prepare'
+09:42:19,228 [INFO] workflow completed in 24ms!
+09:42:19,260 [INFO] --------------------------------------------------------------------------------------
+09:42:19,261 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,261 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,261 [INFO] --------------------------------------------------------------------------------------
+09:42:19,261 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\IpduM\scripts\templates\generateid\IpduM_GenerateId.oaw
+09:42:19,261 [INFO] 
+09:42:19,264 [INFO] BCTXtendComponent: executing 'templates::generateid::IpduM_GenerateId_Id'
+09:42:19,317 [INFO] workflow completed in 53ms!
+09:42:19,344 [INFO] --------------------------------------------------------------------------------------
+09:42:19,344 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,344 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,345 [INFO] --------------------------------------------------------------------------------------
+09:42:19,345 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\PduR\scripts\templates\forward\PduR_Forward.oaw
+09:42:19,345 [INFO] 
+09:42:19,348 [INFO] BCTXtendComponent: executing ' templates::forward::PduR_Forward'
+09:42:19,378 [INFO] >>> WARNING <<<: PduR forwarding to DEM not executed because 'PduR' or 'DEM' configuration is not available. Is this intended?
+09:42:19,379 [INFO] BCTXtendComponent: executing ' templates::forward::PduR_Forward'
+09:42:19,419 [INFO] PduRDsmReInitMainFunction is not forwarded as PduRRbDSMReInitEnabled is configured as False.
+09:42:19,420 [INFO] workflow completed in 71ms!
+09:42:19,453 [INFO] --------------------------------------------------------------------------------------
+09:42:19,454 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,454 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,454 [INFO] --------------------------------------------------------------------------------------
+09:42:19,454 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Prepare.oaw
+09:42:19,455 [INFO] 
+09:42:19,457 [INFO] BCTXtendComponent: executing 'Platform_Prepare'
+09:42:19,460 [INFO] workflow completed in 3ms!
+09:42:19,501 [INFO] --------------------------------------------------------------------------------------
+09:42:19,501 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,501 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,502 [INFO] --------------------------------------------------------------------------------------
+09:42:19,502 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Validate.oaw
+09:42:19,502 [INFO] 
+09:42:19,504 [INFO] BCTCheckComponent: slot model check file(s): Bfx_Validate 
+09:42:19,510 [INFO] workflow completed in 7ms!
+09:42:19,552 [INFO] --------------------------------------------------------------------------------------
+09:42:19,553 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,553 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,553 [INFO] --------------------------------------------------------------------------------------
+09:42:19,553 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\BSMM\BswM\scripts\BswM_Validate.mwe
+09:42:19,553 [INFO] 
+09:42:19,562 [INFO] BCTCheckComponent: slot model check file(s): BswM_Validate 
+09:42:19,625 [INFO] BCTCheckComponent: slot model check file(s): BswM_Validate_PB 
+09:42:19,657 [INFO] workflow completed in 95ms!
+09:42:19,658 [WARN] [WARNING]: BswM: Please check the configuration, logical expression('s) is(are) configured but not used in any Rule -[BswMLogicalExpression_StartCom](Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@79a13012 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:19,659 [WARN] [WARNING]: BswM: Please check the configuration, logical expression's are configured but not used in any Rule -[BswMLogicalExpression_StartCom] for the variant __KW_COMMON(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@79a13012 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:19,659 [WARN] [WARNING]: BswM: Please check the configuration, Actions's are configured but not used in any Action List-[BswMActionItem_RteStart, BswMActionItem_BswMSwitchRun, BswMActionItem_BswMSwitchStartupTwo](Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@79a13012 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:19,702 [INFO] --------------------------------------------------------------------------------------
+09:42:19,703 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,703 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,703 [INFO] --------------------------------------------------------------------------------------
+09:42:19,703 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\generateid\CanSM_GenerateId.oaw
+09:42:19,703 [INFO] 
+09:42:19,709 [INFO] BCTXtendComponent: executing 'templates::generateid::CanSM::CanSM_GenerateId_Id'
+09:42:19,718 [INFO] >>> WARNING <<<: CanSM forwarding to DEM not executed because 'CanSM' or 'DEM' configuration is not available. Is this intended?
+09:42:19,719 [INFO] BCTXtendComponent: executing 'templates::forward::CanSM_GenerateId_Id'
+09:42:19,730 [INFO] workflow completed in 21ms!
+09:42:19,813 [INFO] --------------------------------------------------------------------------------------
+09:42:19,814 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:19,814 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:19,814 [INFO] --------------------------------------------------------------------------------------
+09:42:19,814 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanTp\scripts\validator\CanTp_Validate.mwe
+09:42:19,814 [INFO] 
+09:42:19,817 [INFO] BCTCheckComponent: slot model check file(s): CanTp 
+09:42:19,844 [INFO] workflow completed in 26ms!
+09:42:19,844 [WARN] [WARNING]: CanTp Strict Dlc check is disabled, this violates CanFD ISO/DIS 15765-2 (2014/2015) requirement. Is this intended? to be compliant with ISO/DIS 15765-2 (2014/2015) enable Strict Dlc Check(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@4ba2929f (shortName: CanTpGeneral) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:22,784 [INFO] --------------------------------------------------------------------------------------
+09:42:22,784 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:22,784 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:22,784 [INFO] --------------------------------------------------------------------------------------
+09:42:22,784 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\ComStack\scripts\ComStack_Generate.oaw
+09:42:22,784 [INFO] 
+09:42:22,786 [INFO] BCTCodeGenerator: generating 'ComStack_Cfg_h::Generate FOR model' => []
+09:42:22,792 [INFO] BCTCodeGenerator: generating 'ComStack_Types_arxml::Generate FOR model' => []
+09:42:22,797 [INFO] workflow completed in 11ms!
+09:42:22,840 [INFO] --------------------------------------------------------------------------------------
+09:42:22,841 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:22,841 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:22,841 [INFO] --------------------------------------------------------------------------------------
+09:42:22,841 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\Diagnosis\Det\scripts\filegenerator\Det_Generate.mwe
+09:42:22,841 [INFO] 
+09:42:22,845 [INFO] BCTCodeGenerator: generating 'Det::Root FOR model' => []
+09:42:22,919 [INFO] workflow completed in 74ms!
+09:42:22,967 [INFO] --------------------------------------------------------------------------------------
+09:42:22,967 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:22,967 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:22,967 [INFO] --------------------------------------------------------------------------------------
+09:42:22,967 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\EcuC\scripts\EcuC_Generate.oaw
+09:42:22,968 [INFO] 
+09:42:22,970 [INFO] BCTCodeGenerator: generating 'EcuC_Rb_h::Generate FOR model' => []
+09:42:22,973 [INFO] workflow completed in 4ms!
+09:42:23,005 [INFO] --------------------------------------------------------------------------------------
+09:42:23,006 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,006 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,006 [INFO] --------------------------------------------------------------------------------------
+09:42:23,007 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_PbDetermineForward.mwe
+09:42:23,007 [INFO] 
+09:42:23,009 [INFO] BCTXtendComponent: executing ' templates::EcuM_PbDetermineForward'
+09:42:23,011 [INFO] workflow completed in 2ms!
+09:42:23,042 [INFO] --------------------------------------------------------------------------------------
+09:42:23,042 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,042 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,043 [INFO] --------------------------------------------------------------------------------------
+09:42:23,043 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_RbMonitoringValidate.mwe
+09:42:23,043 [INFO] 
+09:42:23,046 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_RbMonitoringCheck 
+09:42:23,058 [INFO] workflow completed in 13ms!
+09:42:23,093 [INFO] --------------------------------------------------------------------------------------
+09:42:23,094 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,094 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,094 [INFO] --------------------------------------------------------------------------------------
+09:42:23,094 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Validate.mwe
+09:42:23,094 [INFO] 
+09:42:23,097 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_StartupCheck_PB 
+09:42:23,107 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_StartupCheck_PCLT 
+09:42:23,128 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_SleepCheck 
+09:42:23,132 [INFO] workflow completed in 35ms!
+09:42:23,169 [INFO] --------------------------------------------------------------------------------------
+09:42:23,169 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,169 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,169 [INFO] --------------------------------------------------------------------------------------
+09:42:23,169 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Validate.oaw
+09:42:23,170 [INFO] 
+09:42:23,172 [INFO] BCTCheckComponent: slot model check file(s): Platform_Validate 
+09:42:23,179 [INFO] workflow completed in 6ms!
+09:42:23,179 [WARN] [WARNING]: 'McuRbCpuInformation' is not available and has to be configured manually.(Element: autosar40.ecucdescription.impl.EcucModuleConfigurationValuesImpl@24ee597c (shortName: Platform_RefUG) (ecucDefEdition: <unset>, implementationConfigVariant: <unset>, postBuildVariantUsed: <unset>); Reported by: -UNKNOWN-)
+09:42:23,209 [INFO] --------------------------------------------------------------------------------------
+09:42:23,210 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,210 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,210 [INFO] --------------------------------------------------------------------------------------
+09:42:23,210 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Generate.oaw
+09:42:23,210 [INFO] 
+09:42:23,212 [INFO] BCTCodeGenerator: generating 'Bfx_Cfg_h::Generate FOR model' => []
+09:42:23,235 [INFO] workflow completed in 22ms!
+09:42:23,262 [INFO] --------------------------------------------------------------------------------------
+09:42:23,262 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,262 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,262 [INFO] --------------------------------------------------------------------------------------
+09:42:23,263 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\forward\CanSM_Forward.oaw
+09:42:23,263 [INFO] 
+09:42:23,266 [INFO] BCTXtendComponent: executing ' templates::forward::CanSM_Forward'
+09:42:23,271 [INFO] forwarding the values for measurement variables
+09:42:23,277 [INFO] forwarding the implementation data type reference
+09:42:23,279 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of uint8
+09:42:23,282 [INFO] forwarding the implementation data type reference
+09:42:23,283 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of Boolean
+09:42:23,285 [INFO] forwarding the implementation data type reference
+09:42:23,286 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of enum
+09:42:23,289 [INFO] forwarding the implementation data type reference
+09:42:23,290 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of structure
+09:42:23,292 [INFO] BCTXtendComponent: executing 'templates::forward::CanSM_Forward'
+09:42:23,297 [INFO] workflow completed in 31ms!
+09:42:23,369 [INFO] --------------------------------------------------------------------------------------
+09:42:23,370 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,370 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,370 [INFO] --------------------------------------------------------------------------------------
+09:42:23,370 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\validator\CanSM_Validate.oaw
+09:42:23,370 [INFO] 
+09:42:23,373 [INFO] BCTCheckComponent: slot model check file(s): templates::CanSM::validator::CanSM_Validate 
+09:42:23,375 [INFO] ExtensionAdvice 'ComM_CanSM_Aspects' could not be found and will be ignored.
+09:42:23,376 [INFO] ExtensionAdvice 'cantrcv_cansm_aspects' could not be found and will be ignored.
+09:42:23,376 [INFO] ExtensionAdvice 'dem_cansm_aspects' could not be found and will be ignored.
+09:42:23,390 [INFO] workflow completed in 17ms!
+09:42:23,414 [INFO] --------------------------------------------------------------------------------------
+09:42:23,415 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,415 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,415 [INFO] --------------------------------------------------------------------------------------
+09:42:23,415 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\Com\scripts\templates\generateid\Com_GenerateId.oaw
+09:42:23,415 [INFO] 
+09:42:23,418 [INFO] BCTXtendComponent: executing 'templates::generateid::Com_GenerateId_Id'
+09:42:23,511 [INFO] Prepare "__KW_COMMON" variant
+09:42:23,647 [INFO] workflow completed in 229ms!
+09:42:23,716 [INFO] --------------------------------------------------------------------------------------
+09:42:23,717 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,717 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,717 [INFO] --------------------------------------------------------------------------------------
+09:42:23,718 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Generate.mwe
+09:42:23,718 [INFO] 
+09:42:23,737 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_h::Generate FOR model' => []
+09:42:23,766 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_Startup_h::Generate FOR model' => []
+09:42:23,778 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_CbkStartup_h::Generate FOR model' => []
+09:42:23,782 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_Startup_c::Generate FOR model' => []
+09:42:23,798 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_c::Generate FOR model' => []
+09:42:23,813 [INFO] BCTCodeGenerator: generating 'EcuM_Generated_Types_h::Generate FOR model' => []
+09:42:23,816 [INFO] BCTCodeGenerator: generating 'EcuM_Lcfg_c::Generate FOR model' => []
+09:42:23,819 [INFO] BCTCodeGenerator: generating 'EcuM_PBcfg_c::Generate FOR model' => []
+09:42:23,832 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_RbExt_h::Generate FOR model' => []
+09:42:23,836 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_SWCD_arxml::Generate FOR model' => []
+09:42:23,847 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_BSWMD_arxml::Generate FOR model' => []
+09:42:23,854 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_Shutdown_c::Generate FOR model' => []
+09:42:23,858 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_Sleep_c::Generate FOR model' => []
+09:42:23,862 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_SynchPoint_c::Generate FOR model' => []
+09:42:23,866 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_SynchPoint_h::Generate FOR model' => []
+09:42:23,870 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_Version_h::Generate FOR model' => []
+09:42:23,880 [INFO] workflow completed in 142ms!
+09:42:23,924 [INFO] --------------------------------------------------------------------------------------
+09:42:23,925 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,925 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,925 [INFO] --------------------------------------------------------------------------------------
+09:42:23,925 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_PbDetermineValidate.mwe
+09:42:23,925 [INFO] 
+09:42:23,927 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_PbDetermineCheck 
+09:42:23,931 [INFO] workflow completed in 4ms!
+09:42:23,967 [INFO] --------------------------------------------------------------------------------------
+09:42:23,968 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:23,968 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:23,968 [INFO] --------------------------------------------------------------------------------------
+09:42:23,969 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_RbMonitoringGenerate.mwe
+09:42:23,969 [INFO] 
+09:42:23,972 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_RbMo_c::Generate FOR model' => []
+09:42:23,977 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_RbMo_h::Generate FOR model' => []
+09:42:23,987 [INFO] workflow completed in 15ms!
+09:42:24,021 [INFO] --------------------------------------------------------------------------------------
+09:42:24,022 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:24,023 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:24,023 [INFO] --------------------------------------------------------------------------------------
+09:42:24,023 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_WarningReport.mwe
+09:42:24,023 [INFO] 
+09:42:24,026 [INFO] BCTCodeGenerator: generating 'EcuM_WarningReport_txt::Generate FOR model' => []
+09:42:24,038 [INFO] workflow completed in 12ms!
+09:42:24,078 [INFO] --------------------------------------------------------------------------------------
+09:42:24,079 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:24,079 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:24,079 [INFO] --------------------------------------------------------------------------------------
+09:42:24,079 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Generate.oaw
+09:42:24,080 [INFO] 
+09:42:24,083 [INFO] BCTCodeGenerator: generating 'Platform_Types_h::Generate FOR model' => []
+09:42:24,087 [INFO] BCTCodeGenerator: generating 'Platform_Types_arxml::Generate FOR model' => []
+09:42:24,091 [INFO] BCTCodeGenerator: generating 'PlatformBase_Types_arxml::Generate FOR model' => []
+09:42:24,097 [INFO] workflow completed in 14ms!
+09:42:24,127 [INFO] --------------------------------------------------------------------------------------
+09:42:24,127 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:24,127 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:24,128 [INFO] --------------------------------------------------------------------------------------
+09:42:24,128 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\CanSM_Generate.oaw
+09:42:24,128 [INFO] 
+09:42:24,132 [INFO] BCTCodeGenerator: generating 'templates::CanSM::CanSM_Cfg_h::Generate FOR model.ecu.canSM' => []
+09:42:24,134 [INFO] ExtensionAdvice 'ComM_CanSM_Aspects' could not be found and will be ignored.
+09:42:24,135 [INFO] ExtensionAdvice 'cantrcv_cansm_aspects' could not be found and will be ignored.
+09:42:24,136 [INFO] ExtensionAdvice 'Dem_CanSM_Aspects' could not be found and will be ignored.
+09:42:24,151 [INFO] BCTCodeGenerator: generating 'templates::CanSM::CanSM_PBcfg_c::Generate FOR model' => []
+09:42:24,152 [INFO] ExtensionAdvice 'ComM_CanSM_Aspects' could not be found and will be ignored.
+09:42:24,166 [INFO] BCTCodeGenerator: generating 'templates::CanSM::CanSM_PBcfg_h::Generate FOR model.ecu.canSM' => []
+09:42:24,167 [INFO] ExtensionAdvice 'ComM_CanSM_Aspects' could not be found and will be ignored.
+09:42:24,167 [INFO] ExtensionAdvice 'cantrcv_cansm_aspects' could not be found and will be ignored.
+09:42:24,168 [INFO] ExtensionAdvice 'Dem_CanSM_Aspects' could not be found and will be ignored.
+09:42:24,175 [INFO] workflow completed in 43ms!
+09:42:26,314 [INFO] --------------------------------------------------------------------------------------
+09:42:26,314 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:26,314 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:26,314 [INFO] --------------------------------------------------------------------------------------
+09:42:26,314 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\Com\scripts\templates\validator\Com_Validate.oaw
+09:42:26,314 [INFO] 
+09:42:26,319 [INFO] BCTCheckComponent: slot model check file(s): templates::Com::validator::Com_Validate_ComConfig_Var1 
+09:42:26,387 [INFO] BCTCheckComponent: slot model check file(s): templates::Com::validator::Com_Validate_ComIpduGroup_Var1 templates::Com::validator::Com_Validate_ComIpdu_Var1 templates::Com::validator::Com_Validate_ComSignal_Var1 templates::Com::validator::Com_Validate_ComGroupSignal_Var1 templates::Com::validator::Com_Validate_ComSignalGroup_Var1 templates::Com::validator::Com_Validate_Noti_Uniquness_Var1 templates::Com::validator::Com_Validate_ComGwMapping_Var1 
+09:42:27,312 [INFO] workflow completed in 993ms!
+09:42:27,313 [WARN] [WARNING]:  ComSignal [ S_TPM_MalfLmp_On_Rq_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@f8c0a7f (shortName: S_TPM_MalfLmp_On_Rq_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,313 [WARN] [WARNING]:  ComSignal [ S_TPM_IndLmp_On_Rq_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@624fd184 (shortName: S_TPM_IndLmp_On_Rq_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,313 [WARN] [WARNING]:  ComSignal [ S_TPM_WarnDisp_Rq_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@13411317 (shortName: S_TPM_WarnDisp_Rq_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,313 [WARN] [WARNING]:  ComSignal [ S_TPM_Stat_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@2fd5228b (shortName: S_TPM_Stat_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,313 [WARN] [WARNING]:  ComSignal [ S_TPM_MsgDisp_Rq_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@419b2693 (shortName: S_TPM_MsgDisp_Rq_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,313 [WARN] [WARNING]:  ComSignal [ S_Press_Disp_Avl_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@2401c1e8 (shortName: S_Press_Disp_Avl_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TireStat_FR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@2c041fd8 (shortName: S_TireStat_FR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TireStat_RL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@1705d0a2 (shortName: S_TireStat_RL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TireStat_RR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@372f80cd (shortName: S_TireStat_RR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TireStat_FL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@3943041a (shortName: S_TireStat_FL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TirePress_RR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@41b3d63 (shortName: S_TirePress_RR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TirePress_RL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@775235f7 (shortName: S_TirePress_RL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TirePress_FR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@2aab19bf (shortName: S_TirePress_FR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_TirePress_FL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@1e35743e (shortName: S_TirePress_FL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_Tire_Temp_WarnDisp_Rq_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@2d76e759 (shortName: S_Tire_Temp_WarnDisp_Rq_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_Tire_Temp_Stat_RR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@102b01be (shortName: S_Tire_Temp_Stat_RR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_Tire_Temp_Stat_RL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@468c659e (shortName: S_Tire_Temp_Stat_RL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,314 [WARN] [WARNING]:  ComSignal [ S_Tire_Temp_Stat_FR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@7b30a6e3 (shortName: S_Tire_Temp_Stat_FR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_Tire_Temp_Stat_FL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@5288a609 (shortName: S_Tire_Temp_Stat_FL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_RefPress_Rear_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@6c51a8d8 (shortName: S_RefPress_Rear_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_RefPress_Front_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@60871ab6 (shortName: S_RefPress_Front_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_TireTemp_RR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@53154a19 (shortName: S_TireTemp_RR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_TireTemp_RL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@3e97ebe2 (shortName: S_TireTemp_RL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_TireTemp_FR_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@6cfcce7d (shortName: S_TireTemp_FR_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_TireTemp_FL_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@635fff63 (shortName: S_TireTemp_FL_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_ALIVE_TPMS_01_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@7c55b53c (shortName: S_ALIVE_TPMS_01_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,315 [WARN] [WARNING]:  ComSignal [ S_CRC_TPMS_01_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_TPMS_01_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@342efb98 (shortName: S_CRC_TPMS_01_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,316 [WARN] [WARNING]:  ComSignal [ S_WarningMessageID_TPMS_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@513274f0 (shortName: S_WarningMessageID_TPMS_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,316 [WARN] [WARNING]:  ComSignal [ S_BitBlinking_TPMS_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@161516e7 (shortName: S_BitBlinking_TPMS_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,316 [WARN] [WARNING]:  ComSignal [ S_BitStatus_TPMS_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@33bcce45 (shortName: S_BitStatus_TPMS_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,316 [WARN] [WARNING]:  ComSignal [ S_CRC_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@26007c27 (shortName: S_CRC_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,316 [WARN] [WARNING]:  ComSignal [ S_ALIVE_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@5f57f0a0 (shortName: S_ALIVE_WarnMsg_TPMS_Can_Network_Channel_CAN_Tx) (index: <unset>); Reported by: -UNKNOWN-)
+09:42:27,373 [INFO] --------------------------------------------------------------------------------------
+09:42:27,374 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:27,374 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:27,374 [INFO] --------------------------------------------------------------------------------------
+09:42:27,374 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_PbDetermineGenerate.mwe
+09:42:27,374 [INFO] 
+09:42:27,376 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_PbExt_c::Generate FOR model' => []
+09:42:27,379 [INFO] BCTCodeGenerator: generating 'EcuM_Cfg_PbExt_h::Generate FOR model' => []
+09:42:27,381 [INFO] workflow completed in 5ms!
+09:42:27,411 [INFO] --------------------------------------------------------------------------------------
+09:42:27,412 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+09:42:27,412 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+09:42:27,412 [INFO] --------------------------------------------------------------------------------------
+09:42:27,412 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\PduR\scripts\templates\generateid\PduR_GenerateId.oaw
+09:42:27,412 [INFO] 
+09:42:27,415 [INFO] BCTXtendComponent: executing 'templates::generateid::PduR_GenerateId_Id'
+09:42:27,417 [INFO] ExtensionAdvice 'CanIf_PduR_Aspects' could not be found and will be ignored.
+09:42:27,418 [INFO] ExtensionAdvice 'FrIf_PduR_Aspects' could not be found and will be ignored.
+09:42:27,418 [INFO] ExtensionAdvice 'LinIf_PduR_Aspects' could not be found and will be ignored.
+09:42:27,420 [INFO] ExtensionAdvice registered: CanTp_PduR_Aspects
+09:42:27,421 [INFO] ExtensionAdvice 'FrNm_PduR_Aspects' could not be found and will be ignored.
+09:42:27,422 [INFO] ExtensionAdvice registered: IpduM_PduR_Aspects
+09:42:27,423 [INFO] ExtensionAdvice 'LinIf_Tp_PduR_Aspects' could not be found and will be ignored.
+09:42:27,424 [INFO] ExtensionAdvice 'FrTp_PduR_Aspects' could not be found and will be ignored.
+09:42:27,426 [INFO] ExtensionAdvice 'J1939Tp_PduR_Aspects' could not be found and will be ignored.
+09:42:27,427 [INFO] ExtensionAdvice 'SoAd_PduR_Aspects' could not be found and will be ignored.
+09:42:27,428 [INFO] ExtensionAdvice 'UdpNm_PduR_Aspects' could not be found and will be ignored.
+09:42:27,430 [INFO] ExtensionAdvice 'Dcm_PduR_Aspects' could not be found and will be ignored.
+09:42:27,431 [INFO] ExtensionAdvice registered: Com_PduR_Aspects
+09:42:27,432 [INFO] ExtensionAdvice 'Rba_Psi5If_PduR_Aspects' could not be found and will be ignored.
+09:42:27,433 [INFO] ExtensionAdvice 'Dlt_PduR_Aspects' could not be found and will be ignored.
+09:42:27,434 [INFO] ExtensionAdvice 'DoIP_PduR_Aspects' could not be found and will be ignored.
+09:42:27,436 [INFO] ExtensionAdvice 'LdCom_PduR_Aspects' could not be found and will be ignored.
+09:42:27,437 [INFO] ExtensionAdvice 'J1939Rm_PduR_Aspects' could not be found and will be ignored.
+09:42:27,439 [INFO] ExtensionAdvice 'J1939Dcm_PduR_Aspects' could not be found and will be ignored.
+09:42:27,534 [INFO] [PDUR : INFO ] Variant Name: __KW_COMMON
+09:42:27,583 [INFO] [PDUR : INFO ] Total number of routing Paths : 29
+09:42:27,584 [INFO] [PDUR : INFO ] Total number of PduRSrcPdu : 30
+09:42:27,584 [INFO] [PDUR : INFO ] Total number of PduRDestPdu : 30
+09:42:27,584 [INFO] [PDUR : INFO ] Total number of PduRSrcPdu & PduRDestPdu : 60
+09:42:27,584 [INFO] [PDUR : INFO ] Total number of Pdus referred by PduR : 60
+09:42:27,585 [INFO] [PDUR : INFO ] Total number of linked Bsw Pdus : 50
+09:42:27,585 [INFO] [PDUR : INFO ] Total number of linked PduR Pdus : 60
+09:42:27,586 [INFO] [PDUR : INFO ] Variant Name: __KW_COMMON
+09:42:27,590 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,591 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,591 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanTp/EcucModuleDefs/CanTp/CanTpConfig/CanTpChannel/CanTpRxNSdu/CanTpRxNSduRef
+09:42:27,592 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,592 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,592 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,593 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,594 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,594 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,594 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,594 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef
+09:42:27,595 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_IpduM/EcucModuleDefs/IpduM/IpduMConfig/IpduMTxPathway/IpduMTxRequest/IpduMOutgoingPduRef
+09:42:27,595 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,596 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,596 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,596 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,596 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,596 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,597 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,597 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,597 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,597 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,597 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,597 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,598 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,598 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,598 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,598 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,598 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,598 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,599 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,599 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,599 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,599 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,599 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_Com/EcucModuleDefs/Com/ComConfig/ComIPdu/ComPduIdRef
+09:42:27,599 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduRef
+09:42:27,600 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_IpduM/EcucModuleDefs/IpduM/IpduMConfig/IpduMTxPathway/IpduMTxRequest/IpduMTxDynamicPart/IpduMTxDynamicPduRef
+09:42:27,600 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_IpduM/EcucModuleDefs/IpduM/IpduMConfig/IpduMTxPathway/IpduMTxRequest/IpduMTxDynamicPart/IpduMTxDynamicPduRef
+09:42:27,600 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_IpduM/EcucModuleDefs/IpduM/IpduMConfig/IpduMTxPathway/IpduMTxRequest/IpduMTxStaticPart/IpduMTxStaticPduRef
+09:42:27,600 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduRef
+09:42:27,601 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduRef
+09:42:27,601 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduRef
+09:42:27,601 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanIf/EcucModuleDefs/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduRef
+09:42:27,601 [INFO] [PDUR : INFO ] Validating linked Pdu /AUTOSAR_CanTp/EcucModuleDefs/CanTp/CanTpConfig/CanTpChannel/CanTpTxNSdu/CanTpTxNSduRef
+09:42:27,603 [INFO] [PDUR : INFO ] Variant Name: __KW_COMMON
+09:42:27,604 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path BCM_01_LOGICAL_CLAMP_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,605 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduBCM_01_LOGICAL_CLAMP_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,608 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path CGW_01_CON_VEH_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,608 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduCGW_01_CON_VEH_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,608 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Diag_FuncReq_CanTp2PduR_Can_Network_Channel_CAN
+09:42:27,609 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_FuncReq_CanTp2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+09:42:27,609 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Diag_FuncReq_All_CAN_CanTp2PduR_Can_Network_Channel_CAN
+09:42:27,610 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_FuncReq_All_CAN_CanTp2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+09:42:27,610 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Diag_FuncReq_All_ECUs_CanTp2PduR_Can_Network_Channel_CAN
+09:42:27,610 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_FuncReq_All_ECUs_CanTp2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+09:42:27,611 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Diag_PhyReq_TPMS_CanTp2PduR_Can_Network_Channel_CAN
+09:42:27,611 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduDiag_PhyReq_TPMS_CanTp2PduR_Can_Network_Channel_CAN as CanTp
+09:42:27,611 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path ESC_01_VeloSpeed_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,612 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduESC_01_VeloSpeed_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,612 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path ESC_05_OTA_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,612 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduESC_05_OTA_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,612 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path HU_01_OTA_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,613 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduHU_01_OTA_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,613 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path HU_03_SET_FUNC_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,613 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduHU_03_SET_FUNC_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,613 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path NM_EPS_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,613 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduNM_EPS_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,615 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path NM_ESC_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,615 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduNM_ESC_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,615 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path NM_FCM_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,615 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduNM_FCM_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,616 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path NM_VCU_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,616 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduNM_VCU_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,616 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path NM_iBooster_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,616 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduNM_iBooster_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,616 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path TBOX_01_OTA_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,617 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduTBOX_01_OTA_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,617 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path TBOX_02_TIME_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,617 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduTBOX_02_TIME_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,617 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path TCC_02_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,617 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduTCC_02_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,618 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path TPMS_Rx_CCP_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,618 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduTPMS_Rx_CCP_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,618 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path VCU_05_CanIf2PduR_Can_Network_Channel_CAN
+09:42:27,618 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduVCU_05_CanIf2PduR_Can_Network_Channel_CAN as CanIf
+09:42:27,619 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Diag_Resp_TPMS_Phys_Dcm2PduR_Can_Network_Channel_CAN
+09:42:27,619 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_Resp_TPMS_Phys_Dcm2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+09:42:27,619 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Meas_TPMS_1_Multiplexed_IPDU_IpduM2PduR_Can_Network_Channel_CAN
+09:42:27,620 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduMeas_TPMS_1_Multiplexed_IPDU_IpduM2PduR_Can_Network_Channel_CAN as IpduM_modulePositionUp
+09:42:27,620 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Meas_TPMS_1_MUX1_Com2PduR_Can_Network_Channel_CAN
+09:42:27,620 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduMeas_TPMS_1_MUX1_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,621 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Meas_TPMS_1_MUX2_Com2PduR_Can_Network_Channel_CAN
+09:42:27,621 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduMeas_TPMS_1_MUX2_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,621 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Meas_TPMS_1__MUX_STAT_Com2PduR_Can_Network_Channel_CAN
+09:42:27,622 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduMeas_TPMS_1__MUX_STAT_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,622 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path NM_TPMS_Com2PduR_Can_Network_Channel_CAN
+09:42:27,622 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduNM_TPMS_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,623 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path TPMS_01_Com2PduR_Can_Network_Channel_CAN
+09:42:27,623 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduTPMS_01_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,623 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path TPMS_Tx_CCP_Com2PduR_Can_Network_Channel_CAN
+09:42:27,624 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduTPMS_Tx_CCP_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,625 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path WarnMsg_TPMS_Com2PduR_Can_Network_Channel_CAN
+09:42:27,625 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRSrcPduWarnMsg_TPMS_Com2PduR_Can_Network_Channel_CAN as Com
+09:42:27,625 [INFO] [PDUR : INFO ] Assigning owner module to Src Pdu of routing path Diag_Resp_TPMS_Dcm2PduR_Can_Network_Channel_CAN
+09:42:27,625 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_Resp_TPMS_Dcm2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+09:42:27,626 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu BCM_01_LOGICAL_CLAMP_PduR2Com_Can_Network_Channel_CAN
+09:42:27,627 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduBCM_01_LOGICAL_CLAMP_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,627 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu CGW_01_CON_VEH_PduR2Com_Can_Network_Channel_CAN
+09:42:27,627 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduCGW_01_CON_VEH_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,628 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Diag_FuncReq_PduR2Dcm_Can_Network_Channel_CAN
+09:42:27,628 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred to PduRDestPdu Diag_FuncReq_PduR2Dcm_Can_Network_Channel_CAN under the Routing path PduRRoutingPaths has a missing reference to its intended BswModule. Please complete the configuration.
+09:42:27,629 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Diag_FuncReq_All_CAN_PduR2Dcm_Can_Network_Channel_CAN
+09:42:27,629 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred to PduRDestPdu Diag_FuncReq_All_CAN_PduR2Dcm_Can_Network_Channel_CAN under the Routing path PduRRoutingPaths has a missing reference to its intended BswModule. Please complete the configuration.
+09:42:27,630 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Diag_FuncReq_All_ECUs_PduR2Dcm_Can_Network_Channel_CAN
+09:42:27,630 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred to PduRDestPdu Diag_FuncReq_All_ECUs_PduR2Dcm_Can_Network_Channel_CAN under the Routing path PduRRoutingPaths has a missing reference to its intended BswModule. Please complete the configuration.
+09:42:27,630 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Diag_PhyReq_TPMS_PduR2Dcm_Can_Network_Channel_CAN
+09:42:27,631 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred to PduRDestPdu Diag_PhyReq_TPMS_PduR2Dcm_Can_Network_Channel_CAN under the Routing path PduRRoutingPaths has a missing reference to its intended BswModule. Please complete the configuration.
+09:42:27,631 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu ESC_01_VeloSpeed_PduR2Com_Can_Network_Channel_CAN
+09:42:27,631 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduESC_01_VeloSpeed_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,631 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu ESC_05_OTA_PduR2Com_Can_Network_Channel_CAN
+09:42:27,632 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduESC_05_OTA_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,632 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu HU_01_OTA_PduR2Com_Can_Network_Channel_CAN
+09:42:27,633 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduHU_01_OTA_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,633 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu HU_03_SET_FUNC_PduR2Com_Can_Network_Channel_CAN
+09:42:27,633 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduHU_03_SET_FUNC_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,634 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu NM_EPS_PduR2Com_Can_Network_Channel_CAN
+09:42:27,634 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduNM_EPS_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,634 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu NM_ESC_PduR2Com_Can_Network_Channel_CAN
+09:42:27,635 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduNM_ESC_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,635 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu NM_FCM_PduR2Com_Can_Network_Channel_CAN
+09:42:27,635 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduNM_FCM_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,636 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu NM_VCU_PduR2Com_Can_Network_Channel_CAN
+09:42:27,636 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduNM_VCU_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,637 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu NM_iBooster_PduR2Com_Can_Network_Channel_CAN
+09:42:27,637 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduNM_iBooster_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,637 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu TBOX_01_OTA_PduR2Com_Can_Network_Channel_CAN
+09:42:27,637 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduTBOX_01_OTA_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,638 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu TBOX_02_TIME_PduR2Com_Can_Network_Channel_CAN
+09:42:27,638 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduTBOX_02_TIME_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,638 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu TCC_02_PduR2Com_Can_Network_Channel_CAN
+09:42:27,639 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduTCC_02_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,639 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu TPMS_Rx_CCP_PduR2Com_Can_Network_Channel_CAN
+09:42:27,639 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduTPMS_Rx_CCP_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,640 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu VCU_05_PduR2Com_Can_Network_Channel_CAN
+09:42:27,640 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduVCU_05_PduR2Com_Can_Network_Channel_CAN as Com
+09:42:27,641 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Diag_Resp_TPMS_Phys_PduR2CanTp_Can_Network_Channel_CAN
+09:42:27,641 [INFO] [PDUR : ERROR ] The Ecuc Pdu referred to PduRDestPdu Diag_Resp_TPMS_Phys_PduR2CanTp_Can_Network_Channel_CAN under the Routing path PduRRoutingPaths has a missing reference to its intended BswModule. Please complete the configuration.
+09:42:27,641 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Meas_TPMS_1_Multiplexed_IPDU_PduR2CanIf_Can_Network_Channel_CAN
+09:42:27,642 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduMeas_TPMS_1_Multiplexed_IPDU_PduR2CanIf_Can_Network_Channel_CAN as CanIf
+09:42:27,642 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Meas_TPMS_1_MUX1_PduR2IpduM_Can_Network_Channel_CAN
+09:42:27,642 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduMeas_TPMS_1_MUX1_PduR2IpduM_Can_Network_Channel_CAN as IpduM_modulePositionDown
+09:42:27,643 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Meas_TPMS_1_MUX2_PduR2IpduM_Can_Network_Channel_CAN
+09:42:27,643 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduMeas_TPMS_1_MUX2_PduR2IpduM_Can_Network_Channel_CAN as IpduM_modulePositionDown
+09:42:27,643 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Meas_TPMS_1__MUX_STAT_PduR2IpduM_Can_Network_Channel_CAN
+09:42:27,644 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduMeas_TPMS_1__MUX_STAT_PduR2IpduM_Can_Network_Channel_CAN as IpduM_modulePositionDown
+09:42:27,644 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu NM_TPMS_PduR2CanIf_Can_Network_Channel_CAN
+09:42:27,644 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduNM_TPMS_PduR2CanIf_Can_Network_Channel_CAN as CanIf
+09:42:27,644 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu TPMS_01_PduR2CanIf_Can_Network_Channel_CAN
+09:42:27,644 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduTPMS_01_PduR2CanIf_Can_Network_Channel_CAN as CanIf
+09:42:27,645 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu TPMS_Tx_CCP_PduR2CanIf_Can_Network_Channel_CAN
+09:42:27,645 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduTPMS_Tx_CCP_PduR2CanIf_Can_Network_Channel_CAN as CanIf
+09:42:27,645 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu WarnMsg_TPMS_PduR2CanIf_Can_Network_Channel_CAN
+09:42:27,645 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduWarnMsg_TPMS_PduR2CanIf_Can_Network_Channel_CAN as CanIf
+09:42:27,645 [INFO] [PDUR : INFO ] Assigning owner module to PduRDestPdu Diag_Resp_TPMS_PduR2CanTp_Can_Network_Channel_CAN
+09:42:27,646 [INFO] [PDUR : INFO ]  Setting the logical owner of bsw::PduRModule::PduRDestPduDiag_Resp_TPMS_PduR2CanTp_Can_Network_Channel_CAN as CanTp
+09:42:27,649 [INFO] [PDUR : INFO ] Total number of SrcPdu & DestPdu inside PduR is 30
+09:42:27,649 [INFO] [PDUR : ERROR ] Pdu Diag_FuncReq_CanTp2PduR_Can_Network_Channel_CAN is not assigned owner Module. Check if the configuration is complete. 
+09:42:27,650 [INFO] [PDUR : ERROR ] Pdu Diag_FuncReq_All_CAN_CanTp2PduR_Can_Network_Channel_CAN is not assigned owner Module. Check if the configuration is complete. 
+09:42:27,650 [INFO] [PDUR : ERROR ] Pdu Diag_FuncReq_All_ECUs_CanTp2PduR_Can_Network_Channel_CAN is not assigned owner Module. Check if the configuration is complete. 
+09:42:27,650 [INFO] [PDUR : ERROR ] Pdu Diag_Resp_TPMS_Phys_Dcm2PduR_Can_Network_Channel_CAN is not assigned owner Module. Check if the configuration is complete. 
+09:42:27,650 [INFO] [PDUR : ERROR ] Pdu Diag_Resp_TPMS_Dcm2PduR_Can_Network_Channel_CAN is not assigned owner Module. Check if the configuration is complete. 
+09:42:27,655 [INFO] [PDUR : INFO ] Assigning PduRRbTpPoolHandleId to pduRRbTpBufferPools
+09:42:27,655 [INFO] [PDUR : INFO ] Modules owning routing paths are
+09:42:27,655 [INFO] [PDUR : INFO ] [null, CanIf, CanTp, Com, IpduM_modulePositionDown, IpduM_modulePositionUp]
+09:42:27,655 [INFO] [PDUR : INFO ] Assigning PduR HandleIds
+09:42:27,658 [INFO] [PDUR : INFO ] Assigning HandleIds to all PduR Pdus owned by null
+09:42:27,659 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by null
+09:42:27,659 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by null
+09:42:27,661 [INFO] [PDUR : INFO ] Assigning HandleIds to all PduR Pdus owned by CanIf
+09:42:27,661 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by CanIf
+09:42:27,662 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : BCM_01_LOGICAL_CLAMP_CanIf2PduR_Can_Network_Channel_CAN -> 0
+09:42:27,663 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : CGW_01_CON_VEH_CanIf2PduR_Can_Network_Channel_CAN -> 1
+09:42:27,664 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : ESC_01_VeloSpeed_CanIf2PduR_Can_Network_Channel_CAN -> 2
+09:42:27,664 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : ESC_05_OTA_CanIf2PduR_Can_Network_Channel_CAN -> 3
+09:42:27,665 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : HU_01_OTA_CanIf2PduR_Can_Network_Channel_CAN -> 4
+09:42:27,666 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : HU_03_SET_FUNC_CanIf2PduR_Can_Network_Channel_CAN -> 5
+09:42:27,666 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : NM_EPS_CanIf2PduR_Can_Network_Channel_CAN -> 6
+09:42:27,667 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : NM_ESC_CanIf2PduR_Can_Network_Channel_CAN -> 7
+09:42:27,668 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : NM_FCM_CanIf2PduR_Can_Network_Channel_CAN -> 8
+09:42:27,668 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : NM_VCU_CanIf2PduR_Can_Network_Channel_CAN -> 9
+09:42:27,669 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : NM_iBooster_CanIf2PduR_Can_Network_Channel_CAN -> 10
+09:42:27,669 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : TBOX_01_OTA_CanIf2PduR_Can_Network_Channel_CAN -> 11
+09:42:27,670 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : TBOX_02_TIME_CanIf2PduR_Can_Network_Channel_CAN -> 12
+09:42:27,671 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : TCC_02_CanIf2PduR_Can_Network_Channel_CAN -> 13
+09:42:27,671 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : TPMS_Rx_CCP_CanIf2PduR_Can_Network_Channel_CAN -> 14
+09:42:27,672 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : VCU_05_CanIf2PduR_Can_Network_Channel_CAN -> 15
+09:42:27,672 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by CanIf
+09:42:27,673 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : Meas_TPMS_1_Multiplexed_IPDU_PduR2CanIf_Can_Network_Channel_CAN -> 0
+09:42:27,673 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : NM_TPMS_PduR2CanIf_Can_Network_Channel_CAN -> 1
+09:42:27,674 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : TPMS_01_PduR2CanIf_Can_Network_Channel_CAN -> 2
+09:42:27,675 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : TPMS_Tx_CCP_PduR2CanIf_Can_Network_Channel_CAN -> 3
+09:42:27,675 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : WarnMsg_TPMS_PduR2CanIf_Can_Network_Channel_CAN -> 4
+09:42:27,677 [INFO] [PDUR : INFO ] Assigning HandleIds to all PduR Pdus owned by CanTp
+09:42:27,677 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by CanTp
+09:42:27,678 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : Diag_PhyReq_TPMS_CanTp2PduR_Can_Network_Channel_CAN -> 0
+09:42:27,678 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by CanTp
+09:42:27,678 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : Diag_Resp_TPMS_PduR2CanTp_Can_Network_Channel_CAN -> 0
+09:42:27,680 [INFO] [PDUR : INFO ] Assigning HandleIds to all PduR Pdus owned by Com
+09:42:27,681 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by Com
+09:42:27,681 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : Meas_TPMS_1_MUX1_Com2PduR_Can_Network_Channel_CAN -> 0
+09:42:27,681 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : Meas_TPMS_1_MUX2_Com2PduR_Can_Network_Channel_CAN -> 1
+09:42:27,682 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : Meas_TPMS_1__MUX_STAT_Com2PduR_Can_Network_Channel_CAN -> 2
+09:42:27,682 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : NM_TPMS_Com2PduR_Can_Network_Channel_CAN -> 3
+09:42:27,683 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : TPMS_01_Com2PduR_Can_Network_Channel_CAN -> 4
+09:42:27,684 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : TPMS_Tx_CCP_Com2PduR_Can_Network_Channel_CAN -> 5
+09:42:27,684 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : WarnMsg_TPMS_Com2PduR_Can_Network_Channel_CAN -> 6
+09:42:27,685 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by Com
+09:42:27,685 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : BCM_01_LOGICAL_CLAMP_PduR2Com_Can_Network_Channel_CAN -> 0
+09:42:27,685 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : CGW_01_CON_VEH_PduR2Com_Can_Network_Channel_CAN -> 1
+09:42:27,686 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : ESC_01_VeloSpeed_PduR2Com_Can_Network_Channel_CAN -> 2
+09:42:27,686 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : ESC_05_OTA_PduR2Com_Can_Network_Channel_CAN -> 3
+09:42:27,687 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : HU_01_OTA_PduR2Com_Can_Network_Channel_CAN -> 4
+09:42:27,688 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : HU_03_SET_FUNC_PduR2Com_Can_Network_Channel_CAN -> 5
+09:42:27,688 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : NM_EPS_PduR2Com_Can_Network_Channel_CAN -> 6
+09:42:27,689 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : NM_ESC_PduR2Com_Can_Network_Channel_CAN -> 7
+09:42:27,690 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : NM_FCM_PduR2Com_Can_Network_Channel_CAN -> 8
+09:42:27,690 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : NM_VCU_PduR2Com_Can_Network_Channel_CAN -> 9
+09:42:27,691 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : NM_iBooster_PduR2Com_Can_Network_Channel_CAN -> 10
+09:42:27,692 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : TBOX_01_OTA_PduR2Com_Can_Network_Channel_CAN -> 11
+09:42:27,693 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : TBOX_02_TIME_PduR2Com_Can_Network_Channel_CAN -> 12
+09:42:27,693 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : TCC_02_PduR2Com_Can_Network_Channel_CAN -> 13
+09:42:27,694 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : TPMS_Rx_CCP_PduR2Com_Can_Network_Channel_CAN -> 14
+09:42:27,694 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : VCU_05_PduR2Com_Can_Network_Channel_CAN -> 15
+09:42:27,697 [INFO] [PDUR : INFO ] Assigning HandleIds to all PduR Pdus owned by IpduM_modulePositionDown
+09:42:27,697 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by IpduM_modulePositionDown
+09:42:27,698 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by IpduM_modulePositionDown
+09:42:27,698 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : Meas_TPMS_1_MUX1_PduR2IpduM_Can_Network_Channel_CAN -> 0
+09:42:27,699 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : Meas_TPMS_1_MUX2_PduR2IpduM_Can_Network_Channel_CAN -> 1
+09:42:27,700 [INFO] [PDUR : INFO ] Assigning PduRDestPduHandleId to PduRDestPdu : Meas_TPMS_1__MUX_STAT_PduR2IpduM_Can_Network_Channel_CAN -> 2
+09:42:27,702 [INFO] [PDUR : INFO ] Assigning HandleIds to all PduR Pdus owned by IpduM_modulePositionUp
+09:42:27,703 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by IpduM_modulePositionUp
+09:42:27,703 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to PduRSrcPdu : Meas_TPMS_1_Multiplexed_IPDU_IpduM2PduR_Can_Network_Channel_CAN -> 0
+09:42:27,703 [INFO] [PDUR : INFO ] Assigning PduRSourcePduHandleId to all PduRSrcPdus owned by IpduM_modulePositionUp
+09:42:27,704 [INFO] [PDUR : INFO ] Assigning PduRRoutingPathGroupId to PduRRoutingPathGroups
+09:42:27,704 [INFO] workflow completed in 289ms!
+09:42:27,709 [ERROR] ERROR [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_FuncReq_CanTp2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+09:42:27,709 [ERROR] ERROR EvaluationException : [PDUR : ERROR ] The Ecuc Pdu referred for PduRSrcPdu Diag_FuncReq_CanTp2PduR_Can_Network_Channel_CAN under routingPath PduRRoutingPaths has 1 references within PduR.But the same ECUC Pdu is having a missing reference in its intended BswModule. Please complete the configuration 
+	org::eclipse::xtend::util::stdlib::io.ext[990,124] on line 24 'Void internalThrowError(Object s)'
+

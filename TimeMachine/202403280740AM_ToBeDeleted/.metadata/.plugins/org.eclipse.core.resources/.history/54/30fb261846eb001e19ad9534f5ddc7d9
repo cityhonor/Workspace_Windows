@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>TpConfigs</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-TP-CONFIG>
+          <SHORT-NAME>CanTpConfig</SHORT-NAME>
+          <COMMUNICATION-CLUSTER-REF DEST="CAN-CLUSTER">/DBC_SysDesc_Can_Network/Pkg_Cluster/Can_Network</COMMUNICATION-CLUSTER-REF>
+          <TP-CHANNELS>
+            <CAN-TP-CHANNEL>
+              <SHORT-NAME>CanTpChannel_UDS</SHORT-NAME>
+              <CHANNEL-ID>1</CHANNEL-ID>
+              <CHANNEL-MODE>FULL-DUPLEX-MODE</CHANNEL-MODE>
+            </CAN-TP-CHANNEL>
+          </TP-CHANNELS>
+          <TP-CONNECTIONS>
+            <CAN-TP-CONNECTION>
+              <ADDRESSING-FORMAT>EXTENDED</ADDRESSING-FORMAT>
+              <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/TpConfigs/CanTpConfig/CanTpChannel_UDS</CAN-TP-CHANNEL-REF>
+              <MAX-BLOCK-SIZE>64</MAX-BLOCK-SIZE>
+              <PADDING-ACTIVATION>false</PADDING-ACTIVATION>
+              <TA-TYPE>FUNCTIONAL-CAN-FD</TA-TYPE>
+              <TIMEOUT-BR>0.0</TIMEOUT-BR>
+              <TIMEOUT-CR>1.0</TIMEOUT-CR>
+              <TP-SDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/Diag_FuncReq</TP-SDU-REF>
+              <TRANSMITTER-REF DEST="CAN-TP-NODE">/TpConfigs/CanTpConfig/Diag_FuncReq</TRANSMITTER-REF>
+            </CAN-TP-CONNECTION>
+            <CAN-TP-CONNECTION>
+              <ADDRESSING-FORMAT>STANDARD</ADDRESSING-FORMAT>
+              <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/TpConfigs/CanTpConfig/CanTpChannel_UDS</CAN-TP-CHANNEL-REF>
+              <MAX-BLOCK-SIZE>64</MAX-BLOCK-SIZE>
+              <TA-TYPE>FUNCTIONAL-CAN-FD</TA-TYPE>
+              <TIMEOUT-BR>0.0</TIMEOUT-BR>
+              <TIMEOUT-CR>1.0</TIMEOUT-CR>
+              <TP-SDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/Diag_FuncReq_All_CAN</TP-SDU-REF>
+              <TRANSMITTER-REF DEST="CAN-TP-NODE">/TpConfigs/CanTpConfig/Diag_FuncReq_All_CAN</TRANSMITTER-REF>
+            </CAN-TP-CONNECTION>
+            <CAN-TP-CONNECTION>
+              <ADDRESSING-FORMAT>STANDARD</ADDRESSING-FORMAT>
+              <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/TpConfigs/CanTpConfig/CanTpChannel_UDS</CAN-TP-CHANNEL-REF>
+              <MAX-BLOCK-SIZE>64</MAX-BLOCK-SIZE>
+              <TA-TYPE>FUNCTIONAL-CAN-FD</TA-TYPE>
+              <TIMEOUT-BR>0.0</TIMEOUT-BR>
+              <TIMEOUT-CR>1.0</TIMEOUT-CR>
+              <TP-SDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/Diag_FuncReq_All_ECUs</TP-SDU-REF>
+              <TRANSMITTER-REF DEST="CAN-TP-NODE">/TpConfigs/CanTpConfig/Diag_FuncReq_All_ECUs</TRANSMITTER-REF>
+            </CAN-TP-CONNECTION>
+            <CAN-TP-CONNECTION>
+              <ADDRESSING-FORMAT>EXTENDED</ADDRESSING-FORMAT>
+              <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/TpConfigs/CanTpConfig/CanTpChannel_UDS</CAN-TP-CHANNEL-REF>
+              <TA-TYPE>PHYSICAL-CAN-FD</TA-TYPE>
+              <TP-SDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/Diag_PhyReq_TPMS</TP-SDU-REF>
+              <TRANSMITTER-REF DEST="CAN-TP-NODE">/TpConfigs/CanTpConfig/Diag_PhyReq_TPMS</TRANSMITTER-REF>
+            </CAN-TP-CONNECTION>
+            <CAN-TP-CONNECTION>
+              <ADDRESSING-FORMAT>EXTENDED</ADDRESSING-FORMAT>
+              <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/TpConfigs/CanTpConfig/CanTpChannel_UDS</CAN-TP-CHANNEL-REF>
+              <TA-TYPE>PHYSICAL-CAN-FD</TA-TYPE>
+            </CAN-TP-CONNECTION>
+          </TP-CONNECTIONS>
+          <TP-ECUS>
+            <CAN-TP-ECU>
+              <CYCLE-TIME-MAIN-FUNCTION>0.005</CYCLE-TIME-MAIN-FUNCTION>
+              <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS</ECU-INSTANCE-REF>
+            </CAN-TP-ECU>
+          </TP-ECUS>
+          <TP-NODES>
+            <CAN-TP-NODE>
+              <SHORT-NAME>Diag_FuncReq</SHORT-NAME>
+              <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS/Conn_Can_Network_CANNODE_0_TPMS</CONNECTOR-REF>
+              <ST-MIN>0.005</ST-MIN>
+              <TIMEOUT-AR>1.0</TIMEOUT-AR>
+            </CAN-TP-NODE>
+            <CAN-TP-NODE>
+              <SHORT-NAME>Diag_FuncReq_All_CAN</SHORT-NAME>
+              <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS/Conn_Can_Network_CANNODE_0_TPMS</CONNECTOR-REF>
+              <ST-MIN>0.005</ST-MIN>
+              <TIMEOUT-AR>1.0</TIMEOUT-AR>
+            </CAN-TP-NODE>
+            <CAN-TP-NODE>
+              <SHORT-NAME>Diag_FuncReq_All_ECUs</SHORT-NAME>
+              <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS/Conn_Can_Network_CANNODE_0_TPMS</CONNECTOR-REF>
+              <ST-MIN>0.005</ST-MIN>
+              <TIMEOUT-AR>1.0</TIMEOUT-AR>
+            </CAN-TP-NODE>
+            <CAN-TP-NODE>
+              <SHORT-NAME>Diag_PhyReq_TPMS</SHORT-NAME>
+              <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS/Conn_Can_Network_CANNODE_0_TPMS</CONNECTOR-REF>
+              <ST-MIN>0.005</ST-MIN>
+              <TIMEOUT-AR>1.0</TIMEOUT-AR>
+            </CAN-TP-NODE>
+            <CAN-TP-NODE>
+              <SHORT-NAME>Diag_Resp_TPMS</SHORT-NAME>
+              <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_Can_Network/Pkg_Ecu/TPMS/Conn_Can_Network_CANNODE_0_TPMS</CONNECTOR-REF>
+              <TIMEOUT-AS>1.0</TIMEOUT-AS>
+            </CAN-TP-NODE>
+          </TP-NODES>
+        </CAN-TP-CONFIG>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
