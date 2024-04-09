@@ -3581,3 +3581,625 @@ Build validation is failed with following errors for RTA-BSW and execution is ab
  at com.rbei.build.actions.java.core.Log.fatal(Log.java Line:203)
  at dcm.util.task.DcmTask.prepare(DcmTask.java Line:67)
  at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java Line:87)
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Tue Apr 02 16:25:37 CEST 2024
+Project : vEcu_iSolarV12.00.00_MinGwV06.03.00_NxpS32K146_GrenE_Tpms
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 16:25:41:393 hh:mm:ss:ms 
+********************************************************************************
+Clean action: Bfx_Prepare 
+Clean action: CanIf_GenerateId 
+Clean action: CanTp_Prepare_PC 
+Clean action: ComMPreparator 
+Clean action: ComStack_Validate 
+Clean action: Compiler_Generate 
+Clean action: Det_validator 
+Clean action: EcuC_Validate 
+Clean action: EcuM_Forward 
+Clean action: EcuM_Prepare 
+Clean action: IpduM_Prepare 
+Clean action: PduR_Forward 
+Clean action: Platform_Prepare 
+Clean action: Bfx_Validate 
+Clean action: BswM_Validate 
+Clean action: CanSM_Prepare 
+Clean action: CanTp_Validate_PC 
+Clean action: ComMForwarder 
+Clean action: ComMValidator 
+Clean action: ComStack_Generate 
+Clean action: Det_generator 
+Clean action: EcuC_Generate 
+Clean action: EcuM_PbDetermineForward 
+Clean action: EcuM_RbMonitoringValidate 
+Clean action: EcuM_Validate 
+Clean action: Platform_Validate 
+Clean action: Bfx_Generate 
+Clean action: CanSM_Forward 
+Clean action: CanSM_Validate 
+Clean action: Com_Prepare 
+Clean action: DcmForwarder 
+Clean action: EcuM_Generate 
+Clean action: EcuM_PbDetermineValidate 
+Clean action: EcuM_RbMonitoringGenerate 
+Clean action: EcuM_WarningReport 
+Clean action: Platform_Generate 
+Clean action: CanSM_Generate 
+Clean action: ComMGenerator 
+Clean action: Com_Validate 
+Clean action: EcuM_PbDetermineGenerate 
+Clean action: PduR_Prepare 
+Clean action: BswM_Generate 
+Clean action: CanIf_Forward 
+Clean action: CanIf_Validate 
+Clean action: CanTp_Generate_PC 
+Clean action: ComValidator 
+Clean action: Com_Forward 
+Clean action: Com_Generate 
+Clean action: Com_Generate_PB 
+Clean action: DcmValidator 
+Clean action: IpduM_Validate 
+Clean action: PduR_Validate 
+Clean action: CanIf_Generate 
+Clean action: CanIf_Generate_PB 
+Clean action: ComGenerator 
+Clean action: Det_Forward 
+Clean action: IpduM_Forward 
+Clean action: IpduM_Generate 
+Clean action: PduR_Generate 
+Clean action: PduR_Generate_PB 
+Clean action: rba_BswSrv_Generate 
+Clean action: rba_ArxmlGen_Validate 
+Clean action: rba_ArxmlGen_Generate 
+Clean action: DcmGenerator 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:245 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Pre build execution has started at 16:25:42:000 hh:mm:ss:ms 
+********************************************************************************
+Pre build validation successfully completed
+Execute action: 0_CheckLicenses 
+********************************************************************************
+Starting action: Verifying Licenses
+License availabe for stack: Common: OK 
+License availabe for stack: RTA-BASE: OK 
+License availabe for stack: RTA-CAN: OK 
+License availabe for stack: RTA-COM: OK 
+License availabe for stack: RTA-DIAG: OK 
+License availabe for stack: RTA-ETH: OK 
+License availabe for stack: RTA-FRAY: OK 
+License availabe for stack: RTA-HWD(Can): OK 
+License availabe for stack: RTA-HWD(Eth): OK 
+License availabe for stack: RTA-HWD(Fray): OK 
+License availabe for stack: RTA-HWD(Lin): OK 
+License availabe for stack: RTA-J1939: OK 
+License availabe for stack: RTA-LIN: OK 
+License availabe for stack: RTA-MEM: OK 
+License availabe for stack: RTA-RipsPlugins: OK 
+License availabe for stack: RTA-SAFE: OK 
+License availabe for stack: RTA-SEC: OK 
+License availabe for stack: RTA-SWCL: NO 
+License availabe for stack: RTA-XCP: OK 
+Finished action: Verifying Licenses
+Execution of action 0_CheckLicenses successfully completed
+********************************************************************************
+Execute action: ApplicationRegisterer 
+********************************************************************************
+Starting action: Register the Application. Applicable only for Headless usage
+Finished action: Register the Application. Applicable only for Headless usage
+Registering Application not required - No support for headless
+Execution of action ApplicationRegisterer skipped
+********************************************************************************
+Execute action: BswmdEcucValues_1_RemoveExistingBswmdEcucValues 
+********************************************************************************
+Starting action: Remove Bswmd Ecuc Values for ArxmlGen
+Removing static BSWMD Ecuc Values.
+Static BSWMD Ecuc Values.
+Successfully removed static BSWMD Ecuc Values.
+Finished action: Remove Bswmd Ecuc Values for ArxmlGen
+Execution of action BswmdEcucValues_1_RemoveExistingBswmdEcucValues successfully completed
+********************************************************************************
+Execute action: BswmdEcucValues_2_CreateBswmdEcucValues 
+********************************************************************************
+Starting action: Create Bswmd Ecuc Values for ArxmlGen
+Acquiring static BSWMD Ecuc Values.
+Creating static BSWMD Ecuc Values files.
+Creating file 'IpduM_Prot_EcucValues.arxml'.
+Creating file 'ComM_Prot_EcucValues.arxml'.
+Creating file 'CanSM_Prot_EcucValues.arxml'.
+Creating file 'PduR_Prot_EcucValues.arxml'.
+Creating file 'Com_Prot_EcucValues.arxml'.
+Creating file 'CanIf_Prot_EcucValues.arxml'.
+Successfully created static BSWMD Ecuc Values.
+Finished action: Create Bswmd Ecuc Values for ArxmlGen
+Execution of action BswmdEcucValues_2_CreateBswmdEcucValues successfully completed
+********************************************************************************
+Execute action: ParamDefMissingChecker 
+********************************************************************************
+Starting action: Checks for empty definitons.
+Finished action: Checks for empty definitons.
+Execution of action ParamDefMissingChecker successfully completed
+********************************************************************************
+Execute action: ProjectStateValidator 
+********************************************************************************
+Starting action: Runs project validation.
+Finished action: Runs project validation.
+Execution of action ProjectStateValidator successfully completed
+********************************************************************************
+********************************************************************************
+Main build execution has started at 16:25:46:598 hh:mm:ss:ms 
+********************************************************************************
+Execute action: Bfx_Prepare 
+********************************************************************************
+oAW: Prepare script: Bfx_Prepare.oaw
+oAW: Run script: Bfx_Prepare.oaw
+oAW: End of running script: Bfx_Prepare.oaw
+Execution of action Bfx_Prepare successfully completed
+********************************************************************************
+Execute action: CanIf_GenerateId 
+********************************************************************************
+oAW: Prepare script: CanIf_GenerateId.oaw
+oAW: Run script: CanIf_GenerateId.oaw
+oAW: End of running script: CanIf_GenerateId.oaw
+Execution of action CanIf_GenerateId successfully completed
+********************************************************************************
+Execute action: CanTp_Prepare_PC 
+********************************************************************************
+oAW: Prepare script: CanTp_Prepare.mwe
+oAW: Run script: CanTp_Prepare.mwe
+oAW: End of running script: CanTp_Prepare.mwe
+Execution of action CanTp_Prepare_PC successfully completed
+********************************************************************************
+Execute action: ComMPreparator 
+********************************************************************************
+[INFO]No BswM ComMUser created as ComMDirectUserMapping is disabled
+Execution of action ComMPreparator successfully completed
+********************************************************************************
+Execute action: ComStack_Validate 
+********************************************************************************
+oAW: Prepare script: ComStack_Validate.oaw
+oAW: Run script: ComStack_Validate.oaw
+oAW: End of running script: ComStack_Validate.oaw
+Execution of action ComStack_Validate successfully completed
+********************************************************************************
+Execute action: Compiler_Generate 
+********************************************************************************
+oAW: Prepare script: Compiler_Generate.oaw
+oAW: Run script: Compiler_Generate.oaw
+oAW: End of running script: Compiler_Generate.oaw
+Execution of action Compiler_Generate successfully completed
+********************************************************************************
+Execute action: Det_validator 
+********************************************************************************
+oAW: Prepare script: Det_Validate.mwe
+oAW: Run script: Det_Validate.mwe
+oAW: End of running script: Det_Validate.mwe
+Execution of action Det_validator successfully completed
+********************************************************************************
+Execute action: EcuC_Validate 
+********************************************************************************
+oAW: Prepare script: EcuC_Validate.oaw
+oAW: Run script: EcuC_Validate.oaw
+oAW: End of running script: EcuC_Validate.oaw
+Execution of action EcuC_Validate successfully completed
+********************************************************************************
+Execute action: EcuM_Forward 
+********************************************************************************
+oAW: Prepare script: EcuM_Forward.mwe
+oAW: Run script: EcuM_Forward.mwe
+oAW: End of running script: EcuM_Forward.mwe
+Execution of action EcuM_Forward successfully completed
+********************************************************************************
+Execute action: EcuM_Prepare 
+********************************************************************************
+oAW: Prepare script: EcuM_GenerateId.mwe
+oAW: Run script: EcuM_GenerateId.mwe
+oAW: End of running script: EcuM_GenerateId.mwe
+Execution of action EcuM_Prepare successfully completed
+********************************************************************************
+Execute action: IpduM_Prepare 
+********************************************************************************
+oAW: Prepare script: IpduM_GenerateId.oaw
+oAW: Run script: IpduM_GenerateId.oaw
+oAW: End of running script: IpduM_GenerateId.oaw
+Execution of action IpduM_Prepare successfully completed
+********************************************************************************
+Execute action: PduR_Forward 
+********************************************************************************
+oAW: Prepare script: PduR_Forward.oaw
+oAW: Run script: PduR_Forward.oaw
+oAW: End of running script: PduR_Forward.oaw
+Execution of action PduR_Forward successfully completed
+********************************************************************************
+Execute action: Platform_Prepare 
+********************************************************************************
+oAW: Prepare script: Platform_Prepare.oaw
+oAW: Run script: Platform_Prepare.oaw
+oAW: End of running script: Platform_Prepare.oaw
+Execution of action Platform_Prepare successfully completed
+********************************************************************************
+Execute action: Bfx_Validate 
+********************************************************************************
+oAW: Prepare script: Bfx_Validate.oaw
+oAW: Run script: Bfx_Validate.oaw
+oAW: End of running script: Bfx_Validate.oaw
+Execution of action Bfx_Validate successfully completed
+********************************************************************************
+Execute action: BswM_Validate 
+********************************************************************************
+oAW: Prepare script: BswM_Validate.mwe
+oAW: Run script: BswM_Validate.mwe
+oAW: End of running script: BswM_Validate.mwe
+Execution of action BswM_Validate successfully completed
+********************************************************************************
+Execute action: CanSM_Prepare 
+********************************************************************************
+oAW: Prepare script: CanSM_GenerateId.oaw
+oAW: Run script: CanSM_GenerateId.oaw
+oAW: End of running script: CanSM_GenerateId.oaw
+Execution of action CanSM_Prepare successfully completed
+********************************************************************************
+Execute action: CanTp_Validate_PC 
+********************************************************************************
+oAW: Prepare script: CanTp_Validate.mwe
+oAW: Run script: CanTp_Validate.mwe
+oAW: End of running script: CanTp_Validate.mwe
+Execution of action CanTp_Validate_PC successfully completed
+********************************************************************************
+Execute action: ComMForwarder 
+********************************************************************************
+[INFO]Forwarding User size Information into application data type of variable ComM_UserStruct
+[INFO]Forwarding User size Information into implementation data type of variable ComM_UserStruct
+[INFO]Forwarding channel size to application data type of variable ComM_ChannelStruct
+[INFO]Forwarding channel size to implementation data type of variable ComM_ChannelStruct
+[INFO]Forwarding callback information to Com
+[INFO]Forwarding callback information to NvM
+Execution of action ComMForwarder successfully completed
+********************************************************************************
+Execute action: ComMValidator 
+********************************************************************************
+[WARN]The ComMChannel Can_Network_Channel_Can_Network has ComMNmVariant configured as 'None'. Channel with 'None' will never go to NO_COMMUNICATION. Check if this is the intended behaviour.
+Execution of action ComMValidator successfully completed
+********************************************************************************
+Execute action: ComStack_Generate 
+********************************************************************************
+oAW: Prepare script: ComStack_Generate.oaw
+oAW: Run script: ComStack_Generate.oaw
+oAW: End of running script: ComStack_Generate.oaw
+Execution of action ComStack_Generate successfully completed
+********************************************************************************
+Execute action: Det_generator 
+********************************************************************************
+oAW: Prepare script: Det_Generate.mwe
+oAW: Run script: Det_Generate.mwe
+oAW: End of running script: Det_Generate.mwe
+Execution of action Det_generator successfully completed
+********************************************************************************
+Execute action: EcuC_Generate 
+********************************************************************************
+oAW: Prepare script: EcuC_Generate.oaw
+oAW: Run script: EcuC_Generate.oaw
+oAW: End of running script: EcuC_Generate.oaw
+Execution of action EcuC_Generate successfully completed
+********************************************************************************
+Execute action: EcuM_PbDetermineForward 
+********************************************************************************
+oAW: Prepare script: EcuM_PbDetermineForward.mwe
+oAW: Run script: EcuM_PbDetermineForward.mwe
+oAW: End of running script: EcuM_PbDetermineForward.mwe
+Execution of action EcuM_PbDetermineForward successfully completed
+********************************************************************************
+Execute action: EcuM_RbMonitoringValidate 
+********************************************************************************
+oAW: Prepare script: EcuM_RbMonitoringValidate.mwe
+oAW: Run script: EcuM_RbMonitoringValidate.mwe
+oAW: End of running script: EcuM_RbMonitoringValidate.mwe
+Execution of action EcuM_RbMonitoringValidate successfully completed
+********************************************************************************
+Execute action: EcuM_Validate 
+********************************************************************************
+oAW: Prepare script: EcuM_Validate.mwe
+oAW: Run script: EcuM_Validate.mwe
+oAW: End of running script: EcuM_Validate.mwe
+Execution of action EcuM_Validate successfully completed
+********************************************************************************
+Execute action: Platform_Validate 
+********************************************************************************
+oAW: Prepare script: Platform_Validate.oaw
+oAW: Run script: Platform_Validate.oaw
+oAW: End of running script: Platform_Validate.oaw
+Execution of action Platform_Validate successfully completed
+********************************************************************************
+Execute action: Bfx_Generate 
+********************************************************************************
+oAW: Prepare script: Bfx_Generate.oaw
+oAW: Run script: Bfx_Generate.oaw
+oAW: End of running script: Bfx_Generate.oaw
+Execution of action Bfx_Generate successfully completed
+********************************************************************************
+Execute action: CanSM_Forward 
+********************************************************************************
+oAW: Prepare script: CanSM_Forward.oaw
+oAW: Run script: CanSM_Forward.oaw
+oAW: End of running script: CanSM_Forward.oaw
+Execution of action CanSM_Forward successfully completed
+********************************************************************************
+Execute action: CanSM_Validate 
+********************************************************************************
+oAW: Prepare script: CanSM_Validate.oaw
+oAW: Run script: CanSM_Validate.oaw
+oAW: End of running script: CanSM_Validate.oaw
+Execution of action CanSM_Validate successfully completed
+********************************************************************************
+Execute action: Com_Prepare 
+********************************************************************************
+oAW: Prepare script: Com_GenerateId.oaw
+oAW: Run script: Com_GenerateId.oaw
+oAW: End of running script: Com_GenerateId.oaw
+Execution of action Com_Prepare successfully completed
+********************************************************************************
+Execute action: DcmForwarder 
+********************************************************************************
+[DEBUG]Methods with two or more arguments will not get cached: DcmForwarderTask ~buildFunctionalRxPduMap(DcmDslProtocol,DcmDslProtocolType)
+[FATAL]java.lang.NullPointerException
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1025)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.CGLIB$queryData$5(<generated>)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18$$FastClassByCGLIB$$9c01e20f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at dcm.util.aop.intercept.DcmSingleInvocation.proceed(DcmSingleInvocation.java:38)
+	at dcm.util.aop.time.DcmTimeMeasureInterceptor.invoke(DcmTimeMeasureInterceptor.java:59)
+	at dcm.util.aop.intercept.DcmSingleMethodInterceptor.intercept(DcmSingleMethodInterceptor.java:32)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.util.task.DcmTask.prepare(DcmTask.java:63)
+	at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java:87)
+	at com.rbei.build.actions.java.misc.JavaExecutor.run(JavaExecutor.java:59)
+	at com.rbei.build.actions.java.executor.JavaAction.execute(JavaAction.java:161)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.executeAction(AbstractBuildExecuteJob.java:425)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.run(AbstractBuildExecuteJob.java:195)
+	at com.rbei.build.core.engine.jobs.BuildMainExecuteJob.run(BuildMainExecuteJob.java:57)
+	at com.rbei.build.core.engine.jobs.BaseExecuteJob.runInWorkspace(BaseExecuteJob.java:84)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+Exception during execution of JavaAction.
+com.rbei.build.actions.java.misc.exceptions.JavaActionFatalLogException: java.lang.NullPointerException
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1025)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.CGLIB$queryData$5(<generated>)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18$$FastClassByCGLIB$$9c01e20f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at dcm.util.aop.intercept.DcmSingleInvocation.proceed(DcmSingleInvocation.java:38)
+	at dcm.util.aop.time.DcmTimeMeasureInterceptor.invoke(DcmTimeMeasureInterceptor.java:59)
+	at dcm.util.aop.intercept.DcmSingleMethodInterceptor.intercept(DcmSingleMethodInterceptor.java:32)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.util.task.DcmTask.prepare(DcmTask.java:63)
+	at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java:87)
+	at com.rbei.build.actions.java.misc.JavaExecutor.run(JavaExecutor.java:59)
+	at com.rbei.build.actions.java.executor.JavaAction.execute(JavaAction.java:161)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.executeAction(AbstractBuildExecuteJob.java:425)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.run(AbstractBuildExecuteJob.java:195)
+	at com.rbei.build.core.engine.jobs.BuildMainExecuteJob.run(BuildMainExecuteJob.java:57)
+	at com.rbei.build.core.engine.jobs.BaseExecuteJob.runInWorkspace(BaseExecuteJob.java:84)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ at com.rbei.build.actions.java.core.Log.log(Log.java Line:94)
+ at com.rbei.build.actions.java.core.Log.log(Log.java Line:131)
+ at com.rbei.build.actions.java.core.Log.fatal(Log.java Line:203)
+ at dcm.util.task.DcmTask.prepare(DcmTask.java Line:67)
+ at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java Line:87)
+
+Execution of action DcmForwarder failed
+********************************************************************************
+********************************************************************************
+Post build execution has started at 16:26:11:978 hh:mm:ss:ms 
+********************************************************************************
+Execute action: CopyOutput_1_CopyGeneratedCodeToOutput 
+********************************************************************************
+Starting action: Copy generated code to the output folder.
+Finished action: Copy generated code to the output folder.
+Generated code copy is skipped due to an earlier error, see the console for details.
+Execution of action CopyOutput_1_CopyGeneratedCodeToOutput skipped
+********************************************************************************
+Execute action: CopyOutput_2_CopyGeneratedArxmlToProject 
+********************************************************************************
+Starting action: Copy generated ARXML to the output folder.
+Finished action: Copy generated ARXML to the output folder.
+Generated ARXML copy is skipped due to an earlier error, see the console for details.
+Execution of action CopyOutput_2_CopyGeneratedArxmlToProject skipped
+********************************************************************************
+Execute action: CopyOutput_3_CopyStaticIntegrationCodeToOutput 
+********************************************************************************
+Starting action: Copy integration code to the output folder.
+Finished action: Copy integration code to the output folder.
+Integration code copy is skipped due to an earlier error, see the console for details.
+Execution of action CopyOutput_3_CopyStaticIntegrationCodeToOutput skipped
+********************************************************************************
+Execute action: CopyOutput_4_CopyStaticCodeToOutput 
+********************************************************************************
+Starting action: Copy static code to the output folder.
+Finished action: Copy static code to the output folder.
+Static code copy is skipped due to an earlier error, see the console for details.
+Execution of action CopyOutput_4_CopyStaticCodeToOutput skipped
+********************************************************************************
+Execute action: CopyOutput_5_CopyStaticArxmlToProject 
+********************************************************************************
+Starting action: Copy static ARXML to the output folder.
+Finished action: Copy static ARXML to the output folder.
+Static ARXML copy is skipped due to an earlier error, see the console for details.
+Execution of action CopyOutput_5_CopyStaticArxmlToProject skipped
+********************************************************************************
+Execute action: CopyOutput_6_CopyGeneratedLogsToOutput 
+********************************************************************************
+Starting action: Copy generated logs to the output folder.
+Finished action: Copy generated logs to the output folder.
+Execution of action CopyOutput_6_CopyGeneratedLogsToOutput successfully completed
+********************************************************************************
+Execute action: CopyOutput_7_CleanupGeneratedCode 
+********************************************************************************
+Starting action: Cleanup generated code to the output folder.
+Finished action: Cleanup generated code to the output folder.
+Execution of action CopyOutput_7_CleanupGeneratedCode successfully completed
+********************************************************************************
+Execute action: GenerateCodeGenVersionHeader 
+********************************************************************************
+Starting action: Generate the CodeGen version and diagnostic header file.
+Finished action: Generate the CodeGen version and diagnostic header file.
+Create CodeGen version header is skipped due to an earlier error, see the console for details.
+Execution of action GenerateCodeGenVersionHeader skipped
+********************************************************************************
+Execute action: MapServiceComponentsToECUExtract 
+********************************************************************************
+Starting action: Map Service Components to ECU_Extract
+Finished action: Map Service Components to ECU_Extract
+Service Components mapping to ECU_Extract is skipped due to an earlier error, see the console for details.
+Execution of action MapServiceComponentsToECUExtract skipped
+********************************************************************************
+Post handle is skipped due to previous errors
+
+********************************************************************************
+Pre Build Summary 
+********************************************************************************
+- 0_CheckLicenses --> Success (Executed for 00:00:00:290 hh:mm:ss:ms)
+- ApplicationRegisterer --> Skipped (Executed for 00:00:00:022 hh:mm:ss:ms)
+- BswmdEcucValues_1_RemoveExistingBswmdEcucValues --> Success (Executed for 00:00:00:038 hh:mm:ss:ms)
+- BswmdEcucValues_2_CreateBswmdEcucValues --> Success (Executed for 00:00:00:131 hh:mm:ss:ms)
+- ParamDefMissingChecker --> Success (Executed for 00:00:00:175 hh:mm:ss:ms)
+- ProjectStateValidator --> Success (Executed for 00:00:00:021 hh:mm:ss:ms)
+Build Summary 
+********************************************************************************
+- Bfx_Prepare --> Success (Executed for 00:00:13:569 hh:mm:ss:ms)
+- CanIf_GenerateId --> Success (Executed for 00:00:00:250 hh:mm:ss:ms)
+- CanTp_Prepare_PC --> Success (Executed for 00:00:00:065 hh:mm:ss:ms)
+- ComMPreparator --> Success (Executed for 00:00:02:918 hh:mm:ss:ms)
+- ComStack_Validate --> Success (Executed for 00:00:00:103 hh:mm:ss:ms)
+- Compiler_Generate --> Success (Executed for 00:00:00:072 hh:mm:ss:ms)
+- Det_validator --> Success (Executed for 00:00:00:097 hh:mm:ss:ms)
+- EcuC_Validate --> Success (Executed for 00:00:00:065 hh:mm:ss:ms)
+- EcuM_Forward --> Success (Executed for 00:00:00:029 hh:mm:ss:ms)
+- EcuM_Prepare --> Success (Executed for 00:00:00:048 hh:mm:ss:ms)
+- IpduM_Prepare --> Success (Executed for 00:00:00:080 hh:mm:ss:ms)
+- PduR_Forward --> Success (Executed for 00:00:00:106 hh:mm:ss:ms)
+- Platform_Prepare --> Success (Executed for 00:00:00:039 hh:mm:ss:ms)
+- Bfx_Validate --> Success (Executed for 00:00:00:045 hh:mm:ss:ms)
+- BswM_Validate --> Success (Executed for 00:00:00:182 hh:mm:ss:ms)
+- CanSM_Prepare --> Success (Executed for 00:00:00:052 hh:mm:ss:ms)
+- CanTp_Validate_PC --> Success (Executed for 00:00:00:104 hh:mm:ss:ms)
+- ComMForwarder --> Success (Executed for 00:00:01:397 hh:mm:ss:ms)
+- ComMValidator --> Success (Executed for 00:00:01:742 hh:mm:ss:ms)
+- ComStack_Generate --> Success (Executed for 00:00:00:042 hh:mm:ss:ms)
+- Det_generator --> Success (Executed for 00:00:00:119 hh:mm:ss:ms)
+- EcuC_Generate --> Success (Executed for 00:00:00:038 hh:mm:ss:ms)
+- EcuM_PbDetermineForward --> Success (Executed for 00:00:00:031 hh:mm:ss:ms)
+- EcuM_RbMonitoringValidate --> Success (Executed for 00:00:00:039 hh:mm:ss:ms)
+- EcuM_Validate --> Success (Executed for 00:00:00:062 hh:mm:ss:ms)
+- Platform_Validate --> Success (Executed for 00:00:00:047 hh:mm:ss:ms)
+- Bfx_Generate --> Success (Executed for 00:00:00:056 hh:mm:ss:ms)
+- CanSM_Forward --> Success (Executed for 00:00:00:070 hh:mm:ss:ms)
+- CanSM_Validate --> Success (Executed for 00:00:00:058 hh:mm:ss:ms)
+- Com_Prepare --> Success (Executed for 00:00:00:223 hh:mm:ss:ms)
+- DcmForwarder --> Error (Executed for 00:00:02:333 hh:mm:ss:ms)
+Exception during execution of JavaAction.
+com.rbei.build.actions.java.misc.exceptions.JavaActionFatalLogException: java.lang.NullPointerException
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1025)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.CGLIB$queryData$5(<generated>)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18$$FastClassByCGLIB$$9c01e20f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at dcm.util.aop.intercept.DcmSingleInvocation.proceed(DcmSingleInvocation.java:38)
+	at dcm.util.aop.time.DcmTimeMeasureInterceptor.invoke(DcmTimeMeasureInterceptor.java:59)
+	at dcm.util.aop.intercept.DcmSingleMethodInterceptor.intercept(DcmSingleMethodInterceptor.java:32)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.util.task.DcmTask.prepare(DcmTask.java:63)
+	at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java:87)
+	at com.rbei.build.actions.java.misc.JavaExecutor.run(JavaExecutor.java:59)
+	at com.rbei.build.actions.java.executor.JavaAction.execute(JavaAction.java:161)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.executeAction(AbstractBuildExecuteJob.java:425)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.run(AbstractBuildExecuteJob.java:195)
+	at com.rbei.build.core.engine.jobs.BuildMainExecuteJob.run(BuildMainExecuteJob.java:57)
+	at com.rbei.build.core.engine.jobs.BaseExecuteJob.runInWorkspace(BaseExecuteJob.java:84)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ at com.rbei.build.actions.java.core.Log.log(Log.java Line:94)
+ at com.rbei.build.actions.java.core.Log.log(Log.java Line:131)
+ at com.rbei.build.actions.java.core.Log.fatal(Log.java Line:203)
+ at dcm.util.task.DcmTask.prepare(DcmTask.java Line:67)
+ at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java Line:87)
+
+********************************************************************************
+Post Build Summary 
+********************************************************************************
+- CopyOutput_1_CopyGeneratedCodeToOutput --> Skipped (Executed for 00:00:00:022 hh:mm:ss:ms)
+- CopyOutput_2_CopyGeneratedArxmlToProject --> Skipped (Executed for 00:00:00:021 hh:mm:ss:ms)
+- CopyOutput_3_CopyStaticIntegrationCodeToOutput --> Skipped (Executed for 00:00:00:026 hh:mm:ss:ms)
+- CopyOutput_4_CopyStaticCodeToOutput --> Skipped (Executed for 00:00:00:024 hh:mm:ss:ms)
+- CopyOutput_5_CopyStaticArxmlToProject --> Skipped (Executed for 00:00:00:031 hh:mm:ss:ms)
+- CopyOutput_6_CopyGeneratedLogsToOutput --> Success (Executed for 00:00:00:031 hh:mm:ss:ms)
+- CopyOutput_7_CleanupGeneratedCode --> Success (Executed for 00:00:00:027 hh:mm:ss:ms)
+- GenerateCodeGenVersionHeader --> Skipped (Executed for 00:00:00:023 hh:mm:ss:ms)
+- MapServiceComponentsToECUExtract --> Skipped (Executed for 00:00:00:023 hh:mm:ss:ms)
+Time taken for the complete build: 00:00:25:549
+
+================================================================================
+Build validation is failed with following errors for RTA-BSW and execution is aborted: 
+================================================================================
+1. java.lang.NullPointerException
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1025)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.CGLIB$queryData$5(<generated>)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18$$FastClassByCGLIB$$9c01e20f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at dcm.util.aop.intercept.DcmSingleInvocation.proceed(DcmSingleInvocation.java:38)
+	at dcm.util.aop.time.DcmTimeMeasureInterceptor.invoke(DcmTimeMeasureInterceptor.java:59)
+	at dcm.util.aop.intercept.DcmSingleMethodInterceptor.intercept(DcmSingleMethodInterceptor.java:32)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.util.task.DcmTask.prepare(DcmTask.java:63)
+	at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java:87)
+	at com.rbei.build.actions.java.misc.JavaExecutor.run(JavaExecutor.java:59)
+	at com.rbei.build.actions.java.executor.JavaAction.execute(JavaAction.java:161)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.executeAction(AbstractBuildExecuteJob.java:425)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.run(AbstractBuildExecuteJob.java:195)
+	at com.rbei.build.core.engine.jobs.BuildMainExecuteJob.run(BuildMainExecuteJob.java:57)
+	at com.rbei.build.core.engine.jobs.BaseExecuteJob.runInWorkspace(BaseExecuteJob.java:84)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2. com.rbei.build.actions.java.misc.exceptions.JavaActionFatalLogException: java.lang.NullPointerException
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1025)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.CGLIB$queryData$5(<generated>)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18$$FastClassByCGLIB$$9c01e20f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at dcm.util.aop.intercept.DcmSingleInvocation.proceed(DcmSingleInvocation.java:38)
+	at dcm.util.aop.time.DcmTimeMeasureInterceptor.invoke(DcmTimeMeasureInterceptor.java:59)
+	at dcm.util.aop.intercept.DcmSingleMethodInterceptor.intercept(DcmSingleMethodInterceptor.java:32)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.forwarder.DcmForwarderTask.queryData(DcmForwarderTask.java:1)
+	at dcm.forwarder.DcmForwarderCanTpTask$$EnhancerByCGLIB$$d64b2e18.queryData(<generated>)
+	at dcm.util.task.DcmTask.prepare(DcmTask.java:63)
+	at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java:87)
+	at com.rbei.build.actions.java.misc.JavaExecutor.run(JavaExecutor.java:59)
+	at com.rbei.build.actions.java.executor.JavaAction.execute(JavaAction.java:161)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.executeAction(AbstractBuildExecuteJob.java:425)
+	at com.rbei.build.core.engine.jobs.AbstractBuildExecuteJob.run(AbstractBuildExecuteJob.java:195)
+	at com.rbei.build.core.engine.jobs.BuildMainExecuteJob.run(BuildMainExecuteJob.java:57)
+	at com.rbei.build.core.engine.jobs.BaseExecuteJob.runInWorkspace(BaseExecuteJob.java:84)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ at com.rbei.build.actions.java.core.Log.log(Log.java Line:94)
+ at com.rbei.build.actions.java.core.Log.log(Log.java Line:131)
+ at com.rbei.build.actions.java.core.Log.fatal(Log.java Line:203)
+ at dcm.util.task.DcmTask.prepare(DcmTask.java Line:67)
+ at dcm.forwarder.DcmForwarderAction.run(DcmForwarderAction.java Line:87)

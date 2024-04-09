@@ -11253,3 +11253,541 @@ org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:118)
 org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:701)
 org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:117)
 org.eclipse.core.internal.jobs.Worker.run(Worker.java:83)
+!SESSION 2024-04-02 13:19:31.395 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-04-02 13:19:34.254
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-04-02 13:19:34.259
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 13:20:02.397
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 13:20:02.397
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 13:20:02.413
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 13:20:02.413
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 13:20:02.428
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 13:20:02.428
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-04-02 13:20:06.392
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-04-02 13:20:27.791
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-04-02 13:20:30.028
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 245 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-04-02 13:20:30.060
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 30 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-04-02 13:20:33.112
+!MESSAGE RefreshJob: refresh is activated
+!SESSION 2024-04-02 16:22:18.220 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45 4 0 2024-04-02 16:22:20.876
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [1090]
+         Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2024-04-02 16:22:20.876
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [1333]
+  Unresolved requirement: Import-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; version="[0.1.0,1.0.0)"
+    -> Export-Package: org.eclipse.ecf.internal.provider.filetransfer.httpclient45; bundle-symbolic-name="org.eclipse.ecf.provider.filetransfer.httpclient45"; bundle-version="1.0.300.v20200522-1203"; version="0.1.0"; x-friends:="org.eclipse.ecf.provider.filetransfer.httpclient45.win32"
+       org.eclipse.ecf.provider.filetransfer.httpclient45 [1332]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [1090]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.binary; version="[1.13.0,1.14.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.10.v20200114-1512"; version="4.5.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 16:22:46.547
+!MESSAGE Bundle registered: RTA-BSW-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 16:22:46.563
+!MESSAGE Bundle registered: RTA-A2L-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 16:22:46.563
+!MESSAGE Bundle registered: RTA-A2L POST-COMPILE-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 16:22:46.579
+!MESSAGE Bundle registered: RTA-MEMMAP-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 16:22:46.579
+!MESSAGE Bundle registered: RTA-OS-12.2.0
+
+!ENTRY com.etas.rtacar.plugin.framework.extensions 1 0 2024-04-02 16:22:46.594
+!MESSAGE Bundle registered: RTA-RTE-12.2.0
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-04-02 16:22:50.278
+!MESSAGE # RTA-BSW - Stacks: {Common -> license: OK, RTA-BASE -> license: OK, RTA-CAN -> license: OK, RTA-COM -> license: OK, RTA-DIAG -> license: OK, RTA-ETH -> license: OK, RTA-FRAY -> license: OK, RTA-HWD(Can) -> license: OK, RTA-HWD(Eth) -> license: OK, RTA-HWD(Fray) -> license: OK, RTA-HWD(Lin) -> license: OK, RTA-J1939 -> license: OK, RTA-LIN -> license: OK, RTA-MEM -> license: OK, RTA-RipsPlugins -> license: OK, RTA-SAFE -> license: OK, RTA-SEC -> license: OK, RTA-SWCL -> license: NO, RTA-XCP -> license: OK}
+
+!ENTRY org.eclipse.ui 2 2 2024-04-02 16:23:10.797
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.html (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-04-02 16:23:12.919
+!MESSAGE Time taken for CDT Tree Data Structure Initialization CDTTreeDSJob 226 ms
+
+!ENTRY com.bosch.blueworx.core.cdt.filter 1 0 2024-04-02 16:23:12.945
+!MESSAGE Time taken for CDT Tree preference save CDTTreeDSJob 24 ms
+
+!ENTRY org.eclipse.core.resources 1 0 2024-04-02 16:23:15.272
+!MESSAGE RefreshJob: refresh is activated
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.524
+!MESSAGE Starting action: Verifying Licenses
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.555
+!MESSAGE License availabe for stack: Common: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.558
+!MESSAGE License availabe for stack: RTA-BASE: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.562
+!MESSAGE License availabe for stack: RTA-CAN: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.566
+!MESSAGE License availabe for stack: RTA-COM: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.569
+!MESSAGE License availabe for stack: RTA-DIAG: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.571
+!MESSAGE License availabe for stack: RTA-ETH: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.574
+!MESSAGE License availabe for stack: RTA-FRAY: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.576
+!MESSAGE License availabe for stack: RTA-HWD(Can): OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.579
+!MESSAGE License availabe for stack: RTA-HWD(Eth): OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.581
+!MESSAGE License availabe for stack: RTA-HWD(Fray): OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.584
+!MESSAGE License availabe for stack: RTA-HWD(Lin): OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.586
+!MESSAGE License availabe for stack: RTA-J1939: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.588
+!MESSAGE License availabe for stack: RTA-LIN: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.591
+!MESSAGE License availabe for stack: RTA-MEM: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.593
+!MESSAGE License availabe for stack: RTA-RipsPlugins: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.595
+!MESSAGE License availabe for stack: RTA-SAFE: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.599
+!MESSAGE License availabe for stack: RTA-SEC: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.601
+!MESSAGE License availabe for stack: RTA-SWCL: NO 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.603
+!MESSAGE License availabe for stack: RTA-XCP: OK 
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.606
+!MESSAGE Finished action: Verifying Licenses
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.628
+!MESSAGE Starting action: Register the Application. Applicable only for Headless usage
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.631
+!MESSAGE Finished action: Register the Application. Applicable only for Headless usage
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.650
+!MESSAGE Starting action: Remove Bswmd Ecuc Values for ArxmlGen
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.652
+!MESSAGE Removing static BSWMD Ecuc Values.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.655
+!MESSAGE Static BSWMD Ecuc Values.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.669
+!MESSAGE Successfully removed static BSWMD Ecuc Values.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.672
+!MESSAGE Finished action: Remove Bswmd Ecuc Values for ArxmlGen
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.700
+!MESSAGE Starting action: Create Bswmd Ecuc Values for ArxmlGen
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.702
+!MESSAGE Acquiring static BSWMD Ecuc Values.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.720
+!MESSAGE Creating static BSWMD Ecuc Values files.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.729
+!MESSAGE Creating file 'IpduM_Prot_EcucValues.arxml'.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.740
+!MESSAGE Creating file 'ComM_Prot_EcucValues.arxml'.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.761
+!MESSAGE Creating file 'CanSM_Prot_EcucValues.arxml'.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.774
+!MESSAGE Creating file 'PduR_Prot_EcucValues.arxml'.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.781
+!MESSAGE Creating file 'Com_Prot_EcucValues.arxml'.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.798
+!MESSAGE Creating file 'CanIf_Prot_EcucValues.arxml'.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.802
+!MESSAGE Successfully created static BSWMD Ecuc Values.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.804
+!MESSAGE Finished action: Create Bswmd Ecuc Values for ArxmlGen
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.825
+!MESSAGE Starting action: Checks for empty definitons.
+
+!ENTRY com.etas.rtabsw.code 1 0 2024-04-02 16:25:42.978
+!MESSAGE Pre Build Action executed: EcucParameterValue Definition Missing Check
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:42.981
+!MESSAGE Finished action: Checks for empty definitons.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:43.001
+!MESSAGE Starting action: Runs project validation.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:25:43.004
+!MESSAGE Finished action: Runs project validation.
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:57.265
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:57.265
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:57.527
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:57.527
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.070
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.070
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.113
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.114
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.115
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.116
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.130
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.130
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.131
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.131
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.131
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.131
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.141
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.141
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.142
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.142
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.146
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.146
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.155
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.155
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.156
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.156
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.157
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.autosar40.xtend.typesystem": ConfigParameter type 'EcucAddInfoParamDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.autosar40.xtend.typesystem 2 0 2024-04-02 16:25:58.157
+!MESSAGE ConfigParameter type 'EcucAddInfoParamDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.495
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.495
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.502
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.502
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.511
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.511
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.528
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.528
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.551
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.551
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.560
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.560
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.563
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.563
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.565
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.565
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.566
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.566
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.570
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.570
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.578
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.578
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.582
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.582
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.585
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.585
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.586
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.586
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.602
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.602
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.610
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.610
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.612
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.612
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.612
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-04-02 16:25:58.612
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY com.bosch.autosartool.bsw.codegen.util 4 0 2024-04-02 16:26:10.978
+!MESSAGE Refer console for more details.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.000
+!MESSAGE Starting action: Copy generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.002
+!MESSAGE Finished action: Copy generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.022
+!MESSAGE Starting action: Copy generated ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.024
+!MESSAGE Finished action: Copy generated ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.048
+!MESSAGE Starting action: Copy integration code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.051
+!MESSAGE Finished action: Copy integration code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.076
+!MESSAGE Starting action: Copy static code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.078
+!MESSAGE Finished action: Copy static code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.114
+!MESSAGE Starting action: Copy static ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.118
+!MESSAGE Finished action: Copy static ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.143
+!MESSAGE Starting action: Copy generated logs to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.153
+!MESSAGE Finished action: Copy generated logs to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.175
+!MESSAGE Starting action: Cleanup generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.184
+!MESSAGE Finished action: Cleanup generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.205
+!MESSAGE Starting action: Generate the CodeGen version and diagnostic header file.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.207
+!MESSAGE Finished action: Generate the CodeGen version and diagnostic header file.
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.227
+!MESSAGE Starting action: Map Service Components to ECU_Extract
+
+!ENTRY com.rbei.build.core 1 0 2024-04-02 16:26:12.230
+!MESSAGE Finished action: Map Service Components to ECU_Extract
+
+!ENTRY com.bosch.blueworx.core 1 0 2024-04-02 16:26:12.418
+!MESSAGE FileLogger: Close log writer invoked by 
+java.base/java.lang.Thread.getStackTrace(Thread.java:1602)
+com.bosch.blueworx.core.logging.filelogging.FileLogger.getStackTrace(FileLogger.java:275)
+com.bosch.blueworx.core.logging.filelogging.FileLogger.closeLogWritter(FileLogger.java:269)
+com.etas.rtacar.plugin.userhook.core.util.RtaCarPrePostContextHandler.reset(RtaCarPrePostContextHandler.java:372)
+com.rbei.build.service.BuildService3$4.done(BuildService3.java:431)
+org.eclipse.core.internal.jobs.JobListeners.doNotify(JobListeners.java:80)
+org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:118)
+org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:701)
+org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:117)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:83)

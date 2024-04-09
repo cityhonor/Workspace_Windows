@@ -1,245 +1,245 @@
-14:48:29,172 [INFO] --------------------------------------------------------------------------------------
-14:48:29,172 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:29,172 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:29,172 [INFO] --------------------------------------------------------------------------------------
-14:48:29,172 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Prepare.oaw
-14:48:29,172 [INFO] 
-14:48:29,173 [INFO] BCTXtendComponent: executing 'Bfx_Prepare'
-14:48:30,828 [INFO] workflow completed in 1655ms!
-14:48:30,846 [INFO] --------------------------------------------------------------------------------------
-14:48:30,847 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:30,847 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:30,847 [INFO] --------------------------------------------------------------------------------------
-14:48:30,847 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanIf\scripts\templates\generateid\CanIf_GenerateId.oaw
-14:48:30,847 [INFO] 
-14:48:30,848 [INFO] BCTXtendComponent: executing 'templates::generateid::CanIf_GenerateId_Id'
-14:48:30,860 [INFO] workflow completed in 11ms!
-14:48:30,877 [INFO] --------------------------------------------------------------------------------------
-14:48:30,877 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:30,877 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:30,877 [INFO] --------------------------------------------------------------------------------------
-14:48:30,877 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanTp\scripts\datagenerator\CanTp_Prepare.mwe
-14:48:30,877 [INFO] 
-14:48:30,878 [INFO] BCTXtendComponent: executing 'CanTp_Prepare'
-14:48:30,883 [INFO] CanTp_Prepare for Active Variant: __KW_COMMON 
-14:48:30,885 [INFO] workflow completed in 7ms!
-14:48:32,434 [INFO] --------------------------------------------------------------------------------------
-14:48:32,434 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,434 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,434 [INFO] --------------------------------------------------------------------------------------
-14:48:32,435 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\ComStack\scripts\ComStack_Validate.oaw
-14:48:32,435 [INFO] 
-14:48:32,444 [INFO] BCTCheckComponent: slot model check file(s): ComStack_Validate 
-14:48:32,447 [INFO] workflow completed in 3ms!
-14:48:32,465 [INFO] --------------------------------------------------------------------------------------
-14:48:32,465 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,465 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,465 [INFO] --------------------------------------------------------------------------------------
-14:48:32,465 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Compiler\scripts\Compiler_Generate.oaw
-14:48:32,465 [INFO] 
-14:48:32,494 [INFO] BCTCodeGenerator: generating 'Compiler_h::Generate FOR model' => []
-14:48:32,496 [INFO] workflow completed in 2ms!
-14:48:32,541 [INFO] --------------------------------------------------------------------------------------
-14:48:32,541 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,541 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,541 [INFO] --------------------------------------------------------------------------------------
-14:48:32,542 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\Diagnosis\Det\scripts\validator\Det_Validate.mwe
-14:48:32,542 [INFO] 
-14:48:32,543 [INFO] BCTCheckComponent: slot model check file(s): Det_Validate 
-14:48:32,545 [INFO] workflow completed in 3ms!
-14:48:32,566 [INFO] --------------------------------------------------------------------------------------
-14:48:32,566 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,566 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,566 [INFO] --------------------------------------------------------------------------------------
-14:48:32,566 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\EcuC\scripts\EcuC_Validate.oaw
-14:48:32,566 [INFO] 
-14:48:32,567 [INFO] BCTCheckComponent: slot model check file(s): EcuC 
-14:48:32,573 [INFO] workflow completed in 5ms!
-14:48:32,590 [INFO] --------------------------------------------------------------------------------------
-14:48:32,590 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,591 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,591 [INFO] --------------------------------------------------------------------------------------
-14:48:32,591 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Forward.mwe
-14:48:32,591 [INFO] 
-14:48:32,591 [INFO] BCTXtendComponent: executing ' templates::EcuM_NvMForward'
-14:48:32,592 [INFO] workflow completed in 1ms!
-14:48:32,609 [INFO] --------------------------------------------------------------------------------------
-14:48:32,609 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,609 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,609 [INFO] --------------------------------------------------------------------------------------
-14:48:32,609 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_GenerateId.mwe
-14:48:32,610 [INFO] 
-14:48:32,610 [INFO] BCTXtendComponent: executing ' templates::EcuM_Prepare'
-14:48:32,616 [INFO] workflow completed in 6ms!
-14:48:32,641 [INFO] --------------------------------------------------------------------------------------
-14:48:32,641 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,641 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,641 [INFO] --------------------------------------------------------------------------------------
-14:48:32,641 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\IpduM\scripts\templates\generateid\IpduM_GenerateId.oaw
-14:48:32,641 [INFO] 
-14:48:32,642 [INFO] BCTXtendComponent: executing 'templates::generateid::IpduM_GenerateId_Id'
-14:48:32,676 [INFO] workflow completed in 34ms!
-14:48:32,693 [INFO] --------------------------------------------------------------------------------------
-14:48:32,693 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,693 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,693 [INFO] --------------------------------------------------------------------------------------
-14:48:32,693 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\PduR\scripts\templates\forward\PduR_Forward.oaw
-14:48:32,693 [INFO] 
-14:48:32,695 [INFO] BCTXtendComponent: executing ' templates::forward::PduR_Forward'
-14:48:32,704 [INFO] >>> WARNING <<<: PduR forwarding to DEM not executed because 'PduR' or 'DEM' configuration is not available. Is this intended?
-14:48:32,705 [INFO] BCTXtendComponent: executing ' templates::forward::PduR_Forward'
-14:48:32,718 [INFO] PduRDsmReInitMainFunction is not forwarded as PduRRbDSMReInitEnabled is configured as False.
-14:48:32,718 [INFO] workflow completed in 24ms!
-14:48:32,738 [INFO] --------------------------------------------------------------------------------------
-14:48:32,738 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,738 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,738 [INFO] --------------------------------------------------------------------------------------
-14:48:32,738 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Prepare.oaw
-14:48:32,738 [INFO] 
-14:48:32,739 [INFO] BCTXtendComponent: executing 'Platform_Prepare'
-14:48:32,740 [INFO] workflow completed in 1ms!
-14:48:32,762 [INFO] --------------------------------------------------------------------------------------
-14:48:32,762 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,762 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,762 [INFO] --------------------------------------------------------------------------------------
-14:48:32,762 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Validate.oaw
-14:48:32,762 [INFO] 
-14:48:32,763 [INFO] BCTCheckComponent: slot model check file(s): Bfx_Validate 
-14:48:32,765 [INFO] workflow completed in 2ms!
-14:48:32,804 [INFO] --------------------------------------------------------------------------------------
-14:48:32,804 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,804 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,804 [INFO] --------------------------------------------------------------------------------------
-14:48:32,804 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\BSMM\BswM\scripts\BswM_Validate.mwe
-14:48:32,804 [INFO] 
-14:48:32,805 [INFO] BCTCheckComponent: slot model check file(s): BswM_Validate 
-14:48:32,828 [INFO] BCTCheckComponent: slot model check file(s): BswM_Validate_PB 
-14:48:32,840 [INFO] workflow completed in 35ms!
-14:48:32,840 [WARN] [WARNING]: BswM: Please check the configuration, logical expression('s) is(are) configured but not used in any Rule -[BswMLogicalExpression_StartCom](Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@62da29b0 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
-14:48:32,840 [WARN] [WARNING]: BswM: Please check the configuration, logical expression's are configured but not used in any Rule -[BswMLogicalExpression_StartCom] for the variant __KW_COMMON(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@62da29b0 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
-14:48:32,840 [WARN] [WARNING]: BswM: Please check the configuration, Actions's are configured but not used in any Action List-[BswMActionItem_RteStart, BswMActionItem_BswMSwitchRun, BswMActionItem_BswMSwitchStartupTwo](Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@62da29b0 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
-14:48:32,858 [INFO] --------------------------------------------------------------------------------------
-14:48:32,858 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,858 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,858 [INFO] --------------------------------------------------------------------------------------
-14:48:32,858 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\generateid\CanSM_GenerateId.oaw
-14:48:32,858 [INFO] 
-14:48:32,859 [INFO] BCTXtendComponent: executing 'templates::generateid::CanSM::CanSM_GenerateId_Id'
-14:48:32,862 [INFO] >>> WARNING <<<: CanSM forwarding to DEM not executed because 'CanSM' or 'DEM' configuration is not available. Is this intended?
-14:48:32,862 [INFO] BCTXtendComponent: executing 'templates::forward::CanSM_GenerateId_Id'
-14:48:32,866 [INFO] workflow completed in 7ms!
-14:48:32,899 [INFO] --------------------------------------------------------------------------------------
-14:48:32,900 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:32,900 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:32,900 [INFO] --------------------------------------------------------------------------------------
-14:48:32,900 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanTp\scripts\validator\CanTp_Validate.mwe
-14:48:32,900 [INFO] 
-14:48:32,901 [INFO] BCTCheckComponent: slot model check file(s): CanTp 
-14:48:32,918 [INFO] workflow completed in 16ms!
-14:48:32,918 [WARN] [WARNING]: CanTp Strict Dlc check is disabled, this violates CanFD ISO/DIS 15765-2 (2014/2015) requirement. Is this intended? to be compliant with ISO/DIS 15765-2 (2014/2015) enable Strict Dlc Check(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@21292d72 (shortName: CanTpGeneral) (index: <unset>); Reported by: -UNKNOWN-)
-14:48:36,105 [INFO] --------------------------------------------------------------------------------------
-14:48:36,106 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,106 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,106 [INFO] --------------------------------------------------------------------------------------
-14:48:36,106 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\ComStack\scripts\ComStack_Generate.oaw
-14:48:36,106 [INFO] 
-14:48:36,108 [INFO] BCTCodeGenerator: generating 'ComStack_Cfg_h::Generate FOR model' => []
-14:48:36,111 [INFO] BCTCodeGenerator: generating 'ComStack_Types_arxml::Generate FOR model' => []
-14:48:36,112 [INFO] workflow completed in 4ms!
-14:48:36,139 [INFO] --------------------------------------------------------------------------------------
-14:48:36,140 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,140 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,140 [INFO] --------------------------------------------------------------------------------------
-14:48:36,140 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\Diagnosis\Det\scripts\filegenerator\Det_Generate.mwe
-14:48:36,140 [INFO] 
-14:48:36,141 [INFO] BCTCodeGenerator: generating 'Det::Root FOR model' => []
-14:48:36,168 [INFO] workflow completed in 27ms!
-14:48:36,189 [INFO] --------------------------------------------------------------------------------------
-14:48:36,189 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,190 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,190 [INFO] --------------------------------------------------------------------------------------
-14:48:36,190 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\EcuC\scripts\EcuC_Generate.oaw
-14:48:36,190 [INFO] 
-14:48:36,190 [INFO] BCTCodeGenerator: generating 'EcuC_Rb_h::Generate FOR model' => []
-14:48:36,192 [INFO] workflow completed in 2ms!
-14:48:36,210 [INFO] --------------------------------------------------------------------------------------
-14:48:36,210 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,210 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,210 [INFO] --------------------------------------------------------------------------------------
-14:48:36,210 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_PbDetermineForward.mwe
-14:48:36,210 [INFO] 
-14:48:36,211 [INFO] BCTXtendComponent: executing ' templates::EcuM_PbDetermineForward'
-14:48:36,212 [INFO] workflow completed in 1ms!
-14:48:36,234 [INFO] --------------------------------------------------------------------------------------
-14:48:36,235 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,235 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,235 [INFO] --------------------------------------------------------------------------------------
-14:48:36,235 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_RbMonitoringValidate.mwe
-14:48:36,235 [INFO] 
-14:48:36,236 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_RbMonitoringCheck 
-14:48:36,240 [INFO] workflow completed in 4ms!
-14:48:36,262 [INFO] --------------------------------------------------------------------------------------
-14:48:36,262 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,262 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,262 [INFO] --------------------------------------------------------------------------------------
-14:48:36,262 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Validate.mwe
-14:48:36,262 [INFO] 
-14:48:36,263 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_StartupCheck_PB 
-14:48:36,267 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_StartupCheck_PCLT 
-14:48:36,274 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_SleepCheck 
-14:48:36,276 [INFO] workflow completed in 13ms!
-14:48:36,296 [INFO] --------------------------------------------------------------------------------------
-14:48:36,296 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,296 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,296 [INFO] --------------------------------------------------------------------------------------
-14:48:36,296 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Validate.oaw
-14:48:36,296 [INFO] 
-14:48:36,297 [INFO] BCTCheckComponent: slot model check file(s): Platform_Validate 
-14:48:36,301 [INFO] workflow completed in 4ms!
-14:48:36,301 [WARN] [WARNING]: 'McuRbCpuInformation' is not available and has to be configured manually.(Element: autosar40.ecucdescription.impl.EcucModuleConfigurationValuesImpl@59ad0fc2 (shortName: Platform_RefUG) (ecucDefEdition: <unset>, implementationConfigVariant: <unset>, postBuildVariantUsed: <unset>); Reported by: -UNKNOWN-)
-14:48:36,323 [INFO] --------------------------------------------------------------------------------------
-14:48:36,324 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,324 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,324 [INFO] --------------------------------------------------------------------------------------
-14:48:36,324 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Generate.oaw
-14:48:36,324 [INFO] 
-14:48:36,325 [INFO] BCTCodeGenerator: generating 'Bfx_Cfg_h::Generate FOR model' => []
-14:48:36,333 [INFO] workflow completed in 8ms!
-14:48:36,349 [INFO] --------------------------------------------------------------------------------------
-14:48:36,349 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,349 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,349 [INFO] --------------------------------------------------------------------------------------
-14:48:36,349 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\forward\CanSM_Forward.oaw
-14:48:36,349 [INFO] 
-14:48:36,350 [INFO] BCTXtendComponent: executing ' templates::forward::CanSM_Forward'
-14:48:36,352 [INFO] forwarding the values for measurement variables
-14:48:36,355 [INFO] forwarding the implementation data type reference
-14:48:36,356 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of uint8
-14:48:36,356 [INFO] forwarding the implementation data type reference
-14:48:36,357 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of Boolean
-14:48:36,357 [INFO] forwarding the implementation data type reference
-14:48:36,358 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of enum
-14:48:36,358 [INFO] forwarding the implementation data type reference
-14:48:36,358 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of structure
-14:48:36,359 [INFO] BCTXtendComponent: executing 'templates::forward::CanSM_Forward'
-14:48:36,363 [INFO] workflow completed in 13ms!
-14:48:36,403 [INFO] --------------------------------------------------------------------------------------
-14:48:36,403 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,403 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,403 [INFO] --------------------------------------------------------------------------------------
-14:48:36,403 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\validator\CanSM_Validate.oaw
-14:48:36,403 [INFO] 
-14:48:36,404 [INFO] BCTCheckComponent: slot model check file(s): templates::CanSM::validator::CanSM_Validate 
-14:48:36,406 [INFO] ExtensionAdvice 'ComM_CanSM_Aspects' could not be found and will be ignored.
-14:48:36,406 [INFO] ExtensionAdvice 'cantrcv_cansm_aspects' could not be found and will be ignored.
-14:48:36,407 [INFO] ExtensionAdvice 'dem_cansm_aspects' could not be found and will be ignored.
-14:48:36,413 [INFO] workflow completed in 9ms!
-14:48:36,431 [INFO] --------------------------------------------------------------------------------------
-14:48:36,432 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
-14:48:36,432 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
-14:48:36,432 [INFO] --------------------------------------------------------------------------------------
-14:48:36,432 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\Com\scripts\templates\generateid\Com_GenerateId.oaw
-14:48:36,432 [INFO] 
-14:48:36,432 [INFO] BCTXtendComponent: executing 'templates::generateid::Com_GenerateId_Id'
-14:48:36,471 [INFO] Prepare "__KW_COMMON" variant
-14:48:36,520 [INFO] workflow completed in 88ms!
+16:25:48,505 [INFO] --------------------------------------------------------------------------------------
+16:25:48,509 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:25:48,509 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:25:48,509 [INFO] --------------------------------------------------------------------------------------
+16:25:48,509 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Prepare.oaw
+16:25:48,510 [INFO] 
+16:25:56,966 [INFO] BCTXtendComponent: executing 'Bfx_Prepare'
+16:26:00,156 [INFO] workflow completed in 3191ms!
+16:26:00,194 [INFO] --------------------------------------------------------------------------------------
+16:26:00,195 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:00,196 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:00,196 [INFO] --------------------------------------------------------------------------------------
+16:26:00,196 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanIf\scripts\templates\generateid\CanIf_GenerateId.oaw
+16:26:00,196 [INFO] 
+16:26:00,202 [INFO] BCTXtendComponent: executing 'templates::generateid::CanIf_GenerateId_Id'
+16:26:00,414 [INFO] workflow completed in 211ms!
+16:26:00,457 [INFO] --------------------------------------------------------------------------------------
+16:26:00,458 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:00,458 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:00,458 [INFO] --------------------------------------------------------------------------------------
+16:26:00,458 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanTp\scripts\datagenerator\CanTp_Prepare.mwe
+16:26:00,458 [INFO] 
+16:26:00,462 [INFO] BCTXtendComponent: executing 'CanTp_Prepare'
+16:26:00,488 [INFO] CanTp_Prepare for Active Variant: __KW_COMMON 
+16:26:00,494 [INFO] workflow completed in 33ms!
+16:26:03,470 [INFO] --------------------------------------------------------------------------------------
+16:26:03,470 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,471 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,471 [INFO] --------------------------------------------------------------------------------------
+16:26:03,471 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\ComStack\scripts\ComStack_Validate.oaw
+16:26:03,471 [INFO] 
+16:26:03,480 [INFO] BCTCheckComponent: slot model check file(s): ComStack_Validate 
+16:26:03,535 [INFO] workflow completed in 56ms!
+16:26:03,559 [INFO] --------------------------------------------------------------------------------------
+16:26:03,560 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,560 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,560 [INFO] --------------------------------------------------------------------------------------
+16:26:03,560 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Compiler\scripts\Compiler_Generate.oaw
+16:26:03,560 [INFO] 
+16:26:03,588 [INFO] BCTCodeGenerator: generating 'Compiler_h::Generate FOR model' => []
+16:26:03,612 [INFO] workflow completed in 24ms!
+16:26:03,705 [INFO] --------------------------------------------------------------------------------------
+16:26:03,705 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,705 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,706 [INFO] --------------------------------------------------------------------------------------
+16:26:03,706 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\Diagnosis\Det\scripts\validator\Det_Validate.mwe
+16:26:03,706 [INFO] 
+16:26:03,708 [INFO] BCTCheckComponent: slot model check file(s): Det_Validate 
+16:26:03,714 [INFO] workflow completed in 5ms!
+16:26:03,762 [INFO] --------------------------------------------------------------------------------------
+16:26:03,762 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,763 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,763 [INFO] --------------------------------------------------------------------------------------
+16:26:03,763 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\EcuC\scripts\EcuC_Validate.oaw
+16:26:03,763 [INFO] 
+16:26:03,764 [INFO] BCTCheckComponent: slot model check file(s): EcuC 
+16:26:03,789 [INFO] workflow completed in 25ms!
+16:26:03,814 [INFO] --------------------------------------------------------------------------------------
+16:26:03,815 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,815 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,815 [INFO] --------------------------------------------------------------------------------------
+16:26:03,815 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Forward.mwe
+16:26:03,815 [INFO] 
+16:26:03,818 [INFO] BCTXtendComponent: executing ' templates::EcuM_NvMForward'
+16:26:03,822 [INFO] workflow completed in 4ms!
+16:26:03,852 [INFO] --------------------------------------------------------------------------------------
+16:26:03,853 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,853 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,853 [INFO] --------------------------------------------------------------------------------------
+16:26:03,853 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_GenerateId.mwe
+16:26:03,853 [INFO] 
+16:26:03,856 [INFO] BCTXtendComponent: executing ' templates::EcuM_Prepare'
+16:26:03,877 [INFO] workflow completed in 22ms!
+16:26:03,907 [INFO] --------------------------------------------------------------------------------------
+16:26:03,908 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,908 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,908 [INFO] --------------------------------------------------------------------------------------
+16:26:03,908 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\IpduM\scripts\templates\generateid\IpduM_GenerateId.oaw
+16:26:03,908 [INFO] 
+16:26:03,913 [INFO] BCTXtendComponent: executing 'templates::generateid::IpduM_GenerateId_Id'
+16:26:03,964 [INFO] workflow completed in 51ms!
+16:26:03,996 [INFO] --------------------------------------------------------------------------------------
+16:26:03,997 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:03,997 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:03,997 [INFO] --------------------------------------------------------------------------------------
+16:26:03,997 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\PduR\scripts\templates\forward\PduR_Forward.oaw
+16:26:03,997 [INFO] 
+16:26:04,001 [INFO] BCTXtendComponent: executing ' templates::forward::PduR_Forward'
+16:26:04,036 [INFO] >>> WARNING <<<: PduR forwarding to DEM not executed because 'PduR' or 'DEM' configuration is not available. Is this intended?
+16:26:04,037 [INFO] BCTXtendComponent: executing ' templates::forward::PduR_Forward'
+16:26:04,076 [INFO] PduRDsmReInitMainFunction is not forwarded as PduRRbDSMReInitEnabled is configured as False.
+16:26:04,076 [INFO] workflow completed in 75ms!
+16:26:04,116 [INFO] --------------------------------------------------------------------------------------
+16:26:04,116 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:04,116 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:04,117 [INFO] --------------------------------------------------------------------------------------
+16:26:04,117 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Prepare.oaw
+16:26:04,117 [INFO] 
+16:26:04,119 [INFO] BCTXtendComponent: executing 'Platform_Prepare'
+16:26:04,123 [INFO] workflow completed in 3ms!
+16:26:04,166 [INFO] --------------------------------------------------------------------------------------
+16:26:04,167 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:04,167 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:04,167 [INFO] --------------------------------------------------------------------------------------
+16:26:04,168 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Validate.oaw
+16:26:04,168 [INFO] 
+16:26:04,170 [INFO] BCTCheckComponent: slot model check file(s): Bfx_Validate 
+16:26:04,176 [INFO] workflow completed in 7ms!
+16:26:04,236 [INFO] --------------------------------------------------------------------------------------
+16:26:04,237 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:04,237 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:04,237 [INFO] --------------------------------------------------------------------------------------
+16:26:04,237 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\BSMM\BswM\scripts\BswM_Validate.mwe
+16:26:04,237 [INFO] 
+16:26:04,246 [INFO] BCTCheckComponent: slot model check file(s): BswM_Validate 
+16:26:04,319 [INFO] BCTCheckComponent: slot model check file(s): BswM_Validate_PB 
+16:26:04,351 [INFO] workflow completed in 105ms!
+16:26:04,352 [WARN] [WARNING]: BswM: Please check the configuration, logical expression('s) is(are) configured but not used in any Rule -[BswMLogicalExpression_StartCom](Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@3a3f5a99 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
+16:26:04,352 [WARN] [WARNING]: BswM: Please check the configuration, logical expression's are configured but not used in any Rule -[BswMLogicalExpression_StartCom] for the variant __KW_COMMON(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@3a3f5a99 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
+16:26:04,352 [WARN] [WARNING]: BswM: Please check the configuration, Actions's are configured but not used in any Action List-[BswMActionItem_RteStart, BswMActionItem_BswMSwitchRun, BswMActionItem_BswMSwitchStartupTwo](Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@3a3f5a99 (shortName: BswMConfig_RefUG) (index: <unset>); Reported by: -UNKNOWN-)
+16:26:04,397 [INFO] --------------------------------------------------------------------------------------
+16:26:04,397 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:04,397 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:04,398 [INFO] --------------------------------------------------------------------------------------
+16:26:04,398 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\generateid\CanSM_GenerateId.oaw
+16:26:04,398 [INFO] 
+16:26:04,401 [INFO] BCTXtendComponent: executing 'templates::generateid::CanSM::CanSM_GenerateId_Id'
+16:26:04,410 [INFO] >>> WARNING <<<: CanSM forwarding to DEM not executed because 'CanSM' or 'DEM' configuration is not available. Is this intended?
+16:26:04,410 [INFO] BCTXtendComponent: executing 'templates::forward::CanSM_GenerateId_Id'
+16:26:04,421 [INFO] workflow completed in 19ms!
+16:26:04,497 [INFO] --------------------------------------------------------------------------------------
+16:26:04,497 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:04,497 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:04,498 [INFO] --------------------------------------------------------------------------------------
+16:26:04,498 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanTp\scripts\validator\CanTp_Validate.mwe
+16:26:04,498 [INFO] 
+16:26:04,502 [INFO] BCTCheckComponent: slot model check file(s): CanTp 
+16:26:04,533 [INFO] workflow completed in 31ms!
+16:26:04,533 [WARN] [WARNING]: CanTp Strict Dlc check is disabled, this violates CanFD ISO/DIS 15765-2 (2014/2015) requirement. Is this intended? to be compliant with ISO/DIS 15765-2 (2014/2015) enable Strict Dlc Check(Element: autosar40.ecucdescription.impl.EcucContainerValueImpl@4fb99a0d (shortName: CanTpGeneral) (index: <unset>); Reported by: -UNKNOWN-)
+16:26:07,717 [INFO] --------------------------------------------------------------------------------------
+16:26:07,718 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:07,718 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:07,718 [INFO] --------------------------------------------------------------------------------------
+16:26:07,718 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\ComStack\scripts\ComStack_Generate.oaw
+16:26:07,718 [INFO] 
+16:26:07,721 [INFO] BCTCodeGenerator: generating 'ComStack_Cfg_h::Generate FOR model' => []
+16:26:07,725 [INFO] BCTCodeGenerator: generating 'ComStack_Types_arxml::Generate FOR model' => []
+16:26:07,731 [INFO] workflow completed in 10ms!
+16:26:07,778 [INFO] --------------------------------------------------------------------------------------
+16:26:07,779 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:07,779 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:07,779 [INFO] --------------------------------------------------------------------------------------
+16:26:07,779 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\Diagnosis\Det\scripts\filegenerator\Det_Generate.mwe
+16:26:07,779 [INFO] 
+16:26:07,783 [INFO] BCTCodeGenerator: generating 'Det::Root FOR model' => []
+16:26:07,856 [INFO] workflow completed in 73ms!
+16:26:07,890 [INFO] --------------------------------------------------------------------------------------
+16:26:07,891 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:07,891 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:07,891 [INFO] --------------------------------------------------------------------------------------
+16:26:07,891 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\EcuC\scripts\EcuC_Generate.oaw
+16:26:07,892 [INFO] 
+16:26:07,894 [INFO] BCTCodeGenerator: generating 'EcuC_Rb_h::Generate FOR model' => []
+16:26:07,897 [INFO] workflow completed in 3ms!
+16:26:07,931 [INFO] --------------------------------------------------------------------------------------
+16:26:07,931 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:07,931 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:07,931 [INFO] --------------------------------------------------------------------------------------
+16:26:07,932 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_PbDetermineForward.mwe
+16:26:07,932 [INFO] 
+16:26:07,935 [INFO] BCTXtendComponent: executing ' templates::EcuM_PbDetermineForward'
+16:26:07,937 [INFO] workflow completed in 2ms!
+16:26:07,966 [INFO] --------------------------------------------------------------------------------------
+16:26:07,966 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:07,967 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:07,967 [INFO] --------------------------------------------------------------------------------------
+16:26:07,967 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_RbMonitoringValidate.mwe
+16:26:07,967 [INFO] 
+16:26:07,971 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_RbMonitoringCheck 
+16:26:07,980 [INFO] workflow completed in 11ms!
+16:26:08,010 [INFO] --------------------------------------------------------------------------------------
+16:26:08,010 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:08,010 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:08,010 [INFO] --------------------------------------------------------------------------------------
+16:26:08,010 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ESM\EcuM\scripts\EcuM_Validate.mwe
+16:26:08,011 [INFO] 
+16:26:08,013 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_StartupCheck_PB 
+16:26:08,021 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_StartupCheck_PCLT 
+16:26:08,039 [INFO] BCTCheckComponent: slot model check file(s): validator::EcuM_SleepCheck 
+16:26:08,045 [INFO] workflow completed in 32ms!
+16:26:08,085 [INFO] --------------------------------------------------------------------------------------
+16:26:08,085 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:08,085 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:08,085 [INFO] --------------------------------------------------------------------------------------
+16:26:08,086 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CUCEL\Platform\scripts\Platform_Validate.oaw
+16:26:08,086 [INFO] 
+16:26:08,088 [INFO] BCTCheckComponent: slot model check file(s): Platform_Validate 
+16:26:08,095 [INFO] workflow completed in 7ms!
+16:26:08,096 [WARN] [WARNING]: 'McuRbCpuInformation' is not available and has to be configured manually.(Element: autosar40.ecucdescription.impl.EcucModuleConfigurationValuesImpl@72d35460 (shortName: Platform_RefUG) (ecucDefEdition: <unset>, implementationConfigVariant: <unset>, postBuildVariantUsed: <unset>); Reported by: -UNKNOWN-)
+16:26:08,128 [INFO] --------------------------------------------------------------------------------------
+16:26:08,129 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:08,129 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:08,129 [INFO] --------------------------------------------------------------------------------------
+16:26:08,129 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\SrvLibs\Bfx\Bfx\scripts\Bfx_Generate.oaw
+16:26:08,129 [INFO] 
+16:26:08,131 [INFO] BCTCodeGenerator: generating 'Bfx_Cfg_h::Generate FOR model' => []
+16:26:08,155 [INFO] workflow completed in 24ms!
+16:26:08,186 [INFO] --------------------------------------------------------------------------------------
+16:26:08,187 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:08,187 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:08,187 [INFO] --------------------------------------------------------------------------------------
+16:26:08,187 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\forward\CanSM_Forward.oaw
+16:26:08,187 [INFO] 
+16:26:08,190 [INFO] BCTXtendComponent: executing ' templates::forward::CanSM_Forward'
+16:26:08,196 [INFO] forwarding the values for measurement variables
+16:26:08,203 [INFO] forwarding the implementation data type reference
+16:26:08,205 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of uint8
+16:26:08,208 [INFO] forwarding the implementation data type reference
+16:26:08,210 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of Boolean
+16:26:08,212 [INFO] forwarding the implementation data type reference
+16:26:08,214 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of enum
+16:26:08,216 [INFO] forwarding the implementation data type reference
+16:26:08,218 [INFO] forwarding the value of Number of can networks into Measurement variable of type Array of structure
+16:26:08,219 [INFO] BCTXtendComponent: executing 'templates::forward::CanSM_Forward'
+16:26:08,226 [INFO] workflow completed in 36ms!
+16:26:08,285 [INFO] --------------------------------------------------------------------------------------
+16:26:08,285 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:08,285 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:08,286 [INFO] --------------------------------------------------------------------------------------
+16:26:08,286 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\CanStack\CanSM\scripts\templates\validator\CanSM_Validate.oaw
+16:26:08,286 [INFO] 
+16:26:08,287 [INFO] BCTCheckComponent: slot model check file(s): templates::CanSM::validator::CanSM_Validate 
+16:26:08,290 [INFO] ExtensionAdvice 'ComM_CanSM_Aspects' could not be found and will be ignored.
+16:26:08,291 [INFO] ExtensionAdvice 'cantrcv_cansm_aspects' could not be found and will be ignored.
+16:26:08,292 [INFO] ExtensionAdvice 'dem_cansm_aspects' could not be found and will be ignored.
+16:26:08,305 [INFO] workflow completed in 18ms!
+16:26:08,331 [INFO] --------------------------------------------------------------------------------------
+16:26:08,332 [INFO] EMF Modeling Workflow Engine 1.5.3, Build v20200520-0756
+16:26:08,332 [INFO] (c) 2005-2009 openarchitectureware.org and contributors
+16:26:08,332 [INFO] --------------------------------------------------------------------------------------
+16:26:08,332 [INFO] running workflow: C:\ETAS\RTA-CAR_12.2.0\ISOLAR-AB_12.2.1\configuration\org.eclipse.osgi\1981\0\.cp\gen\ComServices\Com\scripts\templates\generateid\Com_GenerateId.oaw
+16:26:08,332 [INFO] 
+16:26:08,335 [INFO] BCTXtendComponent: executing 'templates::generateid::Com_GenerateId_Id'
+16:26:08,414 [INFO] Prepare "__KW_COMMON" variant
+16:26:08,523 [INFO] workflow completed in 188ms!
